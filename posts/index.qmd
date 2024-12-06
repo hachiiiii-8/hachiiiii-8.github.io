@@ -1,0 +1,10 @@
+---
+title: "Blog"
+listing:
+  contents: "."
+  sort: "date-desc"
+  type: "default"
+  categories: true
+  fields: [date, title, author, categories]
+  page-size: 5
+---

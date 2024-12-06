@@ -1,0 +1,35 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!ignored.qmd"
+    - "!ignored-dir/"
+
+website:
+  title: "hao"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Blog"
+        href: posts/index.qmd
+      - text: "About"
+        href: about.qmd
+    tools:
+      - icon: github
+        href: https://github.com/hachiiiii-8
+  sidebar:
+    style: "docked"
+    search: true
+    contents: auto
+
+format:
+  html:
+    theme: flatly
+    css: styles.css
+    toc: true
+
+
+
