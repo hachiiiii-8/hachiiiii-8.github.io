@@ -161,72 +161,15 @@
     ]
   },
   {
-    "objectID": "posts1/2024-12-13-worklog-post.html",
-    "href": "posts1/2024-12-13-worklog-post.html",
-    "title": "Week4-4",
+    "objectID": "posts1/2024-12-14-worklog-post.html",
+    "href": "posts1/2024-12-14-worklog-post.html",
+    "title": "Week4-5",
     "section": "",
-    "text": "1. Missing Semester 2: Shell Tools and Scripting\n\n\n2.\n\n\n\n\n\n\n Back to top",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting - Exercise 1,2,3\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "WorkLog",
       "Week4",
-      "Week4-4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-10-worklog-post.html",
-    "href": "posts1/2024-12-10-worklog-post.html",
-    "title": "Week4-2",
-    "section": "",
-    "text": "1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-2"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-07-worklog-post.html",
-    "href": "posts1/2024-12-07-worklog-post.html",
-    "title": "Week3",
-    "section": "",
-    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week3"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-16-worklog-post.html",
-    "href": "posts1/2024-11-16-worklog-post.html",
-    "title": "Week1",
-    "section": "",
-    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week1"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-23-worklog-post.html",
-    "href": "posts1/2024-11-23-worklog-post.html",
-    "title": "Week2",
-    "section": "",
-    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week2"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html",
-    "href": "posts1/2024-12-09-worklog-post.html",
-    "title": "Week4-1",
-    "section": "",
-    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-1"
+      "Week4-5"
     ]
   },
   {
@@ -242,11 +185,80 @@
     ]
   },
   {
+    "objectID": "posts1/2024-12-09-worklog-post.html",
+    "href": "posts1/2024-12-09-worklog-post.html",
+    "title": "Week4-1",
+    "section": "",
+    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week4",
+      "Week4-1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-23-worklog-post.html",
+    "href": "posts1/2024-11-23-worklog-post.html",
+    "title": "Week2",
+    "section": "",
+    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-16-worklog-post.html",
+    "href": "posts1/2024-11-16-worklog-post.html",
+    "title": "Week1",
+    "section": "",
+    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-07-worklog-post.html",
+    "href": "posts1/2024-12-07-worklog-post.html",
+    "title": "Week3",
+    "section": "",
+    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week3"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-10-worklog-post.html",
+    "href": "posts1/2024-12-10-worklog-post.html",
+    "title": "Week4-2",
+    "section": "",
+    "text": "1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week4",
+      "Week4-2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-13-worklog-post.html",
+    "href": "posts1/2024-12-13-worklog-post.html",
+    "title": "Week4-4",
+    "section": "",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week4",
+      "Week4-4"
+    ]
+  },
+  {
     "objectID": "posts1/index.html",
     "href": "posts1/index.html",
     "title": "Work Record",
     "section": "",
-    "text": "Week4-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Week4-5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 14, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
       "WorkLog",
       "Work Record"
@@ -400,6 +412,18 @@
     "title": "Missing Semester 2: Shell Tools and Scripting",
     "section": "Find shell commands",
     "text": "Find shell commands\nhistory lists the history of commands entered in the shell, and works better with gerp.\nhistory n displays the last n results。\nctrl + R can search the corresponding command from the history",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#assignmemt",
+    "href": "posts/2024-12-12-Missing2-post.html#assignmemt",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Assignmemt",
+    "text": "Assignmemt\n\nQuestion 1\nRead man ls and write an ls command that lists files in the following manner.\nIncludes all files, including hidden files; Sizes are listed in human readable format (e.g. 454M instead of 454279954); Files are ordered by recency; Output is colorized;\n\n\nSolution:\n$ ls -lhAtu --color=auto\ntotal 4K\n-rw-r--r-- 1 hao 197609 470 12月 14 23:09 example.sh\n-rw-r--r-- 1 hao 197609  49 12月 14 23:09 mcd.sh\n-rwxr-xr-x 1 hao 197609  81 12月 14 23:09 script.py*\n-rw-r--r-- 1 hao 197609  12 12月 14 23:09 test.sh\ndrwxr-xr-x 1 hao 197609   0 12月 14 23:05 test/\n\n\nQuestion 2\nWrite bash functions marco and polo that do the following. Whenever you execute marco the current working directory should be saved in some manner, then when you execute polo, no matter what directory you are in, polo should cd you back to the directory where you executed marco. For ease of debugging you can write the code in a file marco.sh and (re)load the definitions to your shell by executing source marco.sh.\n\n\nSolution:\n#marco.sh\nmarco() {\n    export MARCO_DIR=\"$(pwd)\"\n    echo \"The current directory is $MARCO_DIR\"\n}\n#polo.sh\npolo() {\n    # if $MARCO_DIR exisits, change the directory (-n checks for non-empty values)\n    if [[ -n \"$MARCO_DIR\" ]]; then\n        cd \"$MARCO_DIR\" || echo \"Failed to change directory\"\n    else \n        echo \"MARCO_DIR is not existed, run marco first\"\n    fi\n}\n# execution\n$ source marco.sh\n\n$ source polo.sh\n\n$ marco\nThe current directory is /e/blog/missing_semester/lecture2\n\n$ cd test\n\n$ polo\n\n$ pwd\n/e/blog/missing_semester/lecture2\n\n\nQuestion 3\nWrite a bash script that runs the following script until it fails and captures its standard output and error streams to files and prints everything at the end.\n# failure.sh\n#!/usr/bin/env bash\n\nn=$(( RANDOM % 100 ))\n\nif [[ n -eq 42 ]]; then\n   echo \"Something went wrong\"\n   &gt;&2 echo \"The error was using magic numbers\"\n   exit 1\nfi\n\necho \"Everything went according to plan\"\n&gt;&2 redirects the output of a command to file descriptor 2, the standard error output (stderr).\n\n\nSolution:\n#check-failure.sh\n#!/usr/bin/env bash\n\nfile=\"failure.sh\"\nsuccess_count=0\n\nwhile true; do\n    ((success_count++))\n    # stdout to run.log, stderr to error.log\n    ./$file &gt;&gt; run.log 2&gt;&gt; error.log\n    if [[ $? -eq 1 ]]; then\n        echo \"The script failed after $success_count runs.\"\n        echo \"Captured standard error:\"\n        cat error.log\n        break\n    fi\ndone\n# execution\n$ source check-failure.sh\nThe script failed after 16 runs.\nCaptured standard error:\nThe error was using magic numbers",
     "crumbs": [
       "Blog",
       "Missing-Semester",
