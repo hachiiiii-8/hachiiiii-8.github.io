@@ -14,7 +14,7 @@
     "href": "posts/2024-11-23-Missing1-post.html",
     "title": "Missing Semester 1: The Shell",
     "section": "",
-    "text": "echo string: String/Variable output\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo \"hello\"\nhello\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo it is a test\nit is a test",
+    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -26,7 +26,7 @@
     "href": "posts/2024-11-23-Missing1-post.html#echo",
     "title": "Missing Semester 1: The Shell",
     "section": "",
-    "text": "echo string: String/Variable output\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo \"hello\"\nhello\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo it is a test\nit is a test",
+    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -38,7 +38,7 @@
     "href": "posts/2024-11-23-Missing1-post.html#cd-and-pwd",
     "title": "Missing Semester 1: The Shell",
     "section": "cd and pwd",
-    "text": "cd and pwd\npwd: display the current directory cd .: to the current directory cd ..: to its parent directory cd dir_name: to dir_name directory cd ~: to the home cd -: to the last visited directory\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ pwd\n/e/blog\n\nhao@DESKTOP-EUJ3G2G MINGW64 /\n$ cd /e/blog\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ cd -\nhao@DESKTOP-EUJ3G2G MINGW64 /\n\nhao@DESKTOP-EUJ3G2G MINGW64 /\n$ cd ~\nhao@DESKTOP-EUJ3G2G MINGW64 ~",
+    "text": "cd and pwd\npwd: display the current directory cd .: to the current directory cd ..: to its parent directory cd dir_name: to dir_name directory cd ~: to the home cd -: to the last visited directory\n$ cd /e/blog\n\n$ cd -\n/e/blog\n\n$ cd ~\n\n$ pwd\n/c/Users/hao",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -50,7 +50,7 @@
     "href": "posts/2024-11-23-Missing1-post.html#ls",
     "title": "Missing Semester 1: The Shell",
     "section": "ls",
-    "text": "ls\nls: display all the content in the current directory ls -l: display the details of content\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ ls -l\ntotal 4\ndrwxr-xr-x 1 hao 197609 0 11月 20 23:26 _site/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:54 Missing_Semester/\ndrwxr-xr-x 1 hao 197609 0 11月 14 21:31 posts/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:49 WEEK_REPORT/\n\nd refers to a directory\nrwx: read, write, execute\nrwx refers to the owner of the file’s permissions\nr-x refers to the group of the file’s permissions\nr-x refers to anyone else’s permissions",
+    "text": "ls\nls: display all the content in the current directory ls -l: display the details of content\n$ ls -l\ntotal 4\ndrwxr-xr-x 1 hao 197609 0 11月 20 23:26 _site/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:54 Missing_Semester/\ndrwxr-xr-x 1 hao 197609 0 11月 14 21:31 posts/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:49 WEEK_REPORT/\n\nd refers to a directory\nrwx: read, write, execute\nrwx refers to the owner of the file’s permissions\nr-x refers to the group of the file’s permissions\nr-x refers to anyone else’s permissions",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -62,7 +62,7 @@
     "href": "posts/2024-11-23-Missing1-post.html#rmdir-and-mkdir",
     "title": "Missing Semester 1: The Shell",
     "section": "rmdir and mkdir",
-    "text": "rmdir and mkdir\nrmdir dir_name : Delete empty dirs mkdir dir_name: Building a new directory\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ mkdir 1\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ ls\n_site/  1/  Missing_Semester/  posts/  WEEK_REPORT/\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ rmdir 1\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ ls\n_site/  Missing_Semester/  posts/  WEEK_REPORT/",
+    "text": "rmdir and mkdir\nrmdir dir_name : Delete empty dirs mkdir dir_name: Building a new directory\n$ mkdir 1\n$ ls\n_site/  1/  Missing_Semester/  posts/  WEEK_REPORT/\n$ rmdir 1\n$ ls\n_site/  Missing_Semester/  posts/  WEEK_REPORT/",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -74,7 +74,7 @@
     "href": "posts/2024-11-23-Missing1-post.html#cat",
     "title": "Missing Semester 1: The Shell",
     "section": "cat",
-    "text": "cat\ncat file_nameandcat file1 file2: Displaying file contents cat file1 file2 &gt; combined_file: Redirecting files contents to other file cat &gt; newfile: Reading and saving content from the terminal cat &gt;&gt; existing_file: Appending content to an existing file\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ cat &gt; main1.py\nprint(\"hello\")\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ cat &gt; main2.py\nprint(\"hao\")\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ cat main1.py main2.py\nprint(\"hello\")\nprint(\"hao\")\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ cat main1.py main2.py &gt; main.py\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ python main.py\nhello\nhao",
+    "text": "cat\ncat file_nameandcat file1 file2: Displaying file contents cat file1 file2 &gt; combined_file: Redirecting files contents to other file cat &gt; newfile: Reading and saving content from the terminal cat &gt;&gt; existing_file: Appending content to an existing file\n$ cat &gt; main1.py\nprint(\"hello\")\n$ cat &gt; main2.py\nprint(\"hao\")\n$ cat main1.py main2.py\nprint(\"hello\")\nprint(\"hao\")\n$ cat main1.py main2.py &gt; main.py\n$ python main.py\nhello\nhao",
     "crumbs": [
       "Blog",
       "Missing-Semester",
@@ -161,38 +161,15 @@
     ]
   },
   {
-    "objectID": "posts1/2024-12-11-worklog-post.html",
-    "href": "posts1/2024-12-11-worklog-post.html",
-    "title": "Week4-3",
+    "objectID": "posts1/2024-12-13-worklog-post.html",
+    "href": "posts1/2024-12-13-worklog-post.html",
+    "title": "Week4-4",
     "section": "",
-    "text": "1. About page designed\n\n\n\n\n\n\n Back to top",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting\n\n\n\n\n\n\n Back to top",
     "crumbs": [
       "WorkLog",
       "Week4",
-      "Week4-3"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html",
-    "href": "posts1/2024-12-09-worklog-post.html",
-    "title": "Week4-1",
-    "section": "",
-    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-1"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-16-worklog-post.html",
-    "href": "posts1/2024-11-16-worklog-post.html",
-    "title": "Week1",
-    "section": "",
-    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week1"
+      "Week4-4"
     ]
   },
   {
@@ -208,11 +185,68 @@
     ]
   },
   {
+    "objectID": "posts1/2024-12-07-worklog-post.html",
+    "href": "posts1/2024-12-07-worklog-post.html",
+    "title": "Week3",
+    "section": "",
+    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week3"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-16-worklog-post.html",
+    "href": "posts1/2024-11-16-worklog-post.html",
+    "title": "Week1",
+    "section": "",
+    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-23-worklog-post.html",
+    "href": "posts1/2024-11-23-worklog-post.html",
+    "title": "Week2",
+    "section": "",
+    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html",
+    "href": "posts1/2024-12-09-worklog-post.html",
+    "title": "Week4-1",
+    "section": "",
+    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week4",
+      "Week4-1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-11-worklog-post.html",
+    "href": "posts1/2024-12-11-worklog-post.html",
+    "title": "Week4-3",
+    "section": "",
+    "text": "1. About page designed\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "WorkLog",
+      "Week4",
+      "Week4-3"
+    ]
+  },
+  {
     "objectID": "posts1/index.html",
     "href": "posts1/index.html",
     "title": "Work Record",
     "section": "",
-    "text": "Week4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Week4-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
       "WorkLog",
       "Work Record"
@@ -233,27 +267,143 @@
     "href": "posts/2024-12-12-Missing2-post.html",
     "title": "Missing Semester 2: Shell Tools and Scripting",
     "section": "",
-    "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ foo=bar\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo '$foo'\n$foo\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo \"$foo\"\nbar"
+    "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\n$ foo=bar\n\n$ echo '$foo'\n$foo\n\n$ echo \"$foo\"\nbar",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
   },
   {
     "objectID": "posts/2024-12-12-Missing2-post.html#assign-variables",
     "href": "posts/2024-12-12-Missing2-post.html#assign-variables",
     "title": "Missing Semester 2: Shell Tools and Scripting",
     "section": "",
-    "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ foo=bar\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo '$foo'\n$foo\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ echo \"$foo\"\nbar"
+    "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\n$ foo=bar\n\n$ echo '$foo'\n$foo\n\n$ echo \"$foo\"\nbar",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
   },
   {
     "objectID": "posts/2024-12-12-Missing2-post.html#script-function-source-loading-and-execution",
     "href": "posts/2024-12-12-Missing2-post.html#script-function-source-loading-and-execution",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "script function, source loading and execution",
-    "text": "script function, source loading and execution\nmcd () {\n     mkdir -p \"$1\"\n     cd \"$1\"\n }\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ source mcd.sh\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ mcd test\nsource executes the commands in the corresponding file.\nmcd test: Create a folder and switch to it."
+    "section": "Script function, source loading and execution",
+    "text": "Script function, source loading and execution\nmcd () {\n     mkdir -p \"$1\"\n     cd \"$1\"\n }\n\n$ source mcd.sh\n\n$ mcd test\nsource executes the commands in the corresponding file.\nmcd test: Create a folder and switch to it.",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
   },
   {
     "objectID": "posts/2024-12-12-Missing2-post.html#bash-arguments",
     "href": "posts/2024-12-12-Missing2-post.html#bash-arguments",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "bash arguments",
-    "text": "bash arguments\n$0: Name of the script.\n$1-9: The first through ninth arguments of the function.\n$@: All the arguments\n$#: Number of arguments\n$?: Return code of the previous command\nwuhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ ls\ntest1/  test2/\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ cd test3\n\n# Returns 1 if the previous command failed\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ echo $?\n1\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ mkdir test3\n\n# Returns 0 if the previous command succeeded\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ echo $?\n0\n!!: Entire last command.\n$ mkdir /usr/test\nPermission denied\n\n$ sudo !!\nsudo mkdir /usr/test\n$_: Last argument from the last command.\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ mkdir test1\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test\n$ cd $_\n\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog/test/test1\n||: or operator; &&: and operator; ;: separate commands\n# A example contains all above command\necho \"Starting program at $(date)\" # Date will be substituted\n\necho \"Running program $0 with $# arguments with pid $$\"\n\nfor file in \"$@\"; do\n    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n    # When pattern is not found, grep has exit status 1\n    # We redirect STDOUT and STDERR to a null register since we do not care about them\n    if [[ $? -ne 0 ]]; then\n        echo \"File $file does not have any foobar, adding one\"\n        echo \"# foobar\" &gt;&gt; \"$file\"\n    fi\ndone\n\nResults:\nhao@DESKTOP-EUJ3G2G MINGW64 /e/blog\n$ ./example.sh mcd.sh test2.sh\nStarting program at 2024年12月13日  16:34:41\nRunning program ./example.sh with 2 arguments with pid 2115\nFile mcd.sh does not have any foobar, adding one\nFile test2.sh does not have any foobar, adding one"
+    "section": "Bash arguments",
+    "text": "Bash arguments\n$0: Name of the script.\n$1-9: The first through ninth arguments of the function.\n$@: All the arguments\n$#: Number of arguments\n$?: Return code of the previous command\n$ ls\ntest1/  test2/\n\n$ cd test3\n\n# Returns 1 if the previous command failed\n$ echo $?\n1\n\n$ mkdir test3\n\n# Returns 0 if the previous command succeeded\n$ echo $?\n0\n!!: Entire last command.\n$ mkdir /usr/test\nPermission denied\n\n$ sudo !!\nsudo mkdir /usr/test\n$_: Last argument from the last command.\n$ mkdir test3\n\n$ cd $_\n\n$ pwd\n/e/blog/test/test3\n||: or operator; &&: and operator; ;: separate commands\n# A example contains all above command\necho \"Starting program at $(date)\" # Date will be substituted\n\necho \"Running program $0 with $# arguments with pid $$\"\n\nfor file in \"$@\"; do\n    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n    # When pattern is not found, grep has exit status 1\n    # We redirect STDOUT and STDERR to a null register since we do not care about them\n    if [[ $? -ne 0 ]]; then\n        echo \"File $file does not have any foobar, adding one\"\n        echo \"# foobar\" &gt;&gt; \"$file\"\n    fi\ndone\n\nResults:\n$ ./example.sh mcd.sh test2.sh\nStarting program at 2024年12月13日  16:34:41\nRunning program ./example.sh with 2 arguments with pid 2115\nFile mcd.sh does not have any foobar, adding one\nFile test2.sh does not have any foobar, adding one",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#wildcards",
+    "href": "posts/2024-12-12-Missing2-post.html#wildcards",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Wildcards",
+    "text": "Wildcards\n?: Match only one arbitrary character\n*: Match multiple arbitrary characters\n$ ls\nexample.sh  mcd.sh  test/  test1.sh  test2.sh\n\n$ rm test?.sh\n\n$ ls\nexample.sh  mcd.sh  test/\n\n$ ls\nfoo/  test1/  test2/  test3/\n\n$ rmdir tes*\n\n$ ls\nfoo/",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#curly-braces",
+    "href": "posts/2024-12-12-Missing2-post.html#curly-braces",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Curly braces",
+    "text": "Curly braces\nWhen you have a series of commands, you can use {} to expand them automatically\n# create two folders: foo/ bar/\n$ mkdir {foo,bar}\n\n# This creates files foo/a, foo/b, ... foo/j, bar/a, bar/b, ... bar/j\n$ touch {foo,bar}/{a..j}",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#diff",
+    "href": "posts/2024-12-12-Missing2-post.html#diff",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "diff",
+    "text": "diff\ndiff shows differences between 2 files.\n$ touch foo/x bar/y\n\n$ diff &lt;(ls foo) &lt;(ls bar)\n&lt; x\n---\n&gt; y",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#redirection",
+    "href": "posts/2024-12-12-Missing2-post.html#redirection",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Redirection",
+    "text": "Redirection\n&lt;: Uses the contents of the file as input to the command.\n$ wc -l &lt; example.sh\n12\n&gt;: Writes the stdout of the command to the specified file (which overwrites the file).\n&gt;&gt;: Writes the stdout of the command to the specified file (without overwriting the file)\n$ echo \"hello\" &gt; test.sh\n\n$ cat test.sh\nhello\n\n$ echo \"world\" &gt;&gt; test.sh\n\n$ cat test.sh\nhello\nworld\n&lt;&lt;: Provides multiple lines of input until matching the specified character.\n$ cat &lt;&lt; EOF\n&gt; This is line 1\n&gt; This is line 2\n&gt; EOF\nThis is line 1\nThis is line 2",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#path-environment-variable-for-running-the-script",
+    "href": "posts/2024-12-12-Missing2-post.html#path-environment-variable-for-running-the-script",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "PATH environment variable for running the script",
+    "text": "PATH environment variable for running the script\nSearch for the location of the python interpreter in the environment variables by writing #! /usr/bin/env python at the beginning of the script.\n#script.py\n\n#!/usr/bin/env python\nimport sys\nfor arg in reversed(sys.argv[1:]):\n  print(arg)\n\nResults:\n$ ./script.py apple banana cherry\ncherry\nbanana\napple",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#finding-files",
+    "href": "posts/2024-12-12-Missing2-post.html#finding-files",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Finding files",
+    "text": "Finding files\n# Find all directories with the name src \n$ find . -name src -type d\n# Find all python files that contain test in their folder paths\n$ find . -path '*/test/*.py' -type f\n# Find all files modified in the last day\n$ find . -mtime -1\n\n$ touch {test1,text2}.txt\n# Delete all files with .tmp extension\n$ find . -name '*.txt' -exec rm {} \\;\n\n$ ls\nexample.sh  mcd.sh  script.py*  test/  test.sh\n.: Search in the current directory, src refer to file name，d refer to type",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#finding-code",
+    "href": "posts/2024-12-12-Missing2-post.html#finding-code",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Finding Code",
+    "text": "Finding Code\ngrep Matches patterns from the input text.\n#Searching in a file\n$ grep foobar mcd.sh\n# foobar\n\n# Searching recursively in a folder\n$ grep -R foobar .\n./example.sh:    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n./example.sh:        echo \"File $file does not have any foobar, adding one\"\n./example.sh:        echo \"# foobar\" &gt;&gt; \"$file\"\n./mcd.sh:# foobar\n\n# Searching and Deleting texts from the input File\n$ grep -v hao@DESKTOP-EUJ3G2* 2024-11-23-Missing1-post.qmd &gt; 2024-11-23-Missing1-post-copy.qmd\nrg searches folders recursively by default",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-12-Missing2-post.html#find-shell-commands",
+    "href": "posts/2024-12-12-Missing2-post.html#find-shell-commands",
+    "title": "Missing Semester 2: Shell Tools and Scripting",
+    "section": "Find shell commands",
+    "text": "Find shell commands\nhistory lists the history of commands entered in the shell, and works better with gerp.\nhistory n displays the last n results。\nctrl + R can search the corresponding command from the history",
+    "crumbs": [
+      "Blog",
+      "Missing-Semester",
+      "Shell Tools and Scripting"
+    ]
   }
 ]
