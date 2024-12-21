@@ -5195,7 +5195,7 @@ body {font-family: "Merriweather", serif;font-size: 16px !important;line-height:
 </section>
 <section id="find-shell-commands" class="level2">
 <h2 class="anchored" data-anchor-id="find-shell-commands">Find Shell Commands</h2>
-<p><code>history</code> lists the history of commands entered in the shell, and works better with gerp.</p>
+<p><code>history</code> lists the history of commands entered in the shell, and works better with <code>grep</code>.</p>
 <p><code>history n</code> displays the last n results。</p>
 <p><code>ctrl + R</code> can search the corresponding command from the history</p>
 </section>
@@ -5229,7 +5229,7 @@ body {font-family: "Merriweather", serif;font-size: 16px !important;line-height:
 <span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="sourceCode" id="cb20"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#polo.sh</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>polo<span class="op">()</span> <span class="op">{</span></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if $MARCO_DIR exisits, change the directory (-n checks for non-empty values)</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>    <span class="co"># if $MARCO_DIR exists, change the directory (-n checks for non-empty values)</span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> <span class="op">[[</span> -n <span class="st">&quot;</span><span class="va">$MARCO_DIR</span><span class="st">&quot;</span> <span class="op">]];</span> then</span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>        <span class="fu">cd</span> <span class="st">&quot;</span><span class="va">$MARCO_DIR</span><span class="st">&quot;</span> <span class="op">||</span> <span class="fu">echo</span> <span class="st">&quot;Failed to change directory&quot;</span></span>
 <span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span> </span>
@@ -6082,7 +6082,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb27-271"><a href="#cb27-271" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-272"><a href="#cb27-272" aria-hidden="true" tabindex="-1"></a><span class="fu">## Find Shell Commands</span></span>
 <span id="cb27-273"><a href="#cb27-273" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-274"><a href="#cb27-274" aria-hidden="true" tabindex="-1"></a><span class="in">`history`</span> lists the history of commands entered in the shell, and works better with gerp.</span>
+<span id="cb27-274"><a href="#cb27-274" aria-hidden="true" tabindex="-1"></a><span class="in">`history`</span> lists the history of commands entered in the shell, and works better with <span class="in">`grep`</span>.</span>
 <span id="cb27-275"><a href="#cb27-275" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-276"><a href="#cb27-276" aria-hidden="true" tabindex="-1"></a><span class="in">`history n`</span> displays the last n results。</span>
 <span id="cb27-277"><a href="#cb27-277" aria-hidden="true" tabindex="-1"></a></span>
@@ -6128,7 +6128,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb27-317"><a href="#cb27-317" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
 <span id="cb27-318"><a href="#cb27-318" aria-hidden="true" tabindex="-1"></a><span class="in">#polo.sh</span></span>
 <span id="cb27-319"><a href="#cb27-319" aria-hidden="true" tabindex="-1"></a><span class="in">polo() {</span></span>
-<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a><span class="in">    # if $MARCO_DIR exisits, change the directory (-n checks for non-empty values)</span></span>
+<span id="cb27-320"><a href="#cb27-320" aria-hidden="true" tabindex="-1"></a><span class="in">    # if $MARCO_DIR exists, change the directory (-n checks for non-empty values)</span></span>
 <span id="cb27-321"><a href="#cb27-321" aria-hidden="true" tabindex="-1"></a><span class="in">    if [[ -n &quot;$MARCO_DIR&quot; ]]; then</span></span>
 <span id="cb27-322"><a href="#cb27-322" aria-hidden="true" tabindex="-1"></a><span class="in">        cd &quot;$MARCO_DIR&quot; || echo &quot;Failed to change directory&quot;</span></span>
 <span id="cb27-323"><a href="#cb27-323" aria-hidden="true" tabindex="-1"></a><span class="in">    else </span></span>

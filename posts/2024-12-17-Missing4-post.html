@@ -5039,8 +5039,8 @@ body {font-family: "Merriweather", serif;font-size: 16px !important;line-height:
 </section>
 <section id="non-greedy-regex" class="level2">
 <h2 class="anchored" data-anchor-id="non-greedy-regex">Non-greedy Regex</h2>
-<p>Regular expressions are greddy, the above ’. *Disconnected from ’ will match as many characters as possible before the last Disconnected from.</p>
-<p>We can add <code>?</code> behind <code>+</code> or <code>*</code> to make regular expressions non-greddy. But, <code>sed</code> doesn’t support it, we should switch to <code>perl -pe</code></p>
+<p>Regular expressions are greedy, the above ’. *Disconnected from ’ will match as many characters as possible before the last Disconnected from.</p>
+<p>We can add <code>?</code> behind <code>+</code> or <code>*</code> to make regular expressions non-greedy. But, <code>sed</code> doesn’t support it, we should switch to <code>perl -pe</code></p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">echo</span> <span class="st">&#39;something Disconnected from A Disconnected from B. OK finish string&#39;</span> <span class="op">|</span> perl <span class="op">-</span>pe <span class="st">&#39;s/.*?Disconnected from //&#39;</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>A Disconnected <span class="kw">from</span> B<span class="op">.</span> OK finish string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
@@ -5690,9 +5690,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a><span class="fu">## Non-greedy Regex</span></span>
 <span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a>Regular expressions are greddy, the above &#39;. *Disconnected from &#39; will match as many characters as possible before the last Disconnected from.</span>
+<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a>Regular expressions are greedy, the above &#39;. *Disconnected from &#39; will match as many characters as possible before the last Disconnected from.</span>
 <span id="cb14-90"><a href="#cb14-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a>We can add <span class="in">`?`</span> behind <span class="in">`+`</span> or <span class="in">`*`</span> to make regular expressions non-greddy. But, <span class="in">`sed`</span> doesn&#39;t support it, we should switch to <span class="in">`perl -pe`</span></span>
+<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a>We can add <span class="in">`?`</span> behind <span class="in">`+`</span> or <span class="in">`*`</span> to make regular expressions non-greedy. But, <span class="in">`sed`</span> doesn&#39;t support it, we should switch to <span class="in">`perl -pe`</span></span>
 <span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
 <span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a><span class="in">~$ echo &#39;something Disconnected from A Disconnected from B. OK finish string&#39; | perl -pe &#39;s/.*?Disconnected from //&#39;</span></span>
