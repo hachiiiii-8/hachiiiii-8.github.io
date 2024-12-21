@@ -4,281 +4,45 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "Missing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Dive into Deep Learning 1: Introduction\n\n\n\nDive-into-Deep-Learning\n\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Record\n\n\n\nLinux\n\n\n\n\nWu Hao\n\n\nDec 18, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 4: Data Wrangling\n\n\n\nMissing-Semester\n\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
       "Blog"
     ]
   },
   {
-    "objectID": "posts/2024-11-23-Missing1-post.html",
-    "href": "posts/2024-11-23-Missing1-post.html",
-    "title": "Missing Semester 1: The Shell",
+    "objectID": "posts/2024-12-18-Linux-post.html",
+    "href": "posts/2024-12-18-Linux-post.html",
+    "title": "Linux Command Record",
     "section": "",
-    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
+    "text": "cat file_name\n\n\n\nPress the q key (for Quit) on the keyboard to exit the current less viewing mode and return to the terminal.\n\n\n\nPress the Page Up key to page up and Page Down key to continue down the page.\n\n\n\nType /, then a keyword, and press Enter to begin your search. Use n to jump to the next match. Use N to jump to the previous match.\n\n\n\nPress g to immediately jump back to the first line of the file.\n\n\n\nPress r to reload the contents of the file.",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
-      "The Shell"
+      "Tools",
+      "Linux Command Record"
     ]
   },
   {
-    "objectID": "posts/2024-11-23-Missing1-post.html#echo",
-    "href": "posts/2024-11-23-Missing1-post.html#echo",
-    "title": "Missing Semester 1: The Shell",
+    "objectID": "posts/2024-12-18-Linux-post.html#files-viewing",
+    "href": "posts/2024-12-18-Linux-post.html#files-viewing",
+    "title": "Linux Command Record",
     "section": "",
-    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
+    "text": "cat file_name\n\n\n\nPress the q key (for Quit) on the keyboard to exit the current less viewing mode and return to the terminal.\n\n\n\nPress the Page Up key to page up and Page Down key to continue down the page.\n\n\n\nType /, then a keyword, and press Enter to begin your search. Use n to jump to the next match. Use N to jump to the previous match.\n\n\n\nPress g to immediately jump back to the first line of the file.\n\n\n\nPress r to reload the contents of the file.",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
-      "The Shell"
+      "Tools",
+      "Linux Command Record"
     ]
   },
   {
-    "objectID": "posts/2024-11-23-Missing1-post.html#cd-and-pwd",
-    "href": "posts/2024-11-23-Missing1-post.html#cd-and-pwd",
-    "title": "Missing Semester 1: The Shell",
-    "section": "cd and pwd",
-    "text": "cd and pwd\npwd: display the current directory cd .: to the current directory cd ..: to its parent directory cd dir_name: to dir_name directory cd ~: to the home cd -: to the last visited directory\n$ cd /e/blog\n\n$ cd -\n/e/blog\n\n$ cd ~\n\n$ pwd\n/c/Users/hao",
+    "objectID": "posts/2024-12-18-Linux-post.html#file-editing",
+    "href": "posts/2024-12-18-Linux-post.html#file-editing",
+    "title": "Linux Command Record",
+    "section": "File Editing",
+    "text": "File Editing\n\nCommand grep\ngrep instruction\n\n\n\nOption\nFunctionality\n\n\n\n\n-i\nCase insensitive\n\n\n-n\nDisplay line number\n\n\n-c\nDisplay matching lines’ number\n\n\n-o\nOutput only matches\n\n\n-v\nInvert after matching\n\n\n-l\nDisplay file names with matches\n\n\n-r\nrecursively search directories\n\n\n-w\nMatch whole words\n\n\n-A\nShow contextual content\n\n\n-E\nUse extended regulars",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-23-Missing1-post.html#ls",
-    "href": "posts/2024-11-23-Missing1-post.html#ls",
-    "title": "Missing Semester 1: The Shell",
-    "section": "ls",
-    "text": "ls\nls: display all the content in the current directory ls -l: display the details of content\n$ ls -l\ntotal 4\ndrwxr-xr-x 1 hao 197609 0 11月 20 23:26 _site/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:54 Missing_Semester/\ndrwxr-xr-x 1 hao 197609 0 11月 14 21:31 posts/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:49 WEEK_REPORT/\n\nd refers to a directory\nrwx: read, write, execute\nrwx refers to the owner of the file’s permissions\nr-x refers to the group of the file’s permissions\nr-x refers to anyone else’s permissions",
-    "crumbs": [
-      "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-23-Missing1-post.html#rmdir-and-mkdir",
-    "href": "posts/2024-11-23-Missing1-post.html#rmdir-and-mkdir",
-    "title": "Missing Semester 1: The Shell",
-    "section": "rmdir and mkdir",
-    "text": "rmdir and mkdir\nrmdir dir_name : Delete empty dirs mkdir dir_name: Building a new directory\n$ mkdir 1\n$ ls\n_site/  1/  Missing_Semester/  posts/  WEEK_REPORT/\n$ rmdir 1\n$ ls\n_site/  Missing_Semester/  posts/  WEEK_REPORT/",
-    "crumbs": [
-      "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-23-Missing1-post.html#cat",
-    "href": "posts/2024-11-23-Missing1-post.html#cat",
-    "title": "Missing Semester 1: The Shell",
-    "section": "cat",
-    "text": "cat\ncat file_nameandcat file1 file2: Displaying file contents cat file1 file2 &gt; combined_file: Redirecting files contents to other file cat &gt; newfile: Reading and saving content from the terminal cat &gt;&gt; existing_file: Appending content to an existing file\n$ cat &gt; main1.py\nprint(\"hello\")\n$ cat &gt; main2.py\nprint(\"hao\")\n$ cat main1.py main2.py\nprint(\"hello\")\nprint(\"hao\")\n$ cat main1.py main2.py &gt; main.py\n$ python main.py\nhello\nhao",
-    "crumbs": [
-      "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-23-Missing1-post.html#pipe-character",
-    "href": "posts/2024-11-23-Missing1-post.html#pipe-character",
-    "title": "Missing Semester 1: The Shell",
-    "section": "pipe character",
-    "text": "pipe character\n|: Using the output of one command as input to another command (Waiting for construction…)",
-    "crumbs": [
-      "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-23-Missing1-post.html#touch",
-    "href": "posts/2024-11-23-Missing1-post.html#touch",
-    "title": "Missing Semester 1: The Shell",
-    "section": "touch",
-    "text": "touch\ntouch file_name: Update the access and modification times of each FILE to the current time.",
-    "crumbs": [
-      "Blog",
-      "Missing-Semester",
-      "The Shell"
-    ]
-  },
-  {
-    "objectID": "posts1/index.html",
-    "href": "posts1/index.html",
-    "title": "Work Record",
-    "section": "",
-    "text": "Week5-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 14, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Work Record"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-14-worklog-post.html",
-    "href": "posts1/2024-12-14-worklog-post.html",
-    "title": "Week4-5",
-    "section": "",
-    "text": "1. Missing Semester 2: Shell Tools and Scripting - Exercise 1,2,3\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-5"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-11-worklog-post.html",
-    "href": "posts1/2024-12-11-worklog-post.html",
-    "title": "Week4-3",
-    "section": "",
-    "text": "1. About page designed\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-3"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html",
-    "href": "posts1/2024-12-09-worklog-post.html",
-    "title": "Week4-1",
-    "section": "",
-    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-1"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-23-worklog-post.html",
-    "href": "posts1/2024-11-23-worklog-post.html",
-    "title": "Week2",
-    "section": "",
-    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week2"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-16-worklog-post.html",
-    "href": "posts1/2024-11-16-worklog-post.html",
-    "title": "Week1",
-    "section": "",
-    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week1"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-07-worklog-post.html",
-    "href": "posts1/2024-12-07-worklog-post.html",
-    "title": "Week3",
-    "section": "",
-    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week3"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-10-worklog-post.html",
-    "href": "posts1/2024-12-10-worklog-post.html",
-    "title": "Week4-2",
-    "section": "",
-    "text": "1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-2"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-13-worklog-post.html",
-    "href": "posts1/2024-12-13-worklog-post.html",
-    "title": "Week4-4",
-    "section": "",
-    "text": "1. Missing Semester 2: Shell Tools and Scripting\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week4",
-      "Week4-4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-16-worklog-post.html",
-    "href": "posts1/2024-12-16-worklog-post.html",
-    "title": "Week5-1",
-    "section": "",
-    "text": "1. Missing Semester 2: Shell Tools and Scripting - Exercise 4,5\nMissing Semester 2: Shell Tools and Scripting\n\n\n2. Optimized the storage and layout of the site\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "WorkLog",
-      "Week5",
-      "Week5-1"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-16-Recognize-post.html",
-    "href": "posts/2024-11-16-Recognize-post.html",
-    "title": "Recognize Handwritten Digits by CNN",
-    "section": "",
-    "text": "A Handwritten Digits Recognition Model based CNN.\n\nBasic Information\n\nNetwork: CNN\nDataset: MNIST\nFramework: Pytorch\nGPU: NVIDIA GTX1070\n\n\n\n\n\nYou can download data from MNIST\n\n\n\n\n\n\n\nCode\nimport cv2\nimport numpy as np\nimport torch\nfrom torch.utils.data import DataLoader, Dataset\nimport torch.nn as nn\nimport matplotlib.pyplot as plt\nfrom week_log_1.vgg import CNN\nimport sys\nimport time\nimport scipy.io as scio\nfrom IPython.display import Image, display\n\n\n\n\n\n\n\nCode\n# Reversing the black and white thresholds for each pixel\ndef accessPiexl(img):\n    height = img.shape[0]\n    width = img.shape[1]\n    for i in range(height):\n       for j in range(width):\n           img[i][j] = 255 - img[i][j]\n    return img\n\n# Inverse binarized image\ndef accessBinary(img, threshold=165):\n    img = accessPiexl(img)\n    kernel = np.ones((3, 3), np.uint8)\n    img = cv2.GaussianBlur(img, (3, 3), 0) #Gaussian filter\n    img = cv2.erode(img, kernel, iterations=1) #Border burr removal\n    # adaptive filter\n    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, -9)\n    img = cv2.dilate(img, kernel, iterations=1)\n    return img\n\n# For showing prediction results\ndef showResults(path, borders, results=None):\n    img = cv2.imread(path)\n    for i, border in enumerate(borders):\n        cv2.rectangle(img, border[0], border[1], (0, 0, 255))\n        if results:\n            cv2.putText(img, str(results[i]), border[0], cv2.FONT_HERSHEY_COMPLEX, 0.8, (0, 255, 0), 1)\n    cv2.waitKey(0)\n    cv2.imwrite('week_log_1/out.jpg',img)\n    display(Image(filename='week_log_1/out.jpg'))\n\n#Search the edge, and return the top right and bottom left coner of the digits\ndef findBorderContours(path, maxArea=1800):\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)\n    borders = []\n    for contour in contours:\n        #creat a boder\n        x, y, w, h = cv2.boundingRect(contour)\n        if w*h &gt; maxArea:\n            #the coordinate of boder\n            border = [(x, y), (x+w, y+h)]\n            borders.append(border)\n    return borders\n\ndef transUSPS(path, borders, size=(28, 28)):\n    imgData = np.zeros((len(borders), size[0], size[0], 1), dtype='uint8')\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    for i, border in enumerate(borders):\n        borderImg = img[border[0][1]:border[1][1], border[0][0]:border[1][0]]\n        #Expand pixels based on maximum edge make the border close to square\n        extendPiexl = (max(borderImg.shape) - min(borderImg.shape)) // 2\n        #make border\n        targetImg = cv2.copyMakeBorder(borderImg, 7, 7, extendPiexl + 7, extendPiexl + 7, cv2.BORDER_CONSTANT)\n        targetImg = cv2.resize(targetImg, size)\n        # expand dimension\n        targetImg = np.expand_dims(targetImg, axis=-1)\n        imgData[i] = targetImg\n    return imgData\n# load the model and start predicting!\n\nprediction=[]\ndef predict(modelpath, imgData):\n    model = torch.load(modelpath,weights_only=False)\n    with torch.no_grad():\n        for i, data in enumerate(imgData):\n            data = data.type(torch.FloatTensor)\n            test_pred = model(data.cuda())\n            test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)\n            for y in test_label:\n                prediction.append(y)\n\n\n\n\n\n\n\nCode\nclass ImgDataset(Dataset):\n    def __init__(self, x, y=None, transform=None):\n        self.x = x\n        # label is required to be a LongTensor\n        self.y = y\n        if y is not None:\n            self.y = torch.LongTensor(y)\n        self.transform = transform\n    def __len__(self):\n        return len(self.x)\n    def __getitem__(self, index):\n        X = self.x[index]\n        if self.transform is not None:\n            X = self.transform(X)\n        if self.y is not None:\n            Y = self.y[index]\n            return X, Y\n        else:\n            return X\n\n\n\n\n\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self):\n        super(Classifier, self).__init__()\n        # input dimension [1, 16, 16]\n        self.vgg = nn.Sequential(\n            nn.Conv2d(1, 16, 3, 1, 1),  # [16, 28, 28]\n            nn.BatchNorm2d(16),\n            nn.ReLU(),\n            nn.Conv2d(16, 32, 3, 1, 1),  # [32, 28, 28]\n            nn.BatchNorm2d(32),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [32, 14, 14]\n            nn.Conv2d(32, 64, 3, 1, 1),  # [64, 14, 14]\n            nn.BatchNorm2d(64),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, 3, 1, 1),  # [128, 14, 14]\n            nn.BatchNorm2d(128),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [128, 7, 7]\n        )\n        #model definition\n        self.fc = nn.Sequential(\n            nn.Linear(128*7*7, 512),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(512, 1024),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(1024, 11),\n        )\n#forward propagation\n    def forward(self, x):\n        out = self.vgg(x)\n        out = out.view(out.size()[0], -1)\n        return self.fc(out)\n\n\n\n\n\n\n\nCode\nprint(\"Reading data\")\ndataFile2 = 'week_log_1/vgg/data/MNIST.mat'\ndata2 = scio.loadmat(dataFile2)\n\ntrain = data2['fea']\ntrain=train.reshape(70000,1,28,28)\nlabel = data2['gnd']\ntrain_x = train[:50000]\ntrain_y = label[:50000]\nprint(\"Size of training data = {}\".format(len(train_x)))\nval_x = train[50000:65000]\nval_y = label[50000:65000]\nprint(\"Size of validation data = {}\".format(len(val_x)))\ntest_x = train[65000:68000]\ntest_y = label[65000:68000]\ntest_y=test_y.reshape(3000)\nprint(\"Size of Testing data = {}\".format(len(test_x)))\nprint(\"reading over\")\n\n\nReading data\nSize of training data = 50000\nSize of validation data = 15000\nSize of Testing data = 3000\nreading over\n\n\n\n\n\n\n\nCode\nbatch_size = 500\nif sys.platform.startswith('win'):\n    num_workers = 0  \nelse:\n    num_workers = 4\ntrain_set = ImgDataset(train_x, train_y)\nval_set = ImgDataset(val_x, val_y)\ntrain_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=num_workers)\nval_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size, shuffle=False,num_workers=num_workers)\n\ntrain_loss_list=[]\nval_loss_list = []\ntrain_acc_list = []\nval_acc_list = []\n\n#training\nmodel = CNN.Classifier().cuda()\nloss = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)  # Adam for optimizer\nnum_epoch = 25\nfor epoch in range(num_epoch):\n    epoch_start_time = time.time()\n    train_acc = 0.0\n    train_loss = 0.0\n    val_acc = 0.0\n    val_loss = 0.0\n    model.train()\n    for i, data in enumerate(train_loader):\n        data[0] = data[0].type(torch.FloatTensor)\n        data[1]=data[1].reshape(500)\n        optimizer.zero_grad()  \n        train_pred = model(data[0].cuda())  \n        batch_loss = loss(train_pred, data[1].cuda())  \n        batch_loss.backward()  \n        optimizer.step()  \n        train_acc += np.sum(np.argmax(train_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n        train_loss += batch_loss.item()\n    model.eval()\n\n    with torch.no_grad():\n        for i, data in enumerate(val_loader):\n            data[0] = data[0].type(torch.FloatTensor)\n            data[1] = data[1].reshape(500)\n            val_pred = model(data[0].cuda())\n            batch_loss = loss(val_pred, data[1].cuda())\n\n            val_acc += np.sum(np.argmax(val_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n            val_loss += batch_loss.item()\n        if epoch &gt; 20:\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, num_epoch, time.time() - epoch_start_time, \\\n               train_acc / train_set.__len__(), train_loss / train_set.__len__(), val_acc / val_set.__len__(),\n               val_loss / val_set.__len__()))\n        train_loss_list.append(train_loss / train_set.__len__())\n        val_loss_list.append(val_loss / val_set.__len__())\n        train_acc_list.append(train_acc / train_set.__len__())\n        val_acc_list.append(val_acc / val_set.__len__())\ntorch.save(model,'week_log_1/model.pt')\n\n\n[022/025] 1.43 sec(s) Train Acc: 0.994240 Loss: 0.000037 | Val Acc: 0.992467 loss: 0.000070\n[023/025] 1.43 sec(s) Train Acc: 0.996140 Loss: 0.000024 | Val Acc: 0.991800 loss: 0.000069\n[024/025] 1.43 sec(s) Train Acc: 0.996200 Loss: 0.000024 | Val Acc: 0.990133 loss: 0.000095\n[025/025] 1.43 sec(s) Train Acc: 0.996120 Loss: 0.000025 | Val Acc: 0.992533 loss: 0.000077\n\n\n\n\n\n\nCode\nplt.plot(np.arange(num_epoch),train_loss_list)\nplt.plot(np.arange(num_epoch),val_loss_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"Loss\")\nplt.show()\n\nplt.plot(np.arange(num_epoch),train_acc_list)\nplt.plot(np.arange(num_epoch),val_acc_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"accuracy\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\nFigure 1: loss\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: accuracy\n\n\n\n\n\n\n\n\n\n\n\n\nCode\npath = 'week_log_1/vgg/data/2.jpg'\nmodel = 'week_log_1/model.pt'\nborders = findBorderContours(path)\n\nimgData = transUSPS(path, borders)\nimgData = np.transpose(imgData,[0,3,1,2])\nimgData = ImgDataset(imgData)\ntest_loader = DataLoader(imgData, batch_size=1, shuffle=False)\nresults = predict(model, test_loader)\nshowResults(path, borders, prediction)",
-    "crumbs": [
-      "Blog",
-      "Project",
-      "Recognize Handwritten Digits by CNN"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-16-Recognize-post.html#introduction",
-    "href": "posts/2024-11-16-Recognize-post.html#introduction",
-    "title": "Recognize Handwritten Digits by CNN",
-    "section": "",
-    "text": "A Handwritten Digits Recognition Model based CNN.\n\nBasic Information\n\nNetwork: CNN\nDataset: MNIST\nFramework: Pytorch\nGPU: NVIDIA GTX1070",
-    "crumbs": [
-      "Blog",
-      "Project",
-      "Recognize Handwritten Digits by CNN"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-16-Recognize-post.html#download-data",
-    "href": "posts/2024-11-16-Recognize-post.html#download-data",
-    "title": "Recognize Handwritten Digits by CNN",
-    "section": "",
-    "text": "You can download data from MNIST",
-    "crumbs": [
-      "Blog",
-      "Project",
-      "Recognize Handwritten Digits by CNN"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-16-Recognize-post.html#code",
-    "href": "posts/2024-11-16-Recognize-post.html#code",
-    "title": "Recognize Handwritten Digits by CNN",
-    "section": "",
-    "text": "Code\nimport cv2\nimport numpy as np\nimport torch\nfrom torch.utils.data import DataLoader, Dataset\nimport torch.nn as nn\nimport matplotlib.pyplot as plt\nfrom week_log_1.vgg import CNN\nimport sys\nimport time\nimport scipy.io as scio\nfrom IPython.display import Image, display\n\n\n\n\n\n\n\nCode\n# Reversing the black and white thresholds for each pixel\ndef accessPiexl(img):\n    height = img.shape[0]\n    width = img.shape[1]\n    for i in range(height):\n       for j in range(width):\n           img[i][j] = 255 - img[i][j]\n    return img\n\n# Inverse binarized image\ndef accessBinary(img, threshold=165):\n    img = accessPiexl(img)\n    kernel = np.ones((3, 3), np.uint8)\n    img = cv2.GaussianBlur(img, (3, 3), 0) #Gaussian filter\n    img = cv2.erode(img, kernel, iterations=1) #Border burr removal\n    # adaptive filter\n    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, -9)\n    img = cv2.dilate(img, kernel, iterations=1)\n    return img\n\n# For showing prediction results\ndef showResults(path, borders, results=None):\n    img = cv2.imread(path)\n    for i, border in enumerate(borders):\n        cv2.rectangle(img, border[0], border[1], (0, 0, 255))\n        if results:\n            cv2.putText(img, str(results[i]), border[0], cv2.FONT_HERSHEY_COMPLEX, 0.8, (0, 255, 0), 1)\n    cv2.waitKey(0)\n    cv2.imwrite('week_log_1/out.jpg',img)\n    display(Image(filename='week_log_1/out.jpg'))\n\n#Search the edge, and return the top right and bottom left coner of the digits\ndef findBorderContours(path, maxArea=1800):\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)\n    borders = []\n    for contour in contours:\n        #creat a boder\n        x, y, w, h = cv2.boundingRect(contour)\n        if w*h &gt; maxArea:\n            #the coordinate of boder\n            border = [(x, y), (x+w, y+h)]\n            borders.append(border)\n    return borders\n\ndef transUSPS(path, borders, size=(28, 28)):\n    imgData = np.zeros((len(borders), size[0], size[0], 1), dtype='uint8')\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    for i, border in enumerate(borders):\n        borderImg = img[border[0][1]:border[1][1], border[0][0]:border[1][0]]\n        #Expand pixels based on maximum edge make the border close to square\n        extendPiexl = (max(borderImg.shape) - min(borderImg.shape)) // 2\n        #make border\n        targetImg = cv2.copyMakeBorder(borderImg, 7, 7, extendPiexl + 7, extendPiexl + 7, cv2.BORDER_CONSTANT)\n        targetImg = cv2.resize(targetImg, size)\n        # expand dimension\n        targetImg = np.expand_dims(targetImg, axis=-1)\n        imgData[i] = targetImg\n    return imgData\n# load the model and start predicting!\n\nprediction=[]\ndef predict(modelpath, imgData):\n    model = torch.load(modelpath,weights_only=False)\n    with torch.no_grad():\n        for i, data in enumerate(imgData):\n            data = data.type(torch.FloatTensor)\n            test_pred = model(data.cuda())\n            test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)\n            for y in test_label:\n                prediction.append(y)\n\n\n\n\n\n\n\nCode\nclass ImgDataset(Dataset):\n    def __init__(self, x, y=None, transform=None):\n        self.x = x\n        # label is required to be a LongTensor\n        self.y = y\n        if y is not None:\n            self.y = torch.LongTensor(y)\n        self.transform = transform\n    def __len__(self):\n        return len(self.x)\n    def __getitem__(self, index):\n        X = self.x[index]\n        if self.transform is not None:\n            X = self.transform(X)\n        if self.y is not None:\n            Y = self.y[index]\n            return X, Y\n        else:\n            return X\n\n\n\n\n\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self):\n        super(Classifier, self).__init__()\n        # input dimension [1, 16, 16]\n        self.vgg = nn.Sequential(\n            nn.Conv2d(1, 16, 3, 1, 1),  # [16, 28, 28]\n            nn.BatchNorm2d(16),\n            nn.ReLU(),\n            nn.Conv2d(16, 32, 3, 1, 1),  # [32, 28, 28]\n            nn.BatchNorm2d(32),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [32, 14, 14]\n            nn.Conv2d(32, 64, 3, 1, 1),  # [64, 14, 14]\n            nn.BatchNorm2d(64),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, 3, 1, 1),  # [128, 14, 14]\n            nn.BatchNorm2d(128),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [128, 7, 7]\n        )\n        #model definition\n        self.fc = nn.Sequential(\n            nn.Linear(128*7*7, 512),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(512, 1024),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(1024, 11),\n        )\n#forward propagation\n    def forward(self, x):\n        out = self.vgg(x)\n        out = out.view(out.size()[0], -1)\n        return self.fc(out)\n\n\n\n\n\n\n\nCode\nprint(\"Reading data\")\ndataFile2 = 'week_log_1/vgg/data/MNIST.mat'\ndata2 = scio.loadmat(dataFile2)\n\ntrain = data2['fea']\ntrain=train.reshape(70000,1,28,28)\nlabel = data2['gnd']\ntrain_x = train[:50000]\ntrain_y = label[:50000]\nprint(\"Size of training data = {}\".format(len(train_x)))\nval_x = train[50000:65000]\nval_y = label[50000:65000]\nprint(\"Size of validation data = {}\".format(len(val_x)))\ntest_x = train[65000:68000]\ntest_y = label[65000:68000]\ntest_y=test_y.reshape(3000)\nprint(\"Size of Testing data = {}\".format(len(test_x)))\nprint(\"reading over\")\n\n\nReading data\nSize of training data = 50000\nSize of validation data = 15000\nSize of Testing data = 3000\nreading over\n\n\n\n\n\n\n\nCode\nbatch_size = 500\nif sys.platform.startswith('win'):\n    num_workers = 0  \nelse:\n    num_workers = 4\ntrain_set = ImgDataset(train_x, train_y)\nval_set = ImgDataset(val_x, val_y)\ntrain_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=num_workers)\nval_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size, shuffle=False,num_workers=num_workers)\n\ntrain_loss_list=[]\nval_loss_list = []\ntrain_acc_list = []\nval_acc_list = []\n\n#training\nmodel = CNN.Classifier().cuda()\nloss = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)  # Adam for optimizer\nnum_epoch = 25\nfor epoch in range(num_epoch):\n    epoch_start_time = time.time()\n    train_acc = 0.0\n    train_loss = 0.0\n    val_acc = 0.0\n    val_loss = 0.0\n    model.train()\n    for i, data in enumerate(train_loader):\n        data[0] = data[0].type(torch.FloatTensor)\n        data[1]=data[1].reshape(500)\n        optimizer.zero_grad()  \n        train_pred = model(data[0].cuda())  \n        batch_loss = loss(train_pred, data[1].cuda())  \n        batch_loss.backward()  \n        optimizer.step()  \n        train_acc += np.sum(np.argmax(train_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n        train_loss += batch_loss.item()\n    model.eval()\n\n    with torch.no_grad():\n        for i, data in enumerate(val_loader):\n            data[0] = data[0].type(torch.FloatTensor)\n            data[1] = data[1].reshape(500)\n            val_pred = model(data[0].cuda())\n            batch_loss = loss(val_pred, data[1].cuda())\n\n            val_acc += np.sum(np.argmax(val_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n            val_loss += batch_loss.item()\n        if epoch &gt; 20:\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, num_epoch, time.time() - epoch_start_time, \\\n               train_acc / train_set.__len__(), train_loss / train_set.__len__(), val_acc / val_set.__len__(),\n               val_loss / val_set.__len__()))\n        train_loss_list.append(train_loss / train_set.__len__())\n        val_loss_list.append(val_loss / val_set.__len__())\n        train_acc_list.append(train_acc / train_set.__len__())\n        val_acc_list.append(val_acc / val_set.__len__())\ntorch.save(model,'week_log_1/model.pt')\n\n\n[022/025] 1.43 sec(s) Train Acc: 0.994240 Loss: 0.000037 | Val Acc: 0.992467 loss: 0.000070\n[023/025] 1.43 sec(s) Train Acc: 0.996140 Loss: 0.000024 | Val Acc: 0.991800 loss: 0.000069\n[024/025] 1.43 sec(s) Train Acc: 0.996200 Loss: 0.000024 | Val Acc: 0.990133 loss: 0.000095\n[025/025] 1.43 sec(s) Train Acc: 0.996120 Loss: 0.000025 | Val Acc: 0.992533 loss: 0.000077\n\n\n\n\n\n\nCode\nplt.plot(np.arange(num_epoch),train_loss_list)\nplt.plot(np.arange(num_epoch),val_loss_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"Loss\")\nplt.show()\n\nplt.plot(np.arange(num_epoch),train_acc_list)\nplt.plot(np.arange(num_epoch),val_acc_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"accuracy\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\nFigure 1: loss\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: accuracy",
-    "crumbs": [
-      "Blog",
-      "Project",
-      "Recognize Handwritten Digits by CNN"
-    ]
-  },
-  {
-    "objectID": "posts/2024-11-16-Recognize-post.html#prediction-results",
-    "href": "posts/2024-11-16-Recognize-post.html#prediction-results",
-    "title": "Recognize Handwritten Digits by CNN",
-    "section": "",
-    "text": "Code\npath = 'week_log_1/vgg/data/2.jpg'\nmodel = 'week_log_1/model.pt'\nborders = findBorderContours(path)\n\nimgData = transUSPS(path, borders)\nimgData = np.transpose(imgData,[0,3,1,2])\nimgData = ImgDataset(imgData)\ntest_loader = DataLoader(imgData, batch_size=1, shuffle=False)\nresults = predict(model, test_loader)\nshowResults(path, borders, prediction)",
-    "crumbs": [
-      "Blog",
-      "Project",
-      "Recognize Handwritten Digits by CNN"
+      "Tools",
+      "Linux Command Record"
     ]
   },
   {
@@ -289,7 +53,7 @@
     "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\n$ foo=bar\n\n$ echo '$foo'\n$foo\n\n$ echo \"$foo\"\nbar",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -301,19 +65,19 @@
     "text": "Contents in '(string)' are literal strings\nContents in \"(string)\" are substituted by variable values.\n$ foo=bar\n\n$ echo '$foo'\n$foo\n\n$ echo \"$foo\"\nbar",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
   {
-    "objectID": "posts/2024-12-12-Missing2-post.html#script-function-source-loading-and-execution",
-    "href": "posts/2024-12-12-Missing2-post.html#script-function-source-loading-and-execution",
+    "objectID": "posts/2024-12-12-Missing2-post.html#script-function-and-execution",
+    "href": "posts/2024-12-12-Missing2-post.html#script-function-and-execution",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "Script function, source loading and execution",
-    "text": "Script function, source loading and execution\nmcd () {\n     mkdir -p \"$1\"\n     cd \"$1\"\n }\n\n$ source mcd.sh\n\n$ mcd test\nsource executes the commands in the corresponding file.\nmcd test: Create a folder and switch to it.",
+    "section": "Script Function and Execution",
+    "text": "Script Function and Execution\nmcd () {\n     mkdir -p \"$1\"\n     cd \"$1\"\n }\n\n$ source mcd.sh\n\n$ mcd test\nsource executes the commands in the corresponding file.\nmcd test: Create a folder and switch to it.",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -321,11 +85,11 @@
     "objectID": "posts/2024-12-12-Missing2-post.html#bash-arguments",
     "href": "posts/2024-12-12-Missing2-post.html#bash-arguments",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "Bash arguments",
-    "text": "Bash arguments\n$0: Name of the script.\n$1-9: The first through ninth arguments of the function.\n$@: All the arguments\n$#: Number of arguments\n$?: Return code of the previous command\n$ ls\ntest1/  test2/\n\n$ cd test3\n\n# Returns 1 if the previous command failed\n$ echo $?\n1\n\n$ mkdir test3\n\n# Returns 0 if the previous command succeeded\n$ echo $?\n0\n!!: Entire last command.\n$ mkdir /usr/test\nPermission denied\n\n$ sudo !!\nsudo mkdir /usr/test\n$_: Last argument from the last command.\n$ mkdir test3\n\n$ cd $_\n\n$ pwd\n/e/blog/test/test3\n||: or operator; &&: and operator; ;: separate commands\n# A example contains all above command\necho \"Starting program at $(date)\" # Date will be substituted\n\necho \"Running program $0 with $# arguments with pid $$\"\n\nfor file in \"$@\"; do\n    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n    # When pattern is not found, grep has exit status 1\n    # We redirect STDOUT and STDERR to a null register since we do not care about them\n    if [[ $? -ne 0 ]]; then\n        echo \"File $file does not have any foobar, adding one\"\n        echo \"# foobar\" &gt;&gt; \"$file\"\n    fi\ndone\n\nResults:\n$ ./example.sh mcd.sh test2.sh\nStarting program at 2024年12月13日  16:34:41\nRunning program ./example.sh with 2 arguments with pid 2115\nFile mcd.sh does not have any foobar, adding one\nFile test2.sh does not have any foobar, adding one",
+    "section": "Bash Arguments",
+    "text": "Bash Arguments\n$0: Name of the script.\n$1-9: The first through ninth arguments of the function.\n$@: All the arguments\n$#: Number of arguments\n$?: Return code of the previous command\n$ ls\ntest1/  test2/\n\n$ cd test3\n\n# Returns 1 if the previous command failed\n$ echo $?\n1\n\n$ mkdir test3\n\n# Returns 0 if the previous command succeeded\n$ echo $?\n0\n!!: Entire last command.\n$ mkdir /usr/test\nPermission denied\n\n$ sudo !!\nsudo mkdir /usr/test\n$_: Last argument from the last command.\n$ mkdir test3\n\n$ cd $_\n\n$ pwd\n/e/blog/test/test3\n||: or operator; &&: and operator; ;: separate commands\n# A example contains all above command\necho \"Starting program at $(date)\" # Date will be substituted\n\necho \"Running program $0 with $# arguments with pid $$\"\n\nfor file in \"$@\"; do\n    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n    # When pattern is not found, grep has exit status 1\n    # We redirect STDOUT and STDERR to a null register since we do not care about them\n    if [[ $? -ne 0 ]]; then\n        echo \"File $file does not have any foobar, adding one\"\n        echo \"# foobar\" &gt;&gt; \"$file\"\n    fi\ndone\n\nResults:\n$ ./example.sh mcd.sh test2.sh\nStarting program at 2024年12月13日  16:34:41\nRunning program ./example.sh with 2 arguments with pid 2115\nFile mcd.sh does not have any foobar, adding one\nFile test2.sh does not have any foobar, adding one",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -337,7 +101,7 @@
     "text": "Wildcards\n?: Match only one arbitrary character\n*: Match multiple arbitrary characters\n$ ls\nexample.sh  mcd.sh  test/  test1.sh  test2.sh\n\n$ rm test?.sh\n\n$ ls\nexample.sh  mcd.sh  test/\n\n$ ls\nfoo/  test1/  test2/  test3/\n\n$ rmdir tes*\n\n$ ls\nfoo/",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -349,7 +113,7 @@
     "text": "Curly braces\nWhen you have a series of commands, you can use {} to expand them automatically\n# create two folders: foo/ bar/\n$ mkdir {foo,bar}\n\n# This creates files foo/a, foo/b, ... foo/j, bar/a, bar/b, ... bar/j\n$ touch {foo,bar}/{a..j}",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -361,7 +125,7 @@
     "text": "diff\ndiff shows differences between 2 files.\n$ touch foo/x bar/y\n\n$ diff &lt;(ls foo) &lt;(ls bar)\n&lt; x\n---\n&gt; y",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -373,19 +137,19 @@
     "text": "Redirection\n&lt;: Uses the contents of the file as input to the command.\n$ wc -l &lt; example.sh\n12\n&gt;: Writes the stdout of the command to the specified file (which overwrites the file).\n&gt;&gt;: Writes the stdout of the command to the specified file (without overwriting the file)\n$ echo \"hello\" &gt; test.sh\n\n$ cat test.sh\nhello\n\n$ echo \"world\" &gt;&gt; test.sh\n\n$ cat test.sh\nhello\nworld\n&lt;&lt;: Provides multiple lines of input until matching the specified character.\n$ cat &lt;&lt; EOF\n&gt; This is line 1\n&gt; This is line 2\n&gt; EOF\nThis is line 1\nThis is line 2",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
   {
-    "objectID": "posts/2024-12-12-Missing2-post.html#path-environment-variable-for-running-the-script",
-    "href": "posts/2024-12-12-Missing2-post.html#path-environment-variable-for-running-the-script",
+    "objectID": "posts/2024-12-12-Missing2-post.html#path-env-variable-for-running-scripts",
+    "href": "posts/2024-12-12-Missing2-post.html#path-env-variable-for-running-scripts",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "PATH environment variable for running the script",
-    "text": "PATH environment variable for running the script\nSearch for the location of the python interpreter in the environment variables by writing #! /usr/bin/env python at the beginning of the script.\n#script.py\n\n#!/usr/bin/env python\nimport sys\nfor arg in reversed(sys.argv[1:]):\n  print(arg)\n\nResults:\n$ ./script.py apple banana cherry\ncherry\nbanana\napple",
+    "section": "PATH Env Variable for Running Scripts",
+    "text": "PATH Env Variable for Running Scripts\nSearch for the location of the python interpreter in the environment variables by writing #! /usr/bin/env python at the beginning of the script.\n#script.py\n\n#!/usr/bin/env python\nimport sys\nfor arg in reversed(sys.argv[1:]):\n  print(arg)\n\nResults:\n$ ./script.py apple banana cherry\ncherry\nbanana\napple",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -397,7 +161,7 @@
     "text": "Finding files\n# Find all directories with the name src \n$ find . -name src -type d\n# Find all python files that contain test in their folder paths\n$ find . -path '*/test/*.py' -type f\n# Find all files modified in the last day\n$ find . -mtime -1\n\n$ touch {test1,text2}.txt\n# Delete all files with .tmp extension\n$ find . -name '*.txt' -exec rm {} \\;\n\n$ ls\nexample.sh  mcd.sh  script.py*  test/  test.sh\n.: Search in the current directory, src refer to file name，d refer to type",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -409,7 +173,7 @@
     "text": "Finding Code\ngrep Matches patterns from the input text.\n#Searching in a file\n$ grep foobar mcd.sh\n# foobar\n\n# Searching recursively in a folder\n$ grep -R foobar .\n./example.sh:    grep foobar \"$file\" &gt; /dev/null 2&gt; /dev/null\n./example.sh:        echo \"File $file does not have any foobar, adding one\"\n./example.sh:        echo \"# foobar\" &gt;&gt; \"$file\"\n./mcd.sh:# foobar\n\n# Searching and Deleting texts from the input File\n$ grep -v hao@DESKTOP-EUJ3G2* 2024-11-23-Missing1-post.qmd &gt; 2024-11-23-Missing1-post-copy.qmd\nrg searches folders recursively by default",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -417,11 +181,11 @@
     "objectID": "posts/2024-12-12-Missing2-post.html#find-shell-commands",
     "href": "posts/2024-12-12-Missing2-post.html#find-shell-commands",
     "title": "Missing Semester 2: Shell Tools and Scripting",
-    "section": "Find shell commands",
-    "text": "Find shell commands\nhistory lists the history of commands entered in the shell, and works better with gerp.\nhistory n displays the last n results。\nctrl + R can search the corresponding command from the history",
+    "section": "Find Shell Commands",
+    "text": "Find Shell Commands\nhistory lists the history of commands entered in the shell, and works better with gerp.\nhistory n displays the last n results。\nctrl + R can search the corresponding command from the history",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
     ]
   },
@@ -433,8 +197,460 @@
     "text": "Assignmemt\n\nQuestion 1\nRead man ls and write an ls command that lists files in the following manner.\nIncludes all files, including hidden files; Sizes are listed in human readable format (e.g. 454M instead of 454279954); Files are ordered by recency; Output is colorized;\n\n\nSolution:\n$ ls -lhAtu --color=auto\ntotal 4K\n-rw-r--r-- 1 hao 197609 470 12月 14 23:09 example.sh\n-rw-r--r-- 1 hao 197609  49 12月 14 23:09 mcd.sh\n-rwxr-xr-x 1 hao 197609  81 12月 14 23:09 script.py*\n-rw-r--r-- 1 hao 197609  12 12月 14 23:09 test.sh\ndrwxr-xr-x 1 hao 197609   0 12月 14 23:05 test/\n\n\nQuestion 2\nWrite bash functions marco and polo that do the following. Whenever you execute marco the current working directory should be saved in some manner, then when you execute polo, no matter what directory you are in, polo should cd you back to the directory where you executed marco. For ease of debugging you can write the code in a file marco.sh and (re)load the definitions to your shell by executing source marco.sh.\n\n\nSolution:\n#marco.sh\nmarco() {\n    export MARCO_DIR=\"$(pwd)\"\n    echo \"The current directory is $MARCO_DIR\"\n}\n#polo.sh\npolo() {\n    # if $MARCO_DIR exisits, change the directory (-n checks for non-empty values)\n    if [[ -n \"$MARCO_DIR\" ]]; then\n        cd \"$MARCO_DIR\" || echo \"Failed to change directory\"\n    else \n        echo \"MARCO_DIR is not existed, run marco first\"\n    fi\n}\n# execution\n$ source marco.sh\n\n$ source polo.sh\n\n$ marco\nThe current directory is /e/blog/missing_semester/lecture2\n\n$ cd test\n\n$ polo\n\n$ pwd\n/e/blog/missing_semester/lecture2\n\n\nQuestion 3\nWrite a bash script that runs the following script until it fails and captures its standard output and error streams to files and prints everything at the end.\n# failure.sh\n#!/usr/bin/env bash\n\nn=$(( RANDOM % 100 ))\n\nif [[ n -eq 42 ]]; then\n   echo \"Something went wrong\"\n   &gt;&2 echo \"The error was using magic numbers\"\n   exit 1\nfi\n\necho \"Everything went according to plan\"\n&gt;&2 redirects the output of a command to file descriptor 2, the standard error output (stderr).\n\n\nSolution:\n#check-failure.sh\n#!/usr/bin/env bash\n\nfile=\"failure.sh\"\nsuccess_count=0\n\nwhile true; do\n    ((success_count++))\n    # stdout to run.log, stderr to error.log\n    ./$file &gt;&gt; run.log 2&gt;&gt; error.log\n    if [[ $? -eq 1 ]]; then\n        echo \"The script failed after $success_count runs.\"\n        echo \"Captured standard error:\"\n        cat error.log\n        break\n    fi\ndone\n# execution\n$ source check-failure.sh\nThe script failed after 16 runs.\nCaptured standard error:\nThe error was using magic numbers\n\n\nQuestion 4\nWrite a command that recursively finds all HTML files in the folder and makes a zip with them. Note that your command should work even if the files have spaces.\n\n\nSolution:\n$ find . -name \"*.html\" -print0 | xargs -0 tar -cvf html_files.tar\n./1.html\n./2.html\n./3.html\n\n$ ls\n1.html  2.html  3.html  html_files.tar\n\n\nQuestion 5\nWrite a command or script to recursively find the most recently modified file in a directory. More generally, can you list all files by recency?\n\n\nSolution\n#find the most recently modified file\n$  find . -type f | xargs ls -lt --color=auto | head -n 1\n-rw-r--r-- 1 hao 197609 10240 12月 16 23:12 ./html_directory/html_files.tar\n\n#list by recency\n$ find . -type f | xargs ls -lt --color=auto\n-rw-r--r-- 1 hao 197609 10240 12月 16 23:12 ./html_directory/html_files.tar\n-rw-r--r-- 1 hao 197609     0 12月 16 23:01 ./html_directory/3.html\n-rw-r--r-- 1 hao 197609     0 12月 16 23:00 ./html_directory/2.html\n-rw-r--r-- 1 hao 197609     0 12月 16 23:00 ./html_directory/1.html\n-rw-r--r-- 1 hao 197609    34 12月 15 01:16 ./error.log\n-rw-r--r-- 1 hao 197609   531 12月 15 01:16 ./run.log\n-rw-r--r-- 1 hao 197609   369 12月 15 01:16 ./check-failure.sh\n-rw-r--r-- 1 hao 197609   209 12月 15 01:13 ./failure.sh\n-rw-r--r-- 1 hao 197609   180 12月 15 00:22 ./polo.sh\n-rw-r--r-- 1 hao 197609    88 12月 15 00:08 ./marco.sh\n-rwxr-xr-x 1 hao 197609    81 12月 14 15:50 ./script.py\n-rw-r--r-- 1 hao 197609    12 12月 14 15:19 ./test.sh\n-rw-r--r-- 1 hao 197609    49 12月 14 00:34 ./mcd.sh\n-rw-r--r-- 1 hao 197609   470 12月 14 00:26 ./example.sh",
     "crumbs": [
       "Blog",
-      "Missing-Semester",
+      "Missing Semester",
       "Shell Tools and Scripting"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-16-Recognize-post.html",
+    "href": "posts/2024-11-16-Recognize-post.html",
+    "title": "Recognize Handwritten Digits by CNN",
+    "section": "",
+    "text": "A Handwritten Digits Recognition Model based CNN.\n\nBasic Information\n\nNetwork: CNN\nDataset: MNIST\nFramework: Pytorch\nGPU: NVIDIA GTX1070\n\n\n\n\n\nYou can download data from MNIST\n\n\n\n\n\n\n\nCode\nimport cv2\nimport numpy as np\nimport torch\nfrom torch.utils.data import DataLoader, Dataset\nimport torch.nn as nn\nimport matplotlib.pyplot as plt\nfrom week_log_1.vgg import CNN\nimport sys\nimport time\nimport scipy.io as scio\nfrom IPython.display import Image, display\n\n\n\n\n\n\n\nCode\n# Reversing the black and white thresholds for each pixel\ndef accessPiexl(img):\n    height = img.shape[0]\n    width = img.shape[1]\n    for i in range(height):\n       for j in range(width):\n           img[i][j] = 255 - img[i][j]\n    return img\n\n# Inverse binarized image\ndef accessBinary(img, threshold=165):\n    img = accessPiexl(img)\n    kernel = np.ones((3, 3), np.uint8)\n    img = cv2.GaussianBlur(img, (3, 3), 0) #Gaussian filter\n    img = cv2.erode(img, kernel, iterations=1) #Border burr removal\n    # adaptive filter\n    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, -9)\n    img = cv2.dilate(img, kernel, iterations=1)\n    return img\n\n# For showing prediction results\ndef showResults(path, borders, results=None):\n    img = cv2.imread(path)\n    for i, border in enumerate(borders):\n        cv2.rectangle(img, border[0], border[1], (0, 0, 255))\n        if results:\n            cv2.putText(img, str(results[i]), border[0], cv2.FONT_HERSHEY_COMPLEX, 0.8, (0, 255, 0), 1)\n    cv2.waitKey(0)\n    cv2.imwrite('week_log_1/out.jpg',img)\n    display(Image(filename='week_log_1/out.jpg'))\n\n#Search the edge, and return the top right and bottom left coner of the digits\ndef findBorderContours(path, maxArea=1800):\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)\n    borders = []\n    for contour in contours:\n        #creat a boder\n        x, y, w, h = cv2.boundingRect(contour)\n        if w*h &gt; maxArea:\n            #the coordinate of boder\n            border = [(x, y), (x+w, y+h)]\n            borders.append(border)\n    return borders\n\ndef transUSPS(path, borders, size=(28, 28)):\n    imgData = np.zeros((len(borders), size[0], size[0], 1), dtype='uint8')\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    for i, border in enumerate(borders):\n        borderImg = img[border[0][1]:border[1][1], border[0][0]:border[1][0]]\n        #Expand pixels based on maximum edge make the border close to square\n        extendPiexl = (max(borderImg.shape) - min(borderImg.shape)) // 2\n        #make border\n        targetImg = cv2.copyMakeBorder(borderImg, 7, 7, extendPiexl + 7, extendPiexl + 7, cv2.BORDER_CONSTANT)\n        targetImg = cv2.resize(targetImg, size)\n        # expand dimension\n        targetImg = np.expand_dims(targetImg, axis=-1)\n        imgData[i] = targetImg\n    return imgData\n# load the model and start predicting!\n\nprediction=[]\ndef predict(modelpath, imgData):\n    model = torch.load(modelpath,weights_only=False)\n    with torch.no_grad():\n        for i, data in enumerate(imgData):\n            data = data.type(torch.FloatTensor)\n            test_pred = model(data.cuda())\n            test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)\n            for y in test_label:\n                prediction.append(y)\n\n\n\n\n\n\n\nCode\nclass ImgDataset(Dataset):\n    def __init__(self, x, y=None, transform=None):\n        self.x = x\n        # label is required to be a LongTensor\n        self.y = y\n        if y is not None:\n            self.y = torch.LongTensor(y)\n        self.transform = transform\n    def __len__(self):\n        return len(self.x)\n    def __getitem__(self, index):\n        X = self.x[index]\n        if self.transform is not None:\n            X = self.transform(X)\n        if self.y is not None:\n            Y = self.y[index]\n            return X, Y\n        else:\n            return X\n\n\n\n\n\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self):\n        super(Classifier, self).__init__()\n        # input dimension [1, 16, 16]\n        self.vgg = nn.Sequential(\n            nn.Conv2d(1, 16, 3, 1, 1),  # [16, 28, 28]\n            nn.BatchNorm2d(16),\n            nn.ReLU(),\n            nn.Conv2d(16, 32, 3, 1, 1),  # [32, 28, 28]\n            nn.BatchNorm2d(32),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [32, 14, 14]\n            nn.Conv2d(32, 64, 3, 1, 1),  # [64, 14, 14]\n            nn.BatchNorm2d(64),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, 3, 1, 1),  # [128, 14, 14]\n            nn.BatchNorm2d(128),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [128, 7, 7]\n        )\n        #model definition\n        self.fc = nn.Sequential(\n            nn.Linear(128*7*7, 512),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(512, 1024),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(1024, 11),\n        )\n#forward propagation\n    def forward(self, x):\n        out = self.vgg(x)\n        out = out.view(out.size()[0], -1)\n        return self.fc(out)\n\n\n\n\n\n\n\nCode\nprint(\"Reading data\")\ndataFile2 = 'week_log_1/vgg/data/MNIST.mat'\ndata2 = scio.loadmat(dataFile2)\n\ntrain = data2['fea']\ntrain=train.reshape(70000,1,28,28)\nlabel = data2['gnd']\ntrain_x = train[:50000]\ntrain_y = label[:50000]\nprint(\"Size of training data = {}\".format(len(train_x)))\nval_x = train[50000:65000]\nval_y = label[50000:65000]\nprint(\"Size of validation data = {}\".format(len(val_x)))\ntest_x = train[65000:68000]\ntest_y = label[65000:68000]\ntest_y=test_y.reshape(3000)\nprint(\"Size of Testing data = {}\".format(len(test_x)))\nprint(\"reading over\")\n\n\nReading data\nSize of training data = 50000\nSize of validation data = 15000\nSize of Testing data = 3000\nreading over\n\n\n\n\n\n\n\nCode\nbatch_size = 500\nif sys.platform.startswith('win'):\n    num_workers = 0  \nelse:\n    num_workers = 4\ntrain_set = ImgDataset(train_x, train_y)\nval_set = ImgDataset(val_x, val_y)\ntrain_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=num_workers)\nval_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size, shuffle=False,num_workers=num_workers)\n\ntrain_loss_list=[]\nval_loss_list = []\ntrain_acc_list = []\nval_acc_list = []\n\n#training\nmodel = CNN.Classifier().cuda()\nloss = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)  # Adam for optimizer\nnum_epoch = 25\nfor epoch in range(num_epoch):\n    epoch_start_time = time.time()\n    train_acc = 0.0\n    train_loss = 0.0\n    val_acc = 0.0\n    val_loss = 0.0\n    model.train()\n    for i, data in enumerate(train_loader):\n        data[0] = data[0].type(torch.FloatTensor)\n        data[1]=data[1].reshape(500)\n        optimizer.zero_grad()  \n        train_pred = model(data[0].cuda())  \n        batch_loss = loss(train_pred, data[1].cuda())  \n        batch_loss.backward()  \n        optimizer.step()  \n        train_acc += np.sum(np.argmax(train_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n        train_loss += batch_loss.item()\n    model.eval()\n\n    with torch.no_grad():\n        for i, data in enumerate(val_loader):\n            data[0] = data[0].type(torch.FloatTensor)\n            data[1] = data[1].reshape(500)\n            val_pred = model(data[0].cuda())\n            batch_loss = loss(val_pred, data[1].cuda())\n\n            val_acc += np.sum(np.argmax(val_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n            val_loss += batch_loss.item()\n        if epoch &gt; 20:\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, num_epoch, time.time() - epoch_start_time, \\\n               train_acc / train_set.__len__(), train_loss / train_set.__len__(), val_acc / val_set.__len__(),\n               val_loss / val_set.__len__()))\n        train_loss_list.append(train_loss / train_set.__len__())\n        val_loss_list.append(val_loss / val_set.__len__())\n        train_acc_list.append(train_acc / train_set.__len__())\n        val_acc_list.append(val_acc / val_set.__len__())\ntorch.save(model,'week_log_1/model.pt')\n\n\n[022/025] 1.43 sec(s) Train Acc: 0.994240 Loss: 0.000037 | Val Acc: 0.992467 loss: 0.000070\n[023/025] 1.43 sec(s) Train Acc: 0.996140 Loss: 0.000024 | Val Acc: 0.991800 loss: 0.000069\n[024/025] 1.43 sec(s) Train Acc: 0.996200 Loss: 0.000024 | Val Acc: 0.990133 loss: 0.000095\n[025/025] 1.43 sec(s) Train Acc: 0.996120 Loss: 0.000025 | Val Acc: 0.992533 loss: 0.000077\n\n\n\n\n\n\nCode\nplt.plot(np.arange(num_epoch),train_loss_list)\nplt.plot(np.arange(num_epoch),val_loss_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"Loss\")\nplt.show()\n\nplt.plot(np.arange(num_epoch),train_acc_list)\nplt.plot(np.arange(num_epoch),val_acc_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"accuracy\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\nFigure 1: loss\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: accuracy\n\n\n\n\n\n\n\n\n\n\n\n\nCode\npath = 'week_log_1/vgg/data/2.jpg'\nmodel = 'week_log_1/model.pt'\nborders = findBorderContours(path)\n\nimgData = transUSPS(path, borders)\nimgData = np.transpose(imgData,[0,3,1,2])\nimgData = ImgDataset(imgData)\ntest_loader = DataLoader(imgData, batch_size=1, shuffle=False)\nresults = predict(model, test_loader)\nshowResults(path, borders, prediction)",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Recognize Handwritten Digits by CNN"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-16-Recognize-post.html#introduction",
+    "href": "posts/2024-11-16-Recognize-post.html#introduction",
+    "title": "Recognize Handwritten Digits by CNN",
+    "section": "",
+    "text": "A Handwritten Digits Recognition Model based CNN.\n\nBasic Information\n\nNetwork: CNN\nDataset: MNIST\nFramework: Pytorch\nGPU: NVIDIA GTX1070",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Recognize Handwritten Digits by CNN"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-16-Recognize-post.html#download-data",
+    "href": "posts/2024-11-16-Recognize-post.html#download-data",
+    "title": "Recognize Handwritten Digits by CNN",
+    "section": "",
+    "text": "You can download data from MNIST",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Recognize Handwritten Digits by CNN"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-16-Recognize-post.html#code",
+    "href": "posts/2024-11-16-Recognize-post.html#code",
+    "title": "Recognize Handwritten Digits by CNN",
+    "section": "",
+    "text": "Code\nimport cv2\nimport numpy as np\nimport torch\nfrom torch.utils.data import DataLoader, Dataset\nimport torch.nn as nn\nimport matplotlib.pyplot as plt\nfrom week_log_1.vgg import CNN\nimport sys\nimport time\nimport scipy.io as scio\nfrom IPython.display import Image, display\n\n\n\n\n\n\n\nCode\n# Reversing the black and white thresholds for each pixel\ndef accessPiexl(img):\n    height = img.shape[0]\n    width = img.shape[1]\n    for i in range(height):\n       for j in range(width):\n           img[i][j] = 255 - img[i][j]\n    return img\n\n# Inverse binarized image\ndef accessBinary(img, threshold=165):\n    img = accessPiexl(img)\n    kernel = np.ones((3, 3), np.uint8)\n    img = cv2.GaussianBlur(img, (3, 3), 0) #Gaussian filter\n    img = cv2.erode(img, kernel, iterations=1) #Border burr removal\n    # adaptive filter\n    img = cv2.adaptiveThreshold(img, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, -9)\n    img = cv2.dilate(img, kernel, iterations=1)\n    return img\n\n# For showing prediction results\ndef showResults(path, borders, results=None):\n    img = cv2.imread(path)\n    for i, border in enumerate(borders):\n        cv2.rectangle(img, border[0], border[1], (0, 0, 255))\n        if results:\n            cv2.putText(img, str(results[i]), border[0], cv2.FONT_HERSHEY_COMPLEX, 0.8, (0, 255, 0), 1)\n    cv2.waitKey(0)\n    cv2.imwrite('week_log_1/out.jpg',img)\n    display(Image(filename='week_log_1/out.jpg'))\n\n#Search the edge, and return the top right and bottom left coner of the digits\ndef findBorderContours(path, maxArea=1800):\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    contours, hierarchy = cv2.findContours(img, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)\n    borders = []\n    for contour in contours:\n        #creat a boder\n        x, y, w, h = cv2.boundingRect(contour)\n        if w*h &gt; maxArea:\n            #the coordinate of boder\n            border = [(x, y), (x+w, y+h)]\n            borders.append(border)\n    return borders\n\ndef transUSPS(path, borders, size=(28, 28)):\n    imgData = np.zeros((len(borders), size[0], size[0], 1), dtype='uint8')\n    img = cv2.imread(path, cv2.IMREAD_GRAYSCALE)\n    img = accessBinary(img)\n    for i, border in enumerate(borders):\n        borderImg = img[border[0][1]:border[1][1], border[0][0]:border[1][0]]\n        #Expand pixels based on maximum edge make the border close to square\n        extendPiexl = (max(borderImg.shape) - min(borderImg.shape)) // 2\n        #make border\n        targetImg = cv2.copyMakeBorder(borderImg, 7, 7, extendPiexl + 7, extendPiexl + 7, cv2.BORDER_CONSTANT)\n        targetImg = cv2.resize(targetImg, size)\n        # expand dimension\n        targetImg = np.expand_dims(targetImg, axis=-1)\n        imgData[i] = targetImg\n    return imgData\n# load the model and start predicting!\n\nprediction=[]\ndef predict(modelpath, imgData):\n    model = torch.load(modelpath,weights_only=False)\n    with torch.no_grad():\n        for i, data in enumerate(imgData):\n            data = data.type(torch.FloatTensor)\n            test_pred = model(data.cuda())\n            test_label = np.argmax(test_pred.cpu().data.numpy(), axis=1)\n            for y in test_label:\n                prediction.append(y)\n\n\n\n\n\n\n\nCode\nclass ImgDataset(Dataset):\n    def __init__(self, x, y=None, transform=None):\n        self.x = x\n        # label is required to be a LongTensor\n        self.y = y\n        if y is not None:\n            self.y = torch.LongTensor(y)\n        self.transform = transform\n    def __len__(self):\n        return len(self.x)\n    def __getitem__(self, index):\n        X = self.x[index]\n        if self.transform is not None:\n            X = self.transform(X)\n        if self.y is not None:\n            Y = self.y[index]\n            return X, Y\n        else:\n            return X\n\n\n\n\n\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self):\n        super(Classifier, self).__init__()\n        # input dimension [1, 16, 16]\n        self.vgg = nn.Sequential(\n            nn.Conv2d(1, 16, 3, 1, 1),  # [16, 28, 28]\n            nn.BatchNorm2d(16),\n            nn.ReLU(),\n            nn.Conv2d(16, 32, 3, 1, 1),  # [32, 28, 28]\n            nn.BatchNorm2d(32),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [32, 14, 14]\n            nn.Conv2d(32, 64, 3, 1, 1),  # [64, 14, 14]\n            nn.BatchNorm2d(64),\n            nn.ReLU(),\n            nn.Conv2d(64, 128, 3, 1, 1),  # [128, 14, 14]\n            nn.BatchNorm2d(128),\n            nn.ReLU(),\n            nn.MaxPool2d(kernel_size=2),  # [128, 7, 7]\n        )\n        #model definition\n        self.fc = nn.Sequential(\n            nn.Linear(128*7*7, 512),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(512, 1024),\n            nn.ReLU(),\n            nn.Dropout(p=0.5),\n            nn.Linear(1024, 11),\n        )\n#forward propagation\n    def forward(self, x):\n        out = self.vgg(x)\n        out = out.view(out.size()[0], -1)\n        return self.fc(out)\n\n\n\n\n\n\n\nCode\nprint(\"Reading data\")\ndataFile2 = 'week_log_1/vgg/data/MNIST.mat'\ndata2 = scio.loadmat(dataFile2)\n\ntrain = data2['fea']\ntrain=train.reshape(70000,1,28,28)\nlabel = data2['gnd']\ntrain_x = train[:50000]\ntrain_y = label[:50000]\nprint(\"Size of training data = {}\".format(len(train_x)))\nval_x = train[50000:65000]\nval_y = label[50000:65000]\nprint(\"Size of validation data = {}\".format(len(val_x)))\ntest_x = train[65000:68000]\ntest_y = label[65000:68000]\ntest_y=test_y.reshape(3000)\nprint(\"Size of Testing data = {}\".format(len(test_x)))\nprint(\"reading over\")\n\n\nReading data\nSize of training data = 50000\nSize of validation data = 15000\nSize of Testing data = 3000\nreading over\n\n\n\n\n\n\n\nCode\nbatch_size = 500\nif sys.platform.startswith('win'):\n    num_workers = 0  \nelse:\n    num_workers = 4\ntrain_set = ImgDataset(train_x, train_y)\nval_set = ImgDataset(val_x, val_y)\ntrain_loader = torch.utils.data.DataLoader(train_set, batch_size=batch_size, shuffle=True, num_workers=num_workers)\nval_loader = torch.utils.data.DataLoader(val_set, batch_size=batch_size, shuffle=False,num_workers=num_workers)\n\ntrain_loss_list=[]\nval_loss_list = []\ntrain_acc_list = []\nval_acc_list = []\n\n#training\nmodel = CNN.Classifier().cuda()\nloss = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\noptimizer = torch.optim.Adam(model.parameters(), lr=0.001)  # Adam for optimizer\nnum_epoch = 25\nfor epoch in range(num_epoch):\n    epoch_start_time = time.time()\n    train_acc = 0.0\n    train_loss = 0.0\n    val_acc = 0.0\n    val_loss = 0.0\n    model.train()\n    for i, data in enumerate(train_loader):\n        data[0] = data[0].type(torch.FloatTensor)\n        data[1]=data[1].reshape(500)\n        optimizer.zero_grad()  \n        train_pred = model(data[0].cuda())  \n        batch_loss = loss(train_pred, data[1].cuda())  \n        batch_loss.backward()  \n        optimizer.step()  \n        train_acc += np.sum(np.argmax(train_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n        train_loss += batch_loss.item()\n    model.eval()\n\n    with torch.no_grad():\n        for i, data in enumerate(val_loader):\n            data[0] = data[0].type(torch.FloatTensor)\n            data[1] = data[1].reshape(500)\n            val_pred = model(data[0].cuda())\n            batch_loss = loss(val_pred, data[1].cuda())\n\n            val_acc += np.sum(np.argmax(val_pred.cpu().data.numpy(), axis=1) == data[1].numpy())\n            val_loss += batch_loss.item()\n        if epoch &gt; 20:\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, num_epoch, time.time() - epoch_start_time, \\\n               train_acc / train_set.__len__(), train_loss / train_set.__len__(), val_acc / val_set.__len__(),\n               val_loss / val_set.__len__()))\n        train_loss_list.append(train_loss / train_set.__len__())\n        val_loss_list.append(val_loss / val_set.__len__())\n        train_acc_list.append(train_acc / train_set.__len__())\n        val_acc_list.append(val_acc / val_set.__len__())\ntorch.save(model,'week_log_1/model.pt')\n\n\n[022/025] 1.43 sec(s) Train Acc: 0.994240 Loss: 0.000037 | Val Acc: 0.992467 loss: 0.000070\n[023/025] 1.43 sec(s) Train Acc: 0.996140 Loss: 0.000024 | Val Acc: 0.991800 loss: 0.000069\n[024/025] 1.43 sec(s) Train Acc: 0.996200 Loss: 0.000024 | Val Acc: 0.990133 loss: 0.000095\n[025/025] 1.43 sec(s) Train Acc: 0.996120 Loss: 0.000025 | Val Acc: 0.992533 loss: 0.000077\n\n\n\n\n\n\nCode\nplt.plot(np.arange(num_epoch),train_loss_list)\nplt.plot(np.arange(num_epoch),val_loss_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"Loss\")\nplt.show()\n\nplt.plot(np.arange(num_epoch),train_acc_list)\nplt.plot(np.arange(num_epoch),val_acc_list)\nplt.xlabel(\"Epoch\")\nplt.ylabel(\"accuracy\")\nplt.show()\n\n\n\n\n\n\n\n\n\n\nFigure 1: loss\n\n\n\n\n\n\n\n\n\n\n\nFigure 2: accuracy",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Recognize Handwritten Digits by CNN"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-16-Recognize-post.html#prediction-results",
+    "href": "posts/2024-11-16-Recognize-post.html#prediction-results",
+    "title": "Recognize Handwritten Digits by CNN",
+    "section": "",
+    "text": "Code\npath = 'week_log_1/vgg/data/2.jpg'\nmodel = 'week_log_1/model.pt'\nborders = findBorderContours(path)\n\nimgData = transUSPS(path, borders)\nimgData = np.transpose(imgData,[0,3,1,2])\nimgData = ImgDataset(imgData)\ntest_loader = DataLoader(imgData, batch_size=1, shuffle=False)\nresults = predict(model, test_loader)\nshowResults(path, borders, prediction)",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Recognize Handwritten Digits by CNN"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-21-worklog-post.html",
+    "href": "posts1/2024-12-21-worklog-post.html",
+    "title": "Week5-5",
+    "section": "",
+    "text": "1. Styled the site with css\n\n\n2. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week5",
+      "Week5-5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-19-worklog-post.html",
+    "href": "posts1/2024-12-19-worklog-post.html",
+    "title": "Week5-3",
+    "section": "",
+    "text": "1. Missing Semester 4: Data Wrangling and Exerise 1,2,3\nMissing Semester 4: Data Wrangling\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week5",
+      "Week5-3"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html",
+    "href": "posts1/2024-12-16-worklog-post.html",
+    "title": "Week5-1",
+    "section": "",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting - Exercise 4,5\nMissing Semester 2: Shell Tools and Scripting\n\n\n2. Optimized the storage and layout of the site\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week5",
+      "Week5-1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-13-worklog-post.html",
+    "href": "posts1/2024-12-13-worklog-post.html",
+    "title": "Week4-4",
+    "section": "",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week4",
+      "Week4-4"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-10-worklog-post.html",
+    "href": "posts1/2024-12-10-worklog-post.html",
+    "title": "Week4-2",
+    "section": "",
+    "text": "1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week4",
+      "Week4-2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-07-worklog-post.html",
+    "href": "posts1/2024-12-07-worklog-post.html",
+    "title": "Week3",
+    "section": "",
+    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week3"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-16-worklog-post.html",
+    "href": "posts1/2024-11-16-worklog-post.html",
+    "title": "Week1",
+    "section": "",
+    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-11-23-worklog-post.html",
+    "href": "posts1/2024-11-23-worklog-post.html",
+    "title": "Week2",
+    "section": "",
+    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html",
+    "href": "posts1/2024-12-09-worklog-post.html",
+    "title": "Week4-1",
+    "section": "",
+    "text": "1. Solving a problem on the website’s top navigation\nExperience: Don’t believe the automatic generation of the navigation\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week4",
+      "Week4-1"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-11-worklog-post.html",
+    "href": "posts1/2024-12-11-worklog-post.html",
+    "title": "Week4-3",
+    "section": "",
+    "text": "1. About page designed\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week4",
+      "Week4-3"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-14-worklog-post.html",
+    "href": "posts1/2024-12-14-worklog-post.html",
+    "title": "Week4-5",
+    "section": "",
+    "text": "1. Missing Semester 2: Shell Tools and Scripting - Exercise 1,2,3\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week4",
+      "Week4-5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-17-worklog-post.html",
+    "href": "posts1/2024-12-17-worklog-post.html",
+    "title": "Week5-2",
+    "section": "",
+    "text": "1. Missing Semester 4: Data Wrangling\nMissing Semester 4: Data Wrangling\n\n\n2. Configured WSL (Windows Subsystem for Linux)\nLinux Command Record\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week5",
+      "Week5-2"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-20-worklog-post.html",
+    "href": "posts1/2024-12-20-worklog-post.html",
+    "title": "Week5-4",
+    "section": "",
+    "text": "1. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Week5",
+      "Week5-4"
+    ]
+  },
+  {
+    "objectID": "posts1/index.html",
+    "href": "posts1/index.html",
+    "title": "Work Record",
+    "section": "",
+    "text": "Week5-5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 21, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 19, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 14, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 13, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 11, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4-2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n Back to top",
+    "crumbs": [
+      "Worklog",
+      "Work Record"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html",
+    "href": "posts/2024-11-23-Missing1-post.html",
+    "title": "Missing Semester 1: The Shell",
+    "section": "",
+    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#echo",
+    "href": "posts/2024-11-23-Missing1-post.html#echo",
+    "title": "Missing Semester 1: The Shell",
+    "section": "",
+    "text": "echo string: String/Variable output\n$ echo \"hello\"\nhello\n\n$ echo it is a test\nit is a test",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#cd-and-pwd",
+    "href": "posts/2024-11-23-Missing1-post.html#cd-and-pwd",
+    "title": "Missing Semester 1: The Shell",
+    "section": "cd and pwd",
+    "text": "cd and pwd\npwd: display the current directory cd .: to the current directory cd ..: to its parent directory cd dir_name: to dir_name directory cd ~: to the home cd -: to the last visited directory\n$ cd /e/blog\n\n$ cd -\n/e/blog\n\n$ cd ~\n\n$ pwd\n/c/Users/hao",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#ls",
+    "href": "posts/2024-11-23-Missing1-post.html#ls",
+    "title": "Missing Semester 1: The Shell",
+    "section": "ls",
+    "text": "ls\nls: display all the content in the current directory ls -l: display the details of content\n$ ls -l\ntotal 4\ndrwxr-xr-x 1 hao 197609 0 11月 20 23:26 _site/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:54 Missing_Semester/\ndrwxr-xr-x 1 hao 197609 0 11月 14 21:31 posts/\ndrwxr-xr-x 1 hao 197609 0 11月 21 16:49 WEEK_REPORT/\n\nd refers to a directory\nrwx: read, write, execute\nrwx refers to the owner of the file’s permissions\nr-x refers to the group of the file’s permissions\nr-x refers to anyone else’s permissions",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#rmdir-and-mkdir",
+    "href": "posts/2024-11-23-Missing1-post.html#rmdir-and-mkdir",
+    "title": "Missing Semester 1: The Shell",
+    "section": "rmdir and mkdir",
+    "text": "rmdir and mkdir\nrmdir dir_name : Delete empty dirs mkdir dir_name: Building a new directory\n$ mkdir 1\n$ ls\n_site/  1/  Missing_Semester/  posts/  WEEK_REPORT/\n$ rmdir 1\n$ ls\n_site/  Missing_Semester/  posts/  WEEK_REPORT/",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#cat",
+    "href": "posts/2024-11-23-Missing1-post.html#cat",
+    "title": "Missing Semester 1: The Shell",
+    "section": "cat",
+    "text": "cat\ncat file_nameandcat file1 file2: Displaying file contents cat file1 file2 &gt; combined_file: Redirecting files contents to other file cat &gt; newfile: Reading and saving content from the terminal cat &gt;&gt; existing_file: Appending content to an existing file\n$ cat &gt; main1.py\nprint(\"hello\")\n$ cat &gt; main2.py\nprint(\"hao\")\n$ cat main1.py main2.py\nprint(\"hello\")\nprint(\"hao\")\n$ cat main1.py main2.py &gt; main.py\n$ python main.py\nhello\nhao",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#pipe-character",
+    "href": "posts/2024-11-23-Missing1-post.html#pipe-character",
+    "title": "Missing Semester 1: The Shell",
+    "section": "pipe character",
+    "text": "pipe character\n|: Using the output of one command as input to another command (Waiting for construction…)",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-11-23-Missing1-post.html#touch",
+    "href": "posts/2024-11-23-Missing1-post.html#touch",
+    "title": "Missing Semester 1: The Shell",
+    "section": "touch",
+    "text": "touch\ntouch file_name: Update the access and modification times of each FILE to the current time.",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "The Shell"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html",
+    "href": "posts/2024-12-17-Missing4-post.html",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "",
+    "text": "Reading my server’s log:\n~$ ssh hao1227 journalctl\nFinding some useful information from the log:\n~$ ssh hao1227@host 'journalctl | grep sshd | grep \"Disconnected from\"' | less\nless: Generate a page for the corresponding content that can be scrolled up and down",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#ssh-run-command",
+    "href": "posts/2024-12-17-Missing4-post.html#ssh-run-command",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "",
+    "text": "Reading my server’s log:\n~$ ssh hao1227 journalctl\nFinding some useful information from the log:\n~$ ssh hao1227@host 'journalctl | grep sshd | grep \"Disconnected from\"' | less\nless: Generate a page for the corresponding content that can be scrolled up and down",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#sed-stream-editor",
+    "href": "posts/2024-12-17-Missing4-post.html#sed-stream-editor",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "sed: Stream Editor",
+    "text": "sed: Stream Editor\ncommand s: substitution (for one match) sed 's/REGEX/SUBSTITUTION/'\ncommand s, g: Replacement of multiple matches sed 's/REGEX/SUBSTITUTION/g'\nREGEX: Regular Expressions\n~$ cat ssh.log\nDec 17 21:49:04 DESKTOP-EUJ3G2G sshd[1120]: Disconnected from user hao1227 host port 45654\nDec 17 23:48:51 DESKTOP-EUJ3G2G sshd[406]: Disconnected from user hao1227 host port 48594\nDec 18 00:00:51 DESKTOP-EUJ3G2G sshd[777]: Disconnected from user hao1227 host port 45254\nDec 18 00:08:45 DESKTOP-EUJ3G2G sshd[838]: Disconnected from user hao1227 host port 39252\n\n# Replacing regular expression Parts with null characters by sed\n~$ cat ssh.log | sed 's/.*Disconnected from //' \nuser hao1227 host port 45654\nuser hao1227 host port 48594\nuser hao1227 host port 45254\nuser hao1227 host port 39252",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#regular-expressions",
+    "href": "posts/2024-12-17-Missing4-post.html#regular-expressions",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "Regular Expressions",
+    "text": "Regular Expressions\n. means “any single character” except newline\n* zero or more of the preceding match\n+ one or more of the preceding match\n[abc] any one character of a, b, and c\n(RX1|RX2) either something that matches RX1 or RX2\n^ the start of the line\n$ the end of the line\nNow you have more information about the regular expressions. So, how can we match just the text that follows the username, especially if the username can have spaces and such?\nTips: regex debugger can help us understand the complex regular expressions.\n#Show access server username sorted by number of visits\n~$ cat ssh.log | sed -E 's/.*Disconnected from user (.*) [0-9.]+ port [0-9]+/\\1/' | uniq -c | sort\n4 hao1227\n\n#A more robust code\n~$ cat ssh.log | sed -E 's/.*Disconnected from (authenticating |invalid )?user (.*) [0-9.]+ port [0-9]+( \\[preauth\\])?/\\2/' | uniq -c | sort | tail -n10 \nCapture groups: Any text matched by a regex surrounded by parentheses is stored in a numbered capture group ()\nWe can capture username with \\2 (group2).\nuniq -c performs neighbor reweighting and per-item counting, and sort sorts the counts.\ntail -n10 outputs the top 10 counts (or sort -r, head -n10)",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#non-greedy-regex",
+    "href": "posts/2024-12-17-Missing4-post.html#non-greedy-regex",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "Non-greedy Regex",
+    "text": "Non-greedy Regex\nRegular expressions are greddy, the above ’. *Disconnected from ’ will match as many characters as possible before the last Disconnected from.\nWe can add ? behind + or * to make regular expressions non-greddy. But, sed doesn’t support it, we should switch to perl -pe\n~$ echo 'something Disconnected from A Disconnected from B. OK finish string' | perl -pe 's/.*?Disconnected from //'\nA Disconnected from B. OK finish string",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#awk---another-editor",
+    "href": "posts/2024-12-17-Missing4-post.html#awk---another-editor",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "awk - another editor",
+    "text": "awk - another editor\nFirst, we can get the information about usrname and their counts of visit by sed and regular Expressions.\n# test.log\n$ cat test.log\n1 xbot\n4 hao1227\n8 bin\n10 admin\n$1 refers to column 1, $2 refers to column 2. print can print column data.\n#print visit counts\n~$ cat test.log | awk '{print $1}'\n1\n4\n8\n10\nWe can add judgment condition to awk. For example, we can output the specific usrname start with x and end with t and its visit count is “1”.\n#search the specific usr and return its information\n~$ cat test.log | awk '$1 == 1 && $2 ~ /^x[^ ]*t$/ { print $2 }'\nxbot\nwe can also call loops in awk.\nBEGIN { rows = 0 }\n$1 == 1 && $2 ~ /^c[^ ]*e$/ { rows += $1 }\nEND { print rows }",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#analyzing-data",
+    "href": "posts/2024-12-17-Missing4-post.html#analyzing-data",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "Analyzing Data",
+    "text": "Analyzing Data\npaste -sd+ can generate an addition formula (-s combine lines, -d+ use + as delimiter)\nbc -l calculates the formula.\n#calculate the total counts\n~$ cat test.log | awk '{print $1}' | paste -sd+ | bc -l\n23\nwc counts the number of lines in the file\n#calculate the total counts\n$ find . -type f -name '*qmd' | xargs wc -l\n  308 ./2024-11-16-Recognize-post.qmd\n  103 ./2024-11-23-Missing1-post.qmd\n  439 ./2024-12-12-Missing2-post.qmd\n  164 ./2024-12-17-Missing4-post.qmd\n   36 ./2024-12-18-Linux-post.qmd\n    9 ./index.qmd\n 1059 total",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-17-Missing4-post.html#assignment",
+    "href": "posts/2024-12-17-Missing4-post.html#assignment",
+    "title": "Missing Semester 4: Data Wrangling",
+    "section": "Assignment",
+    "text": "Assignment\n\nQuestion 1\nTake this short interactive regex tutorial\n\n\nQuestion 2\nFind the number of words (in /usr/share/dict/words) that contain at least three as and don’t have a 's ending.\nHow many of those two-letter combinations are there? And for a challenge: which combinations do not occur?\n\n\nSolution\n# Find the number of words\n$ cat words.txt | sed 'y/[A-Z]/[a-z]/' | grep -E '^([^a]*a){3}.*$' | grep -v \"'s$\" | wc -l\n833\n\n# Count the two-letter combinations\n$ cat words.txt | sed 'y/[A-Z]/[a-z]/' | grep -E '^([^a]*a){3}.*$' | grep -v \"'s$\" | sed -E \"s/.*([a-z]{2})$/\\1/\" | sort | uniq -c | sort | wc -l\n110\nsed 'y/ performs an alphabetical case conversion.\ngrep -E and grep -v refer to command grep\nFor challenge, I can just give a python code.\n# the results from above stored in a list com1[]\nletters = set(\"\".join(com1))\nfor letter1 in [a...z]:\n  for letter2 in [a...z]:\n      combine = letter1 + letter2\n      if combine not in com1:\n        com2.append(combine)\nreturn com2\n\n\nQuestion 3\nTo do in-place substitution it is quite tempting to do something like sed s/REGEX/SUBSTITUTION/ input.txt &gt; input.txt. However this is a bad idea, why?\n\n\nSolution\nsed will clean all the contents in the input.txt before writing. Thus, you’d better save your file first.",
+    "crumbs": [
+      "Blog",
+      "Missing Semester",
+      "Data Wrangling"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-20-DIDP-post.html",
+    "href": "posts/2024-12-20-DIDP-post.html",
+    "title": "Dive into Deep Learning 1: Introduction",
+    "section": "",
+    "text": "The key process of a machine learning model:\n\nData that we can learn from.\nModel that can transform the data.\nObjective Function\nAlgorithm that can adjust the parameters of model by Objective Function.\n\n\n\nIn most instance, each data point or sample typically consists of a set of features, based on which the model must make its predictions. The objective of predicting is label(or target).\n\n\nThe image would be represented numerically as three grids of numerical valures, which represent red, green and blue light at each pixel location. For instance, a 200×200 pixel color image would consist of 200×200×3=120000 numerical values.\n\n\n\nFor a medical task, given a set of features, like [age, vital signs, comorbidities…], which enable the diagnosis of a patient(data point).\nWhen each example is characterized by the same number of numerical features, we say that the inputs are fixed-length vectors and we call the length of the vectors the dimensionality of the data.\n\n\n\n\nSome classic models:\n\nClassification: ResNet, AlexNet, ViT\nGeneration: StyleGAN, Stable Diffusion\nSequence Generation and Processing: BERT, GPT\nObject Detection: R-CNN, YOLO, DETR\nSemantic Segmentation: UNet, SETR\n\n\n\n\nIn order to develop a formal mathematical system of learning machines, we need to have formal measures of how good (or bad) our models are. By convention, we usually define objective functions so that lower is better.\nSome classic objective functions:\n\nCross-Entropy Loss: \\[L_{\\text{CE}} = - \\sum_{i=1}^C y_i \\log(p_i)\\]\n\n\\(y_i\\) is the real distribution, \\(p_i\\) is the prediction of model.\n\nKL Divergence\n\nTo measure the difference between two probability distributions. \\[D_{\\text{KL}}(P \\| Q) = \\sum_{i} P(i) \\log\\left(\\frac{P(i)}{Q(i)}\\right)\\]\n\n\n\nWhen a model performs well on the training set but fails to generalize to unseen data, we say that it is overfitting to the training data.\nSome methods to for reducing overfitting:\n\nData Augnmentation and Data Cleaning\nReduce Model Complexity\nDropout and Batch Normalization\nL1 Regularization and L2 Regularization\n\n\n\n\nWe need an algorithm capable of searching for the best possible parameters for minimizing the loss function.\nSome classic optimization algorithms:\n\nGradient Descent, GD\nStochastic Gradient Descent, SGD\nAdaptive Moment Estimation, Adam",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-20-DIDP-post.html#key-component",
+    "href": "posts/2024-12-20-DIDP-post.html#key-component",
+    "title": "Dive into Deep Learning 1: Introduction",
+    "section": "",
+    "text": "The key process of a machine learning model:\n\nData that we can learn from.\nModel that can transform the data.\nObjective Function\nAlgorithm that can adjust the parameters of model by Objective Function.\n\n\n\nIn most instance, each data point or sample typically consists of a set of features, based on which the model must make its predictions. The objective of predicting is label(or target).\n\n\nThe image would be represented numerically as three grids of numerical valures, which represent red, green and blue light at each pixel location. For instance, a 200×200 pixel color image would consist of 200×200×3=120000 numerical values.\n\n\n\nFor a medical task, given a set of features, like [age, vital signs, comorbidities…], which enable the diagnosis of a patient(data point).\nWhen each example is characterized by the same number of numerical features, we say that the inputs are fixed-length vectors and we call the length of the vectors the dimensionality of the data.\n\n\n\n\nSome classic models:\n\nClassification: ResNet, AlexNet, ViT\nGeneration: StyleGAN, Stable Diffusion\nSequence Generation and Processing: BERT, GPT\nObject Detection: R-CNN, YOLO, DETR\nSemantic Segmentation: UNet, SETR\n\n\n\n\nIn order to develop a formal mathematical system of learning machines, we need to have formal measures of how good (or bad) our models are. By convention, we usually define objective functions so that lower is better.\nSome classic objective functions:\n\nCross-Entropy Loss: \\[L_{\\text{CE}} = - \\sum_{i=1}^C y_i \\log(p_i)\\]\n\n\\(y_i\\) is the real distribution, \\(p_i\\) is the prediction of model.\n\nKL Divergence\n\nTo measure the difference between two probability distributions. \\[D_{\\text{KL}}(P \\| Q) = \\sum_{i} P(i) \\log\\left(\\frac{P(i)}{Q(i)}\\right)\\]\n\n\n\nWhen a model performs well on the training set but fails to generalize to unseen data, we say that it is overfitting to the training data.\nSome methods to for reducing overfitting:\n\nData Augnmentation and Data Cleaning\nReduce Model Complexity\nDropout and Batch Normalization\nL1 Regularization and L2 Regularization\n\n\n\n\nWe need an algorithm capable of searching for the best possible parameters for minimizing the loss function.\nSome classic optimization algorithms:\n\nGradient Descent, GD\nStochastic Gradient Descent, SGD\nAdaptive Moment Estimation, Adam",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "Introduction"
+    ]
+  },
+  {
+    "objectID": "posts/2024-12-20-DIDP-post.html#machine-learning-tasks",
+    "href": "posts/2024-12-20-DIDP-post.html#machine-learning-tasks",
+    "title": "Dive into Deep Learning 1: Introduction",
+    "section": "Machine Learning Tasks",
+    "text": "Machine Learning Tasks\n\nSupervised Learning",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "Introduction"
     ]
   }
 ]
