@@ -2,27 +2,35 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hachiiiii-8.github.io/posts/index.html</loc>
-    <lastmod>2024-12-21T09:33:35.659Z</lastmod>
+    <lastmod>2025-01-02T07:31:31.495Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-27-DIDP-post.html</loc>
-    <lastmod>2024-12-28T08:27:45.632Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-31-classification-post.html</loc>
+    <lastmod>2025-01-04T16:06:03.430Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-20-DIDP-post.html</loc>
-    <lastmod>2024-12-21T17:09:23.371Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-29-DIDP-post.html</loc>
+    <lastmod>2025-01-04T05:37:48.891Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-17-Missing4-post.html</loc>
-    <lastmod>2024-12-21T14:41:00.114Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-22-covid19-prediction-post.html</loc>
+    <lastmod>2025-01-02T07:14:51.305Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-11-23-Missing1-post.html</loc>
-    <lastmod>2024-12-14T15:07:18.289Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-18-Linux-post.html</loc>
+    <lastmod>2025-01-02T09:57:03.651Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts1/index.html</loc>
-    <lastmod>2024-12-14T15:07:18.292Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-12-Missing2-post.html</loc>
+    <lastmod>2025-01-02T07:09:12.499Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hachiiiii-8.github.io/posts/2024-11-16-Recognize-post.html</loc>
+    <lastmod>2025-01-04T16:05:08.722Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hachiiiii-8.github.io/posts1/2024-12-27-worklog-post.html</loc>
+    <lastmod>2025-01-04T16:14:16.468Z</lastmod>
   </url>
   <url>
     <loc>https://hachiiiii-8.github.io/posts1/2024-12-16-worklog-post.html</loc>
@@ -42,7 +50,7 @@
   </url>
   <url>
     <loc>https://hachiiiii-8.github.io/index.html</loc>
-    <lastmod>2024-12-20T18:03:45.318Z</lastmod>
+    <lastmod>2025-01-02T07:34:27.823Z</lastmod>
   </url>
   <url>
     <loc>https://hachiiiii-8.github.io/posts1/2024-11-23-worklog-post.html</loc>
@@ -57,23 +65,31 @@
     <lastmod>2024-12-29T08:23:44.414Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-11-16-Recognize-post.html</loc>
-    <lastmod>2024-12-26T08:56:41.739Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts1/index.html</loc>
+    <lastmod>2024-12-14T15:07:18.292Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-12-Missing2-post.html</loc>
-    <lastmod>2024-12-21T14:41:36.992Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-11-23-Missing1-post.html</loc>
+    <lastmod>2025-01-02T07:09:05.525Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-18-Linux-post.html</loc>
-    <lastmod>2024-12-19T14:25:10.124Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-17-Missing4-post.html</loc>
+    <lastmod>2025-01-02T07:09:19.571Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-22-covid19-prediction-post.html</loc>
-    <lastmod>2024-12-29T07:41:39.942Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-20-DIDP-post.html</loc>
+    <lastmod>2025-01-02T07:06:21.445Z</lastmod>
   </url>
   <url>
-    <loc>https://hachiiiii-8.github.io/posts/2024-12-29-DIDP-post.html</loc>
-    <lastmod>2024-12-29T08:28:26.028Z</lastmod>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-27-DIDP-post.html</loc>
+    <lastmod>2025-01-02T07:10:20.224Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-30-BT-post.html</loc>
+    <lastmod>2025-01-02T07:10:27.998Z</lastmod>
+  </url>
+  <url>
+    <loc>https://hachiiiii-8.github.io/posts/2024-12-31-python_function-post.html</loc>
+    <lastmod>2025-01-03T14:31:28.418Z</lastmod>
   </url>
 </urlset>
