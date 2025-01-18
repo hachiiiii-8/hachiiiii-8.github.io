@@ -4,7 +4,7 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "2.3 Linear Algebra\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 10, 2025\n\n\n\n\n\n\n\n\n\n\n\nSpeakers Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Classify the speakers of given features.\n\n\n\nWu Hao\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nMLE Record 1\n\n\n\nJob Record\n\n\n\nRecord any MLE issues that may be used. Points: 1.Self-Attention\n\n\n\nWu Hao\n\n\nJan 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.1 Queries, Keys, and Values\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.2 Attention Pooling by Similarity\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.3 Attention Scoring Functions\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nPhoneme Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Phoneme Classification.\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nUseful Python Function\n\n\n\nTools\n\n\n\nRecord some of the useful python functions encountered and their usage\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nSelf-Attention\n\n\n\nBasic Theory\n\n\n\nTheoretical knowledge of self-attention mechanisms\n\n\n\nWu Hao\n\n\nDec 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.2 Data Preprocessing\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.1 Data Manipulation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\nSolve a classification problem: A Handwritten Digits Recognition Model based CNN.\n\n\n\nWu Hao\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nRegression Task: COVID-19 Cases Prediction\n\n\n\nProject\n\n\n\nSolve a regression problem with deep neural networks (DNN): COVID-19 Cases Prediction.\n\n\n\nWu Hao\n\n\nDec 22, 2024\n\n\n\n\n\n\n\n\n\n\n\nDive into Deep Learning 1: Introduction\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Record\n\n\n\nTools\n\n\n\nRecord some of the linux command lines encountered and their usage\n\n\n\nWu Hao\n\n\nDec 18, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 4: Data Wrangling\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n Back to top",
+    "text": "2.6 Probability and Statistics\n\n\n\nDive-into-Deep-Learning\n\n\n\nCreate two common distributions (binomial and multidimensional distribution)\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.1 Linear Regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nUse a model, loss function and minibatch SGD to fit a function for a entire dataset\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.5 Automatic Differentiation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCalculate the gradient automatically: Backward and Detaching Computation\n\n\n\nWu Hao\n\n\nJan 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.4 Calculus\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.3 Linear Algebra\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 10, 2025\n\n\n\n\n\n\n\n\n\n\n\nSpeakers Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Classify the speakers of given features.\n\n\n\nWu Hao\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nMLE Record 1\n\n\n\nJob Record\n\n\n\nRecord any MLE issues that may be used. Points: 1.Self-Attention\n\n\n\nWu Hao\n\n\nJan 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.1 Queries, Keys, and Values\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.2 Attention Pooling by Similarity\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.3 Attention Scoring Functions\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nPhoneme Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Phoneme Classification.\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nUseful Python Function\n\n\n\nTools\n\n\n\nRecord some of the useful python functions encountered and their usage\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nSelf-Attention\n\n\n\nBasic Theory\n\n\n\nTheoretical knowledge of self-attention mechanisms\n\n\n\nWu Hao\n\n\nDec 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.2 Data Preprocessing\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.1 Data Manipulation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\nSolve a classification problem: A Handwritten Digits Recognition Model based CNN.\n\n\n\nWu Hao\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nRegression Task: COVID-19 Cases Prediction\n\n\n\nProject\n\n\n\nSolve a regression problem with deep neural networks (DNN): COVID-19 Cases Prediction.\n\n\n\nWu Hao\n\n\nDec 22, 2024\n\n\n\n\n\n\n\n\n\n\n\nDive into Deep Learning 1: Introduction\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Record\n\n\n\nTools\n\n\n\nRecord some of the linux command lines encountered and their usage\n\n\n\nWu Hao\n\n\nDec 18, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 4: Data Wrangling\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n Back to top",
     "crumbs": [
       "Blog"
     ]
@@ -74,7 +74,7 @@
     "href": "posts/Project/2025-1-8-self-attention.html#configurations",
     "title": "Speakers Classification",
     "section": "Configurations",
-    "text": "Configurations\n\n\nCode\ndevice = 'cuda' if torch.cuda.is_available() else 'cpu'\nconfig = {\n    'seed': 342425,       # seed number, we can pick lucky number. :)\n    'valid_ratio': 0.8,   # validation_size = train_size * valid_ratio\n    'n_steps': 70000,     # Number of steps.            \n    'batch_size': 2048, \n    'learning_rate': 1e-3,\n    'warmup_steps': 1000,\n    'save_steps': 10000,\n    'valid_steps': 2000,           \n    'early_stop': 10000,    # If model has not improved for this many consecutive epochs, stop training.\n    'n_workers': 8,\n    'save_path': './Voxceleb2/model.ckpt'  # our model will be saved here.\n}",
+    "text": "Configurations\n\n\nCode\ndevice = 'cuda' if torch.cuda.is_available() else 'cpu'\nconfig = {\n    'seed': 342425,       # seed number, we can pick lucky number. :)\n    'valid_ratio': 0.8,   # validation_size = train_size * valid_ratio\n    'n_steps': 100000,     # Number of steps.            \n    'batch_size': 32, \n    'learning_rate': 1e-3,\n    'warmup_steps': 1000,\n    'save_steps': 10000,\n    'valid_steps': 2000,           \n    'early_stop': 15000,    # If model has not improved for this many consecutive epochs, stop training.\n    'n_workers': 0,\n    'save_path': './Voxceleb2/model.ckpt'  # our model will be saved here.\n}",
     "crumbs": [
       "Blog",
       "Projects",
@@ -98,7 +98,19 @@
     "href": "posts/Project/2025-1-8-self-attention.html#training-code",
     "title": "Speakers Classification",
     "section": "Training Code",
-    "text": "Training Code\n\nDataset Processing\nWe should construct the train_data, valid_data and test_data.\nFirst, we extract the information of speaker from metadata.json and uttr-{random string}.pt, and produce our dataset.\nLet’s show an example in metadata.json that can give us clues.\n{\n\"speakers\": {\n        \"id03074\": [\n            {\n                \"feature_path\": \"uttr-18e375195dc146fd8d14b8a322c29b90.pt\",\n                \"mel_len\": 435\n            },\n            {\n                \"feature_path\": \"uttr-fe3576f81b5841ab8931c1dd611bf547.pt\",\n                \"mel_len\": 344\n            },\n        ]\n    }\n}\nWe can get the speaker name and the corresponding feature path. And we also have a mapping.json that can help us map from speaker name to their corresponding id.\n\n\nCode\n# Load the mapping from speaker name to their corresponding id. \nmapping_path = os.path.join(data_dir, 'mapping.json')\nmapping = json.load(open(mapping_path))\nspeaker2id = mapping[\"speaker2id\"] \n\n# Load metadata of training data.\nmetadata_path = os.path.join(data_dir, 'metadata.json')\nmetadata = json.load(open(metadata_path))[\"speakers\"] # dictionary {name: }\n\nspeaker_num = len(metadata.keys()) #key: speaker name\nspeaker_data =[]\nfor speaker in metadata.keys():\n    for utterances in metadata[speaker]:\n        speaker_data.append([utterances[\"feature_path\"], speaker2id[speaker]])\n\n# Load metadata of testing data.\ntestdata_path = os.path.join(data_dir, \"testdata.json\")\ntest_metadata = json.load(open(testdata_path))[\"utterances\"]\ntest_data =[]\nfor utterance in test_metadata:\n    test_data.append(utterance[\"feature_path\"])\n\n\nWe’ve got speaker_data and test_data that consists of many lists [feature_path, id].\nBut a new problem has arisen: from the metadata.json, we find that the length of the segment is not the same. We should unify the length.\n\n\nCode\ndef adjust_frames(data_dir, feat_path, speaker, segment_len=128):\n    if speaker is not None:\n        segment = torch.load(os.path.join(data_dir, feat_path), weights_only=True)\n        # Segmemt mel-spectrogram into \"segment_len\" frames.\n        if len(segment) &gt; segment_len:\n         # Randomly get the starting point of the segment.\n            start = random.randint(0, len(segment) - segment_len)\n        # Get a segment with \"segment_len\" frames.\n            segment = torch.FloatTensor(segment[start:start+segment_len])\n        else:\n            segment = torch.FloatTensor(segment)\n    # Turn the speaker id into long for computing loss later.\n        speaker = torch.FloatTensor([speaker]).long()\n        return segment, speaker\n    \n    else:\n        segment = torch.load(os.path.join(data_dir, feat_path), weights_only=True)\n        segment = torch.FloatTensor(segment)\n        return segment\n\n\nNow, we extracted the information about the speaker successfully and unified the length of each audio.\nIt’s time to construct train_dataset, valid_dataset and test_dataset.\nAs usual, let’s start by splitting the data.\n\n\nCode\ndef data_split(data_set, ratio, seed):\n    split_1_size = int(ratio * len(data_set)) \n    split_2_size = len(data_set) - split_1_size\n    split_2_set, split_1_set = random_split(data_set, [split_2_size, split_1_size], generator=torch.Generator().manual_seed(seed))\n    #Proportionally divide split1, the rest is split2\n    return split_1_set, split_2_set\n\ntrain_data, valid_data = data_split(speaker_data, config['valid_ratio'], config['seed'])\ntrain_feature_paths, valid_feature_paths = [], []\ntrain_labels, valid_labels = [], []\nfor num in range(len(train_data)):\n    features_path, id_label = train_data[num]\n    train_feature_paths.append(features_path)\n    train_labels.append(id_label)\n\nfor num in range(len(valid_data)):\n    features_path, id_label = valid_data[num]\n    valid_feature_paths.append(features_path)\n    valid_labels.append(id_label)\n\nprint(f\"Length of train_data is {len(train_feature_paths)}\")\nprint(f\"Length of valid_data is {len(valid_feature_paths)}\")\nprint(f\"Length of test_data is {len(test_data)}\")\n\n\nLength of train_data is 45332\nLength of valid_data is 11334\nLength of test_data is 8000\n\n\nSo, we’ve got:\n\ntrain_features_paths, train_labels (id)\nvalid_features_paths, valid_labels (id)\ntest_features_paths\n\nNow, it’s time to construct our dataset.\n\n\nCode\nclass myDataset(Dataset):\n    def __init__(self, x, y=None):\n        self.x = x\n        self.y = y\n\n    def __getitem__(self, index):\n        X = self.x[index]\n        if self.y is not None:\n            X, Y = adjust_frames(data_dir, X, self.y)\n            return X, Y\n        else:\n            X = adjust_frames(data_dir, X, self.y)\n            return X\n\n    def __len__(self):\n        return len(self.x)\n\ntrain_dataset, valid_dataset, test_dataset = myDataset(train_feature_paths, train_labels), \\\n                                            myDataset(valid_feature_paths, valid_labels), \\\n                                            myDataset(test_data)\n\n# free up memory\ndel train_feature_paths, train_labels, valid_feature_paths, valid_labels, test_data\ngc.collect()\n\n\n0\n\n\n\n\nCode\ndef collate_batch(batch):\n    # Process features within a batch.\n    \"\"\"Collate a batch of data.\"\"\"\n    mel, speaker = zip(*batch)\n    # Because we train the model batch by batch, we need to pad the features in the same batch to make their lengths the same.\n    mel = pad_sequence(mel, batch_first=True, padding_value=-20)    # pad log 10^(-20) which is very small value.\n    # mel: (batch size, length, 40)\n    return mel, torch.FloatTensor(speaker).long()\n\ndef inference_collate_batch(batch):\n    \"\"\"Collate a batch of data.\"\"\"\n    feat_paths, mels = zip(*batch)\n\n    return feat_paths, torch.stack(mels)\n\n\ntrain_loader = DataLoader(\n        train_dataset,\n        batch_size=config['batch_size'],\n        shuffle=True,\n        drop_last=True,\n        num_workers=config['n_workers'],\n        pin_memory=True,\n        collate_fn=collate_batch,\n    )\nvalid_loader = DataLoader(\n        valid_dataset,\n        batch_size=config['batch_size'],\n        num_workers=config['n_workers'],\n        drop_last=True,\n        pin_memory=True,\n        collate_fn=collate_batch,\n    )\ntest_loader = DataLoader(\n        test_dataset,\n        batch_size=1,\n        shuffle=False,\n        drop_last=False,\n        num_workers=8,\n        collate_fn=inference_collate_batch,\n    )\n\n\nAt this point, we’ve finished building the dataset. With train_loader, we can get bulk data during the training process and pass it to the model. It’s time to construct our model.\n\n\nModel\nWe adopt the base transformer encoder layer in Attention Is All You Need as our model.\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self, d_model=80, n_spks=600, dropout=0.1):\n        super().__init__()\n        # Project the dimension of features from that of input into d_model.\n        self.prenet = nn.Linear(40, d_model)\n        self.encoder_layer = nn.TransformerEncoderLayer(\n            d_model=d_model, dim_feedforward=256, nhead=2\n        )\n        # self.encoder = nn.TransformerEncoder(self.encoder_layer, num_layers=2)\n\n        # Project the the dimension of features from d_model into speaker nums.\n        self.pred_layer = nn.Sequential(\n            nn.Linear(d_model, d_model),\n            nn.ReLU(),\n            nn.Linear(d_model, n_spks),\n        )\n\n    def forward(self, mels):\n        \"\"\"\n        args:\n            mels: (batch size, length, 40)\n        return:\n            out: (batch size, n_spks)\n        \"\"\"\n        # out: (batch size, length, d_model)\n        out = self.prenet(mels)\n        # out: (length, batch size, d_model)\n        out = out.permute(1, 0, 2)\n        # The encoder layer expect features in the shape of (length, batch size, d_model).\n        out = self.encoder_layer(out)\n        # out: (batch size, length, d_model)\n        out = out.transpose(0, 1)\n        # mean pooling\n        stats = out.mean(dim=1)\n\n        # out: (batch, n_spks)\n        out = self.pred_layer(stats)\n        return out\n\n\nFor transformer architecture, the design of learning rate schedule is different from that of CNN. Previous works show that the warmup of learning rate is useful for training models with transformer architectures.\nThis training method combines the warmup and cosine decay strategies. Specifically, the learning rate gradually increases at the beginning of training, then gradually decays and finally tends to zero.\n\n\nCode\ndef get_cosine_schedule_with_warmup(\n    optimizer: Optimizer,\n    num_warmup_steps: int,\n    num_training_steps: int,\n    num_cycles: float = 0.5,\n    last_epoch: int = -1,\n):\n    def lr_lambda(current_step):\n        # Warmup\n        if current_step &lt; num_warmup_steps:\n            return float(current_step) / float(max(1, num_warmup_steps))\n        # decadence\n        progress = float(current_step - num_warmup_steps) / float(\n            max(1, num_training_steps - num_warmup_steps)\n        )\n        return max(\n            0.0, 0.5 * (1.0 + math.cos(math.pi * float(num_cycles) * 2.0 * progress))\n        )\n    return LambdaLR(optimizer, lr_lambda, last_epoch)\n\n\n\n\nTraining Loop\nDue to the long reading time, in order not to affect the subsequent training, it is read first.\ntrain_iterator = iter(train_loader)\n\n\nCode\ndef trainer(train_loader, train_iterator, valid_loader, model, config, device):\n\n    criterion = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\n    #optimization algorithm (Adam). \n    optimizer = torch.optim.AdamW(model.parameters(), lr=config['learning_rate']) \n    \n    print(f\"[Info]: Finish loading data!\",flush = True)\n\n    writer = SummaryWriter() # Writer of tensorboard.\n\n    n_steps, best_acc, step, early_stop_count, epoch_start_time = config['n_steps'], 0.0, 0, 0, 0.0\n    scheduler = get_cosine_schedule_with_warmup(optimizer, config['warmup_steps'], n_steps)\n\n    for step in range(n_steps):\n        # Get data\n        try:\n            batch = next(train_iterator)\n        except StopIteration:\n            train_iterator = iter(train_loader)\n            batch = next(train_iterator)\n        \n        train_acc = 0.0\n        segment, speaker = batch\n        segment, speaker = segment.to(device), speaker.to(device)   # Move our data to device.\n        train_pred = model(segment)\n        loss = criterion(train_pred, y)\n        train_acc = torch.mean(tarin_pred.argmax(1) == speaker).float()\n\n        train_batch_loss = loss.detach().item()\n        train_acc = train_acc.detach().item()\n\n        # update model\n        optimizer.step()                    # Update parameters.\n        loss.backward()                    # Compute gradient(back propagation).\n        scheduler.step()\n        optimizer.zero_grad()               # Set gradient to zero.\n\n        writer.add_scalar('Loss/train', batch_loss, step)\n        writer.add_scalar('Accuracy/train', train_acc, step)\n\n        if (step+1) % config['valid_steps'] == 0: \n        #As step reaches valid_steps, change to valid mode\n            model.eval() # Set our model to evaluation mode.\n            valid_acc = 0.0\n            loss_record = []\n\n            for segment, speaker in valid_loader:\n                with torch.no_grad():\n                    segment, speaker = segment.to(device), speaker.to(device)\n                    valid_pred = model(segment)\n                    batch_loss = criterion(valid_pred, y)\n                    valid_acc += np.sum(np.argmax(valid_pred.detach().cpu().numpy(), axis=1) == speaker.cpu().numpy())\n                    loss_record.append(batch_loss.item())\n            \n            mean_valid_loss = sum(loss_record)/len(loss_record)\n            valid_acc = valid_acc / valid_dataset.__len__()\n    \n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (step + 1, n_steps, time.time() - epoch_start_time, \\\n               train_acc, train_batch_loss, valid_acc,\n               mean_valid_loss))\n            epoch_start_time = time.time() \n            writer.add_scalar('Loss/valid', mean_valid_loss, step)\n            writer.add_scalar('Accuracy/valid', valid_acc, step)\n\n            if valid_acc &gt; best_acc:\n                best_acc = valid_acc\n                torch.save(model.state_dict(), config['save_path']) # Save our best model\n                print('Saving model with accuracy {:.3f}...'.format(best_acc))\n                early_stop_count = 0\n            else: \n                early_stop_count += 2000\n\n            if early_stop_count &gt;= config['early_stop']:\n                print('\\nModel is not improving, so we halt the training session.')\n                return\n\n\nmodel = Classifier(n_spks=speaker_num).to(device)\nprint(f\"[Info]: Finish creating model!\",flush = True)\ntrainer(train_loader, train_iterator, valid_loader, model, config, device)",
+    "text": "Training Code\n\nDataset Processing\nWe should construct the train_data, valid_data and test_data.\nFirst, we extract the information of speaker from metadata.json and uttr-{random string}.pt, and produce our dataset.\nLet’s show an example in metadata.json that can give us clues.\n{\n\"speakers\": {\n        \"id03074\": [\n            {\n                \"feature_path\": \"uttr-18e375195dc146fd8d14b8a322c29b90.pt\",\n                \"mel_len\": 435\n            },\n            {\n                \"feature_path\": \"uttr-fe3576f81b5841ab8931c1dd611bf547.pt\",\n                \"mel_len\": 344\n            },\n        ]\n    }\n}\nWe can get the speaker name and the corresponding feature path. And we also have a mapping.json that can help us map from speaker name to their corresponding id.\n\n\nCode\ndef create_data(data_dir):\n    # Load the mapping from speaker name to their corresponding id. \n    mapping_path = os.path.join(data_dir, 'mapping.json')\n    mapping = json.load(open(mapping_path))\n    speaker2id = mapping[\"speaker2id\"] \n\n    # Load metadata of training data.\n    metadata_path = os.path.join(data_dir, 'metadata.json')\n    metadata = json.load(open(metadata_path))[\"speakers\"] # dictionary {name: }\n\n    speaker_num = len(metadata.keys()) #key: speaker name\n    speaker_data =[]\n    for speaker in metadata.keys():\n        for utterances in metadata[speaker]:\n            speaker_data.append([utterances[\"feature_path\"], speaker2id[speaker]])\n    return speaker_num, speaker_data\n\n\nWe’ve got speaker_data and test_data that consists of many lists [feature_path, id].\nBut a new problem has arisen: from the metadata.json, we find that the length of the segment is not the same. We should unify the length.\n\n\nCode\ndef adjust_frames(data_dir, feat_path, speaker, segment_len=128):\n    if speaker is not None:\n        segment = torch.load(os.path.join(data_dir, feat_path), weights_only=True)\n        # Segmemt mel-spectrogram into \"segment_len\" frames.\n        if len(segment) &gt; segment_len:\n         # Randomly get the starting point of the segment.\n            start = random.randint(0, len(segment) - segment_len)\n        # Get a segment with \"segment_len\" frames.\n            segment = torch.FloatTensor(segment[start:start+segment_len])\n        else:\n            segment = torch.FloatTensor(segment)\n    # Turn the speaker id into long for computing loss later.\n        speaker = torch.FloatTensor([speaker]).long()\n        return segment, speaker\n\n\nNow, we extracted the information about the speaker successfully and unified the length of each audio.\nIt’s time to construct train_dataset, valid_dataset and test_dataset.\nAs usual, let’s start by splitting the data.\n\n\nCode\ndef data_split(data_set, ratio, seed):\n    split_1_size = int(ratio * len(data_set)) \n    split_2_size = len(data_set) - split_1_size\n    split_2_set, split_1_set = random_split(data_set, [split_2_size, split_1_size], generator=torch.Generator().manual_seed(seed))\n    #Proportionally divide split1, the rest is split2\n    return split_1_set, split_2_set\n\n\nSo, we’ve got:\n\ntrain_features_paths, train_labels (id)\nvalid_features_paths, valid_labels (id)\ntest_features_paths\n\nNow, it’s time to construct our dataset.\n\n\nCode\nclass myDataset(Dataset):\n    def __init__(self, data_dir, segment_len=128):\n        self.data_dir = data_dir\n        self.segment_len = segment_len\n        self.speaker_num, self.speaker_data = create_data(data_dir)\n        \n\n    def __getitem__(self, index):\n        feat_path, speaker = self.speaker_data[index]\n        X, Y = adjust_frames(data_dir, feat_path, speaker)\n        return X, Y\n\n    def __len__(self):\n        return len(self.speaker_data)\n    \n    def get_speaker_number(self):\n        return self.speaker_num\n\ndata_set = myDataset(data_dir)\nspeaker_num = data_set.get_speaker_number()\n\n\n\n\nCode\ndef collate_batch(batch):\n    # Process features within a batch.\n    \"\"\"Collate a batch of data.\"\"\"\n    mel, speaker = zip(*batch)\n    # Because we train the model batch by batch, we need to pad the features in the same batch to make their lengths the same.\n    mel = pad_sequence(mel, batch_first=True, padding_value=-20)    # pad log 10^(-20) which is very small value.\n    # mel: (batch size, length, 40)\n    return mel, torch.FloatTensor(speaker).long()\n\ndef inference_collate_batch(batch):\n    \"\"\"Collate a batch of data.\"\"\"\n    feat_paths, mels = zip(*batch)\n\n    return feat_paths, torch.stack(mels)\n\ntrain_dataset, valid_dataset = data_split(data_set, config['valid_ratio'], config['seed'])\n\nprint(f\"Shape of train_data is {len(train_dataset)}\")\nprint(f\"Shape of test_data is {len(valid_dataset)}\")\n\ntrain_loader = DataLoader(\n        train_dataset,\n        batch_size=config['batch_size'],\n        shuffle=True,\n        drop_last=True,\n        num_workers=config['n_workers'],\n        pin_memory=True,\n        collate_fn=collate_batch,\n    )\nvalid_loader = DataLoader(\n        valid_dataset,\n        batch_size=config['batch_size'],\n        num_workers=config['n_workers'],\n        drop_last=True,\n        pin_memory=True,\n        collate_fn=collate_batch,\n    )\n\n\nShape of train_data is 45332\nShape of test_data is 11334\n\n\nAt this point, we’ve finished building the dataset. With train_loader, we can get bulk data during the training process and pass it to the model. It’s time to construct our model.\n\n\nModel\nWe adopt the base transformer encoder layer in Attention Is All You Need as our model.\n\n\nCode\nclass Classifier(nn.Module):\n    def __init__(self, d_model=80, n_spks=600, dropout=0.1):\n        super().__init__()\n        # Project the dimension of features from that of input into d_model.\n        self.prenet = nn.Linear(40, d_model)\n        self.encoder_layer = nn.TransformerEncoderLayer(\n            d_model=d_model, dim_feedforward=256, nhead=2\n        )\n        # self.encoder = nn.TransformerEncoder(self.encoder_layer, num_layers=2)\n\n        # Project the the dimension of features from d_model into speaker nums.\n        self.pred_layer = nn.Sequential(\n            nn.Linear(d_model, d_model),\n            nn.ReLU(),\n            nn.Linear(d_model, n_spks),\n        )\n\n    def forward(self, mels):\n        \"\"\"\n        args:\n            mels: (batch size, length, 40)\n        return:\n            out: (batch size, n_spks)\n        \"\"\"\n        # out: (batch size, length, d_model)\n        out = self.prenet(mels)\n        # out: (length, batch size, d_model)\n        out = out.permute(1, 0, 2)\n        # The encoder layer expect features in the shape of (length, batch size, d_model).\n        out = self.encoder_layer(out)\n        # out: (batch size, length, d_model)\n        out = out.transpose(0, 1)\n        # mean pooling\n        stats = out.mean(dim=1)\n\n        # out: (batch, n_spks)\n        out = self.pred_layer(stats)\n        return out\n\n\nFor transformer architecture, the design of learning rate schedule is different from that of CNN. Previous works show that the warmup of learning rate is useful for training models with transformer architectures.\nThis training method combines the warmup and cosine decay strategies. Specifically, the learning rate gradually increases at the beginning of training, then gradually decays and finally tends to zero.\n\n\nCode\ndef get_cosine_schedule_with_warmup(\n    optimizer: Optimizer,\n    num_warmup_steps: int,\n    num_training_steps: int,\n    num_cycles: float = 0.5,\n    last_epoch: int = -1,\n):\n    def lr_lambda(current_step):\n        # Warmup\n        if current_step &lt; num_warmup_steps:\n            return float(current_step) / float(max(1, num_warmup_steps))\n        # decadence\n        progress = float(current_step - num_warmup_steps) / float(\n            max(1, num_training_steps - num_warmup_steps)\n        )\n        return max(\n            0.0, 0.5 * (1.0 + math.cos(math.pi * float(num_cycles) * 2.0 * progress))\n        )\n    return LambdaLR(optimizer, lr_lambda, last_epoch)\n\n\n\n\nTraining Loop\n\n\nCode\ndef trainer(train_loader, valid_loader, model, config, device):\n\n    criterion = nn.CrossEntropyLoss()  # loss: CrossEntropyLoss\n    #optimization algorithm (Adam). \n    optimizer = torch.optim.AdamW(model.parameters(), lr=config['learning_rate']) \n    train_iterator = iter(train_loader)\n    print(f\"[Info]: Finish loading data!\",flush = True)\n\n    writer = SummaryWriter() # Writer of tensorboard.\n\n    n_steps, best_acc, step, early_stop_count, epoch_start_time = config['n_steps'], 0.0, 0, 0, 0\n    scheduler = get_cosine_schedule_with_warmup(optimizer, config['warmup_steps'], n_steps)\n\n    for step in range(n_steps):\n        # Get data\n        try:\n            batch = next(train_iterator)\n        except StopIteration:\n            train_iterator = iter(train_loader)\n            batch = next(train_iterator)\n        \n        train_acc = 0.0\n        segment, speaker = batch\n        segment, speaker = segment.to(device), speaker.to(device)   # Move our data to device.\n        train_pred = model(segment)\n        loss = criterion(train_pred, speaker)\n        train_acc = torch.mean((train_pred.argmax(1) == speaker).float())\n\n        train_batch_loss = loss.detach().item()\n        train_acc = train_acc.detach().item()\n\n        # update model\n        loss.backward()                     # Compute gradient(back propagation).\n        optimizer.step()                    # Update parameters (after back propagation).\n        scheduler.step()\n        optimizer.zero_grad()               # Set gradient to zero.\n\n        writer.add_scalar('Loss/train', train_batch_loss, step)\n        writer.add_scalar('Accuracy/train', train_acc, step)\n\n        if (step+1) % config['valid_steps'] == 0: \n        #As step reaches valid_steps, change to valid mode\n            model.eval() # Set our model to evaluation mode.\n            valid_acc = 0.0\n            loss_record = []\n\n            for segment, speaker in valid_loader:\n                with torch.no_grad():\n                    segment, speaker = segment.to(device), speaker.to(device)\n                    valid_pred = model(segment)\n                    batch_loss = criterion(valid_pred, speaker)\n                    valid_acc += np.sum(np.argmax(valid_pred.detach().cpu().numpy(), axis=1) == speaker.cpu().numpy())\n                    loss_record.append(batch_loss.item())\n            \n            mean_valid_loss = sum(loss_record)/len(loss_record)\n            valid_acc = valid_acc / valid_dataset.__len__()\n    \n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Val Acc: %3.6f loss: %3.6f' % \\\n              (step + 1, n_steps, time.time() - epoch_start_time, \\\n               train_acc, train_batch_loss, valid_acc,\n               mean_valid_loss))\n            epoch_start_time = time.time() \n            writer.add_scalar('Loss/valid', mean_valid_loss, step)\n            writer.add_scalar('Accuracy/valid', valid_acc, step)\n\n            if valid_acc &gt; best_acc:\n                best_acc = valid_acc\n                torch.save(model.state_dict(), config['save_path']) # Save our best model\n                print('Saving model with accuracy {:.3f}...'.format(best_acc))\n                early_stop_count = 0\n            else: \n                early_stop_count += 2000\n\n            if early_stop_count &gt;= config['early_stop']:\n                print('\\nModel is not improving, so we halt the training session.')\n                return\n\n\n\n\nCode\nmodel = Classifier(n_spks=speaker_num).to(device)\nprint(f\"[Info]: Finish creating model!\",flush = True)\ntrainer(train_loader, valid_loader, model, config, device)\n\n\n[Info]: Finish creating model!\n[Info]: Finish loading data!\n[2000/100000] 1736785147.36 sec(s) Train Acc: 0.062500 Loss: 4.763556 | Val Acc: 0.139668 loss: 4.180274\nSaving model with accuracy 0.140...\n[4000/100000] 29.40 sec(s) Train Acc: 0.375000 Loss: 3.558872 | Val Acc: 0.253662 loss: 3.497505\nSaving model with accuracy 0.254...\n[6000/100000] 30.30 sec(s) Train Acc: 0.375000 Loss: 3.103851 | Val Acc: 0.318246 loss: 3.122223\nSaving model with accuracy 0.318...\n[8000/100000] 30.00 sec(s) Train Acc: 0.343750 Loss: 2.995615 | Val Acc: 0.348421 loss: 2.937050\nSaving model with accuracy 0.348...\n[10000/100000] 30.22 sec(s) Train Acc: 0.343750 Loss: 2.666591 | Val Acc: 0.400918 loss: 2.693994\nSaving model with accuracy 0.401...\n[12000/100000] 30.17 sec(s) Train Acc: 0.593750 Loss: 1.682548 | Val Acc: 0.420240 loss: 2.595049\nSaving model with accuracy 0.420...\n[14000/100000] 30.26 sec(s) Train Acc: 0.625000 Loss: 1.748430 | Val Acc: 0.439651 loss: 2.493582\nSaving model with accuracy 0.440...\n[16000/100000] 29.98 sec(s) Train Acc: 0.468750 Loss: 2.022387 | Val Acc: 0.461267 loss: 2.364499\nSaving model with accuracy 0.461...\n[18000/100000] 30.13 sec(s) Train Acc: 0.562500 Loss: 2.274288 | Val Acc: 0.479089 loss: 2.303821\nSaving model with accuracy 0.479...\n[20000/100000] 29.58 sec(s) Train Acc: 0.375000 Loss: 2.829436 | Val Acc: 0.488354 loss: 2.271922\nSaving model with accuracy 0.488...\n[22000/100000] 30.33 sec(s) Train Acc: 0.406250 Loss: 2.585733 | Val Acc: 0.501500 loss: 2.212537\nSaving model with accuracy 0.501...\n[24000/100000] 30.07 sec(s) Train Acc: 0.656250 Loss: 1.486131 | Val Acc: 0.516587 loss: 2.137303\nSaving model with accuracy 0.517...\n[26000/100000] 29.07 sec(s) Train Acc: 0.531250 Loss: 1.886613 | Val Acc: 0.516323 loss: 2.140898\n[28000/100000] 29.93 sec(s) Train Acc: 0.562500 Loss: 1.857071 | Val Acc: 0.532204 loss: 2.049328\nSaving model with accuracy 0.532...\n[30000/100000] 30.15 sec(s) Train Acc: 0.593750 Loss: 1.376489 | Val Acc: 0.521969 loss: 2.076280\n[32000/100000] 30.72 sec(s) Train Acc: 0.593750 Loss: 1.595436 | Val Acc: 0.546938 loss: 2.004108\nSaving model with accuracy 0.547...\n[34000/100000] 30.18 sec(s) Train Acc: 0.625000 Loss: 1.287100 | Val Acc: 0.561143 loss: 1.930584\nSaving model with accuracy 0.561...\n[36000/100000] 29.88 sec(s) Train Acc: 0.656250 Loss: 1.661053 | Val Acc: 0.567849 loss: 1.925980\nSaving model with accuracy 0.568...\n[38000/100000] 29.82 sec(s) Train Acc: 0.718750 Loss: 1.207181 | Val Acc: 0.574554 loss: 1.863647\nSaving model with accuracy 0.575...\n[40000/100000] 29.89 sec(s) Train Acc: 0.718750 Loss: 1.051800 | Val Acc: 0.577995 loss: 1.849897\nSaving model with accuracy 0.578...\n[42000/100000] 29.68 sec(s) Train Acc: 0.750000 Loss: 0.984920 | Val Acc: 0.586201 loss: 1.828000\nSaving model with accuracy 0.586...\n[44000/100000] 29.15 sec(s) Train Acc: 0.687500 Loss: 1.568771 | Val Acc: 0.585230 loss: 1.811234\n[46000/100000] 30.20 sec(s) Train Acc: 0.625000 Loss: 1.480202 | Val Acc: 0.593171 loss: 1.785238\nSaving model with accuracy 0.593...\n[48000/100000] 30.06 sec(s) Train Acc: 0.593750 Loss: 1.378206 | Val Acc: 0.599171 loss: 1.770260\nSaving model with accuracy 0.599...\n[50000/100000] 29.97 sec(s) Train Acc: 0.687500 Loss: 1.607541 | Val Acc: 0.603317 loss: 1.757037\nSaving model with accuracy 0.603...\n[52000/100000] 29.85 sec(s) Train Acc: 0.656250 Loss: 1.264764 | Val Acc: 0.620875 loss: 1.668333\nSaving model with accuracy 0.621...\n[54000/100000] 30.00 sec(s) Train Acc: 0.625000 Loss: 1.964311 | Val Acc: 0.616905 loss: 1.683624\n[56000/100000] 30.13 sec(s) Train Acc: 0.687500 Loss: 0.963602 | Val Acc: 0.621140 loss: 1.653202\nSaving model with accuracy 0.621...\n[58000/100000] 29.07 sec(s) Train Acc: 0.718750 Loss: 1.260556 | Val Acc: 0.630404 loss: 1.636144\nSaving model with accuracy 0.630...\n[60000/100000] 30.05 sec(s) Train Acc: 0.625000 Loss: 1.886137 | Val Acc: 0.632169 loss: 1.618396\nSaving model with accuracy 0.632...\n[62000/100000] 29.86 sec(s) Train Acc: 0.687500 Loss: 1.078340 | Val Acc: 0.641874 loss: 1.583358\nSaving model with accuracy 0.642...\n[64000/100000] 29.78 sec(s) Train Acc: 0.750000 Loss: 1.118006 | Val Acc: 0.636227 loss: 1.586511\n[66000/100000] 30.07 sec(s) Train Acc: 0.750000 Loss: 0.764296 | Val Acc: 0.645403 loss: 1.550869\nSaving model with accuracy 0.645...\n[68000/100000] 29.91 sec(s) Train Acc: 0.718750 Loss: 1.092815 | Val Acc: 0.648668 loss: 1.531836\nSaving model with accuracy 0.649...\n[70000/100000] 29.79 sec(s) Train Acc: 0.593750 Loss: 1.304801 | Val Acc: 0.649638 loss: 1.546181\nSaving model with accuracy 0.650...\n[72000/100000] 30.10 sec(s) Train Acc: 0.875000 Loss: 0.507769 | Val Acc: 0.657667 loss: 1.506019\nSaving model with accuracy 0.658...\n[74000/100000] 29.84 sec(s) Train Acc: 0.687500 Loss: 1.153222 | Val Acc: 0.666137 loss: 1.483031\nSaving model with accuracy 0.666...\n[76000/100000] 29.77 sec(s) Train Acc: 0.812500 Loss: 0.907432 | Val Acc: 0.666667 loss: 1.486739\nSaving model with accuracy 0.667...\n[78000/100000] 29.76 sec(s) Train Acc: 0.687500 Loss: 1.229669 | Val Acc: 0.669137 loss: 1.476002\nSaving model with accuracy 0.669...\n[80000/100000] 29.14 sec(s) Train Acc: 0.718750 Loss: 1.621765 | Val Acc: 0.668078 loss: 1.477428\n[82000/100000] 29.26 sec(s) Train Acc: 0.906250 Loss: 0.361991 | Val Acc: 0.670019 loss: 1.461863\nSaving model with accuracy 0.670...\n[84000/100000] 29.08 sec(s) Train Acc: 0.812500 Loss: 0.700334 | Val Acc: 0.669137 loss: 1.466430\n[86000/100000] 29.90 sec(s) Train Acc: 0.718750 Loss: 1.210617 | Val Acc: 0.677431 loss: 1.431527\nSaving model with accuracy 0.677...\n[88000/100000] 30.10 sec(s) Train Acc: 0.687500 Loss: 1.284620 | Val Acc: 0.670108 loss: 1.446557\n[90000/100000] 28.89 sec(s) Train Acc: 0.718750 Loss: 1.108928 | Val Acc: 0.677695 loss: 1.441907\nSaving model with accuracy 0.678...\n[92000/100000] 30.06 sec(s) Train Acc: 0.875000 Loss: 0.662957 | Val Acc: 0.673725 loss: 1.425624\n[94000/100000] 29.00 sec(s) Train Acc: 0.656250 Loss: 1.163444 | Val Acc: 0.672843 loss: 1.449679\n[96000/100000] 30.14 sec(s) Train Acc: 0.812500 Loss: 1.131119 | Val Acc: 0.674431 loss: 1.441858\n[98000/100000] 29.80 sec(s) Train Acc: 0.781250 Loss: 1.004292 | Val Acc: 0.677166 loss: 1.425756\n[100000/100000] 29.83 sec(s) Train Acc: 0.843750 Loss: 0.655998 | Val Acc: 0.674872 loss: 1.443794\n\n\nWe can visualize our training progress by Tensorboard.\ntensorboard --logdir=./posts/Project/runs/\n\n\n\nAccuracy\n\n\n\n\n\nLoss",
+    "crumbs": [
+      "Blog",
+      "Projects",
+      "Speakers Classification"
+    ]
+  },
+  {
+    "objectID": "posts/Project/2025-1-8-self-attention.html#testing-code",
+    "href": "posts/Project/2025-1-8-self-attention.html#testing-code",
+    "title": "Speakers Classification",
+    "section": "Testing Code",
+    "text": "Testing Code\nWe use the best model model.ckpt obtained through training to accomplish the classification of speech.\n\n\nCode\n# Load metadata of testing data.\ntestdata_path = os.path.join(data_dir, \"testdata.json\")\ntest_metadata = json.load(open(testdata_path))[\"utterances\"]\ntest_data =[]\nfor utterance in test_metadata:\n    test_data.append(utterance[\"feature_path\"])\n\nprint(f\"Length of test_data is {len(test_data)}\")\n\n\nLength of test_data is 8000\n\n\n\n\nCode\n### create test_dataset and test_dataloader\nclass InferenceDataset(Dataset):\n    def __init__(self, test_data, data_dir):\n        self.data = test_data\n        self.path = data_dir\n\n    def __len__(self):\n        return len(self.data)\n\n    def __getitem__(self, index):\n        feat_path = self.data[index]\n        speaker = torch.load(os.path.join(self.path, feat_path), weights_only=True)\n\n        return feat_path, speaker\n\ntest_dataset = InferenceDataset(test_data, data_dir)\n\ntest_loader = DataLoader(\n        test_dataset,\n        batch_size=1,\n        shuffle=False,\n        drop_last=False,\n        num_workers=0,\n        collate_fn=inference_collate_batch,\n    )\n\n\n\n\nCode\n# predict\ndef predict(test_loader, model, device):\n    model.eval() # Set your model to evaluation mode.\n    labels = []\n    with torch.no_grad():  \n        for path, feature in test_loader:\n            feature = feature.to(device)                                        \n            test_pred = model(feature)\n            # Find the maximum in test_pred                     \n            test_label = np.argmax(test_pred.detach().cpu().numpy(), axis=1)\n            labels.append(test_label)\n        labels = np.concatenate(labels, axis=0) \n        return labels\n\nmodel = Classifier(n_spks=speaker_num).to(device)\nmodel.load_state_dict(torch.load(config['save_path'], weights_only=True))\npreds = predict(test_loader, model, device)\n\n\n\nSaving Results\n\n\nCode\ndef save_pred(preds, file):\n    with open(file, 'w') as fp:\n        writer = csv.writer(fp)\n        writer.writerow(['id', 'tested_results'])\n        for i, p in enumerate(preds):\n            writer.writerow([i, p])\n\nsave_pred(preds, './Voxceleb2/pred.csv') \ndisplay_results = pd.read_csv('./Voxceleb2/pred.csv')\n\nprint(\"Prediction Results\")\nprint(display_results)\n\n\nPrediction Results\n        id  tested_results\n0        0             334\n1        1             407\n2        2             330\n3        3             460\n4        4             406\n...    ...             ...\n7995  7995             162\n7996  7996             413\n7997  7997              69\n7998  7998             174\n7999  7999             262\n\n[8000 rows x 2 columns]",
     "crumbs": [
       "Blog",
       "Projects",
@@ -419,6 +431,110 @@
       "Dive into Deep Learning",
       "11. Attention Mechanisms and Transformers",
       "11.2 Attention Pooling by Similarity"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-3.1.html",
+    "href": "posts/DIDP/2025-1-18-3.1.html",
+    "title": "3.1 Linear Regression",
+    "section": "",
+    "text": "Code\nimport math\nimport time\nimport numpy as np\nimport torch\nfrom d2l import torch as d2l",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "3.Linear Neural Networks for Regression",
+      "3.1 Linear Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-3.1.html#basics",
+    "href": "posts/DIDP/2025-1-18-3.1.html#basics",
+    "title": "3.1 Linear Regression",
+    "section": "Basics",
+    "text": "Basics\n\nModel\nSupposed that our inputs consists of \\(d\\) features, we can assign each an index and express our prediction \\(\\hat{y}\\)\n\\[\n\\hat{y} = w_1 x_1 + \\cdots + w_d x_d + b.\n\\]\nCollecting all features into a vector \\(\\mathbf{x} \\in \\mathbb{R}^d\\) and all weights into a vector \\(\\mathbf{w} \\in \\mathbb{R}^d\\), we can express our model compactly via the dot product between \\(\\mathbf{w}\\) and \\(\\mathbf{x}\\):\n\\[\n\\hat{y} = \\mathbf{w}^\\top \\mathbf{x} + b.\n\\]\nThe vector \\(\\mathbf{x}\\) corresponds to the feature of a single example. But we often have many samples in a batch. We can define it as the design matrix \\(\\mathbf{X} \\in \\mathbb{R}^{n \\times d}\\). Here, \\(\\mathbf{X}\\) contains one row for every example and one column for every feature. And we can express our model by:\n\\[\n\\hat{\\mathbf{y}} = \\mathbf{X} \\mathbf{w} + b,\n\\]\n\n\nLoss Function\nLoss function quantify the distance between the real and predicted values of the target. We often minimize the loss when we train a model. For regression problems, the most common loss function is the squared error, which given by:\n\\[\nl^{(i)}(\\mathbf{w}, b) = \\frac{1}{2} \\left(\\hat{y}^{(i)} - y^{(i)}\\right)^2.\n\\]\nAnd to measure the distance of a model on the entire dataset of \\(n\\) examples. we can define it as:\n\\[\nL(\\mathbf{w}, b) = \\frac{1}{n} \\sum_{i=1}^n l^{(i)}(\\mathbf{w}, b) = \\frac{1}{n} \\sum_{i=1}^n \\frac{1}{2} \\left(\\mathbf{w}^\\top \\mathbf{x}^{(i)} + b - y^{(i)}\\right)^2.\n\\]\nwhich \\(\\mathbf{w}^*, b^* = \\arg\\min_{\\mathbf{w}, b} L(\\mathbf{w}, b).\\)\n\n\nAnalytic Solution\nMathematically, we can find the minimum point of the loss plane by matrix derivation, and it can be defined as:\n\\[\n\\mathbf{w}^* = \\left(\\mathbf{X}^\\top \\mathbf{X}\\right)^{-1} \\mathbf{X}^\\top \\mathbf{y}\n\\]\n\n\nMinibatch Stochastic Gradient Descent\nBut the analytic solution is very restrictive on the problem, which prevents it from being widely used in deep learning. We can still train our model effectively if we cannot get the analytic solution by gradient descent.\nThe simplest use of gradient descent is to compute the loss function (the mean value of the loss for all the samples in the dataset) with respect to the derivatives of the model parameters. However, the implementation in practice can be very slow: because we have to traverse the whole dataset before each update of the parameters. Therefore, we usually take a small batch of random samples each time we need to compute an update, a variant of which is called minibatch stochastic gradient descent.\nWe can express the update as follows:\n\\[\n(\\mathbf{w}, b) \\leftarrow (\\mathbf{w}, b) - \\frac{\\eta}{|\\mathcal{B}|} \\sum_{i \\in \\mathcal{B}_t} \\partial_{(\\mathbf{w}, b)} l^{(i)}(\\mathbf{w}, b).\n\\]\nwhere \\(\\mathcal{B}_t\\) means a minibatch.\nIn summary, minibatch SGD proceeds as follows: (1) initialize the values of the model parameters, typically at random; (2)iteratively sample random minibatches from the data, updating the parameters in the direction of the negative gradient. For quadratic losses and affine transformations, this has a closed-form expansion:\n\\[\n\\mathbf{w} \\leftarrow \\mathbf{w} - \\frac{\\eta}{|\\mathcal{B}|} \\sum_{i \\in \\mathcal{B}_t} \\partial_{\\mathbf{w}} l^{(i)}(\\mathbf{w}, b) = \\mathbf{w} - \\frac{\\eta}{|\\mathcal{B}|} \\sum_{i \\in \\mathcal{B}_t} \\mathbf{x}^{(i)} \\left( \\mathbf{w}^\\top \\mathbf{x}^{(i)} + b - y^{(i)} \\right)\n\\]\n\\[\nb \\leftarrow b - \\frac{\\eta}{|\\mathcal{B}|} \\sum_{i \\in \\mathcal{B}_t} \\partial_b l^{(i)}(\\mathbf{w}, b) = b - \\frac{\\eta}{|\\mathcal{B}|} \\sum_{i \\in \\mathcal{B}_t} \\left( \\mathbf{w}^\\top \\mathbf{x}^{(i)} + b - y^{(i)} \\right)\n\\]\nwhere \\(|\\mathcal{B}|\\) means the number of samples in a minibatch (batch_size), \\(\\eta\\) refers to learning rate. And both of them are assigned before training.\nNow, we can train our model by features (\\(x\\)), loss function and minibatch SGD.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "3.Linear Neural Networks for Regression",
+      "3.1 Linear Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-3.1.html#vectorization-for-speed",
+    "href": "posts/DIDP/2025-1-18-3.1.html#vectorization-for-speed",
+    "title": "3.1 Linear Regression",
+    "section": "Vectorization for Speed",
+    "text": "Vectorization for Speed\nWhen training our models, we typically want to process whole minibatches of examples simultaneously. Doing this efficiently requires that we vectorize the calculations and leverage fast linear algebra libraries rather than writing costly for-loops in Python.\nTo start, we instantiate two 10000-dimensional vectors containing all 1s. And we call time() to compare the running time.\n\n\nCode\n%matplotlib inline\nimport math\nimport time\nimport numpy as np\nimport torch\nfrom d2l import torch as d2l\n\nn = 10000\na = torch.ones([n])\nb = torch.ones([n])\n\n\nWe define a timers.\n\n\nCode\nclass Timer:  \n    def __init__(self):\n        self.times = []\n        self.start()\n\n    def start(self):\n        self.tik = time.time()\n\n    def stop(self):\n        self.times.append(time.time() - self.tik)\n        return self.times[-1]\n\n    def avg(self):\n        return sum(self.times) / len(self.times)\n\n    def sum(self):\n        return sum(self.times)\n\n    def cumsum(self):\n        return np.array(self.times).cumsum().tolist()\n\n\nFirst we use for-loops.\n\n\nCode\nc = torch.zeros(n)\ntimer = Timer()\nfor i in range(n):\n    c[i] = a[i] + b[i]\nprint(f'{timer.stop():.5f} sec')\n\n\n0.06500 sec\n\n\nAlternatively, we rely on the reloaded + operator to compute the elementwise sum.\n\n\nCode\ntimer.start()\nd = a + b\nf'{timer.stop():.5f} sec'\n\n\n'0.00000 sec'\n\n\nObviously, the second method is dramatically faster than the first. Vectorizing code often yields order-of-magnitude speedups.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "3.Linear Neural Networks for Regression",
+      "3.1 Linear Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-3.1.html#the-normal-distribution-and-squared-loss",
+    "href": "posts/DIDP/2025-1-18-3.1.html#the-normal-distribution-and-squared-loss",
+    "title": "3.1 Linear Regression",
+    "section": "The Normal Distribution and Squared Loss",
+    "text": "The Normal Distribution and Squared Loss\nA normal distribution with mean \\(\\mu\\) and variance \\(\\sigma^2\\) is given as:\n\\[\np(x) = \\frac{1}{\\sqrt{2\\pi \\sigma^2}} \\exp\\left( -\\frac{1}{2\\sigma^2}(x - \\mu)^2 \\right).\n\\]\n\n\nCode\ndef normal(x, mu, sigma):\n    p = 1 / math.sqrt(2 * math.pi * sigma**2)\n    return p * np.exp(-0.5 * (x - mu)**2 / sigma**2)\n\n\nWe can visualize the normal distributions.\n\n\nCode\n# Use NumPy again for visualization\nx = np.arange(-7, 7, 0.01)\n\n# Mean and standard deviation pairs\nparams = [(0, 1), (0, 2), (3, 1)]\nd2l.plot(x, [normal(x, mu, sigma) for mu, sigma in params], xlabel='x',\n         ylabel='p(x)', figsize=(4.5, 2.5),\n         legend=[f'mean {mu}, std {sigma}' for mu, sigma in params])\n\n\n\n\n\n\n\n\n\nNote that changing the mean corresponds to a shift along the \\(x\\)-axis, and increasing the variance spreads the distribution out, lowering its peak.\nOne way to motivate linear regression with squared loss is to assume that observations arise from noisy measurements, where the noise \\(\\epsilon\\) follows the normal distribution \\(\\mathcal{N}(0, \\sigma^2)\\):\n\\[\ny = \\mathbf{w}^\\top \\mathbf{x} + b + \\epsilon \\quad \\text{where} \\quad \\epsilon \\sim \\mathcal{N}(0, \\sigma^2).\n\\]\nwhere \\(\\epsilon \\sim \\mathcal{N}(0, \\sigma^2)\\).\nThus, we can write out the likelihood of seeing a particular \\(y\\) for a given \\(x\\) via:\n\\[\nP(y | \\mathbf{x}) = \\frac{1}{\\sqrt{2 \\pi \\sigma^2}} \\exp\\left( -\\frac{1}{2\\sigma^2} \\left( y - \\mathbf{w}^\\top \\mathbf{x} - b \\right)^2 \\right).\n\\]\nBased on the principle of maximum likelihood, the best values of parameters \\(\\mathbf{w}\\) and \\(b\\) are those that maximize the likelihood of the entire dataset:\n\\[\nP(y | \\mathbf{X}) = \\prod_{i=1}^n p(y^{(i)} | \\mathbf{x}^{(i)}).\n\\]\nFor historical reasons, optimizations are more often expressed as minimization rather than maximization. So, without changing anything, we can minimize the negative log-likelihood, which we can express as follows:\n\\[\n- \\log P(y | \\mathbf{X}) = \\sum_{i=1}^n \\frac{1}{2} \\log(2 \\pi \\sigma^2) + \\frac{1}{2\\sigma^2} \\left( y^{(i)} - \\mathbf{w}^\\top \\mathbf{x}^{(i)} - b \\right)^2.\n\\]\nIt follows that minimizing the mean squared error (MSE) is equivalent to the maximum likelihood estimation of a linear model under the assumption of additive Gaussian noise.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "3.Linear Neural Networks for Regression",
+      "3.1 Linear Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-17-2.5.html",
+    "href": "posts/DIDP/2025-1-17-2.5.html",
+    "title": "2.5 Automatic Differentiation",
+    "section": "",
+    "text": "Code\nimport torch",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.5 Automatic Differentiation"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-17-2.5.html#a-simple-function",
+    "href": "posts/DIDP/2025-1-17-2.5.html#a-simple-function",
+    "title": "2.5 Automatic Differentiation",
+    "section": "A simple Function",
+    "text": "A simple Function\n\n\nCode\nx = torch.arange(4.0)\nx\n\n\ntensor([0., 1., 2., 3.])\n\n\nIn case of running out of memory, we should avoid allocating new memory every time we take a derivative.\n\n\nCode\nx.requires_grad_(True)\nx.grad\n\n# assign the function of x to y\ny = 2 * torch.dot(x, x)\ny\n\n\ntensor(28., grad_fn=&lt;MulBackward0&gt;)\n\n\nWe can now take the gradient of \\(y\\) with respect to \\(x\\) by calling its backward method.\n\n\nCode\ny.backward()\nx.grad\n\n\ntensor([ 0.,  4.,  8., 12.])\n\n\nThe function \\(y = 2 \\mathbf{x}^\\top \\mathbf{x}.\\) with respect to \\(x\\) should be \\(4x\\). We can do a validation.\n\n\nCode\nx.grad == 4 *x\n\n\ntensor([True, True, True, True])\n\n\nNow, let’s calculate another function of \\(x\\) and take its gradient.\n\n\nCode\nx.grad.zero_() # set the gradient to 0\ny = x.sum()\ny.backward()\nx.grad\n\n\ntensor([1., 1., 1., 1.])",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.5 Automatic Differentiation"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-17-2.5.html#backward-for-non-scalar-variables",
+    "href": "posts/DIDP/2025-1-17-2.5.html#backward-for-non-scalar-variables",
+    "title": "2.5 Automatic Differentiation",
+    "section": "Backward for Non-Scalar Variables",
+    "text": "Backward for Non-Scalar Variables\nWhen y is a vector, the derivative of \\(y\\) with respect to a vector \\(x\\) is a matrix called the Jacobian that contains the partial derivatives of each component of \\(y\\) with respect to each component of \\(x\\). Thus, the result of differentiation could be an even higher-order tensor.\nFor example, we often have a vector representing the value of our loss function calculated separately for each example among a batch of training example. Here, we just want to sum up the gradients computed individually for each example.\n\n\nCode\n#Calling backward on a non-scalar requires passing in a gradient argument that specifies the gradient of the differentiation function with respect to self.\nx.grad.zero_()\ny =x *x\ny.backward(gradient=torch.ones(len(y)))\nx.grad\n\n\ntensor([0., 2., 4., 6.])",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.5 Automatic Differentiation"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-17-2.5.html#detaching-computation",
+    "href": "posts/DIDP/2025-1-17-2.5.html#detaching-computation",
+    "title": "2.5 Automatic Differentiation",
+    "section": "Detaching Computation",
+    "text": "Detaching Computation\nIf we do not want to compute a gradient, we can detach the respective computational graph from the final result.\nIn the following example, we just want to focus on the direct influence of \\(x\\) on \\(z\\) rather than the influence conveyed via \\(y\\). We can create a new variable \\(u\\) that takes the same value as \\(y\\) whose provenance has been wiped out. Thus \\(u\\) has no ancestors in the graph and gradients do not flow through \\(u\\) to \\(x\\).\n\n\nCode\nx.grad.zero_()\ny = x *x\nu = y.detach()\nz = u* x\n\nz.sum().backward()\nx.grad == u\n\n\ntensor([True, True, True, True])\n\n\nThus, taking the gradient of \\(z= x *u\\) will yield the result \\(u\\). Also treat \\(u\\) as a constant instead of the partial derivative of \\(z = x*x*x\\) with respect to \\(x\\).\nSince we record the computation results of \\(y\\), we can call the backward on \\(y\\), and get the gradient of \\(y\\) with respect to \\(x\\).\n\n\nCode\nx.grad.zero_()\ny.sum().backward()\nx.grad == 2*x\n\n\ntensor([True, True, True, True])",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.5 Automatic Differentiation"
     ]
   },
   {
@@ -834,113 +950,36 @@
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-2",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-2",
-    "title": "Week6",
-    "section": "Week6-2",
-    "text": "Week6-2\n\nRecognize Handwritten Digits by CNN\n\nRewrote this project using a newly learned code style",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-2",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-2",
+    "title": "Week7",
+    "section": "Week 7-2",
+    "text": "Week 7-2\n\nSolve a classification problem: Phoneme Classification",
     "crumbs": [
       "Worklog",
-      "Week6"
+      "Week7"
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-3",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-3",
-    "title": "Week6",
-    "section": "Week6-3",
-    "text": "Week6-3\n\nDive into Deep Learning 2: Preliminaries\n\n2.1 Data Manipulation",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-3",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-3",
+    "title": "Week7",
+    "section": "Week 7-3",
+    "text": "Week 7-3\n\nSome Useful Python Function",
     "crumbs": [
       "Worklog",
-      "Week6"
+      "Week7"
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-4",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-4",
-    "title": "Week6",
-    "section": "Week6-4",
-    "text": "Week6-4\n\nDive into Deep Learning 2: Preliminaries\n\n2.2 Data Preprocessing",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-4",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-4",
+    "title": "Week7",
+    "section": "Week 7-4",
+    "text": "Week 7-4\n\nThe Basic of Self-Attention",
     "crumbs": [
       "Worklog",
-      "Week6"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html#week4-2",
-    "href": "posts1/2024-12-09-worklog-post.html#week4-2",
-    "title": "Week4",
-    "section": "Week4-2",
-    "text": "Week4-2\n\n1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed",
-    "crumbs": [
-      "Worklog",
-      "Week4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html#week4-3",
-    "href": "posts1/2024-12-09-worklog-post.html#week4-3",
-    "title": "Week4",
-    "section": "Week4-3",
-    "text": "Week4-3\n\n1. About page designed",
-    "crumbs": [
-      "Worklog",
-      "Week4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html#week4-4",
-    "href": "posts1/2024-12-09-worklog-post.html#week4-4",
-    "title": "Week4",
-    "section": "Week4-4",
-    "text": "Week4-4\n\n1. Missing Semester 2: Shell Tools and Scripting",
-    "crumbs": [
-      "Worklog",
-      "Week4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-09-worklog-post.html#week4-5",
-    "href": "posts1/2024-12-09-worklog-post.html#week4-5",
-    "title": "Week4",
-    "section": "Week4-5",
-    "text": "Week4-5\n\n1. Missing Semester 2: Shell Tools and Scripting - Exercise 1,2,3",
-    "crumbs": [
-      "Worklog",
-      "Week4"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-23-worklog-post.html",
-    "href": "posts1/2024-11-23-worklog-post.html",
-    "title": "Week2",
-    "section": "",
-    "text": "1. Missing Semester 1: The Shell\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Worklog",
-      "Week2"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-11-16-worklog-post.html",
-    "href": "posts1/2024-11-16-worklog-post.html",
-    "title": "Week1",
-    "section": "",
-    "text": "1. A Handwritten Digits Recognition Model based CNN.\n\n\n2. The Birth of My Research Partner LAN 🥳 🥳\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Worklog",
-      "Week1"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-07-worklog-post.html",
-    "href": "posts1/2024-12-07-worklog-post.html",
-    "title": "Week3",
-    "section": "",
-    "text": "1. The birth of my page\n\n\n\n\n\n\n Back to top",
-    "crumbs": [
-      "Worklog",
-      "Week3"
+      "Week7"
     ]
   },
   {
@@ -1010,44 +1049,128 @@
     ]
   },
   {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-2",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-2",
-    "title": "Week7",
-    "section": "Week 7-2",
-    "text": "Week 7-2\n\nSolve a classification problem: Phoneme Classification",
+    "objectID": "posts1/2024-12-09-worklog-post.html#week2",
+    "href": "posts1/2024-12-09-worklog-post.html#week2",
+    "title": "Week1,2,3,4",
+    "section": "Week2",
+    "text": "Week2\n\n1. Missing Semester 1: The Shell",
     "crumbs": [
       "Worklog",
-      "Week7"
+      "Week1,2,3,4"
     ]
   },
   {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-3",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-3",
-    "title": "Week7",
-    "section": "Week 7-3",
-    "text": "Week 7-3\n\nSome Useful Python Function",
+    "objectID": "posts1/2024-12-09-worklog-post.html#week3",
+    "href": "posts1/2024-12-09-worklog-post.html#week3",
+    "title": "Week1,2,3,4",
+    "section": "Week3",
+    "text": "Week3\n\n1. The birth of my page",
     "crumbs": [
       "Worklog",
-      "Week7"
+      "Week1,2,3,4"
     ]
   },
   {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-4",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-4",
-    "title": "Week7",
-    "section": "Week 7-4",
-    "text": "Week 7-4\n\nThe Basic of Self-Attention",
+    "objectID": "posts1/2024-12-09-worklog-post.html#week4-1",
+    "href": "posts1/2024-12-09-worklog-post.html#week4-1",
+    "title": "Week1,2,3,4",
+    "section": "Week4-1",
+    "text": "Week4-1\n\n1. Solving a problem on the website’s top navigation",
     "crumbs": [
       "Worklog",
-      "Week7"
+      "Week1,2,3,4"
     ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html#week4-2",
+    "href": "posts1/2024-12-09-worklog-post.html#week4-2",
+    "title": "Week1,2,3,4",
+    "section": "Week4-2",
+    "text": "Week4-2\n\n1. A bug in the sidebar repaired\n\n\n2. Design of Home page completed",
+    "crumbs": [
+      "Worklog",
+      "Week1,2,3,4"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html#week4-3",
+    "href": "posts1/2024-12-09-worklog-post.html#week4-3",
+    "title": "Week1,2,3,4",
+    "section": "Week4-3",
+    "text": "Week4-3\n\n1. About page designed",
+    "crumbs": [
+      "Worklog",
+      "Week1,2,3,4"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html#week4-4",
+    "href": "posts1/2024-12-09-worklog-post.html#week4-4",
+    "title": "Week1,2,3,4",
+    "section": "Week4-4",
+    "text": "Week4-4\n\n1. Missing Semester 2: Shell Tools and Scripting",
+    "crumbs": [
+      "Worklog",
+      "Week1,2,3,4"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-09-worklog-post.html#week4-5",
+    "href": "posts1/2024-12-09-worklog-post.html#week4-5",
+    "title": "Week1,2,3,4",
+    "section": "Week4-5",
+    "text": "Week4-5\n\n1. Missing Semester 2: Shell Tools and Scripting - Exercise 1,2,3",
+    "crumbs": [
+      "Worklog",
+      "Week1,2,3,4"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-2",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-2",
+    "title": "Week6",
+    "section": "Week6-2",
+    "text": "Week6-2\n\nRecognize Handwritten Digits by CNN\n\nRewrote this project using a newly learned code style",
+    "crumbs": [
+      "Worklog",
+      "Week6"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-3",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-3",
+    "title": "Week6",
+    "section": "Week6-3",
+    "text": "Week6-3\n\nDive into Deep Learning 2: Preliminaries\n\n2.1 Data Manipulation",
+    "crumbs": [
+      "Worklog",
+      "Week6"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-4",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-4",
+    "title": "Week6",
+    "section": "Week6-4",
+    "text": "Week6-4\n\nDive into Deep Learning 2: Preliminaries\n\n2.2 Data Preprocessing",
+    "crumbs": [
+      "Worklog",
+      "Week6"
+    ]
+  },
+  {
+    "objectID": "posts1/2025-1-13-worklog-post.html#week8-2",
+    "href": "posts1/2025-1-13-worklog-post.html#week8-2",
+    "title": "Week9",
+    "section": "Week8-2",
+    "text": "Week8-2\n\n2.4 Calculus\n\n\n2.5 Automatic Differentiation\n\n\n2.6 Probability and Statistics\n\n\n3.1 Linear Regression"
   },
   {
     "objectID": "posts1/index.html",
     "href": "posts1/index.html",
     "title": "Work Record",
     "section": "",
-    "text": "Week8\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek7\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek6\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek3\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 7, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek2\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nNov 16, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Week9\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek8\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek7\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek6\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1,2,3,4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
       "Worklog",
       "Work Record"
@@ -1139,6 +1262,71 @@
       "Dive into Deep Learning",
       "2. Preliminaries",
       "2.2 Data Preprocessing"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-15-2.4.html",
+    "href": "posts/DIDP/2025-1-15-2.4.html",
+    "title": "2.4 Calculus",
+    "section": "",
+    "text": "Code\n%matplotlib inline\nimport numpy as np\nfrom matplotlib_inline import backend_inline\nfrom d2l import torch as d2l",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.4 Calculus"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-15-2.4.html#derivatives-and-differentiation",
+    "href": "posts/DIDP/2025-1-15-2.4.html#derivatives-and-differentiation",
+    "title": "2.4 Calculus",
+    "section": "Derivatives and Differentiation",
+    "text": "Derivatives and Differentiation\nLet’s start by an example. Define \\(u = f(x) = 3x^2 - 4x.\\)\n\n\nCode\ndef f(x):\n  return 3 * x ** 2 - 4 * x\n\n\nThe derivation of \\(f\\) at a point \\(x\\) is defined as\n\\[\nf'(x) = \\lim_{h \\to 0} \\frac{f(x + h) - f(x)}{h}.\n\\]\nSetting \\(x=1\\), we can see that \\(\\frac{f(x + h) - f(x)}{h}\\) approaches 2 as \\(h\\) approaches 0.\n\n\nCode\nfor h in 10.0**np.arange(-1, -6, -1):\n    print(f'h={h:.5f}, numerical limit={(f(1+h)-f(1))/h:.5f}')\n\n\nh=0.10000, numerical limit=2.30000\nh=0.01000, numerical limit=2.03000\nh=0.00100, numerical limit=2.00300\nh=0.00010, numerical limit=2.00030\nh=0.00001, numerical limit=2.00003",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.4 Calculus"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-15-2.4.html#visualization-utilities",
+    "href": "posts/DIDP/2025-1-15-2.4.html#visualization-utilities",
+    "title": "2.4 Calculus",
+    "section": "Visualization Utilities",
+    "text": "Visualization Utilities\nWe can visualize the slopes of functions using the matplotlib.\n\n\nCode\ndef use_svg_display():  #@save\n    \"\"\"Use the svg format to display a plot in Jupyter.\"\"\"\n    backend_inline.set_matplotlib_formats('svg')\n\ndef set_figsize(figsize=(3.5, 2.5)):  #@save\n    \"\"\"Set the figure size for matplotlib.\"\"\"\n    use_svg_display()\n    d2l.plt.rcParams['figure.figsize'] = figsize\n\ndef set_axes(axes, xlabel, ylabel, xlim, ylim, xscale, yscale, legend):\n    \"\"\"Set the axes for matplotlib.\"\"\"\n    axes.set_xlabel(xlabel), axes.set_ylabel(ylabel)\n    axes.set_xscale(xscale), axes.set_yscale(yscale)\n    axes.set_xlim(xlim),     axes.set_ylim(ylim)\n    if legend:\n        axes.legend(legend)\n    axes.grid()\n  \n#@save\ndef plot(X, Y=None, xlabel=None, ylabel=None, legend=[], xlim=None,\n         ylim=None, xscale='linear', yscale='linear',\n         fmts=('-', 'm--', 'g-.', 'r:'), figsize=(3.5, 2.5), axes=None):\n    \"\"\"Plot data points.\"\"\"\n\n    def has_one_axis(X):  # True if X (tensor or list) has 1 axis\n        return (hasattr(X, \"ndim\") and X.ndim == 1 or isinstance(X, list)\n                and not hasattr(X[0], \"__len__\"))\n\n    if has_one_axis(X): X = [X]\n    if Y is None:\n        X, Y = [[]] * len(X), X\n    elif has_one_axis(Y):\n        Y = [Y]\n    if len(X) != len(Y):\n        X = X * len(Y)\n\n    set_figsize(figsize)\n    if axes is None:\n        axes = d2l.plt.gca()\n    axes.cla()\n    for x, y, fmt in zip(X, Y, fmts):\n        axes.plot(x,y,fmt) if len(x) else axes.plot(y,fmt)\n    set_axes(axes, xlabel, ylabel, xlim, ylim, xscale, yscale, legend)\n\n\nNow we can plot the function \\(u=f(x)\\).\n\n\nCode\nx = np.arange(0, 3, 0.1)\nplot(x, [f(x), 2 * x - 3], 'x', 'f(x)', legend=['f(x)', 'Tangent line (x=1)'])",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.4 Calculus"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-2.6.html",
+    "href": "posts/DIDP/2025-1-18-2.6.html",
+    "title": "2.6 Probability and Statistics",
+    "section": "",
+    "text": "Code\nimport random\nimport torch\nfrom torch.distributions.multinomial import Multinomial\nfrom d2l import torch as d2l",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.6 Probability and Statistics"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-18-2.6.html#a-simple-example-tossing-dices",
+    "href": "posts/DIDP/2025-1-18-2.6.html#a-simple-example-tossing-dices",
+    "title": "2.6 Probability and Statistics",
+    "section": "A Simple Example: Tossing Dices",
+    "text": "A Simple Example: Tossing Dices\nFirstly, We can introduce a simple process, tossing coins, which follows a binomial distribution.\n\n\nCode\nnum_tosses = 100\nheads = sum([random.random() &gt; 0.5 for _ in range(num_tosses)])\ntails = num_tosses - heads\n\nprint(f\"heads, tails: {[heads, tails]}\")\n\n\nheads, tails: [42, 58]\n\n\nBut our dices tossing process follows multidimensional distribution, we can call Multinomial() to simulate 10000 throws.\n\n\nCode\nfair_probs = torch.ones([6]) / 6\ncount = Multinomial(10000, fair_probs).sample()\nprint(count)\n## calculate the possibility\n\nprint(f\"Possibility is {count/10000}\")\n\n\ntensor([1678., 1675., 1685., 1600., 1670., 1692.])\nPossibility is tensor([0.1678, 0.1675, 0.1685, 0.1600, 0.1670, 0.1692])\n\n\nWe can also see how these probabilities converge to true probabilities over time. Let’s conduct an experiment with 500 groups, taking 10 samples from each group.\n\n\nCode\ncounts = Multinomial(10, fair_probs).sample((500,))\ncum_counts = counts.cumsum(dim=0)\nestimates = cum_counts / cum_counts.sum(dim=1, keepdims=True)\nestimates = estimates.numpy()\n\nd2l.set_figsize((6, 4.5))\nd2l.plt.plot(estimates[:, 0], label=(\"P(die=1)\"))\nd2l.plt.plot(estimates[:, 1], label=(\"P(die=2)\"))\nd2l.plt.plot(estimates[:, 2], label=(\"P(die=3)\"))\nd2l.plt.plot(estimates[:, 3], label=(\"P(die=4)\"))\nd2l.plt.plot(estimates[:, 4], label=(\"P(die=5)\"))\nd2l.plt.plot(estimates[:, 5], label=(\"P(die=6)\"))\nd2l.plt.axhline(y=0.167, color='black', linestyle='dashed')\nd2l.plt.gca().set_xlabel('Samples')\nd2l.plt.gca().set_ylabel('Estimated probability')\nd2l.plt.legend()",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "2. Preliminaries",
+      "2.6 Probability and Statistics"
     ]
   },
   {
