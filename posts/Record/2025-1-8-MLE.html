@@ -5101,7 +5101,25 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/DIDP/2025-1-18-3.2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.2 Synthetic Regression Data</span></a>
+ <span class="menu-text">3.2 Linear Regression Implementation from Scratch</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/DIDP/2025-1-19-3.3.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.3 A clean implementation of linear regression</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/DIDP/2025-1-19-3.4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.4 Generalization</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../posts/DIDP/2025-1-20-3.5.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">3.5 Weight Decaying</span></a>
   </div>
 </li>
       </ul>
@@ -5240,6 +5258,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
    
   <ul class="collapse">
   <li><a href="#self-attention" id="toc-self-attention" class="nav-link active" data-scroll-target="#self-attention">Self-Attention</a></li>
+  <li><a href="#overfitting-and-underfitting" id="toc-overfitting-and-underfitting" class="nav-link" data-scroll-target="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
   </ul>
 </nav>
     </div>
@@ -5304,6 +5323,17 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 <li>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</li>
 <li>The division by the root sign <span class="math inline">\(d_k\)</span> is to normalize the result after the dot product of <span class="math inline">\(q\)</span> and <span class="math inline">\(k\)</span> into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</li>
 </ol>
+</section>
+</section>
+<section id="overfitting-and-underfitting" class="level2">
+<h2 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h2>
+<section id="question-1-1" class="level3">
+<h3 class="anchored" data-anchor-id="question-1-1">Question 1</h3>
+<p>Why regularization reduces overfitting and explains <span class="math inline">\(L_1\)</span> regularization and <span class="math inline">\(L_2\)</span> regularization.</p>
+</section>
+<section id="solution-1" class="level3">
+<h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
+<p><a href="https://zhuanlan.zhihu.com/p/35356992">Solution</a></p>
 
 
 <!-- -->
@@ -5813,7 +5843,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A larger $\sqrt d_k$ leads to a larger variance in the $Q, K$ dot product, resulting in a larger gap between the vector element values;</span>
 <span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The division by the root sign $d_k$ is to normalize the result after the dot product of $q$ and $k$ into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The division by the root sign $d_k$ is to normalize the result after the dot product of $q$ and $k$ into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overfitting and Underfitting</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Why regularization reduces overfitting and explains $L_1$ regularization and $L_2$ regularization. </span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Solution</span><span class="co">](https://zhuanlan.zhihu.com/p/35356992)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
