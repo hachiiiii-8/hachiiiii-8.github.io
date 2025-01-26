@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wu Hao">
-<meta name="description" content="Course Note and Exercise">
+<meta name="description" content="A regularization technique that can improve generalization">
 
-<title>Missing Semester 4: Data Wrangling – hao</title>
+<title>3.5 Weight Decaying – hao</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4790,7 +4790,7 @@ src: url(data:font/ttf;base64,AAEAAAAQAQAABAAAR0RFRmISYeYAAAI8AAABWEdQT1McrRjvAA
 body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color: #333;margin: 0;padding: 0;background-color: #fafafa;}h1, h2, h3, h4, h5, h6 {font-family: "Playfair Display", serif;color: #222;}h1 { font-size: 2.25rem; }h2 { font-size: 2rem; }h3 { font-size: 1.75rem; }h4 { font-size: 1.5rem; }code, pre {font-family: "Fira Code", monospace;font-size: 15px;color: #d63384;background-color: #f8f9fa;padding: 0.5rem;border-radius: 0.25rem;}a {color: #0d6efd;text-decoration: none;}a:hover {color: #0a58ca;text-decoration: underline;}ul {padding-left: 1.5rem;list-style-type: disc;font-size: 16px;line-height: 1.6;}ol {padding-left: 1.5rem;list-style-type: decimal;font-size: 20px;line-height: 1.6;}div.output pre {max-height: 300px; overflow-y: auto;  }div.cell-output pre {max-height: 300px;overflow-y: auto;}.navbar {display: flex;justify-content: space-between;align-items: center;background-color: #0078d4;color: white;padding: 10px 20px;}.navbar a {color: white;text-decoration: none;margin: 0 10px;}.navbar a:hover {text-decoration: underline;}.col-sm-3 {width: 30%;float: left;box-sizing: border-box;padding: 10px;}.col-sm-9 {width: 70%;float: right;box-sizing: border-box;padding: 10px;}.user-info {background-color: white;padding: 20px;border-radius: 10px;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);text-align: center;margin-bottom: 20px;}.user-info img {width: 80px;height: 80px;border-radius: 50%;margin-bottom: 10px;}.user-info h2 {font-size: 1.5rem;margin-bottom: 5px;}.user-info p {font-size: 1rem;color: #555;}.blog-list {background-color: white;padding: 20px;border-radius: 10px;box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);margin-bottom: 20px;}.blog-item {display: flex;margin-bottom: 20px;border-bottom: 1px solid #e0e0e0;padding-bottom: 10px;}.blog-item:last-child {border-bottom: none;}.blog-item img {width: 100px;height: 100px;border-radius: 10px;margin-right: 20px;}.blog-item h3 {font-size: 1.25rem;margin-bottom: 5px;}.blog-item p {font-size: 1rem;color: #555;}.blog-item a {color: #0078d4;text-decoration: none;}.blog-item a:hover {text-decoration: underline;}</style>
 </head>
 
-<body class="nav-sidebar floating nav-fixed">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -4812,7 +4812,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../../posts/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../posts/index.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
@@ -4830,335 +4830,28 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Missing_semester/2024-11-23-Missing1-post.html">Missing Semester</a></li><li class="breadcrumb-item"><a href="../../posts/Missing_semester/2024-12-17-Missing4-post.html">Data Wrangling</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Blog</span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
- <span class="menu-text">Missing Semester</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Missing_semester/2024-11-23-Missing1-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Shell</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Missing_semester/2024-12-12-Missing2-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Shell Tools and Scripting</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Missing_semester/2024-12-17-Missing4-post.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Data Wrangling</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
- <span class="menu-text">Dive into Deep Learning</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2024-12-20-DIDP-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">1. Introduction</span></a>
-  </div>
-</li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
- <span class="menu-text">2. Preliminaries</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2024-12-27-DIDP-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.1 Data Manipulation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2024-12-29-DIDP-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.2 Data Preprocessing</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-10-2.3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.3 Linear Algebra</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-15-2.4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.4 Calculus</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-17-2.5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.5 Automatic Differentiation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-18-2.6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">2.6 Probability and Statistics</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">3.Linear Neural Networks for Regression</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-18-3.1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.1 Linear Regression</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-18-3.2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.2 Linear Regression Implementation from Scratch</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-19-3.3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.3 A clean implementation of linear regression</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-19-3.4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.4 Generalization</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-20-3.5.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">3.5 Weight Decaying</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
- <span class="menu-text">4.Linear Neural Networks for Classification</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
- <span class="menu-text">11. Attention Mechanisms and Transformers</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-6-11.1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">11.1 Queries, Keys, and Values</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-6-11.2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">11.2 Attention Pooling by Similarity</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-7-11.3.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">11.3 Attention Scoring Functions</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true">
- <span class="menu-text">Projects</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Project/2024-11-16-Recognize-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Recognize Handwritten Digits by CNN</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Project/2024-12-22-covid19-prediction-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">COVID-19 Cases Prediction</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Project/2024-12-31-classification-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Phoneme Classification</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Project/2025-1-8-self-attention.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Speakers Classification</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true">
- <span class="menu-text">Basics of Deep Learning</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Basic_theory/2024-12-30-BT-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Self-Attention</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
- <span class="menu-text">Tools</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Tools/2024-12-18-Linux-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Linux Command Record</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Tools/2024-12-31-python_function-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Useful Python Function</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Tools/2025-1-22-Docker-post.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Introduction to Docker</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true">
- <span class="menu-text">Record of Job</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-10" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-10" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../posts/Record/2025-1-8-MLE.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">MLE Record 1</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul class="collapse">
-  <li><a href="#ssh-run-command" id="toc-ssh-run-command" class="nav-link active" data-scroll-target="#ssh-run-command">SSH run command</a></li>
-  <li><a href="#sed-stream-editor" id="toc-sed-stream-editor" class="nav-link" data-scroll-target="#sed-stream-editor">sed: Stream Editor</a></li>
-  <li><a href="#regular-expressions" id="toc-regular-expressions" class="nav-link" data-scroll-target="#regular-expressions">Regular Expressions</a></li>
-  <li><a href="#non-greedy-regex" id="toc-non-greedy-regex" class="nav-link" data-scroll-target="#non-greedy-regex">Non-greedy Regex</a></li>
-  <li><a href="#awk---another-editor" id="toc-awk---another-editor" class="nav-link" data-scroll-target="#awk---another-editor">awk - another editor</a></li>
-  <li><a href="#analyzing-data" id="toc-analyzing-data" class="nav-link" data-scroll-target="#analyzing-data">Analyzing Data</a></li>
-  <li><a href="#assignment" id="toc-assignment" class="nav-link" data-scroll-target="#assignment">Assignment</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Missing_semester/2024-11-23-Missing1-post.html">Missing Semester</a></li><li class="breadcrumb-item"><a href="../../posts/Missing_semester/2024-12-17-Missing4-post.html">Data Wrangling</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">Missing Semester 4: Data Wrangling</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">3.5 Weight Decaying</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">Missing-Semester</div>
+    <div class="quarto-category">Dive-into-Deep-Learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Course Note and Exercise
+    A regularization technique that can improve generalization
   </div>
 </div>
 
@@ -5175,7 +4868,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024/12/17</p>
+      <p class="date">2025/1/20</p>
     </div>
   </div>
   
@@ -5187,149 +4880,10 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </header>
 
 
-<section id="ssh-run-command" class="level2">
-<h2 class="anchored" data-anchor-id="ssh-run-command">SSH run command</h2>
-<p>Reading my server’s log:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ ssh hao1227 journalctl</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Finding some useful information from the log:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ ssh hao1227@host <span class="st">&#39;journalctl | grep sshd | grep &quot;Disconnected from&quot;&#39;</span> <span class="op">|</span> less</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>less</code>: Generate a page for the corresponding content that can be scrolled up and down</p>
-</section>
-<section id="sed-stream-editor" class="level2">
-<h2 class="anchored" data-anchor-id="sed-stream-editor">sed: Stream Editor</h2>
-<p>command <code>s</code>: substitution (for one match) <code>sed &#39;s/REGEX/SUBSTITUTION/&#39;</code></p>
-<p>command <code>s, g</code>: Replacement of multiple matches <code>sed &#39;s/REGEX/SUBSTITUTION/g&#39;</code></p>
-<p><code>REGEX</code>: Regular Expressions</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> ssh<span class="op">.</span><span class="fu">log</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Dec <span class="dv">17</span> <span class="dv">21</span><span class="op">:</span><span class="dv">49</span><span class="op">:</span><span class="dv">04</span> DESKTOP-EUJ3G2G sshd<span class="op">[</span><span class="dv">1120</span><span class="op">]:</span> Disconnected <span class="kw">from</span> user hao1227 host port <span class="dv">45654</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="dt">Dec</span> <span class="dv">17</span> <span class="dv">23</span><span class="op">:</span><span class="dv">48</span><span class="op">:</span><span class="dv">51</span> DESKTOP-EUJ3G2G sshd<span class="op">[</span><span class="dv">406</span><span class="op">]:</span> Disconnected <span class="kw">from</span> user hao1227 host port <span class="dv">48594</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="dt">Dec</span> <span class="dv">18</span> <span class="dv">00</span><span class="op">:</span><span class="dv">00</span><span class="op">:</span><span class="dv">51</span> DESKTOP-EUJ3G2G sshd<span class="op">[</span><span class="dv">777</span><span class="op">]:</span> Disconnected <span class="kw">from</span> user hao1227 host port <span class="dv">45254</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="dt">Dec</span> <span class="dv">18</span> <span class="dv">00</span><span class="op">:</span><span class="dv">08</span><span class="op">:</span><span class="dv">45</span> DESKTOP-EUJ3G2G sshd<span class="op">[</span><span class="dv">838</span><span class="op">]:</span> Disconnected <span class="kw">from</span> user hao1227 host port <span class="dv">39252</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Replacing regular expression Parts with null characters by sed</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> ssh<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> sed <span class="st">&#39;s/.*Disconnected from //&#39;</span> </span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>user hao1227 host port <span class="dv">45654</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="dt">user</span> hao1227 host port <span class="dv">48594</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a><span class="dt">user</span> hao1227 host port <span class="dv">45254</span></span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a><span class="dt">user</span> hao1227 host port <span class="dv">39252</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="regular-expressions" class="level2">
-<h2 class="anchored" data-anchor-id="regular-expressions">Regular Expressions</h2>
-<p><code>.</code> means “any single character” except newline</p>
-<p><code>*</code> zero or more of the preceding match</p>
-<p><code>+</code> one or more of the preceding match</p>
-<p><code>[abc]</code> any one character of a, b, and c</p>
-<p><code>(RX1|RX2)</code> either something that matches RX1 or RX2</p>
-<p><code>^</code> the start of the line</p>
-<p><code>$</code> the end of the line</p>
-<p>Now you have more information about the regular expressions. So, how can we match just the text that <strong>follows the username</strong>, especially if the username can have spaces and such?</p>
-<p>Tips: <a href="https://regex101.com/r/qqbZqh/2">regex debugger</a> can help us understand the complex regular expressions.</p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Show access server username sorted by number of visits</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> ssh<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> sed <span class="op">-</span>E <span class="st">&#39;s/.*Disconnected from user (.*) [0-9.]+ port [0-9]+/\1/&#39;</span> <span class="op">|</span> uniq <span class="op">-</span>c <span class="op">|</span> <span class="fu">sort</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> hao1227</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#A more robust code</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> ssh<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> sed <span class="op">-</span>E <span class="st">&#39;s/.*Disconnected from (authenticating |invalid )?user (.*) [0-9.]+ port [0-9]+( \[preauth\])?/\2/&#39;</span> <span class="op">|</span> uniq <span class="op">-</span>c <span class="op">|</span> <span class="fu">sort</span> <span class="op">|</span> tail <span class="op">-</span>n10 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>Capture groups: Any text matched by a regex surrounded by parentheses is stored in a numbered capture group <code>()</code></p>
-<p>We can capture username with <code>\2</code> (group2).</p>
-<p><code>uniq -c</code> performs neighbor reweighting and per-item counting, and <code>sort</code> sorts the counts.</p>
-<p><code>tail -n10</code> outputs the top 10 counts (or sort -r, head -n10)</p>
-</section>
-<section id="non-greedy-regex" class="level2">
-<h2 class="anchored" data-anchor-id="non-greedy-regex">Non-greedy Regex</h2>
-<p>Regular expressions are greedy, the above ’. *Disconnected from ’ will match as many characters as possible before the last Disconnected from.</p>
-<p>We can add <code>?</code> behind <code>+</code> or <code>*</code> to make regular expressions non-greedy. But, <code>sed</code> doesn’t support it, we should switch to <code>perl -pe</code></p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">echo</span> <span class="st">&#39;something Disconnected from A Disconnected from B. OK finish string&#39;</span> <span class="op">|</span> perl <span class="op">-</span>pe <span class="st">&#39;s/.*?Disconnected from //&#39;</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>A Disconnected <span class="kw">from</span> B<span class="op">.</span> OK finish string</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="awk---another-editor" class="level2">
-<h2 class="anchored" data-anchor-id="awk---another-editor">awk - another editor</h2>
-<p>First, we can get the information about usrname and their counts of visit by <code>sed</code> and regular Expressions.</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># test.log</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> test<span class="op">.</span><span class="fu">log</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> xbot</span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span> hao1227</span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span> bin</span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> admin</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>$1</code> refers to column 1, <code>$2</code> refers to column 2. <code>print</code> can print column data.</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#print visit counts</span></span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> test<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> awk <span class="st">&#39;{print $1}&#39;</span></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span></span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dv">4</span></span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="dv">8</span></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>We can add judgment condition to <code>awk</code>. For example, we can output the specific usrname start with x and end with t and its visit count is “1”.</p>
-<div class="sourceCode" id="cb8"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#search the specific usr and return its information</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> test<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> awk <span class="st">&#39;$1 == 1 &amp;&amp; $2 ~ /^x[^ ]*t$/ { print $2 }&#39;</span></span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>xbot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>we can also call loops in <code>awk</code>.</p>
-<div class="sourceCode" id="cb9"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">BEGIN</span> <span class="op">{</span> rows <span class="op">=</span> <span class="dv">0</span> <span class="op">}</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>$<span class="dv">1</span> <span class="op">==</span> <span class="dv">1</span> <span class="op">&amp;&amp;</span> $<span class="dv">2</span> <span class="op">~</span> <span class="op">/^</span>c<span class="op">[^</span> <span class="op">]*</span>e$<span class="op">/</span> <span class="op">{</span> rows <span class="op">+=</span> $<span class="dv">1</span> <span class="op">}</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="kw">END</span> <span class="op">{</span> print rows <span class="op">}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="analyzing-data" class="level2">
-<h2 class="anchored" data-anchor-id="analyzing-data">Analyzing Data</h2>
-<p><code>paste -sd+</code> can generate an addition formula (<code>-s</code> combine lines, <code>-d+</code> use + as delimiter)</p>
-<p><code>bc -l</code> calculates the formula.</p>
-<div class="sourceCode" id="cb10"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculate the total counts</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="op">~</span>$ <span class="fu">cat</span> test<span class="op">.</span><span class="fu">log</span> <span class="op">|</span> awk <span class="st">&#39;{print $1}&#39;</span> <span class="op">|</span> paste <span class="op">-</span>sd<span class="op">+</span> <span class="op">|</span> bc <span class="op">-</span>l</span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="dv">23</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>wc</code> counts the number of lines in the file</p>
-<div class="sourceCode" id="cb11"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculate the total counts</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>$ find <span class="op">.</span> <span class="op">-</span>type f <span class="op">-</span>name <span class="st">&#39;*qmd&#39;</span> <span class="op">|</span> xargs wc <span class="op">-</span>l</span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="dv">308</span> <span class="op">./</span><span class="dv">2024</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">16</span><span class="op">-</span>Recognize-post<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="dv">103</span> <span class="op">./</span><span class="dv">2024</span><span class="op">-</span><span class="dv">11</span><span class="op">-</span><span class="dv">23</span><span class="op">-</span>Missing1-post<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="dv">439</span> <span class="op">./</span><span class="dv">2024</span><span class="op">-</span><span class="dv">12</span><span class="op">-</span><span class="dv">12</span><span class="op">-</span>Missing2-post<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="dv">164</span> <span class="op">./</span><span class="dv">2024</span><span class="op">-</span><span class="dv">12</span><span class="op">-</span><span class="dv">17</span><span class="op">-</span>Missing4-post<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>   <span class="dv">36</span> <span class="op">./</span><span class="dv">2024</span><span class="op">-</span><span class="dv">12</span><span class="op">-</span><span class="dv">18</span><span class="op">-</span>Linux-post<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a>    <span class="dv">9</span> <span class="op">./</span>index<span class="op">.</span><span class="fu">qmd</span></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a> <span class="dv">1059</span> total</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="assignment" class="level2">
-<h2 class="anchored" data-anchor-id="assignment">Assignment</h2>
-<section id="question-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
-<p>Take this <a href="https://regexone.com/">short interactive regex tutorial</a></p>
-</section>
-<section id="question-2" class="level3">
-<h3 class="anchored" data-anchor-id="question-2">Question 2</h3>
-<p>Find the number of words (in <code>/usr/share/dict/words</code>) that contain at least three <code>a</code>s and don’t have a <code>&#39;s</code> ending.</p>
-<p>How many of those two-letter combinations are there? And for a challenge: which combinations do not occur?</p>
-</section>
-<section id="solution" class="level3">
-<h3 class="anchored" data-anchor-id="solution">Solution</h3>
-<div class="sourceCode" id="cb12"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Find the number of words</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> words<span class="op">.</span><span class="fu">txt</span> <span class="op">|</span> sed <span class="st">&#39;y/[A-Z]/[a-z]/&#39;</span> <span class="op">|</span> grep <span class="op">-</span>E <span class="st">&#39;^([^a]*a){3}.*$&#39;</span> <span class="op">|</span> grep <span class="op">-</span>v <span class="st">&quot;&#39;s$&quot;</span> <span class="op">|</span> wc <span class="op">-</span>l</span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="dv">833</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Count the two-letter combinations</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>$ <span class="fu">cat</span> words<span class="op">.</span><span class="fu">txt</span> <span class="op">|</span> sed <span class="st">&#39;y/[A-Z]/[a-z]/&#39;</span> <span class="op">|</span> grep <span class="op">-</span>E <span class="st">&#39;^([^a]*a){3}.*$&#39;</span> <span class="op">|</span> grep <span class="op">-</span>v <span class="st">&quot;&#39;s$&quot;</span> <span class="op">|</span> sed <span class="op">-</span>E <span class="st">&quot;s/.*([a-z]{2})$/\1/&quot;</span> <span class="op">|</span> <span class="fu">sort</span> <span class="op">|</span> uniq <span class="op">-</span>c <span class="op">|</span> <span class="fu">sort</span> <span class="op">|</span> wc <span class="op">-</span>l</span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="dv">110</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><code>sed &#39;y/</code> performs an alphabetical case conversion.</p>
-<p><code>grep -E</code> and <code>grep -v</code> refer to <a href="../../posts/Tools/2024-12-18-Linux-post.html#command-grep">command grep</a></p>
-<p>For challenge, I can just give a python code.</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># the results from above stored in a list com1[]</span></span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>letters <span class="op">=</span> <span class="bu">set</span>(<span class="st">&quot;&quot;</span>.join(com1))</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> letter1 <span class="kw">in</span> [a...z]:</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> letter2 <span class="kw">in</span> [a...z]:</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>      combine <span class="op">=</span> letter1 <span class="op">+</span> letter2</span>
-<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> combine <span class="kw">not</span> <span class="kw">in</span> com1:</span>
-<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>        com2.append(combine)</span>
-<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> com2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="question-3" class="level3">
-<h3 class="anchored" data-anchor-id="question-3">Question 3</h3>
-<p>To do in-place substitution it is quite tempting to do something like <code>sed s/REGEX/SUBSTITUTION/ input.txt &gt; input.txt</code>. However this is a bad idea, why?</p>
-</section>
-<section id="solution-1" class="level3">
-<h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
-<p><code>sed</code> will clean all the contents in the input.txt before writing. Thus, you’d better save your file first.</p>
 
 
 <!-- -->
 
-</section>
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -5800,221 +5354,78 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb14" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;Missing Semester 4: Data Wrangling&quot;</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2024/12/17</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Course Note and Exercise&quot;</span></span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a><span class="co">  - Missing-Semester</span></span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a><span class="co">  - Tools</span></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb14-13"><a href="#cb14-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-14"><a href="#cb14-14" aria-hidden="true" tabindex="-1"></a><span class="fu">## SSH run command</span></span>
-<span id="cb14-15"><a href="#cb14-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-16"><a href="#cb14-16" aria-hidden="true" tabindex="-1"></a>Reading my server’s log:</span>
-<span id="cb14-17"><a href="#cb14-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-18"><a href="#cb14-18" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-19"><a href="#cb14-19" aria-hidden="true" tabindex="-1"></a><span class="in">~$ ssh hao1227 journalctl</span></span>
-<span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a>Finding some useful information from the log:</span>
-<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-25"><a href="#cb14-25" aria-hidden="true" tabindex="-1"></a><span class="in">~$ ssh hao1227@host &#39;journalctl | grep sshd | grep &quot;Disconnected from&quot;&#39; | less</span></span>
-<span id="cb14-26"><a href="#cb14-26" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-27"><a href="#cb14-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-28"><a href="#cb14-28" aria-hidden="true" tabindex="-1"></a><span class="in">`less`</span>: Generate a page for the corresponding content that can be scrolled up and down</span>
-<span id="cb14-29"><a href="#cb14-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-30"><a href="#cb14-30" aria-hidden="true" tabindex="-1"></a><span class="fu">## sed: Stream Editor</span></span>
-<span id="cb14-31"><a href="#cb14-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-32"><a href="#cb14-32" aria-hidden="true" tabindex="-1"></a>command <span class="in">`s`</span>: substitution (for one match)</span>
-<span id="cb14-33"><a href="#cb14-33" aria-hidden="true" tabindex="-1"></a><span class="in">`sed &#39;s/REGEX/SUBSTITUTION/&#39;`</span></span>
-<span id="cb14-34"><a href="#cb14-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-35"><a href="#cb14-35" aria-hidden="true" tabindex="-1"></a>command <span class="in">`s, g`</span>: Replacement of multiple matches</span>
-<span id="cb14-36"><a href="#cb14-36" aria-hidden="true" tabindex="-1"></a><span class="in">`sed &#39;s/REGEX/SUBSTITUTION/g&#39;`</span></span>
-<span id="cb14-37"><a href="#cb14-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-38"><a href="#cb14-38" aria-hidden="true" tabindex="-1"></a><span class="in">`REGEX`</span>: Regular Expressions</span>
-<span id="cb14-39"><a href="#cb14-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-40"><a href="#cb14-40" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-41"><a href="#cb14-41" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat ssh.log</span></span>
-<span id="cb14-42"><a href="#cb14-42" aria-hidden="true" tabindex="-1"></a><span class="in">Dec 17 21:49:04 DESKTOP-EUJ3G2G sshd[1120]: Disconnected from user hao1227 host port 45654</span></span>
-<span id="cb14-43"><a href="#cb14-43" aria-hidden="true" tabindex="-1"></a><span class="in">Dec 17 23:48:51 DESKTOP-EUJ3G2G sshd[406]: Disconnected from user hao1227 host port 48594</span></span>
-<span id="cb14-44"><a href="#cb14-44" aria-hidden="true" tabindex="-1"></a><span class="in">Dec 18 00:00:51 DESKTOP-EUJ3G2G sshd[777]: Disconnected from user hao1227 host port 45254</span></span>
-<span id="cb14-45"><a href="#cb14-45" aria-hidden="true" tabindex="-1"></a><span class="in">Dec 18 00:08:45 DESKTOP-EUJ3G2G sshd[838]: Disconnected from user hao1227 host port 39252</span></span>
-<span id="cb14-46"><a href="#cb14-46" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-47"><a href="#cb14-47" aria-hidden="true" tabindex="-1"></a><span class="in"># Replacing regular expression Parts with null characters by sed</span></span>
-<span id="cb14-48"><a href="#cb14-48" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat ssh.log | sed &#39;s/.*Disconnected from //&#39; </span></span>
-<span id="cb14-49"><a href="#cb14-49" aria-hidden="true" tabindex="-1"></a><span class="in">user hao1227 host port 45654</span></span>
-<span id="cb14-50"><a href="#cb14-50" aria-hidden="true" tabindex="-1"></a><span class="in">user hao1227 host port 48594</span></span>
-<span id="cb14-51"><a href="#cb14-51" aria-hidden="true" tabindex="-1"></a><span class="in">user hao1227 host port 45254</span></span>
-<span id="cb14-52"><a href="#cb14-52" aria-hidden="true" tabindex="-1"></a><span class="in">user hao1227 host port 39252</span></span>
-<span id="cb14-53"><a href="#cb14-53" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-54"><a href="#cb14-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-55"><a href="#cb14-55" aria-hidden="true" tabindex="-1"></a><span class="fu">## Regular Expressions</span></span>
-<span id="cb14-56"><a href="#cb14-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-57"><a href="#cb14-57" aria-hidden="true" tabindex="-1"></a><span class="in">`.`</span> means “any single character” except newline</span>
-<span id="cb14-58"><a href="#cb14-58" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-59"><a href="#cb14-59" aria-hidden="true" tabindex="-1"></a><span class="in">`*`</span> zero or more of the preceding match</span>
-<span id="cb14-60"><a href="#cb14-60" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-61"><a href="#cb14-61" aria-hidden="true" tabindex="-1"></a><span class="in">`+`</span> one or more of the preceding match</span>
-<span id="cb14-62"><a href="#cb14-62" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-63"><a href="#cb14-63" aria-hidden="true" tabindex="-1"></a><span class="in">`[abc]`</span> any one character of a, b, and c</span>
-<span id="cb14-64"><a href="#cb14-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-65"><a href="#cb14-65" aria-hidden="true" tabindex="-1"></a><span class="in">`(RX1|RX2)`</span> either something that matches RX1 or RX2</span>
-<span id="cb14-66"><a href="#cb14-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-67"><a href="#cb14-67" aria-hidden="true" tabindex="-1"></a><span class="in">`^`</span> the start of the line</span>
-<span id="cb14-68"><a href="#cb14-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-69"><a href="#cb14-69" aria-hidden="true" tabindex="-1"></a><span class="in">`$`</span> the end of the line</span>
-<span id="cb14-70"><a href="#cb14-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-71"><a href="#cb14-71" aria-hidden="true" tabindex="-1"></a>Now you have more information about the regular expressions. So, how can we match just the text that **follows the username**, especially if the username can have spaces and such?</span>
-<span id="cb14-72"><a href="#cb14-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-73"><a href="#cb14-73" aria-hidden="true" tabindex="-1"></a>Tips: <span class="co">[</span><span class="ot">regex debugger</span><span class="co">](https://regex101.com/r/qqbZqh/2)</span> can help us understand the complex regular expressions.</span>
-<span id="cb14-74"><a href="#cb14-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-75"><a href="#cb14-75" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-76"><a href="#cb14-76" aria-hidden="true" tabindex="-1"></a><span class="in">#Show access server username sorted by number of visits</span></span>
-<span id="cb14-77"><a href="#cb14-77" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat ssh.log | sed -E &#39;s/.*Disconnected from user (.*) [0-9.]+ port [0-9]+/\1/&#39; | uniq -c | sort</span></span>
-<span id="cb14-78"><a href="#cb14-78" aria-hidden="true" tabindex="-1"></a><span class="in">4 hao1227</span></span>
-<span id="cb14-79"><a href="#cb14-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-80"><a href="#cb14-80" aria-hidden="true" tabindex="-1"></a><span class="in">#A more robust code</span></span>
-<span id="cb14-81"><a href="#cb14-81" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat ssh.log | sed -E &#39;s/.*Disconnected from (authenticating |invalid )?user (.*) [0-9.]+ port [0-9]+( \[preauth\])?/\2/&#39; | uniq -c | sort | tail -n10 </span></span>
-<span id="cb14-82"><a href="#cb14-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-83"><a href="#cb14-83" aria-hidden="true" tabindex="-1"></a>Capture groups: Any text matched by a regex surrounded by parentheses is stored in a numbered capture group <span class="in">`()`</span></span>
-<span id="cb14-84"><a href="#cb14-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-85"><a href="#cb14-85" aria-hidden="true" tabindex="-1"></a>We can capture username with <span class="in">`\2`</span> (group2).</span>
-<span id="cb14-86"><a href="#cb14-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-87"><a href="#cb14-87" aria-hidden="true" tabindex="-1"></a><span class="in">`uniq -c`</span> performs neighbor reweighting and per-item counting, and <span class="in">`sort`</span> sorts the counts.</span>
-<span id="cb14-88"><a href="#cb14-88" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-89"><a href="#cb14-89" aria-hidden="true" tabindex="-1"></a><span class="in">`tail -n10`</span> outputs the top 10 counts (or sort -r, head -n10)</span>
-<span id="cb14-90"><a href="#cb14-90" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-91"><a href="#cb14-91" aria-hidden="true" tabindex="-1"></a><span class="fu">## Non-greedy Regex</span></span>
-<span id="cb14-92"><a href="#cb14-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-93"><a href="#cb14-93" aria-hidden="true" tabindex="-1"></a>Regular expressions are greedy, the above &#39;. *Disconnected from &#39; will match as many characters as possible before the last Disconnected from.</span>
-<span id="cb14-94"><a href="#cb14-94" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-95"><a href="#cb14-95" aria-hidden="true" tabindex="-1"></a>We can add <span class="in">`?`</span> behind <span class="in">`+`</span> or <span class="in">`*`</span> to make regular expressions non-greedy. But, <span class="in">`sed`</span> doesn&#39;t support it, we should switch to <span class="in">`perl -pe`</span></span>
-<span id="cb14-96"><a href="#cb14-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-97"><a href="#cb14-97" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-98"><a href="#cb14-98" aria-hidden="true" tabindex="-1"></a><span class="in">~$ echo &#39;something Disconnected from A Disconnected from B. OK finish string&#39; | perl -pe &#39;s/.*?Disconnected from //&#39;</span></span>
-<span id="cb14-99"><a href="#cb14-99" aria-hidden="true" tabindex="-1"></a><span class="in">A Disconnected from B. OK finish string</span></span>
-<span id="cb14-100"><a href="#cb14-100" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-101"><a href="#cb14-101" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-102"><a href="#cb14-102" aria-hidden="true" tabindex="-1"></a><span class="fu">## awk - another editor</span></span>
-<span id="cb14-103"><a href="#cb14-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-104"><a href="#cb14-104" aria-hidden="true" tabindex="-1"></a>First, we can get the information about usrname and their counts of visit by <span class="in">`sed`</span> and regular Expressions.</span>
-<span id="cb14-105"><a href="#cb14-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-106"><a href="#cb14-106" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-107"><a href="#cb14-107" aria-hidden="true" tabindex="-1"></a><span class="in"># test.log</span></span>
-<span id="cb14-108"><a href="#cb14-108" aria-hidden="true" tabindex="-1"></a><span class="in">$ cat test.log</span></span>
-<span id="cb14-109"><a href="#cb14-109" aria-hidden="true" tabindex="-1"></a><span class="in">1 xbot</span></span>
-<span id="cb14-110"><a href="#cb14-110" aria-hidden="true" tabindex="-1"></a><span class="in">4 hao1227</span></span>
-<span id="cb14-111"><a href="#cb14-111" aria-hidden="true" tabindex="-1"></a><span class="in">8 bin</span></span>
-<span id="cb14-112"><a href="#cb14-112" aria-hidden="true" tabindex="-1"></a><span class="in">10 admin</span></span>
-<span id="cb14-113"><a href="#cb14-113" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-114"><a href="#cb14-114" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-115"><a href="#cb14-115" aria-hidden="true" tabindex="-1"></a><span class="in">`$1`</span> refers to column 1, <span class="in">`$2`</span> refers to column 2. <span class="in">`print`</span> can print column data.</span>
-<span id="cb14-116"><a href="#cb14-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-117"><a href="#cb14-117" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-118"><a href="#cb14-118" aria-hidden="true" tabindex="-1"></a><span class="in">#print visit counts</span></span>
-<span id="cb14-119"><a href="#cb14-119" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat test.log | awk &#39;{print $1}&#39;</span></span>
-<span id="cb14-120"><a href="#cb14-120" aria-hidden="true" tabindex="-1"></a><span class="in">1</span></span>
-<span id="cb14-121"><a href="#cb14-121" aria-hidden="true" tabindex="-1"></a><span class="in">4</span></span>
-<span id="cb14-122"><a href="#cb14-122" aria-hidden="true" tabindex="-1"></a><span class="in">8</span></span>
-<span id="cb14-123"><a href="#cb14-123" aria-hidden="true" tabindex="-1"></a><span class="in">10</span></span>
-<span id="cb14-124"><a href="#cb14-124" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-125"><a href="#cb14-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-126"><a href="#cb14-126" aria-hidden="true" tabindex="-1"></a>We can add judgment condition to <span class="in">`awk`</span>. For example, we can output the specific usrname start with x and end with t and its visit count is &quot;1&quot;.</span>
-<span id="cb14-127"><a href="#cb14-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-128"><a href="#cb14-128" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-129"><a href="#cb14-129" aria-hidden="true" tabindex="-1"></a><span class="in">#search the specific usr and return its information</span></span>
-<span id="cb14-130"><a href="#cb14-130" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat test.log | awk &#39;$1 == 1 &amp;&amp; $2 ~ /^x[^ ]*t$/ { print $2 }&#39;</span></span>
-<span id="cb14-131"><a href="#cb14-131" aria-hidden="true" tabindex="-1"></a><span class="in">xbot</span></span>
-<span id="cb14-132"><a href="#cb14-132" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-133"><a href="#cb14-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-134"><a href="#cb14-134" aria-hidden="true" tabindex="-1"></a>we can also call loops in <span class="in">`awk`</span>. </span>
-<span id="cb14-135"><a href="#cb14-135" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-136"><a href="#cb14-136" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-137"><a href="#cb14-137" aria-hidden="true" tabindex="-1"></a><span class="in">BEGIN { rows = 0 }</span></span>
-<span id="cb14-138"><a href="#cb14-138" aria-hidden="true" tabindex="-1"></a><span class="in">$1 == 1 &amp;&amp; $2 ~ /^c[^ ]*e$/ { rows += $1 }</span></span>
-<span id="cb14-139"><a href="#cb14-139" aria-hidden="true" tabindex="-1"></a><span class="in">END { print rows }</span></span>
-<span id="cb14-140"><a href="#cb14-140" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-141"><a href="#cb14-141" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-142"><a href="#cb14-142" aria-hidden="true" tabindex="-1"></a><span class="fu">## Analyzing Data</span></span>
-<span id="cb14-143"><a href="#cb14-143" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-144"><a href="#cb14-144" aria-hidden="true" tabindex="-1"></a><span class="in">`paste -sd+`</span> can generate an addition formula (<span class="in">`-s`</span> combine lines, <span class="in">`-d+`</span> use + as delimiter)</span>
-<span id="cb14-145"><a href="#cb14-145" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-146"><a href="#cb14-146" aria-hidden="true" tabindex="-1"></a><span class="in">`bc -l`</span> calculates the formula.</span>
-<span id="cb14-147"><a href="#cb14-147" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-148"><a href="#cb14-148" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-149"><a href="#cb14-149" aria-hidden="true" tabindex="-1"></a><span class="in">#calculate the total counts</span></span>
-<span id="cb14-150"><a href="#cb14-150" aria-hidden="true" tabindex="-1"></a><span class="in">~$ cat test.log | awk &#39;{print $1}&#39; | paste -sd+ | bc -l</span></span>
-<span id="cb14-151"><a href="#cb14-151" aria-hidden="true" tabindex="-1"></a><span class="in">23</span></span>
-<span id="cb14-152"><a href="#cb14-152" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-153"><a href="#cb14-153" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-154"><a href="#cb14-154" aria-hidden="true" tabindex="-1"></a><span class="in">`wc`</span> counts the number of lines in the file</span>
-<span id="cb14-155"><a href="#cb14-155" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-156"><a href="#cb14-156" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-157"><a href="#cb14-157" aria-hidden="true" tabindex="-1"></a><span class="in">#calculate the total counts</span></span>
-<span id="cb14-158"><a href="#cb14-158" aria-hidden="true" tabindex="-1"></a><span class="in">$ find . -type f -name &#39;*qmd&#39; | xargs wc -l</span></span>
-<span id="cb14-159"><a href="#cb14-159" aria-hidden="true" tabindex="-1"></a><span class="in">  308 ./2024-11-16-Recognize-post.qmd</span></span>
-<span id="cb14-160"><a href="#cb14-160" aria-hidden="true" tabindex="-1"></a><span class="in">  103 ./2024-11-23-Missing1-post.qmd</span></span>
-<span id="cb14-161"><a href="#cb14-161" aria-hidden="true" tabindex="-1"></a><span class="in">  439 ./2024-12-12-Missing2-post.qmd</span></span>
-<span id="cb14-162"><a href="#cb14-162" aria-hidden="true" tabindex="-1"></a><span class="in">  164 ./2024-12-17-Missing4-post.qmd</span></span>
-<span id="cb14-163"><a href="#cb14-163" aria-hidden="true" tabindex="-1"></a><span class="in">   36 ./2024-12-18-Linux-post.qmd</span></span>
-<span id="cb14-164"><a href="#cb14-164" aria-hidden="true" tabindex="-1"></a><span class="in">    9 ./index.qmd</span></span>
-<span id="cb14-165"><a href="#cb14-165" aria-hidden="true" tabindex="-1"></a><span class="in"> 1059 total</span></span>
-<span id="cb14-166"><a href="#cb14-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-167"><a href="#cb14-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-168"><a href="#cb14-168" aria-hidden="true" tabindex="-1"></a><span class="fu">## Assignment</span></span>
-<span id="cb14-169"><a href="#cb14-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-170"><a href="#cb14-170" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
-<span id="cb14-171"><a href="#cb14-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-172"><a href="#cb14-172" aria-hidden="true" tabindex="-1"></a>Take this <span class="co">[</span><span class="ot">short interactive regex tutorial</span><span class="co">](https://regexone.com/)</span></span>
-<span id="cb14-173"><a href="#cb14-173" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-174"><a href="#cb14-174" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 2</span></span>
-<span id="cb14-175"><a href="#cb14-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-176"><a href="#cb14-176" aria-hidden="true" tabindex="-1"></a>Find the number of words (in <span class="in">`/usr/share/dict/words`</span>) that contain at least three <span class="in">`a`</span>s and don’t have a <span class="in">`&#39;s`</span> ending.</span>
-<span id="cb14-177"><a href="#cb14-177" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-178"><a href="#cb14-178" aria-hidden="true" tabindex="-1"></a>How many of those two-letter combinations are there? And for a challenge: which combinations do not occur?</span>
-<span id="cb14-179"><a href="#cb14-179" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-180"><a href="#cb14-180" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb14-181"><a href="#cb14-181" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-182"><a href="#cb14-182" aria-hidden="true" tabindex="-1"></a><span class="in">```powershell</span></span>
-<span id="cb14-183"><a href="#cb14-183" aria-hidden="true" tabindex="-1"></a><span class="in"># Find the number of words</span></span>
-<span id="cb14-184"><a href="#cb14-184" aria-hidden="true" tabindex="-1"></a><span class="in">$ cat words.txt | sed &#39;y/[A-Z]/[a-z]/&#39; | grep -E &#39;^([^a]*a){3}.*$&#39; | grep -v &quot;&#39;s$&quot; | wc -l</span></span>
-<span id="cb14-185"><a href="#cb14-185" aria-hidden="true" tabindex="-1"></a><span class="in">833</span></span>
-<span id="cb14-186"><a href="#cb14-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-187"><a href="#cb14-187" aria-hidden="true" tabindex="-1"></a><span class="in"># Count the two-letter combinations</span></span>
-<span id="cb14-188"><a href="#cb14-188" aria-hidden="true" tabindex="-1"></a><span class="in">$ cat words.txt | sed &#39;y/[A-Z]/[a-z]/&#39; | grep -E &#39;^([^a]*a){3}.*$&#39; | grep -v &quot;&#39;s$&quot; | sed -E &quot;s/.*([a-z]{2})$/\1/&quot; | sort | uniq -c | sort | wc -l</span></span>
-<span id="cb14-189"><a href="#cb14-189" aria-hidden="true" tabindex="-1"></a><span class="in">110</span></span>
-<span id="cb14-190"><a href="#cb14-190" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-191"><a href="#cb14-191" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-192"><a href="#cb14-192" aria-hidden="true" tabindex="-1"></a><span class="in">`sed &#39;y/`</span> performs an alphabetical case conversion.</span>
-<span id="cb14-193"><a href="#cb14-193" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-194"><a href="#cb14-194" aria-hidden="true" tabindex="-1"></a><span class="in">`grep -E`</span> and <span class="in">`grep -v`</span> refer to <span class="co">[</span><span class="ot">command grep</span><span class="co">](../Tools/2024-12-18-Linux-post.qmd#command-grep)</span></span>
-<span id="cb14-195"><a href="#cb14-195" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-196"><a href="#cb14-196" aria-hidden="true" tabindex="-1"></a>For challenge, I can just give a python code.</span>
-<span id="cb14-197"><a href="#cb14-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-198"><a href="#cb14-198" aria-hidden="true" tabindex="-1"></a><span class="in">```python</span></span>
-<span id="cb14-199"><a href="#cb14-199" aria-hidden="true" tabindex="-1"></a><span class="co"># the results from above stored in a list com1[]</span></span>
-<span id="cb14-200"><a href="#cb14-200" aria-hidden="true" tabindex="-1"></a>letters <span class="op">=</span> <span class="bu">set</span>(<span class="st">&quot;&quot;</span>.join(com1))</span>
-<span id="cb14-201"><a href="#cb14-201" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> letter1 <span class="kw">in</span> [a...z]:</span>
-<span id="cb14-202"><a href="#cb14-202" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> letter2 <span class="kw">in</span> [a...z]:</span>
-<span id="cb14-203"><a href="#cb14-203" aria-hidden="true" tabindex="-1"></a>      combine <span class="op">=</span> letter1 <span class="op">+</span> letter2</span>
-<span id="cb14-204"><a href="#cb14-204" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> combine <span class="kw">not</span> <span class="kw">in</span> com1:</span>
-<span id="cb14-205"><a href="#cb14-205" aria-hidden="true" tabindex="-1"></a>        com2.append(combine)</span>
-<span id="cb14-206"><a href="#cb14-206" aria-hidden="true" tabindex="-1"></a><span class="cf">return</span> com2</span>
-<span id="cb14-207"><a href="#cb14-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb14-208"><a href="#cb14-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-209"><a href="#cb14-209" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 3</span></span>
-<span id="cb14-210"><a href="#cb14-210" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-211"><a href="#cb14-211" aria-hidden="true" tabindex="-1"></a>To do in-place substitution it is quite tempting to do something like <span class="in">`sed s/REGEX/SUBSTITUTION/ input.txt &gt; input.txt`</span>. However this is a bad idea, why? </span>
-<span id="cb14-212"><a href="#cb14-212" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-213"><a href="#cb14-213" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb14-214"><a href="#cb14-214" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-215"><a href="#cb14-215" aria-hidden="true" tabindex="-1"></a><span class="in">`sed`</span> will clean all the contents in the input.txt before writing. Thus, you&#39;d better save your file first.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;4.1 Softmax Regression&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/1/24</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Dive-into-Deep-Learning</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;How to use Softmax regression models to predict the category to which a sample belongs&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Deep Learning</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Classification Task</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>The objective of classification task is to predict the input sample $\mathbf{x}$ belongs to a certain $y \in <span class="sc">\{</span>1, 2, \dots, k<span class="sc">\}</span>.$ </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>The Softmax function is able to transform the unnormalized predictions into non-negative numbers that sum to 1, while keeping the model derivable. Therefore, we can use the Softmax function to represent the output of the model as a selection of labels with maximum probability.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Softmax Regression Model</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Softmax Regression Model is a linear model, and it can be represented as:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>\mathbf{o} = \mathbf{W} \mathbf{x} + \mathbf{b}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{o} \in \mathbb{R}^k$ is the output without normalized。</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{W} \in \mathbb{R}^{k \times d}$ is the weight matrix。</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{b} \in \mathbb{R}^k$ is the bias vector。</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$k$ is the number of categories，$d$ is the dimension of the input feature。</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Softmax Function</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>How can we normalized the output? To accomplish this, we first power each of the unnormalized predictions, which ensures that the output is non-negative. To ensure that the probability values of the final outputs sum to 1, we then let the result after each powering divide their sum. And the formula is as follows:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>\hat{y}_i = \frac{\exp(o_i)}{\sum_{j=1}^k \exp(o_j)}</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>where：</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\hat{y}_i$ is the possibility of the sample belongs to $i$.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\hat{y}$ are the non-negative numbers that sum to 1.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Vectorization</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>To improve computational efficiency, we vectorize calculations in minibatches of data. The vector calculation expression for softmax regression is:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>\mathbf{O} = \mathbf{X} \mathbf{W} + \mathbf{b}, <span class="sc">\\</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>\hat{\mathbf{Y}} = \text{softmax}(\mathbf{O}).</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{X} \in \mathbb{R}^{n \times d}$ is a minibatch</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{W} \in \mathbb{R}^{d \times q}$ is the weight matrix</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{b} \in \mathbb{R}^{1 \times q}$ is the bias matrix</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Loss Function</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>The **Cross-Entropy** loss function can measure the distance between the prediction $\hat{\mathbf{y}}$ and the ground-truth $\mathbf{y}$:</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>\text{Loss} = -\sum_{i=1}^k y_i \log(\hat{y}_i)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>From an information theoretic perspective, we can consider the cross-entropy classification goal in two ways: (i) maximizing the likelihood of the observed data; and (ii) minimizing the surprise required to convey the labels.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
