@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wu Hao">
-<meta name="description" content="Course Note and Exercise">
+<meta name="description" content="How to use Softmax regression models to predict the category to which a sample belongs">
 
-<title>2.2 Data Preprocessing – hao</title>
+<title>4.1 Softmax Regression – hao</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4974,7 +4974,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-27-DIDP-post.html">2. Preliminaries</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-29-DIDP-post.html">2.2 Data Preprocessing</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-1-24-4.1.html">4.Linear Neural Networks for Classification</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-1-24-4.1.html">4.1 Softmax Regression</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -5038,13 +5038,13 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false">
  <span class="menu-text">2. Preliminaries</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/DIDP/2024-12-27-DIDP-post.html" class="sidebar-item-text sidebar-link">
@@ -5053,7 +5053,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2024-12-29-DIDP-post.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../posts/DIDP/2024-12-29-DIDP-post.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2.2 Data Preprocessing</span></a>
   </div>
 </li>
@@ -5126,16 +5126,16 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true">
  <span class="menu-text">4.Linear Neural Networks for Classification</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-1-24-4.1.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/DIDP/2025-1-24-4.1.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">4.1 Softmax Regression</span></a>
   </div>
 </li>
@@ -5303,18 +5303,20 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#reading-the-dataset" id="toc-reading-the-dataset" class="nav-link active" data-scroll-target="#reading-the-dataset">Reading the Dataset</a></li>
-  <li><a href="#data-preparation" id="toc-data-preparation" class="nav-link" data-scroll-target="#data-preparation">Data Preparation</a></li>
-  <li><a href="#conversion-to-the-tensor-format" id="toc-conversion-to-the-tensor-format" class="nav-link" data-scroll-target="#conversion-to-the-tensor-format">Conversion to the Tensor Format</a></li>
+  <li><a href="#classification-task" id="toc-classification-task" class="nav-link active" data-scroll-target="#classification-task">Classification Task</a></li>
+  <li><a href="#softmax-regression-model" id="toc-softmax-regression-model" class="nav-link" data-scroll-target="#softmax-regression-model">Softmax Regression Model</a></li>
+  <li><a href="#softmax-function" id="toc-softmax-function" class="nav-link" data-scroll-target="#softmax-function">Softmax Function</a></li>
+  <li><a href="#vectorization" id="toc-vectorization" class="nav-link" data-scroll-target="#vectorization">Vectorization</a></li>
+  <li><a href="#loss-function" id="toc-loss-function" class="nav-link" data-scroll-target="#loss-function">Loss Function</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-27-DIDP-post.html">2. Preliminaries</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-29-DIDP-post.html">2.2 Data Preprocessing</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-1-24-4.1.html">4.Linear Neural Networks for Classification</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-1-24-4.1.html">4.1 Softmax Regression</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">2.2 Data Preprocessing</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
+<div class="quarto-title-block"><div><h1 class="title">4.1 Softmax Regression</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
     <div class="quarto-category">Dive-into-Deep-Learning</div>
   </div>
@@ -5322,7 +5324,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 
 <div>
   <div class="description">
-    Course Note and Exercise
+    How to use Softmax regression models to predict the category to which a sample belongs
   </div>
 </div>
 
@@ -5339,7 +5341,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2024/12/29</p>
+      <p class="date">2025/1/24</p>
     </div>
   </div>
   
@@ -5351,198 +5353,53 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </header>
 
 
-<p>To help us understand the knowledge quickly, we will introduce another blog <a href="../../posts/Project/2024-12-22-covid19-prediction-post.html">Regression Task: COVID-19 Cases Prediction</a>.</p>
-<section id="reading-the-dataset" class="level2">
-<h2 class="anchored" data-anchor-id="reading-the-dataset">Reading the Dataset</h2>
-<p>First, we should check if the director exists. If it doesn’t, we should make it.</p>
-<div id="46ac81f7" class="cell" data-execution_count="1">
-<details open class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># checking and making directory</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>os.makedirs(os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>), exist_ok<span class="op">=</span><span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>Suppose that we have some prediction results about the covid-19 prediction, and they are recorded by a list. Now, we want to store them in a <code>.csv</code> file.</p>
-<div id="eeb72b3f" class="cell" data-execution_count="2">
-<details open class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>data_file <span class="op">=</span> os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>, <span class="st">&#39;pred.csv&#39;</span>)</span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_pred(preds, <span class="bu">file</span>):</span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="bu">file</span>, <span class="st">&#39;w&#39;</span>) <span class="im">as</span> fp:</span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>        writer <span class="op">=</span> csv.writer(fp)</span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        writer.writerow([<span class="st">&#39;id&#39;</span>, <span class="st">&#39;tested_results&#39;</span>])</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, p <span class="kw">in</span> <span class="bu">enumerate</span>(preds):</span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>            writer.writerow([i, p])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-</div>
-<p>We can save a list of prediction results by calling <code>save_pred(preds, data_file)</code>.</p>
-<p>Now, we introduce the dataset that we have used in the covid-19 prediction. Download data from <a href="https://www.kaggle.com/competitions/ml2022spring-hw1/data">Covid-19</a></p>
-<p>Some basic information about the dataset:</p>
-<div id="af73496b" class="cell" data-execution_count="3">
-<details open class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># reading data</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>train_datafile <span class="op">=</span> os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>, <span class="st">&#39;covid.train.csv&#39;</span>)</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>train_data<span class="op">=</span> pd.read_csv(train_datafile)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Train_data is</span><span class="ch">\n</span><span class="sc">{</span>train_data<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Train_data is
-        id  AL  AK  AZ  AR  CA  CO  CT  FL  GA  ...  work_outside_home.4  \
-0        0   0   0   0   0   0   0   0   1   0  ...            31.113209   
-1        1   0   0   0   0   0   1   0   0   0  ...            33.920257   
-2        2   0   0   0   0   0   0   0   0   0  ...            31.604604   
-3        3   0   0   0   0   0   0   0   0   0  ...            35.115738   
-4        4   0   0   0   0   0   0   0   0   0  ...            35.129714   
-...    ...  ..  ..  ..  ..  ..  ..  ..  ..  ..  ...                  ...   
-2694  2695   0   0   0   0   0   0   0   0   0  ...            39.209278   
-2695  2696   0   0   0   0   0   0   0   0   0  ...            28.984491   
-2696  2697   0   0   0   1   0   0   0   0   0  ...            34.346100   
-2697  2698   0   0   0   0   0   0   0   0   0  ...            30.451071   
-2698  2699   0   0   0   0   0   0   0   0   0  ...            33.803854   
-
-         shop.4  restaurant.4  spent_time.4  large_event.4  public_transit.4  \
-0     67.394551     36.674291     40.743132      17.842221          4.093712   
-1     64.398380     34.612238     44.035688      17.808103          4.924935   
-2     62.101064     26.521875     36.746453      13.903667          7.313833   
-3     67.935520     38.022492     48.434809      27.134876          3.101904   
-4     69.934592     38.242368     49.095933      22.683709          4.594620   
-...         ...           ...           ...            ...               ...   
-2694  65.815096     37.046827     46.777637      21.952499          2.724187   
-2695  66.126427     31.299807     40.399527      16.783327         14.058799   
-2696  63.456270     30.829009     41.828908      20.597714          2.391852   
-2697  67.477177     33.975333     45.837535      18.437260          3.088666   
-2698  66.374538     38.493176     41.290529      19.225268          5.326241   
-
-      anxious.4  depressed.4  worried_finances.4  tested_positive.4  
-0     10.440071     8.627117           37.329512           7.456154  
-1     10.172662     9.954333           32.508881           8.010957  
-2     10.388712     7.956139           36.745588           2.906977  
-3     10.498683     8.231522           38.680162          12.575816  
-4      9.878927     9.469290           28.344123          21.428589  
-...         ...          ...                 ...                ...  
-2694  14.658436    11.099308           33.154910          13.437482  
-2695  13.129031    10.492896           36.670282           5.040143  
-2696  16.940896    12.888275           42.452451          13.618256  
-2697  12.621144    10.096939           29.668802           9.512585  
-2698  13.157865     9.618114           37.744195          11.069423  
-
-[2699 rows x 118 columns]</code></pre>
-</div>
-</div>
-<p><strong>Note that if we use <code>pd.read_csv()</code> read the data, their format are <code>DataFrame</code>.</strong></p>
-<p><strong>And if you want to process them, you’d better convert them to numpy by <code>.values</code>.</strong></p>
-<p>From the results displayed, we see that the shape of train_data is 2699×118 consisting of <span class="math inline">\(id + 37 states + 16 features * 5 days\)</span>.</p>
+<section id="classification-task" class="level2">
+<h2 class="anchored" data-anchor-id="classification-task">Classification Task</h2>
+<p>The objective of classification task is to predict the input sample <span class="math inline">\(\mathbf{x}\)</span> belongs to a certain <span class="math inline">\(y \in \{1, 2, \dots, k\}.\)</span></p>
+<p>The Softmax function is able to transform the unnormalized predictions into non-negative numbers that sum to 1, while keeping the model derivable. Therefore, we can use the Softmax function to represent the output of the model as a selection of labels with maximum probability.</p>
 </section>
-<section id="data-preparation" class="level2">
-<h2 class="anchored" data-anchor-id="data-preparation">Data Preparation</h2>
-<p>We should separate our data into features and labels. In general, the last column of data is the label and the rest are the features.</p>
-<div id="784bc08f" class="cell" data-execution_count="4">
-<details open class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>features, labels <span class="op">=</span> train_data.iloc[:,:<span class="op">-</span><span class="dv">1</span>], train_data.iloc[:,<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Features are</span><span class="ch">\n</span><span class="sc">{</span>features<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Labels are</span><span class="ch">\n</span><span class="sc">{</span>labels<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Features are
-        id  AL  AK  AZ  AR  CA  CO  CT  FL  GA  ...  travel_outside_state.4  \
-0        0   0   0   0   0   0   0   0   1   0  ...                7.944531   
-1        1   0   0   0   0   0   1   0   0   0  ...               10.523814   
-2        2   0   0   0   0   0   0   0   0   0  ...               16.477784   
-3        3   0   0   0   0   0   0   0   0   0  ...               19.140939   
-4        4   0   0   0   0   0   0   0   0   0  ...               22.698218   
-...    ...  ..  ..  ..  ..  ..  ..  ..  ..  ..  ...                     ...   
-2694  2695   0   0   0   0   0   0   0   0   0  ...               17.503116   
-2695  2696   0   0   0   0   0   0   0   0   0  ...               13.804978   
-2696  2697   0   0   0   1   0   0   0   0   0  ...               14.535434   
-2697  2698   0   0   0   0   0   0   0   0   0  ...               10.993013   
-2698  2699   0   0   0   0   0   0   0   0   0  ...               13.528217   
-
-      work_outside_home.4     shop.4  restaurant.4  spent_time.4  \
-0               31.113209  67.394551     36.674291     40.743132   
-1               33.920257  64.398380     34.612238     44.035688   
-2               31.604604  62.101064     26.521875     36.746453   
-3               35.115738  67.935520     38.022492     48.434809   
-4               35.129714  69.934592     38.242368     49.095933   
-...                   ...        ...           ...           ...   
-2694            39.209278  65.815096     37.046827     46.777637   
-2695            28.984491  66.126427     31.299807     40.399527   
-2696            34.346100  63.456270     30.829009     41.828908   
-2697            30.451071  67.477177     33.975333     45.837535   
-2698            33.803854  66.374538     38.493176     41.290529   
-
-      large_event.4  public_transit.4  anxious.4  depressed.4  \
-0         17.842221          4.093712  10.440071     8.627117   
-1         17.808103          4.924935  10.172662     9.954333   
-2         13.903667          7.313833  10.388712     7.956139   
-3         27.134876          3.101904  10.498683     8.231522   
-4         22.683709          4.594620   9.878927     9.469290   
-...             ...               ...        ...          ...   
-2694      21.952499          2.724187  14.658436    11.099308   
-2695      16.783327         14.058799  13.129031    10.492896   
-2696      20.597714          2.391852  16.940896    12.888275   
-2697      18.437260          3.088666  12.621144    10.096939   
-2698      19.225268          5.326241  13.157865     9.618114   
-
-      worried_finances.4  
-0              37.329512  
-1              32.508881  
-2              36.745588  
-3              38.680162  
-4              28.344123  
-...                  ...  
-2694           33.154910  
-2695           36.670282  
-2696           42.452451  
-2697           29.668802  
-2698           37.744195  
-
-[2699 rows x 117 columns]
-
-Labels are
-0        7.456154
-1        8.010957
-2        2.906977
-3       12.575816
-4       21.428589
-          ...    
-2694    13.437482
-2695     5.040143
-2696    13.618256
-2697     9.512585
-2698    11.069423
-Name: tested_positive.4, Length: 2699, dtype: float64
-</code></pre>
-</div>
-</div>
+<section id="softmax-regression-model" class="level2">
+<h2 class="anchored" data-anchor-id="softmax-regression-model">Softmax Regression Model</h2>
+<p>Softmax Regression Model is a linear model, and it can be represented as:</p>
+<p><span class="math display">\[
+\mathbf{o} = \mathbf{W} \mathbf{x} + \mathbf{b}
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{o} \in \mathbb{R}^k\)</span> is the output without normalized。</li>
+<li><span class="math inline">\(\mathbf{W} \in \mathbb{R}^{k \times d}\)</span> is the weight matrix。</li>
+<li><span class="math inline">\(\mathbf{b} \in \mathbb{R}^k\)</span> is the bias vector。</li>
+<li><span class="math inline">\(k\)</span> is the number of categories，<span class="math inline">\(d\)</span> is the dimension of the input feature。</li>
+</ul>
 </section>
-<section id="conversion-to-the-tensor-format" class="level2">
-<h2 class="anchored" data-anchor-id="conversion-to-the-tensor-format">Conversion to the Tensor Format</h2>
-<p>If we want to run the data on the GPU, we’ll need to convert it to a tensor format.</p>
-<div id="19f38ada" class="cell" data-execution_count="5">
-<details open class="code-fold">
-<summary>Code</summary>
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> torch.FloatTensor(features.to_numpy())</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>lables <span class="op">=</span> torch.FloatTensor(labels.to_numpy())</span>
-<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Type of features is </span><span class="sc">{</span><span class="bu">type</span>(features)<span class="sc">}</span><span class="ss">&quot;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</details>
-<div class="cell-output cell-output-stdout">
-<pre><code>Type of features is &lt;class &#39;torch.Tensor&#39;&gt;</code></pre>
-</div>
-</div>
-<p><strong><code>torch.LongTensor</code> should be used to represent integer labels (e.g., category labels in a categorization task).</strong></p>
-<p><strong><code>torch.FloatTensor</code> is suitable for continuous numeric data, not category labels.</strong></p>
+<section id="softmax-function" class="level2">
+<h2 class="anchored" data-anchor-id="softmax-function">Softmax Function</h2>
+<p>How can we normalized the output? To accomplish this, we first power each of the unnormalized predictions, which ensures that the output is non-negative. To ensure that the probability values of the final outputs sum to 1, we then let the result after each powering divide their sum. And the formula is as follows:</p>
+<p><span class="math display">\[
+\hat{y}_i = \frac{\exp(o_i)}{\sum_{j=1}^k \exp(o_j)}
+\]</span></p>
+<p>where： - <span class="math inline">\(\hat{y}_i\)</span> is the possibility of the sample belongs to <span class="math inline">\(i\)</span>. - <span class="math inline">\(\hat{y}\)</span> are the non-negative numbers that sum to 1.</p>
+</section>
+<section id="vectorization" class="level2">
+<h2 class="anchored" data-anchor-id="vectorization">Vectorization</h2>
+<p>To improve computational efficiency, we vectorize calculations in minibatches of data. The vector calculation expression for softmax regression is: <span class="math display">\[
+\mathbf{O} = \mathbf{X} \mathbf{W} + \mathbf{b}, \\
+\hat{\mathbf{Y}} = \text{softmax}(\mathbf{O}).
+\]</span></p>
+<p>where:</p>
+<ul>
+<li><span class="math inline">\(\mathbf{X} \in \mathbb{R}^{n \times d}\)</span> is a minibatch</li>
+<li><span class="math inline">\(\mathbf{W} \in \mathbb{R}^{d \times q}\)</span> is the weight matrix</li>
+<li><span class="math inline">\(\mathbf{b} \in \mathbb{R}^{1 \times q}\)</span> is the bias matrix</li>
+</ul>
+</section>
+<section id="loss-function" class="level2">
+<h2 class="anchored" data-anchor-id="loss-function">Loss Function</h2>
+<p>The <strong>Cross-Entropy</strong> loss function can measure the distance between the prediction <span class="math inline">\(\hat{\mathbf{y}}\)</span> and the ground-truth <span class="math inline">\(\mathbf{y}\)</span>:</p>
+<p><span class="math display">\[
+\text{Loss} = -\sum_{i=1}^k y_i \log(\hat{y}_i)
+\]</span></p>
+<p>From an information theoretic perspective, we can consider the cross-entropy classification goal in two ways: (i) maximizing the likelihood of the observed data; and (ii) minimizing the surprise required to convey the labels.</p>
 
 
 <!-- -->
@@ -6018,98 +5875,78 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb9" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;2.2 Data Preprocessing&quot;</span></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2024/12/29</span></span>
-<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
-<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Dive-into-Deep-Learning</span></span>
-<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Course Note and Exercise&quot;</span></span>
-<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
-<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
-<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Deep Learning</span></span>
-<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
-<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
-<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a>To help us understand the knowledge quickly, we will introduce another blog <span class="co">[</span><span class="ot">Regression Task: COVID-19 Cases Prediction</span><span class="co">](../Project/2024-12-22-covid19-prediction-post.qmd)</span>.</span>
-<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Reading the Dataset</span></span>
-<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>First, we should check if the director exists. If it doesn&#39;t, we should make it.</span>
-<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-25"><a href="#cb9-25" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-26"><a href="#cb9-26" aria-hidden="true" tabindex="-1"></a><span class="co"># checking and making directory</span></span>
-<span id="cb9-27"><a href="#cb9-27" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
-<span id="cb9-28"><a href="#cb9-28" aria-hidden="true" tabindex="-1"></a>os.makedirs(os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>), exist_ok<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb9-29"><a href="#cb9-29" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-30"><a href="#cb9-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-31"><a href="#cb9-31" aria-hidden="true" tabindex="-1"></a>Suppose that we have some prediction results about the covid-19 prediction, and they are recorded by a list. Now, we want to store them in a <span class="in">`.csv`</span> file.</span>
-<span id="cb9-32"><a href="#cb9-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-35"><a href="#cb9-35" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-36"><a href="#cb9-36" aria-hidden="true" tabindex="-1"></a><span class="co"># Store results</span></span>
-<span id="cb9-37"><a href="#cb9-37" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
-<span id="cb9-38"><a href="#cb9-38" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-39"><a href="#cb9-39" aria-hidden="true" tabindex="-1"></a>data_file <span class="op">=</span> os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>, <span class="st">&#39;pred.csv&#39;</span>)</span>
-<span id="cb9-40"><a href="#cb9-40" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> save_pred(preds, <span class="bu">file</span>):</span>
-<span id="cb9-41"><a href="#cb9-41" aria-hidden="true" tabindex="-1"></a>    <span class="cf">with</span> <span class="bu">open</span>(<span class="bu">file</span>, <span class="st">&#39;w&#39;</span>) <span class="im">as</span> fp:</span>
-<span id="cb9-42"><a href="#cb9-42" aria-hidden="true" tabindex="-1"></a>        writer <span class="op">=</span> csv.writer(fp)</span>
-<span id="cb9-43"><a href="#cb9-43" aria-hidden="true" tabindex="-1"></a>        writer.writerow([<span class="st">&#39;id&#39;</span>, <span class="st">&#39;tested_results&#39;</span>])</span>
-<span id="cb9-44"><a href="#cb9-44" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i, p <span class="kw">in</span> <span class="bu">enumerate</span>(preds):</span>
-<span id="cb9-45"><a href="#cb9-45" aria-hidden="true" tabindex="-1"></a>            writer.writerow([i, p])</span>
-<span id="cb9-46"><a href="#cb9-46" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-47"><a href="#cb9-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-48"><a href="#cb9-48" aria-hidden="true" tabindex="-1"></a>We can save a list of prediction results by calling <span class="in">`save_pred(preds, data_file)`</span>.</span>
-<span id="cb9-49"><a href="#cb9-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-50"><a href="#cb9-50" aria-hidden="true" tabindex="-1"></a>Now, we introduce the dataset that we have used in the covid-19 prediction. Download data from <span class="co">[</span><span class="ot">Covid-19</span><span class="co">](https://www.kaggle.com/competitions/ml2022spring-hw1/data)</span></span>
-<span id="cb9-51"><a href="#cb9-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-52"><a href="#cb9-52" aria-hidden="true" tabindex="-1"></a>Some basic information about the dataset:</span>
-<span id="cb9-53"><a href="#cb9-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-56"><a href="#cb9-56" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-57"><a href="#cb9-57" aria-hidden="true" tabindex="-1"></a><span class="co"># reading data</span></span>
-<span id="cb9-58"><a href="#cb9-58" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb9-59"><a href="#cb9-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-60"><a href="#cb9-60" aria-hidden="true" tabindex="-1"></a>train_datafile <span class="op">=</span> os.path.join(<span class="st">&#39;covid-19-prediction&#39;</span>, <span class="st">&#39;covid.train.csv&#39;</span>)</span>
-<span id="cb9-61"><a href="#cb9-61" aria-hidden="true" tabindex="-1"></a>train_data<span class="op">=</span> pd.read_csv(train_datafile)</span>
-<span id="cb9-62"><a href="#cb9-62" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Train_data is</span><span class="ch">\n</span><span class="sc">{</span>train_data<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb9-63"><a href="#cb9-63" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-64"><a href="#cb9-64" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-65"><a href="#cb9-65" aria-hidden="true" tabindex="-1"></a>**Note that if we use `pd.read_csv()` read the data, their format are `DataFrame`.**</span>
-<span id="cb9-66"><a href="#cb9-66" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-67"><a href="#cb9-67" aria-hidden="true" tabindex="-1"></a>**And if you want to process them, you&#39;d better convert them to numpy by `.values`.**</span>
-<span id="cb9-68"><a href="#cb9-68" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-69"><a href="#cb9-69" aria-hidden="true" tabindex="-1"></a>From the results displayed, we see that the shape of train_data is 2699×118 consisting of $id + 37 states + 16 features * 5 days$.</span>
-<span id="cb9-70"><a href="#cb9-70" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-71"><a href="#cb9-71" aria-hidden="true" tabindex="-1"></a><span class="fu">## Data Preparation</span></span>
-<span id="cb9-72"><a href="#cb9-72" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-73"><a href="#cb9-73" aria-hidden="true" tabindex="-1"></a>We should separate our data into features and labels. In general, the last column of data is the label and the rest are the features.</span>
-<span id="cb9-74"><a href="#cb9-74" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-77"><a href="#cb9-77" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-78"><a href="#cb9-78" aria-hidden="true" tabindex="-1"></a>features, labels <span class="op">=</span> train_data.iloc[:,:<span class="op">-</span><span class="dv">1</span>], train_data.iloc[:,<span class="op">-</span><span class="dv">1</span>]</span>
-<span id="cb9-79"><a href="#cb9-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-80"><a href="#cb9-80" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Features are</span><span class="ch">\n</span><span class="sc">{</span>features<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
-<span id="cb9-81"><a href="#cb9-81" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Labels are</span><span class="ch">\n</span><span class="sc">{</span>labels<span class="sc">}</span><span class="ch">\n</span><span class="ss">&quot;</span>)</span>
-<span id="cb9-82"><a href="#cb9-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-83"><a href="#cb9-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-84"><a href="#cb9-84" aria-hidden="true" tabindex="-1"></a><span class="fu">## Conversion to the Tensor Format</span></span>
-<span id="cb9-85"><a href="#cb9-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-86"><a href="#cb9-86" aria-hidden="true" tabindex="-1"></a>If we want to run the data on the GPU, we&#39;ll need to convert it to a tensor format.</span>
-<span id="cb9-87"><a href="#cb9-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-90"><a href="#cb9-90" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
-<span id="cb9-91"><a href="#cb9-91" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
-<span id="cb9-92"><a href="#cb9-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-93"><a href="#cb9-93" aria-hidden="true" tabindex="-1"></a>features <span class="op">=</span> torch.FloatTensor(features.to_numpy())</span>
-<span id="cb9-94"><a href="#cb9-94" aria-hidden="true" tabindex="-1"></a>lables <span class="op">=</span> torch.FloatTensor(labels.to_numpy())</span>
-<span id="cb9-95"><a href="#cb9-95" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-96"><a href="#cb9-96" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Type of features is </span><span class="sc">{</span><span class="bu">type</span>(features)<span class="sc">}</span><span class="ss">&quot;</span>)</span>
-<span id="cb9-97"><a href="#cb9-97" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb9-98"><a href="#cb9-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-99"><a href="#cb9-99" aria-hidden="true" tabindex="-1"></a>**`torch.LongTensor` should be used to represent integer labels (e.g., category labels in a categorization task).**</span>
-<span id="cb9-100"><a href="#cb9-100" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-101"><a href="#cb9-101" aria-hidden="true" tabindex="-1"></a>**`torch.FloatTensor` is suitable for continuous numeric data, not category labels.**</span>
-</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;4.1 Softmax Regression&quot;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/1/24</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Dive-into-Deep-Learning</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;How to use Softmax regression models to predict the category to which a sample belongs&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Deep Learning</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Classification Task</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>The objective of classification task is to predict the input sample $\mathbf{x}$ belongs to a certain $y \in <span class="sc">\{</span>1, 2, \dots, k<span class="sc">\}</span>.$ </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>The Softmax function is able to transform the unnormalized predictions into non-negative numbers that sum to 1, while keeping the model derivable. Therefore, we can use the Softmax function to represent the output of the model as a selection of labels with maximum probability.</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="fu">## Softmax Regression Model</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>Softmax Regression Model is a linear model, and it can be represented as:</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>\mathbf{o} = \mathbf{W} \mathbf{x} + \mathbf{b}</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{o} \in \mathbb{R}^k$ is the output without normalized。</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{W} \in \mathbb{R}^{k \times d}$ is the weight matrix。</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{b} \in \mathbb{R}^k$ is the bias vector。</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$k$ is the number of categories，$d$ is the dimension of the input feature。</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">## Softmax Function</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>How can we normalized the output? To accomplish this, we first power each of the unnormalized predictions, which ensures that the output is non-negative. To ensure that the probability values of the final outputs sum to 1, we then let the result after each powering divide their sum. And the formula is as follows:</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>\hat{y}_i = \frac{\exp(o_i)}{\sum_{j=1}^k \exp(o_j)}</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>where：</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\hat{y}_i$ is the possibility of the sample belongs to $i$.</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\hat{y}$ are the non-negative numbers that sum to 1.</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="fu">## Vectorization</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>To improve computational efficiency, we vectorize calculations in minibatches of data. The vector calculation expression for softmax regression is:</span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>\mathbf{O} = \mathbf{X} \mathbf{W} + \mathbf{b}, <span class="sc">\\</span></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>\hat{\mathbf{Y}} = \text{softmax}(\mathbf{O}).</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>where:</span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{X} \in \mathbb{R}^{n \times d}$ is a minibatch</span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{W} \in \mathbb{R}^{d \times q}$ is the weight matrix</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>$\mathbf{b} \in \mathbb{R}^{1 \times q}$ is the bias matrix</span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a><span class="fu">## Loss Function</span></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>The **Cross-Entropy** loss function can measure the distance between the prediction $\hat{\mathbf{y}}$ and the ground-truth $\mathbf{y}$:</span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>\text{Loss} = -\sum_{i=1}^k y_i \log(\hat{y}_i)</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>From an information theoretic perspective, we can consider the cross-entropy classification goal in two ways: (i) maximizing the likelihood of the observed data; and (ii) minimizing the surprise required to convey the labels.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

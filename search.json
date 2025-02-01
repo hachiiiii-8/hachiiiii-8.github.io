@@ -4,7 +4,7 @@
     "href": "posts/index.html",
     "title": "Blog",
     "section": "",
-    "text": "4.1 Softmax Regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nHow to use Softmax regression models to predict the category to which a sample belongs\n\n\n\nWu Hao\n\n\nJan 24, 2025\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Docker\n\n\n\nTools\n\n\n\nConfiguring our deep learning environment with Docker\n\n\n\nWu Hao\n\n\nJan 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.5 Weight Decaying\n\n\n\nDive-into-Deep-Learning\n\n\n\nA regularization technique that can improve generalization\n\n\n\nWu Hao\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.3 A clean implementation of linear regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nUsing the Pytorch API to implement the training process\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.4 Generalization\n\n\n\nDive-into-Deep-Learning\n\n\n\nIntroduction to the Generalization of model and its visualization\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.6 Probability and Statistics\n\n\n\nDive-into-Deep-Learning\n\n\n\nCreate two common distributions (binomial and multidimensional distribution)\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.1 Linear Regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nUse a model, loss function and minibatch SGD to fit a function for a entire dataset\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.2 Linear Regression Implementation from Scratch\n\n\n\nDive-into-Deep-Learning\n\n\n\nHow basic deep networks are implemented and optimized\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.5 Automatic Differentiation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCalculate the gradient automatically: Backward and Detaching Computation\n\n\n\nWu Hao\n\n\nJan 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.4 Calculus\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.3 Linear Algebra\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 10, 2025\n\n\n\n\n\n\n\n\n\n\n\nSpeakers Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Classify the speakers of given features.\n\n\n\nWu Hao\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nMLE Record 1\n\n\n\nJob Record\n\n\n\nRecord any MLE issues that may be used. Points: 1.Self-Attention\n\n\n\nWu Hao\n\n\nJan 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.1 Queries, Keys, and Values\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.2 Attention Pooling by Similarity\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.3 Attention Scoring Functions\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nPhoneme Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Phoneme Classification.\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nUseful Python Function\n\n\n\nTools\n\n\n\nRecord some of the useful python functions encountered and their usage\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nSelf-Attention\n\n\n\nBasic Theory\n\n\n\nTheoretical knowledge of self-attention mechanisms\n\n\n\nWu Hao\n\n\nDec 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.2 Data Preprocessing\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.1 Data Manipulation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\nSolve a classification problem: A Handwritten Digits Recognition Model based CNN.\n\n\n\nWu Hao\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nRegression Task: COVID-19 Cases Prediction\n\n\n\nProject\n\n\n\nSolve a regression problem with deep neural networks (DNN): COVID-19 Cases Prediction.\n\n\n\nWu Hao\n\n\nDec 22, 2024\n\n\n\n\n\n\n\n\n\n\n\nDive into Deep Learning 1: Introduction\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Record\n\n\n\nTools\n\n\n\nRecord some of the Ubuntu command lines encountered and their usage\n\n\n\nWu Hao\n\n\nDec 18, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 4: Data Wrangling\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n Back to top",
+    "text": "5.1 Multilayer Perceptrons\n\n\n\nDive-into-Deep-Learning\n\n\n\nA multilayer perceptron adds one or more fully connected hidden layers between the output and input layers and transforms the output of the hidden layers by means of an…\n\n\n\nWu Hao\n\n\nFeb 1, 2025\n\n\n\n\n\n\n\n\n\n\n\n4.2-4.4 Fashion-MNIST: A Classification Task\n\n\n\nDive-into-Deep-Learning\n\n\n\nWith softmax regression, we can train a multi-classification model to accomplish the Fashion-MNIST classification task\n\n\n\nWu Hao\n\n\nJan 31, 2025\n\n\n\n\n\n\n\n\n\n\n\n4.1 Softmax Regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nHow to use Softmax regression models to predict the category to which a sample belongs\n\n\n\nWu Hao\n\n\nJan 24, 2025\n\n\n\n\n\n\n\n\n\n\n\nIntroduction to Docker\n\n\n\nTools\n\n\n\nConfiguring our deep learning environment with Docker\n\n\n\nWu Hao\n\n\nJan 22, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.5 Weight Decaying\n\n\n\nDive-into-Deep-Learning\n\n\n\nA regularization technique that can improve generalization\n\n\n\nWu Hao\n\n\nJan 20, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.3 A clean implementation of linear regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nUsing the Pytorch API to implement the training process\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.4 Generalization\n\n\n\nDive-into-Deep-Learning\n\n\n\nIntroduction to the Generalization of model and its visualization\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.6 Probability and Statistics\n\n\n\nDive-into-Deep-Learning\n\n\n\nCreate two common distributions (binomial and multidimensional distribution)\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.1 Linear Regression\n\n\n\nDive-into-Deep-Learning\n\n\n\nUse a model, loss function and minibatch SGD to fit a function for a entire dataset\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n3.2 Linear Regression Implementation from Scratch\n\n\n\nDive-into-Deep-Learning\n\n\n\nHow basic deep networks are implemented and optimized\n\n\n\nWu Hao\n\n\nJan 18, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.5 Automatic Differentiation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCalculate the gradient automatically: Backward and Detaching Computation\n\n\n\nWu Hao\n\n\nJan 17, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.4 Calculus\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\n2.3 Linear Algebra\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 10, 2025\n\n\n\n\n\n\n\n\n\n\n\nSpeakers Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Classify the speakers of given features.\n\n\n\nWu Hao\n\n\nJan 9, 2025\n\n\n\n\n\n\n\n\n\n\n\nMLE Record 1\n\n\n\nJob Record\n\n\n\nRecord any MLE issues that may be used. Points: 1.Self-Attention\n\n\n\nWu Hao\n\n\nJan 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.1 Queries, Keys, and Values\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.2 Attention Pooling by Similarity\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\n11.3 Attention Scoring Functions\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nPhoneme Classification\n\n\n\nProject\n\n\n\nSolve a classification problem: Phoneme Classification.\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nUseful Python Function\n\n\n\nTools\n\n\n\nRecord some of the useful python functions encountered and their usage\n\n\n\nWu Hao\n\n\nDec 31, 2024\n\n\n\n\n\n\n\n\n\n\n\nSelf-Attention\n\n\n\nBasic Theory\n\n\n\nTheoretical knowledge of self-attention mechanisms\n\n\n\nWu Hao\n\n\nDec 30, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.2 Data Preprocessing\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 29, 2024\n\n\n\n\n\n\n\n\n\n\n\n2.1 Data Manipulation\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nRecognize Handwritten Digits by CNN\n\n\n\nProject\n\n\n\nSolve a classification problem: A Handwritten Digits Recognition Model based CNN.\n\n\n\nWu Hao\n\n\nDec 26, 2024\n\n\n\n\n\n\n\n\n\n\n\nRegression Task: COVID-19 Cases Prediction\n\n\n\nProject\n\n\n\nSolve a regression problem with deep neural networks (DNN): COVID-19 Cases Prediction.\n\n\n\nWu Hao\n\n\nDec 22, 2024\n\n\n\n\n\n\n\n\n\n\n\nDive into Deep Learning 1: Introduction\n\n\n\nDive-into-Deep-Learning\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 20, 2024\n\n\n\n\n\n\n\n\n\n\n\nLinux Command Record\n\n\n\nTools\n\n\n\nRecord some of the Ubuntu command lines encountered and their usage\n\n\n\nWu Hao\n\n\nDec 18, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 4: Data Wrangling\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 17, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 2: Shell Tools and Scripting\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nDec 12, 2024\n\n\n\n\n\n\n\n\n\n\n\nMissing Semester 1: The Shell\n\n\n\nMissing-Semester\n\n\n\nCourse Note and Exercise\n\n\n\nWu Hao\n\n\nNov 23, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n\n  \n\n Back to top",
     "crumbs": [
       "Blog"
     ]
@@ -430,94 +430,224 @@
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-7-11.3.html",
-    "href": "posts/DIDP/2025-1-7-11.3.html",
-    "title": "11.3 Attention Scoring Functions",
+    "objectID": "posts/DIDP/2025-2-1-5.1.html",
+    "href": "posts/DIDP/2025-2-1-5.1.html",
+    "title": "5.1 Multilayer Perceptrons",
     "section": "",
-    "text": "In section 11.2, we introduce a distance-based kernel to model interactions between queries and keys. But it’s takes too much to compute. So, we will introduce some attention scoring functions that will outperform the method in section 11.2.\nNote that the details of calculating output by query, keys and values is in here\nWe import the packages we need first.\nCode\nimport math\nimport torch\nfrom torch import nn\nfrom d2l import torch as d2l",
+    "text": "Linear models often fail in real-world scenarios. For example, the decrease of body temperature does not reduce risk. Although we can determine the risk based on the distance to the normal temperature, it is still not usable on the image classification when we faced an inverted cat/dog images remain in the same category. And linear models fail to capture context-dependent relationships between the neighboring pixels.\n\n\n\nWe can overcome limitations of linear models by introducing nonlinearity through hidden layers. The easiest way to do this is to stack many fully connected layers on top of one another. Each layer feeds into the layer above it, until we generate outputs. This architecture is commonly called a multilayer perceptron, often abbreviated as MLP.\n\\[\n\\mathbf{H} = \\mathbf{X} \\mathbf{W}^{(1)} + \\mathbf{b}^{(1)}, \\\\\n\\mathbf{O} = \\mathbf{H} \\mathbf{W}^{(2)} + \\mathbf{b}^{(2)}.\n\\]\n\n\\(\\mathbf{X} \\in \\mathbb{R}^{n \\times d}\\) is a minibatch of \\(n\\) examples where each example has \\(d\\) inputs.\n\\(\\mathbf{H} \\in \\mathbb{R}^{n \\times h}\\) is the outputs of the hidden layer, which are hidden representations.\n\\(\\mathbf{W}^{(1)} \\in \\mathbb{R}^{d \\times h}\\) is hidden layer weights, and \\(\\mathbf{b}^{(1)} \\in \\mathbb{R}^{1 \\times h}\\) is biases.\n\\(\\mathbf{W}^{(2)} \\in \\mathbb{R}^{h \\times q}\\) is output-layer weights, and \\(\\mathbf{b}^{(2)} \\in \\mathbb{R}^{1 \\times q}\\) is biases.\n\nIn order to realize the potential of multilayer architectures, we need more key ingredient: a nonlinear activation function \\(\\sigma\\) to be applied to each hidden unit. The formula is as follows:\n\\[\n\\mathbf{H} = \\sigma(\\mathbf{X} \\mathbf{W}^{(1)} + \\mathbf{b}^{(1)}), \\\\\n\\mathbf{O} = \\mathbf{H} \\mathbf{W}^{(2)} + \\mathbf{b}^{(2)},\n\\]",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.3 Attention Scoring Functions"
+      "Multilayer Perceptrons",
+      "5.1 Multilayer Perceptrons"
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-7-11.3.html#dot-product-attention",
-    "href": "posts/DIDP/2025-1-7-11.3.html#dot-product-attention",
-    "title": "11.3 Attention Scoring Functions",
-    "section": "Dot Product Attention",
-    "text": "Dot Product Attention\nLet’s recall the dot product in self attention. Its formula is as follows:\n\\[\n\\begin{align*}\n    \\text{Attention\\_weights}(Q, K) &= \\frac{\\exp\\left(\\mathbf{q}^\\top \\mathbf{k}_i / \\sqrt{d_k}\\right)}{\\sum_{j=1} \\exp\\left(\\mathbf{q}^\\top \\mathbf{k}_j / \\sqrt{d_k}\\right)}\n\\end{align*}\n\\]\nTips: Why do we divide \\(d_k\\) in the formula?\n\nA larger \\(\\sqrt d_k\\) leads to a larger variance in the \\(Q, K\\) dot product, resulting in a larger gap between the vector element values;\nThe gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;\nThe division by the root sign \\(d_k\\) is to normalize the result after the dot product of \\(q\\) and \\(k\\) into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.",
-    "crumbs": [
-      "Blog",
-      "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.3 Attention Scoring Functions"
-    ]
-  },
-  {
-    "objectID": "posts/DIDP/2025-1-7-11.3.html#convenience-functions",
-    "href": "posts/DIDP/2025-1-7-11.3.html#convenience-functions",
-    "title": "11.3 Attention Scoring Functions",
-    "section": "Convenience Functions",
-    "text": "Convenience Functions\n\nMasked Softmax Operation\nThe softmax operation is used to output a probability distribution as the attention weights. But in some cases, not all values should be included in the attention aggregation.\nFor example, when processing text, some sequences are populated with special elements that have no meaning. In order to obtain attention convergence using only meaningful element, an effective sequence length can be assigned so that positions outside the assigned range can be filtered out when calculating the softmax. Since it is such a common problem, it has a name: the masked softmax operation.\nHere is the implement.\n\n\nCode\ndef masked_softmax(X, valid_lens):  #@save\n    \"\"\"Perform softmax operation by masking elements on the last dim.\"\"\"\n    # X: 3D tensor [batch_size, seq_len, features], valid_lens: 1D or 2D tensor\n    def _sequence_mask(X, valid_len, value=0):\n        maxlen = X.size(1)\n        mask = torch.arange((maxlen), dtype=torch.float32,\n                            device=X.device)[None, :] &lt; valid_len[:, None]\n        X[~mask] = value # 0 or -1e6\n        return X\n\n    if valid_lens is None:\n        return nn.functional.softmax(X, dim=-1)\n    else:\n        shape = X.shape\n        if valid_lens.dim() == 1: # 1D or 2D\n            valid_lens = torch.repeat_interleave(valid_lens, shape[1])\n        else:\n            valid_lens = valid_lens.reshape(-1)\n        # On the last axis, replace masked elements with a very large negative\n        # value, whose exponentiation outputs 0\n        # [batch_size * seq_len, features]\n        X = _sequence_mask(X.reshape(-1, shape[-1]), valid_lens, value=-1e6)\n        return nn.functional.softmax(X.reshape(shape), dim=-1)\n\n\nTo illustrate how this function works, consider a minibatch of two examples of size \\(2 \\times 4\\), where their valid length are 2 and 3. Through the Masked Softmax Operation, the positions outside the effective length are masked as 0.\n\n\nCode\nmasked_softmax(torch.rand(2, 2, 4), torch.tensor([2, 3])) # valid_len 1D\nmasked_softmax(torch.rand(2, 2, 4), torch.tensor([[1, 3], [2, 4]])) # valid_len 2D\n\n\ntensor([[[1.0000, 0.0000, 0.0000, 0.0000],\n         [0.3748, 0.2905, 0.3347, 0.0000]],\n\n        [[0.3466, 0.6534, 0.0000, 0.0000],\n         [0.2038, 0.3050, 0.3511, 0.1401]]])\n\n\n\n\nBatch Matrix Multiplication\nThen the batch matrix multiplication (BMM) computes the elementwise product\n\\[\n\\text{BMM}(\\mathbf{Q}, \\mathbf{K}) = [\\mathbf{Q}_1 \\mathbf{K}_1, \\mathbf{Q}_2 \\mathbf{K}_2, \\dots, \\mathbf{Q}_n \\mathbf{K}_n] \\in \\mathbb{R}^{n \\times a \\times c}.\n\\]\n\n\nCode\nQ = torch.ones((2, 3, 4))\nK = torch.ones((2, 4, 6))\nd2l.check_shape(torch.bmm(Q, K), (2, 3, 6))",
-    "crumbs": [
-      "Blog",
-      "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.3 Attention Scoring Functions"
-    ]
-  },
-  {
-    "objectID": "posts/DIDP/2025-1-7-11.3.html#scaled-dot-product-attention",
-    "href": "posts/DIDP/2025-1-7-11.3.html#scaled-dot-product-attention",
-    "title": "11.3 Attention Scoring Functions",
-    "section": "Scaled Dot Product Attention",
-    "text": "Scaled Dot Product Attention\nIn practice, we often think of minibatches for efficiency, such as computing attention for \\(n\\) queries and \\(m\\) key-value pairs, where queries and keys are of length \\(d\\) and values are of length \\(v\\). The scaled dot product attention of queries \\(\\mathbf{Q} \\in \\mathbb{R}^{n \\times d}\\), keys \\(\\mathbf{K} \\in \\mathbb{R}^{m \\times d}\\), and values \\(\\mathbf{V} \\in \\mathbb{R}^{m \\times v}\\) thus can be written as\n\\[\n\\text{softmax}\\left(\\frac{\\mathbf{Q} \\mathbf{K}^\\top}{\\sqrt{d}}\\right) \\mathbf{V} \\in \\mathbb{R}^{n \\times v}.\n\\]\n\n\nCode\nclass DotProductAttention(nn.Module):  #@save\n    \"\"\"Scaled dot product attention.\"\"\"\n    def __init__(self, dropout):\n        super().__init__()\n        self.dropout = nn.Dropout(dropout)\n\n    # Shape of queries: (batch_size, no. of queries, d)\n    # Shape of keys: (batch_size, no. of key-value pairs, d)\n    # Shape of values: (batch_size, no. of key-value pairs, value dimension)\n    # Shape of valid_lens: (batch_size,) or (batch_size, no. of queries)\n    def forward(self, queries, keys, values, valid_lens=None):\n        d = queries.shape[-1]\n        # Swap the last two dimensions of keys with keys.transpose(1, 2)\n        scores = torch.bmm(queries, keys.transpose(1, 2)) / math.sqrt(d)\n        self.attention_weights = masked_softmax(scores, valid_lens)\n        return torch.bmm(self.dropout(self.attention_weights), values)\n\nqueries = torch.normal(0, 1, (2, 1, 2))\nkeys = torch.normal(0, 1, (2, 10, 2))\nvalues = torch.normal(0, 1, (2, 10, 4))\nvalid_lens = torch.tensor([2, 6])\n\nattention = DotProductAttention(dropout=0.5)\nattention.eval()\nattention(queries, keys, values, valid_lens)\n\n\ntensor([[[-0.9529,  0.5175,  0.1956, -0.3657]],\n\n        [[ 0.1863,  0.3582,  0.1847,  0.7891]]])\n\n\n\n\nCode\nd2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),\n                  xlabel='Keys', ylabel='Queries')",
-    "crumbs": [
-      "Blog",
-      "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.3 Attention Scoring Functions"
-    ]
-  },
-  {
-    "objectID": "posts/DIDP/2025-1-7-11.3.html#additive-attention",
-    "href": "posts/DIDP/2025-1-7-11.3.html#additive-attention",
-    "title": "11.3 Attention Scoring Functions",
-    "section": "Additive Attention",
-    "text": "Additive Attention\nWhen queries \\(q\\) and keys \\(k\\) are vectors of different dimension, we can either use a matrix to address the mismatch via \\(\\mathbf{q}^\\top \\mathbf{M} \\mathbf{k}_i\\), or we can use additive attention as the scoring function. The formula is as follow:\n\\[\na(\\mathbf{q}, \\mathbf{k}) = \\mathbf{w}_v^\\top \\tanh(\\mathbf{W}_q \\mathbf{q} + \\mathbf{W}_k \\mathbf{k}) \\in \\mathbb{R},\n\\]\nwhere the learnable parameters are \\(\\mathbf{W_q} \\in \\mathbb{R}^{h \\times q}\\), \\(\\mathbf{W_k} \\in \\mathbb{R}^{h \\times k}\\), and \\(\\mathbf{w_v} \\in \\mathbb{R}^{h}\\).\n\n\nCode\nclass AdditiveAttention(nn.Module):  #@save\n    \"\"\"Additive attention.\"\"\"\n    def __init__(self, num_hiddens, dropout, **kwargs):\n        super(AdditiveAttention, self).__init__(**kwargs)\n        self.W_k = nn.LazyLinear(num_hiddens, bias=False)\n        self.W_q = nn.LazyLinear(num_hiddens, bias=False)\n        self.w_v = nn.LazyLinear(1, bias=False)\n        self.dropout = nn.Dropout(dropout)\n\n    def forward(self, queries, keys, values, valid_lens):\n        queries, keys = self.W_q(queries), self.W_k(keys)\n        # After dimension expansion, shape of queries: (batch_size, no. of\n        # queries, 1, num_hiddens) and shape of keys: (batch_size, 1, no. of\n        # key-value pairs, num_hiddens). Sum them up with broadcasting\n        features = queries.unsqueeze(2) + keys.unsqueeze(1)\n        features = torch.tanh(features)\n        # There is only one output of self.w_v, so we remove the last\n        # one-dimensional entry from the shape. Shape of scores: (batch_size,\n        # no. of queries, no. of key-value pairs)\n        scores = self.w_v(features).squeeze(-1)\n        self.attention_weights = masked_softmax(scores, valid_lens)\n        # Shape of values: (batch_size, no. of key-value pairs, value\n        # dimension)\n        return torch.bmm(self.dropout(self.attention_weights), values)\n\nqueries = torch.normal(0, 1, (2, 1, 20))\n\nattention = AdditiveAttention(num_hiddens=8, dropout=0.1)\nattention.eval()\n\nattention(queries, keys, values, valid_lens)\n\n\ntensor([[[-0.9559,  0.5002,  0.1978, -0.4814]],\n\n        [[ 0.1049,  0.8026,  0.5460,  0.6277]]], grad_fn=&lt;BmmBackward0&gt;)\n\n\n\n\nCode\nd2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),\n                  xlabel='Keys', ylabel='Queries')",
-    "crumbs": [
-      "Blog",
-      "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.3 Attention Scoring Functions"
-    ]
-  },
-  {
-    "objectID": "posts/DIDP/2025-1-6-11.1.html",
-    "href": "posts/DIDP/2025-1-6-11.1.html",
-    "title": "11.1 Queries, Keys, and Values",
+    "objectID": "posts/DIDP/2025-2-1-5.1.html#hidden-layers",
+    "href": "posts/DIDP/2025-2-1-5.1.html#hidden-layers",
+    "title": "5.1 Multilayer Perceptrons",
     "section": "",
-    "text": "The Basic Theory of Self-attention please see here",
+    "text": "Linear models often fail in real-world scenarios. For example, the decrease of body temperature does not reduce risk. Although we can determine the risk based on the distance to the normal temperature, it is still not usable on the image classification when we faced an inverted cat/dog images remain in the same category. And linear models fail to capture context-dependent relationships between the neighboring pixels.\n\n\n\nWe can overcome limitations of linear models by introducing nonlinearity through hidden layers. The easiest way to do this is to stack many fully connected layers on top of one another. Each layer feeds into the layer above it, until we generate outputs. This architecture is commonly called a multilayer perceptron, often abbreviated as MLP.\n\\[\n\\mathbf{H} = \\mathbf{X} \\mathbf{W}^{(1)} + \\mathbf{b}^{(1)}, \\\\\n\\mathbf{O} = \\mathbf{H} \\mathbf{W}^{(2)} + \\mathbf{b}^{(2)}.\n\\]\n\n\\(\\mathbf{X} \\in \\mathbb{R}^{n \\times d}\\) is a minibatch of \\(n\\) examples where each example has \\(d\\) inputs.\n\\(\\mathbf{H} \\in \\mathbb{R}^{n \\times h}\\) is the outputs of the hidden layer, which are hidden representations.\n\\(\\mathbf{W}^{(1)} \\in \\mathbb{R}^{d \\times h}\\) is hidden layer weights, and \\(\\mathbf{b}^{(1)} \\in \\mathbb{R}^{1 \\times h}\\) is biases.\n\\(\\mathbf{W}^{(2)} \\in \\mathbb{R}^{h \\times q}\\) is output-layer weights, and \\(\\mathbf{b}^{(2)} \\in \\mathbb{R}^{1 \\times q}\\) is biases.\n\nIn order to realize the potential of multilayer architectures, we need more key ingredient: a nonlinear activation function \\(\\sigma\\) to be applied to each hidden unit. The formula is as follows:\n\\[\n\\mathbf{H} = \\sigma(\\mathbf{X} \\mathbf{W}^{(1)} + \\mathbf{b}^{(1)}), \\\\\n\\mathbf{O} = \\mathbf{H} \\mathbf{W}^{(2)} + \\mathbf{b}^{(2)},\n\\]",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.1 Queries, Keys, and Values"
+      "Multilayer Perceptrons",
+      "5.1 Multilayer Perceptrons"
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-6-11.1.html#visualization-of-attention-weights",
-    "href": "posts/DIDP/2025-1-6-11.1.html#visualization-of-attention-weights",
-    "title": "11.1 Queries, Keys, and Values",
-    "section": "Visualization of Attention Weights",
-    "text": "Visualization of Attention Weights\nThe darker the color, the better the match.\n\n\nCode\nimport torch\nfrom d2l import torch as d2l\n\n#@save\ndef show_heatmaps(matrices, xlabel, ylabel, titles=None, figsize=(2.5, 2.5), cmap='Reds'):\n    d2l.use_svg_display()\n    num_rows, num_cols = matrices.shape[0], matrices.shape[1]\n    fig, axes = d2l.plt.subplots(num_rows, num_cols, figsize=figsize,\n                                 sharex=True, sharey=True, squeeze=False)\n    for i, (row_axes, row_matrices) in enumerate(zip(axes, matrices)):\n        for j, (ax, matrix) in enumerate(zip(row_axes, row_matrices)):\n            pcm = ax.imshow(matrix.detach().numpy(), cmap=cmap)\n            if i == num_rows - 1:\n                ax.set_xlabel(xlabel)\n            if j == 0:\n                ax.set_ylabel(ylabel)\n            if titles:\n                ax.set_title(titles[j])\n    fig.colorbar(pcm, ax=axes, shrink=0.6)\n  \nattention_weights = torch.eye(10).reshape((1, 1, 10, 10))\nshow_heatmaps(attention_weights, xlabel='Keys', ylabel='Queries')",
+    "objectID": "posts/DIDP/2025-2-1-5.1.html#activation-functions",
+    "href": "posts/DIDP/2025-2-1-5.1.html#activation-functions",
+    "title": "5.1 Multilayer Perceptrons",
+    "section": "Activation Functions",
+    "text": "Activation Functions\n\nReLU Function\n\\[\n\\mathrm{ReLU}(x) = \\max(x, 0).\n\\]\n\n\nCode\nimport torch\nfrom d2l import torch as d2l\n\nx = torch.arange(-8.0, 8.0, 0.1, requires_grad=True)\ny = torch.relu(x)\nd2l.plot(x.detach(), y.detach(), 'x', 'relu(x)', figsize=(5, 2.5))\n\n\n\n\n\n\n\n\n\nThe reason for using ReLU is that its derivatives are particularly well behaved: either they vanish or they just let the argument through. This makes optimization better behaved and it mitigated the well-documented problem of vanishing gradients that plagued previous versions of neural networks.\n\n\nCode\ny.backward(torch.ones_like(x), retain_graph=True)\nd2l.plot(x.detach(), x.grad, 'x', 'grad of relu', figsize=(5, 2.5))\n\n\n\n\n\n\n\n\n\n\n\nSigmoid Function\n\\[\n\\text{sigmoid}(x) = \\frac{1}{1 + \\exp(-x)}.\n\\]\n\n\nCode\ny = torch.sigmoid(x)\nd2l.plot(x.detach(), y.detach(), 'x', 'sigmoid(x)', figsize=(5, 2.5))\n\n\n\n\n\n\n\n\n\nfunction is a smooth, differentiable approximation of the threshold cell. The sigmoid function is still widely used as an activation function on output units when we want to treat the output as the probability of a binary classification problem.\n\n\nCode\nx.grad.data.zero_()\ny.backward(torch.ones_like(x),retain_graph=True)\nd2l.plot(x.detach(), x.grad, 'x', 'grad of sigmoid', figsize=(5, 2.5))\n\n\n\n\n\n\n\n\n\n\n\ntanh Function\n\\[\n\\tanh(x) = \\frac{1 - \\exp(-2x)}{1 + \\exp(-2x)}.\n\\]\n\n\nCode\ny = torch.tanh(x)\nd2l.plot(x.detach(), y.detach(), 'x', 'tanh(x)', figsize=(5, 2.5))\n\n\n\n\n\n\n\n\n\n\n\nCode\nx.grad.data.zero_()\ny.backward(torch.ones_like(x),retain_graph=True)\nd2l.plot(x.detach(), x.grad, 'x', 'grad of tanh', figsize=(5, 2.5))",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "Multilayer Perceptrons",
+      "5.1 Multilayer Perceptrons"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.2.html",
+    "href": "posts/DIDP/2025-1-6-11.2.html",
+    "title": "11.2 Attention Pooling by Similarity",
+    "section": "",
+    "text": "The Basic Theory of Self-attention please see here\nIn traditional pooling (e.g., Maximum Pooling, Average Pooling), the contributions of all features are usually equal or selected based on local regions (e.g., 3x3 or 2x2 windows). However, in Attention Pooling by Similarity, the weights of the pooling process are dynamically determined by the similarity between features. Specifically, features with higher similarity are given greater weights, while features with lower similarity are given smaller weights.\nWe have some common kernels:\n\\[\n\\alpha(\\mathbf{q}, \\mathbf{k}) =\n\\begin{cases}\n    \\exp\\left(-\\frac{1}{2}\\|\\mathbf{q} - \\mathbf{k}\\|^2\\right), & \\text{Gaussian}; \\\\\n    1 \\text{ if } \\|\\mathbf{q} - \\mathbf{k}\\| \\leq 1, & \\text{Boxcar}; \\\\\n    \\max(0, 1 - \\|\\mathbf{q} - \\mathbf{k}\\|), & \\text{Epanechnikov}.\n\\end{cases}\n\\]\nWe import all the packages we need in here.\n\n\nCode\nimport numpy as np\nimport torch\nfrom torch import nn\nfrom torch.nn import functional as F\nfrom d2l import torch as d2l\n\nd2l.use_svg_display()",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
       "11. Attention Mechanisms and Transformers",
-      "11.1 Queries, Keys, and Values"
+      "11.2 Attention Pooling by Similarity"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.2.html#introduction",
+    "href": "posts/DIDP/2025-1-6-11.2.html#introduction",
+    "title": "11.2 Attention Pooling by Similarity",
+    "section": "",
+    "text": "The Basic Theory of Self-attention please see here\nIn traditional pooling (e.g., Maximum Pooling, Average Pooling), the contributions of all features are usually equal or selected based on local regions (e.g., 3x3 or 2x2 windows). However, in Attention Pooling by Similarity, the weights of the pooling process are dynamically determined by the similarity between features. Specifically, features with higher similarity are given greater weights, while features with lower similarity are given smaller weights.\nWe have some common kernels:\n\\[\n\\alpha(\\mathbf{q}, \\mathbf{k}) =\n\\begin{cases}\n    \\exp\\left(-\\frac{1}{2}\\|\\mathbf{q} - \\mathbf{k}\\|^2\\right), & \\text{Gaussian}; \\\\\n    1 \\text{ if } \\|\\mathbf{q} - \\mathbf{k}\\| \\leq 1, & \\text{Boxcar}; \\\\\n    \\max(0, 1 - \\|\\mathbf{q} - \\mathbf{k}\\|), & \\text{Epanechnikov}.\n\\end{cases}\n\\]\nWe import all the packages we need in here.\n\n\nCode\nimport numpy as np\nimport torch\nfrom torch import nn\nfrom torch.nn import functional as F\nfrom d2l import torch as d2l\n\nd2l.use_svg_display()",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.2 Attention Pooling by Similarity"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.2.html#kernels-and-data",
+    "href": "posts/DIDP/2025-1-6-11.2.html#kernels-and-data",
+    "title": "11.2 Attention Pooling by Similarity",
+    "section": "Kernels and Data",
+    "text": "Kernels and Data\nFirst, we define some common kernels.\n\n\nCode\n# Define some kernels\ndef gaussian(x):\n    return torch.exp(-x**2 / 2)\n\ndef boxcar(x):\n    return torch.abs(x) &lt; 1.0\n\ndef constant(x):\n    return 1.0 + 0 * x\n\ndef epanechikov(x):\n    return torch.max(1 - torch.abs(x), torch.zeros_like(x))\n\nfig, axes = d2l.plt.subplots(1, 4, sharey=True, figsize=(12, 3))\n\nkernels = (gaussian, boxcar, constant, epanechikov)\nnames = ('Gaussian', 'Boxcar', 'Constant', 'Epanechikov')\nx = torch.arange(-2.5, 2.5, 0.1)\nfor kernel, name, ax in zip(kernels, names, axes):\n    ax.plot(x.detach().numpy(), kernel(x).detach().numpy())\n    ax.set_xlabel(name)\n\nd2l.plt.show()\n\n\n\n\n\n\n\n\n\nTo see Nadaraya–Watson estimation in action, let’s define some training data. In the following we use the dependency\n\\[\ny_i = 2\\sin(x_i) + x_i^{0.8} + \\epsilon,\n\\]\n\n\nCode\n#Creat training dataset\nn_train = 50 \nx_train, _ = torch.sort(torch.rand(n_train) * 5) \n\ndef f(x):\n    return 2 * torch.sin(x) + x**0.8\n\ny_train = f(x_train) + torch.normal(0.0, 0.5, (n_train,))\nx_test = torch.arange(0, 5, 0.1) \ny_truth = f(x_test)  \nn_test = len(x_test) \n\n\nWe creat a dataset with x_train, y_train, x_test and y_truth.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.2 Attention Pooling by Similarity"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.2.html#attention-pooling-via-nadarayawatson-regression",
+    "href": "posts/DIDP/2025-1-6-11.2.html#attention-pooling-via-nadarayawatson-regression",
+    "title": "11.2 Attention Pooling by Similarity",
+    "section": "Attention Pooling via Nadaraya–Watson Regression",
+    "text": "Attention Pooling via Nadaraya–Watson Regression\nNow that we have data and kernels, all we need is a function that computes the kernel regression estimates. Note that we also want to obtain the relative kernel weights in order to perform some minor diagnostics. Hence we first compute the kernel between all training features (covariates) \\(x_train\\) and all validation features \\(x_val\\). This yields a matrix, which we subsequently normalize. When multiplied with the training labels \\(y_train\\) we obtain the estimates. The normalized relative kernel weights (\\(attention\\_w\\) below) are the attention weights.\n\n\nCode\n#y_hat: pred, attention_w: attention weight\ndef nadaraya_watson(x_train, y_train, x_val, kernel):\n    dists = x_train.reshape((-1, 1)) - x_val.reshape((1, -1)) #dist between train and valid\n    # Each column/row corresponds to each query/key\n    k = kernel(dists).type(torch.float32)\n    # Normalization over keys for each query\n    attention_w = k / k.sum(0)\n    y_hat = y_train@attention_w\n    return y_hat, attention_w\n\n\nThe whole calculation is as follows:\n\\[\nf(x) = \\sum_{i=1}^n \\frac{K(x - x_i)}{\\sum_{j=1}^n K(x - x_j)} y_i,\n\\]\nwhere \\(K\\) is the kernel.\nAnd it has a more common formula:\n\\[\nf(x) = \\sum_{i=1}^n \\alpha(x, x_i) y_i,\n\\]\nwhere \\(x\\) is the query, \\([x_i, y_i]\\) is the key-value pair.\nLet’s have a look at the kind of estimates that the different kernels produce.\n\n\nCode\ndef plot_kernel_reg(y_hat):\n    d2l.plot(x_test, [y_truth, y_hat], 'x', 'y', legend=['Truth', 'Pred'],\n             xlim=[0, 5], ylim=[-1, 5])\n    d2l.plt.plot(x_train, y_train, 'o', alpha=0.5)\n\n\n\nConstant kernel\n\nThe estimator calculates the average of all training sample output values based on average convergence.\n\n\nCode\ny_hat, attention_w_constant = nadaraya_watson(x_train, y_train, x_test, kernel= constant)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\nFrom the results, it is not the model we need.\n\nGaussian kernel\n\n\n\nCode\ny_hat, attention_w_Gaussian = nadaraya_watson(x_train, y_train, x_test, kernel= gaussian)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\n\nBoxcar kernel\n\n\n\nCode\ny_hat, attention_w_Boxcar = nadaraya_watson(x_train, y_train, x_test, kernel= boxcar)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\n\nEpanechikov\n\n\n\nCode\ny_hat, attention_w_Epanechikov = nadaraya_watson(x_train, y_train, x_test, kernel= epanechikov)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\nLet’s see their attention maps.\n\n\nCode\ndef plot(attention_w, names):\n    fig, axes = d2l.plt.subplots(1, 4, sharey=True, figsize=(12, 3))\n    for name, attention, ax in zip(names, attention_w, axes):\n        pcm = ax.imshow(attention.detach().numpy(), cmap='Reds')\n        ax.set_xlabel(name)\n    fig.colorbar(pcm, ax=axes, shrink=0.7)\n\nattention_w = [attention_w_Gaussian, attention_w_Boxcar, attention_w_constant, attention_w_Epanechikov] \nplot(attention_w, names)\n\n\n\n\n\n\n\n\n\nThe visualization clearly shows why the estimates for Gaussian, Boxcar, and Epanechikov are very similar: after all, they are derived from very similar attention weights, despite the different functional form of the kernel.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.2 Attention Pooling by Similarity"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html",
+    "href": "posts/DIDP/2025-1-31-4.2.html",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "",
+    "text": "We introduce a dataset - Fashion-MNIST Dataset to complete Classification Task. It contains images of 10 categories of clothing at \\(28 \\times 28\\) pixels resolution.\n\n\nCode\nimport torch\nimport torchvision\nfrom torch.utils import data\nfrom torch.utils.data import DataLoader\nfrom torch import nn\nfrom torchvision import transforms\nfrom d2l import torch as d2l\nimport time\nimport numpy as np\n\nd2l.use_svg_display()\n\n\n\n\nWe can download and read the Fashion-MNIST dataset using the built-in functions in the framework.\n\n\nCode\ntrans = transforms.ToTensor()\n# trans.insert(0, transforms.Resize(resize)) #adjust size\nmnist_train = torchvision.datasets.FashionMNIST(root=\"./data\", train=True, transform=trans, download = True)\nmnist_test = torchvision.datasets.FashionMNIST(root=\"./data\", train=False, transform=trans, download = True)\n\n\n\n\nCode\nprint(f\"Length of train_data is {len(mnist_train)}\")\nprint(f\"Length of test_data is {len(mnist_test)}\")\nprint(f\"Size of data is {mnist_train[0][0].shape}\")\n\n\nLength of train_data is 60000\nLength of test_data is 10000\nSize of data is torch.Size([1, 28, 28])\n\n\nSince the label in dataset is number, we should create a function to convert between a numeric label index and its text name.\n\n\nCode\ndef get_fashion_mnist_labels(labels):\n    text_labels = ['t-shirt', 'trouser', 'pullover', 'dress', 'coat',\n                   'sandal', 'shirt', 'sneaker', 'bag', 'ankle boot']\n    return [text_labels[int(i)] for i in labels]\n\n\nThe follows function can visualize the sample.\n\n\nCode\ndef show_images(images, num_rows, num_cols, titles=None, scale=1.5):\n    figsize = (num_cols * scale, num_rows * scale)\n    _, axes = d2l.plt.subplots(num_rows, num_cols, figsize = figsize)\n    axes = axes.flatten()\n    for i, (ax, image) in enumerate(zip(axes, images)):\n        if torch.is_tensor(image):\n            ax.imshow(image.numpy())\n        else:\n            ax.imshow(image)\n        ax.axes.get_xaxis().set_visible(False)\n        ax.axes.get_yaxis().set_visible(False)\n        if titles:\n            ax.set_title(titles[i])\n    return axes\n  \nX, y = next(iter(DataLoader(mnist_train, batch_size=18)))\nshow_images(X.reshape(18, 28, 28), 2, 9, titles = get_fashion_mnist_labels(y))\n\n\narray([&lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'dress'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'pullover'}&gt;,\n       &lt;Axes: title={'center': 'sneaker'}&gt;,\n       &lt;Axes: title={'center': 'pullover'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sneaker'}&gt;,\n       &lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 'trouser'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;], dtype=object)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nbatch_size = 256\n\ntrain_iter = DataLoader(mnist_train, batch_size, shuffle= True)\ntest_iter = DataLoader(mnist_test, batch_size)\ntimer = d2l.Timer()\nfor X,y in train_iter:\n    continue\n\nprint(f\"{timer.stop():2f} sec\")\n\n\n5.454388 sec",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#reading-data",
+    "href": "posts/DIDP/2025-1-31-4.2.html#reading-data",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "",
+    "text": "We can download and read the Fashion-MNIST dataset using the built-in functions in the framework.\n\n\nCode\ntrans = transforms.ToTensor()\n# trans.insert(0, transforms.Resize(resize)) #adjust size\nmnist_train = torchvision.datasets.FashionMNIST(root=\"./data\", train=True, transform=trans, download = True)\nmnist_test = torchvision.datasets.FashionMNIST(root=\"./data\", train=False, transform=trans, download = True)\n\n\n\n\nCode\nprint(f\"Length of train_data is {len(mnist_train)}\")\nprint(f\"Length of test_data is {len(mnist_test)}\")\nprint(f\"Size of data is {mnist_train[0][0].shape}\")\n\n\nLength of train_data is 60000\nLength of test_data is 10000\nSize of data is torch.Size([1, 28, 28])\n\n\nSince the label in dataset is number, we should create a function to convert between a numeric label index and its text name.\n\n\nCode\ndef get_fashion_mnist_labels(labels):\n    text_labels = ['t-shirt', 'trouser', 'pullover', 'dress', 'coat',\n                   'sandal', 'shirt', 'sneaker', 'bag', 'ankle boot']\n    return [text_labels[int(i)] for i in labels]\n\n\nThe follows function can visualize the sample.\n\n\nCode\ndef show_images(images, num_rows, num_cols, titles=None, scale=1.5):\n    figsize = (num_cols * scale, num_rows * scale)\n    _, axes = d2l.plt.subplots(num_rows, num_cols, figsize = figsize)\n    axes = axes.flatten()\n    for i, (ax, image) in enumerate(zip(axes, images)):\n        if torch.is_tensor(image):\n            ax.imshow(image.numpy())\n        else:\n            ax.imshow(image)\n        ax.axes.get_xaxis().set_visible(False)\n        ax.axes.get_yaxis().set_visible(False)\n        if titles:\n            ax.set_title(titles[i])\n    return axes\n  \nX, y = next(iter(DataLoader(mnist_train, batch_size=18)))\nshow_images(X.reshape(18, 28, 28), 2, 9, titles = get_fashion_mnist_labels(y))\n\n\narray([&lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'dress'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'pullover'}&gt;,\n       &lt;Axes: title={'center': 'sneaker'}&gt;,\n       &lt;Axes: title={'center': 'pullover'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;,\n       &lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sandal'}&gt;,\n       &lt;Axes: title={'center': 'sneaker'}&gt;,\n       &lt;Axes: title={'center': 'ankle boot'}&gt;,\n       &lt;Axes: title={'center': 'trouser'}&gt;,\n       &lt;Axes: title={'center': 't-shirt'}&gt;], dtype=object)",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#reading-minibatch",
+    "href": "posts/DIDP/2025-1-31-4.2.html#reading-minibatch",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "",
+    "text": "Code\nbatch_size = 256\n\ntrain_iter = DataLoader(mnist_train, batch_size, shuffle= True)\ntest_iter = DataLoader(mnist_test, batch_size)\ntimer = d2l.Timer()\nfor X,y in train_iter:\n    continue\n\nprint(f\"{timer.stop():2f} sec\")\n\n\n5.454388 sec",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#the-softmax",
+    "href": "posts/DIDP/2025-1-31-4.2.html#the-softmax",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "The Softmax",
+    "text": "The Softmax\nThe basic theory of Softmax is in here\n\n\nCode\ndef softmax(X):\n    X_exp = torch.exp(X)\n    partition = X_exp.sum(1, keepdims = True)\n    return X_exp / partition\n  \n#test\nX = torch.rand((2, 5))\nX_prob = softmax(X)\nX_prob, X_prob.sum(1)\n\n\n(tensor([[0.1304, 0.2743, 0.2477, 0.1474, 0.2002],\n         [0.2431, 0.1392, 0.2322, 0.1420, 0.2437]]),\n tensor([1., 1.]))",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#the-model",
+    "href": "posts/DIDP/2025-1-31-4.2.html#the-model",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "The Model",
+    "text": "The Model\nEach instance should be represented by a fixed-length vector. Since the raw data consists of \\(28 \\times 28\\) pixel images, we flatten each image, treating them as vectors of length 784. Since we have 10 classes, our network has an output dimension of 10. Consequently, our weights constitute a \\(784 \\times 10\\) matrix plus a \\(1 \\times 10\\) row vector for the biases.\n\n\nCode\nclass SoftmaxRegressionScratch(d2l.Classifier):\n    def __init__(self, num_inputs, num_outputs, lr, sigma=0.01):\n        super().__init__()\n        self.save_hyperparameters()\n        self.W = torch.normal(0, sigma, size=(num_inputs, num_outputs), requires_grad = True)\n        self.b = torch.zeros(num_outputs, requires_grad=True)\n    \n    def parameters(self):\n        return [self.W, self.b]\n\n    def forward(self, X):\n        X = X.reshape((-1, self.W.shape[0]))\n        return softmax(torch.matmul(X, self.W) + self.b)",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#cross-entropy-loss",
+    "href": "posts/DIDP/2025-1-31-4.2.html#cross-entropy-loss",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "Cross-Entropy Loss",
+    "text": "Cross-Entropy Loss\n\n\nCode\ndef cross_entropy(y_hat, y):\n    return -torch.log(y_hat[list(range(len(y_hat))), y]).mean()\n\n# test\ny = torch.tensor([0, 2])\ny_hat = torch.tensor([[0.1, 0.3, 0.6], [0.3, 0.2, 0.5]])\ncross_entropy(y_hat, y)\n\n\ntensor(1.4979)",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#training",
+    "href": "posts/DIDP/2025-1-31-4.2.html#training",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "Training",
+    "text": "Training\n\n\nCode\ndef trainer(train_iter, test_iter, model):\n\n    #optimization algorithm (Adam). \n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001) # lr=0.001 default\n    n_epochs= 10\n\n    for epoch in range(n_epochs):\n        model.train()\n        epoch_start_time = time.time()\n        loss_record = []\n        train_acc = 0.0\n        #x: features, y: labels\n        for X, y in train_iter:\n            optimizer.zero_grad()               # Set gradient to zero.\n            train_pred = model(X)  \n            batch_loss = cross_entropy(train_pred, y)\n            batch_loss.backward()               # Compute gradient(back propagation).\n            optimizer.step()                    # Update parameters.\n            train_acc += np.sum(np.argmax(train_pred.detach().cpu().numpy(), axis=1) == y.cpu().numpy())\n            loss_record.append(batch_loss.detach().item()) #detach(): separation gradient\n\n        mean_train_loss = sum(loss_record)/len(loss_record)\n        train_acc = train_acc / len(mnist_train)\n\n        model.eval() # Set our model to evaluation mode.\n        loss_record = []\n        test_acc = 0.0\n        with torch.no_grad():\n            for x, y in test_iter:\n                test_pred = model(x)\n                batch_loss = cross_entropy(test_pred, y)\n                test_acc += np.sum(np.argmax(test_pred.detach().cpu().numpy(), axis=1) == y.cpu().numpy())\n                loss_record.append(batch_loss.item())\n            \n            mean_test_loss = sum(loss_record)/len(loss_record)\n            test_acc = test_acc / len(mnist_test)\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Test Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, n_epochs, time.time() - epoch_start_time, \\\n               train_acc, mean_train_loss, test_acc, mean_test_loss))\n\n\nStart training\n\n\nCode\nmodel = SoftmaxRegressionScratch(num_inputs=784, num_outputs=10, lr=0.1)\ntrainer(train_iter, test_iter, model)\n\n\n[001/010] 7.02 sec(s) Train Acc: 0.736717 Loss: 0.833946 | Test Acc: 0.789800 loss: 0.623086\n[002/010] 7.00 sec(s) Train Acc: 0.817367 Loss: 0.558589 | Test Acc: 0.811600 loss: 0.548562\n[003/010] 6.94 sec(s) Train Acc: 0.832567 Loss: 0.505843 | Test Acc: 0.823500 loss: 0.515734\n[004/010] 6.90 sec(s) Train Acc: 0.841483 Loss: 0.478285 | Test Acc: 0.828500 loss: 0.494454\n[005/010] 7.00 sec(s) Train Acc: 0.846000 Loss: 0.460256 | Test Acc: 0.834500 loss: 0.480991\n[006/010] 6.96 sec(s) Train Acc: 0.848117 Loss: 0.448227 | Test Acc: 0.835500 loss: 0.472511\n[007/010] 7.01 sec(s) Train Acc: 0.851317 Loss: 0.439126 | Test Acc: 0.838200 loss: 0.463746\n[008/010] 7.46 sec(s) Train Acc: 0.854233 Loss: 0.431061 | Test Acc: 0.838400 loss: 0.460257\n[009/010] 7.57 sec(s) Train Acc: 0.854433 Loss: 0.425866 | Test Acc: 0.838200 loss: 0.460497\n[010/010] 7.24 sec(s) Train Acc: 0.857133 Loss: 0.420365 | Test Acc: 0.840700 loss: 0.456013",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#define-the-model",
+    "href": "posts/DIDP/2025-1-31-4.2.html#define-the-model",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "Define the Model",
+    "text": "Define the Model\n\n\nCode\nclass SoftmaxRegression(d2l.Classifier):\n    def __init__(self, num_inputs, num_outputs, lr, sigma=0.01):\n        super().__init__()\n        self.save_hyperparameters()\n        self.net = nn.Sequential(nn.Flatten(),\n                                nn.LazyLinear(num_outputs))\n\n    def forward(self, X):\n        return self.net(X)",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#loss-function",
+    "href": "posts/DIDP/2025-1-31-4.2.html#loss-function",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "Loss Function",
+    "text": "Loss Function\nWe can also import the cross-entropy loss function from deep learning frameworks.\n\n\nCode\ncriterion = nn.CrossEntropyLoss()",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-31-4.2.html#training-1",
+    "href": "posts/DIDP/2025-1-31-4.2.html#training-1",
+    "title": "4.2-4.4 Fashion-MNIST: A Classification Task",
+    "section": "Training",
+    "text": "Training\n\n\nCode\ndef trainer_concise(train_iter, test_iter, model):\n\n    #optimization algorithm (Adam). \n    optimizer = torch.optim.Adam(model.parameters(), lr=0.001) # lr=0.001 default\n\n    n_epochs= 10\n\n    for epoch in range(n_epochs):\n        model.train()\n        epoch_start_time = time.time()\n        loss_record = []\n        train_acc = 0.0\n        #x: features, y: labels\n        for X, y in train_iter:\n            optimizer.zero_grad()               # Set gradient to zero.\n            train_pred = model(X)  \n            batch_loss = criterion(train_pred, y)\n            batch_loss.backward()               # Compute gradient(back propagation).\n            optimizer.step()                    # Update parameters.\n            train_acc += np.sum(np.argmax(train_pred.detach().cpu().numpy(), axis=1) == y.cpu().numpy())\n            loss_record.append(batch_loss.detach().item()) #detach(): separation gradient\n\n        mean_train_loss = sum(loss_record)/len(loss_record)\n        train_acc = train_acc / len(mnist_train)\n\n        model.eval() # Set our model to evaluation mode.\n        loss_record = []\n        test_acc = 0.0\n        with torch.no_grad():\n            for x, y in test_iter:\n                test_pred = model(x)\n                batch_loss = criterion(test_pred, y)\n                test_acc += np.sum(np.argmax(test_pred.detach().cpu().numpy(), axis=1) == y.cpu().numpy())\n                loss_record.append(batch_loss.item())\n            \n            mean_test_loss = sum(loss_record)/len(loss_record)\n            test_acc = test_acc / len(mnist_test)\n            print('[%03d/%03d] %2.2f sec(s) Train Acc: %3.6f Loss: %3.6f | Test Acc: %3.6f loss: %3.6f' % \\\n              (epoch + 1, n_epochs, time.time() - epoch_start_time, \\\n               train_acc, mean_train_loss, test_acc, mean_test_loss))\n\nmodel = SoftmaxRegression(num_inputs=784, num_outputs=10, lr=0.1)\ntrainer_concise(train_iter, test_iter, model)\n\n\n[001/010] 6.98 sec(s) Train Acc: 0.732633 Loss: 0.843272 | Test Acc: 0.787500 loss: 0.627218\n[002/010] 6.94 sec(s) Train Acc: 0.814800 Loss: 0.563191 | Test Acc: 0.815700 loss: 0.547387\n[003/010] 6.94 sec(s) Train Acc: 0.831617 Loss: 0.508068 | Test Acc: 0.824000 loss: 0.516820\n[004/010] 6.90 sec(s) Train Acc: 0.840117 Loss: 0.479658 | Test Acc: 0.830700 loss: 0.495753\n[005/010] 6.90 sec(s) Train Acc: 0.845050 Loss: 0.462107 | Test Acc: 0.832200 loss: 0.481482\n[006/010] 6.95 sec(s) Train Acc: 0.849333 Loss: 0.449103 | Test Acc: 0.835300 loss: 0.473411\n[007/010] 6.95 sec(s) Train Acc: 0.851517 Loss: 0.438581 | Test Acc: 0.833600 loss: 0.472392\n[008/010] 6.98 sec(s) Train Acc: 0.853750 Loss: 0.431832 | Test Acc: 0.838600 loss: 0.461254\n[009/010] 6.97 sec(s) Train Acc: 0.855567 Loss: 0.426201 | Test Acc: 0.838300 loss: 0.459700\n[010/010] 6.91 sec(s) Train Acc: 0.856983 Loss: 0.421533 | Test Acc: 0.841500 loss: 0.453576",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.2-4.4 Fashion-MNIST: A Classification Task"
     ]
   },
   {
@@ -1193,47 +1323,113 @@
     ]
   },
   {
-    "objectID": "posts1/2025-1-13-worklog-post.html#week9-2",
-    "href": "posts1/2025-1-13-worklog-post.html#week9-2",
-    "title": "Week9",
-    "section": "Week9-2",
-    "text": "Week9-2\n\n2.4 Calculus\n\n\n2.5 Automatic Differentiation\n\n\n2.6 Probability and Statistics\n\n\n3.1 Linear Regression\n\n\n3.2 Synthetic Regression Data",
+    "objectID": "posts1/2025-1-19-worklog-post.html#week10-2",
+    "href": "posts1/2025-1-19-worklog-post.html#week10-2",
+    "title": "Week10",
+    "section": "Week10-2",
+    "text": "Week10-2\n\nIntroduction to Docker",
     "crumbs": [
       "Worklog",
-      "Week9"
+      "Week10"
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-2",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-2",
-    "title": "Week6",
-    "section": "Week6-2",
-    "text": "Week6-2\n\nRecognize Handwritten Digits by CNN\n\nRewrote this project using a newly learned code style",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-2",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-2",
+    "title": "Week7",
+    "section": "Week 7-2",
+    "text": "Week 7-2\n\nSolve a classification problem: Phoneme Classification",
     "crumbs": [
       "Worklog",
-      "Week6"
+      "Week7"
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-3",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-3",
-    "title": "Week6",
-    "section": "Week6-3",
-    "text": "Week6-3\n\nDive into Deep Learning 2: Preliminaries\n\n2.1 Data Manipulation",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-3",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-3",
+    "title": "Week7",
+    "section": "Week 7-3",
+    "text": "Week 7-3\n\nSome Useful Python Function",
     "crumbs": [
       "Worklog",
-      "Week6"
+      "Week7"
     ]
   },
   {
-    "objectID": "posts1/2024-12-23-worklog-post.html#week6-4",
-    "href": "posts1/2024-12-23-worklog-post.html#week6-4",
-    "title": "Week6",
-    "section": "Week6-4",
-    "text": "Week6-4\n\nDive into Deep Learning 2: Preliminaries\n\n2.2 Data Preprocessing",
+    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-4",
+    "href": "posts1/2024-12-27-worklog-post.html#week-7-4",
+    "title": "Week7",
+    "section": "Week 7-4",
+    "text": "Week 7-4\n\nThe Basic of Self-Attention",
     "crumbs": [
       "Worklog",
-      "Week6"
+      "Week7"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html",
+    "href": "posts1/2024-12-16-worklog-post.html",
+    "title": "Week5",
+    "section": "",
+    "text": "Missing Semester 2: Shell Tools and Scripting",
+    "crumbs": [
+      "Worklog",
+      "Week5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html#week5-1",
+    "href": "posts1/2024-12-16-worklog-post.html#week5-1",
+    "title": "Week5",
+    "section": "",
+    "text": "Missing Semester 2: Shell Tools and Scripting",
+    "crumbs": [
+      "Worklog",
+      "Week5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html#week5-2",
+    "href": "posts1/2024-12-16-worklog-post.html#week5-2",
+    "title": "Week5",
+    "section": "Week5-2",
+    "text": "Week5-2\n\n1. Missing Semester 4: Data Wrangling\nMissing Semester 4: Data Wrangling\n\n\n2. Configured WSL (Windows Subsystem for Linux)\nLinux Command Record",
+    "crumbs": [
+      "Worklog",
+      "Week5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html#week5-3",
+    "href": "posts1/2024-12-16-worklog-post.html#week5-3",
+    "title": "Week5",
+    "section": "Week5-3",
+    "text": "Week5-3\n\n1. Missing Semester 4: Data Wrangling and Exerise 1,2,3\nMissing Semester 4: Data Wrangling",
+    "crumbs": [
+      "Worklog",
+      "Week5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html#week-5-4",
+    "href": "posts1/2024-12-16-worklog-post.html#week-5-4",
+    "title": "Week5",
+    "section": "Week 5-4",
+    "text": "Week 5-4\n\n1. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction",
+    "crumbs": [
+      "Worklog",
+      "Week5"
+    ]
+  },
+  {
+    "objectID": "posts1/2024-12-16-worklog-post.html#week-5-5",
+    "href": "posts1/2024-12-16-worklog-post.html#week-5-5",
+    "title": "Week5",
+    "section": "Week 5-5",
+    "text": "Week 5-5\n\n1. Styled the site with css\n\n\n2. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction",
+    "crumbs": [
+      "Worklog",
+      "Week5"
     ]
   },
   {
@@ -1314,102 +1510,58 @@
     ]
   },
   {
-    "objectID": "posts1/2024-12-16-worklog-post.html",
-    "href": "posts1/2024-12-16-worklog-post.html",
-    "title": "Week5",
-    "section": "",
-    "text": "Missing Semester 2: Shell Tools and Scripting",
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-2",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-2",
+    "title": "Week6",
+    "section": "Week6-2",
+    "text": "Week6-2\n\nRecognize Handwritten Digits by CNN\n\nRewrote this project using a newly learned code style",
     "crumbs": [
       "Worklog",
-      "Week5"
+      "Week6"
     ]
   },
   {
-    "objectID": "posts1/2024-12-16-worklog-post.html#week5-1",
-    "href": "posts1/2024-12-16-worklog-post.html#week5-1",
-    "title": "Week5",
-    "section": "",
-    "text": "Missing Semester 2: Shell Tools and Scripting",
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-3",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-3",
+    "title": "Week6",
+    "section": "Week6-3",
+    "text": "Week6-3\n\nDive into Deep Learning 2: Preliminaries\n\n2.1 Data Manipulation",
     "crumbs": [
       "Worklog",
-      "Week5"
+      "Week6"
     ]
   },
   {
-    "objectID": "posts1/2024-12-16-worklog-post.html#week5-2",
-    "href": "posts1/2024-12-16-worklog-post.html#week5-2",
-    "title": "Week5",
-    "section": "Week5-2",
-    "text": "Week5-2\n\n1. Missing Semester 4: Data Wrangling\nMissing Semester 4: Data Wrangling\n\n\n2. Configured WSL (Windows Subsystem for Linux)\nLinux Command Record",
+    "objectID": "posts1/2024-12-23-worklog-post.html#week6-4",
+    "href": "posts1/2024-12-23-worklog-post.html#week6-4",
+    "title": "Week6",
+    "section": "Week6-4",
+    "text": "Week6-4\n\nDive into Deep Learning 2: Preliminaries\n\n2.2 Data Preprocessing",
     "crumbs": [
       "Worklog",
-      "Week5"
+      "Week6"
     ]
   },
   {
-    "objectID": "posts1/2024-12-16-worklog-post.html#week5-3",
-    "href": "posts1/2024-12-16-worklog-post.html#week5-3",
-    "title": "Week5",
-    "section": "Week5-3",
-    "text": "Week5-3\n\n1. Missing Semester 4: Data Wrangling and Exerise 1,2,3\nMissing Semester 4: Data Wrangling",
+    "objectID": "posts1/2025-1-13-worklog-post.html#week9-2",
+    "href": "posts1/2025-1-13-worklog-post.html#week9-2",
+    "title": "Week9",
+    "section": "Week9-2",
+    "text": "Week9-2\n\n2.4 Calculus\n\n\n2.5 Automatic Differentiation\n\n\n2.6 Probability and Statistics\n\n\n3.1 Linear Regression\n\n\n3.2 Synthetic Regression Data",
     "crumbs": [
       "Worklog",
-      "Week5"
+      "Week9"
     ]
   },
   {
-    "objectID": "posts1/2024-12-16-worklog-post.html#week-5-4",
-    "href": "posts1/2024-12-16-worklog-post.html#week-5-4",
-    "title": "Week5",
-    "section": "Week 5-4",
-    "text": "Week 5-4\n\n1. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction",
+    "objectID": "posts1/2025-1-26-worklog-post.html#week11-1",
+    "href": "posts1/2025-1-26-worklog-post.html#week11-1",
+    "title": "Week11",
+    "section": "Week11-1",
+    "text": "Week11-1\n\n4.2 The Image Classification Dataset\n\n\n4.3 Softmax Regression Implementation from Scratch\n\n\n4.4 Concise Implementation of Softmax Regression\n\n\n5.1 Multilayer Perceptrons",
     "crumbs": [
       "Worklog",
-      "Week5"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-16-worklog-post.html#week-5-5",
-    "href": "posts1/2024-12-16-worklog-post.html#week-5-5",
-    "title": "Week5",
-    "section": "Week 5-5",
-    "text": "Week 5-5\n\n1. Styled the site with css\n\n\n2. Dive into Deep Learning 1: Introduction\nDive into Deep Learning 1: Introduction",
-    "crumbs": [
-      "Worklog",
-      "Week5"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-2",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-2",
-    "title": "Week7",
-    "section": "Week 7-2",
-    "text": "Week 7-2\n\nSolve a classification problem: Phoneme Classification",
-    "crumbs": [
-      "Worklog",
-      "Week7"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-3",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-3",
-    "title": "Week7",
-    "section": "Week 7-3",
-    "text": "Week 7-3\n\nSome Useful Python Function",
-    "crumbs": [
-      "Worklog",
-      "Week7"
-    ]
-  },
-  {
-    "objectID": "posts1/2024-12-27-worklog-post.html#week-7-4",
-    "href": "posts1/2024-12-27-worklog-post.html#week-7-4",
-    "title": "Week7",
-    "section": "Week 7-4",
-    "text": "Week 7-4\n\nThe Basic of Self-Attention",
-    "crumbs": [
-      "Worklog",
-      "Week7"
+      "Week11"
     ]
   },
   {
@@ -1417,7 +1569,7 @@
     "href": "posts1/index.html",
     "title": "Work Record",
     "section": "",
-    "text": "Week10\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek9\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek8\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek7\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek6\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1,2,3,4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
+    "text": "Week11\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 26, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek10\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 19, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek9\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 15, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek8\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nJan 6, 2025\n\n\n\n\n\n\n\n\n\n\n\nWeek7\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 27, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek6\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 23, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek5\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 16, 2024\n\n\n\n\n\n\n\n\n\n\n\nWeek1,2,3,4\n\n\n\nWeek Report\n\n\n\n\nWu Hao\n\n\nDec 10, 2024\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top",
     "crumbs": [
       "Worklog",
       "Work Record"
@@ -1798,62 +1950,172 @@
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-20-4.1.html",
-    "href": "posts/DIDP/2025-1-20-4.1.html",
-    "title": "3.5 Weight Decaying",
+    "objectID": "posts/DIDP/2025-1-24-4.1.html",
+    "href": "posts/DIDP/2025-1-24-4.1.html",
+    "title": "4.1 Softmax Regression",
     "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "posts/DIDP/2025-1-6-11.2.html",
-    "href": "posts/DIDP/2025-1-6-11.2.html",
-    "title": "11.2 Attention Pooling by Similarity",
-    "section": "",
-    "text": "The Basic Theory of Self-attention please see here\nIn traditional pooling (e.g., Maximum Pooling, Average Pooling), the contributions of all features are usually equal or selected based on local regions (e.g., 3x3 or 2x2 windows). However, in Attention Pooling by Similarity, the weights of the pooling process are dynamically determined by the similarity between features. Specifically, features with higher similarity are given greater weights, while features with lower similarity are given smaller weights.\nWe have some common kernels:\n\\[\n\\alpha(\\mathbf{q}, \\mathbf{k}) =\n\\begin{cases}\n    \\exp\\left(-\\frac{1}{2}\\|\\mathbf{q} - \\mathbf{k}\\|^2\\right), & \\text{Gaussian}; \\\\\n    1 \\text{ if } \\|\\mathbf{q} - \\mathbf{k}\\| \\leq 1, & \\text{Boxcar}; \\\\\n    \\max(0, 1 - \\|\\mathbf{q} - \\mathbf{k}\\|), & \\text{Epanechnikov}.\n\\end{cases}\n\\]\nWe import all the packages we need in here.\n\n\nCode\nimport numpy as np\nimport torch\nfrom torch import nn\nfrom torch.nn import functional as F\nfrom d2l import torch as d2l\n\nd2l.use_svg_display()",
+    "text": "The objective of classification task is to predict the input sample \\(\\mathbf{x}\\) belongs to a certain \\(y \\in \\{1, 2, \\dots, k\\}.\\)\nThe Softmax function is able to transform the unnormalized predictions into non-negative numbers that sum to 1, while keeping the model derivable. Therefore, we can use the Softmax function to represent the output of the model as a selection of labels with maximum probability.",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.2 Attention Pooling by Similarity"
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-6-11.2.html#introduction",
-    "href": "posts/DIDP/2025-1-6-11.2.html#introduction",
-    "title": "11.2 Attention Pooling by Similarity",
+    "objectID": "posts/DIDP/2025-1-24-4.1.html#classification-task",
+    "href": "posts/DIDP/2025-1-24-4.1.html#classification-task",
+    "title": "4.1 Softmax Regression",
     "section": "",
-    "text": "The Basic Theory of Self-attention please see here\nIn traditional pooling (e.g., Maximum Pooling, Average Pooling), the contributions of all features are usually equal or selected based on local regions (e.g., 3x3 or 2x2 windows). However, in Attention Pooling by Similarity, the weights of the pooling process are dynamically determined by the similarity between features. Specifically, features with higher similarity are given greater weights, while features with lower similarity are given smaller weights.\nWe have some common kernels:\n\\[\n\\alpha(\\mathbf{q}, \\mathbf{k}) =\n\\begin{cases}\n    \\exp\\left(-\\frac{1}{2}\\|\\mathbf{q} - \\mathbf{k}\\|^2\\right), & \\text{Gaussian}; \\\\\n    1 \\text{ if } \\|\\mathbf{q} - \\mathbf{k}\\| \\leq 1, & \\text{Boxcar}; \\\\\n    \\max(0, 1 - \\|\\mathbf{q} - \\mathbf{k}\\|), & \\text{Epanechnikov}.\n\\end{cases}\n\\]\nWe import all the packages we need in here.\n\n\nCode\nimport numpy as np\nimport torch\nfrom torch import nn\nfrom torch.nn import functional as F\nfrom d2l import torch as d2l\n\nd2l.use_svg_display()",
+    "text": "The objective of classification task is to predict the input sample \\(\\mathbf{x}\\) belongs to a certain \\(y \\in \\{1, 2, \\dots, k\\}.\\)\nThe Softmax function is able to transform the unnormalized predictions into non-negative numbers that sum to 1, while keeping the model derivable. Therefore, we can use the Softmax function to represent the output of the model as a selection of labels with maximum probability.",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.2 Attention Pooling by Similarity"
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-6-11.2.html#kernels-and-data",
-    "href": "posts/DIDP/2025-1-6-11.2.html#kernels-and-data",
-    "title": "11.2 Attention Pooling by Similarity",
-    "section": "Kernels and Data",
-    "text": "Kernels and Data\nFirst, we define some common kernels.\n\n\nCode\n# Define some kernels\ndef gaussian(x):\n    return torch.exp(-x**2 / 2)\n\ndef boxcar(x):\n    return torch.abs(x) &lt; 1.0\n\ndef constant(x):\n    return 1.0 + 0 * x\n\ndef epanechikov(x):\n    return torch.max(1 - torch.abs(x), torch.zeros_like(x))\n\nfig, axes = d2l.plt.subplots(1, 4, sharey=True, figsize=(12, 3))\n\nkernels = (gaussian, boxcar, constant, epanechikov)\nnames = ('Gaussian', 'Boxcar', 'Constant', 'Epanechikov')\nx = torch.arange(-2.5, 2.5, 0.1)\nfor kernel, name, ax in zip(kernels, names, axes):\n    ax.plot(x.detach().numpy(), kernel(x).detach().numpy())\n    ax.set_xlabel(name)\n\nd2l.plt.show()\n\n\n\n\n\n\n\n\n\nTo see Nadaraya–Watson estimation in action, let’s define some training data. In the following we use the dependency\n\\[\ny_i = 2\\sin(x_i) + x_i^{0.8} + \\epsilon,\n\\]\n\n\nCode\n#Creat training dataset\nn_train = 50 \nx_train, _ = torch.sort(torch.rand(n_train) * 5) \n\ndef f(x):\n    return 2 * torch.sin(x) + x**0.8\n\ny_train = f(x_train) + torch.normal(0.0, 0.5, (n_train,))\nx_test = torch.arange(0, 5, 0.1) \ny_truth = f(x_test)  \nn_test = len(x_test) \n\n\nWe creat a dataset with x_train, y_train, x_test and y_truth.",
+    "objectID": "posts/DIDP/2025-1-24-4.1.html#softmax-regression-model",
+    "href": "posts/DIDP/2025-1-24-4.1.html#softmax-regression-model",
+    "title": "4.1 Softmax Regression",
+    "section": "Softmax Regression Model",
+    "text": "Softmax Regression Model\nSoftmax Regression Model is a linear model, and it can be represented as:\n\\[\n\\mathbf{o} = \\mathbf{W} \\mathbf{x} + \\mathbf{b}\n\\]\nwhere:\n\n\\(\\mathbf{o} \\in \\mathbb{R}^k\\) is the output without normalized。\n\\(\\mathbf{W} \\in \\mathbb{R}^{k \\times d}\\) is the weight matrix。\n\\(\\mathbf{b} \\in \\mathbb{R}^k\\) is the bias vector。\n\\(k\\) is the number of categories，\\(d\\) is the dimension of the input feature。",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
-      "11. Attention Mechanisms and Transformers",
-      "11.2 Attention Pooling by Similarity"
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
     ]
   },
   {
-    "objectID": "posts/DIDP/2025-1-6-11.2.html#attention-pooling-via-nadarayawatson-regression",
-    "href": "posts/DIDP/2025-1-6-11.2.html#attention-pooling-via-nadarayawatson-regression",
-    "title": "11.2 Attention Pooling by Similarity",
-    "section": "Attention Pooling via Nadaraya–Watson Regression",
-    "text": "Attention Pooling via Nadaraya–Watson Regression\nNow that we have data and kernels, all we need is a function that computes the kernel regression estimates. Note that we also want to obtain the relative kernel weights in order to perform some minor diagnostics. Hence we first compute the kernel between all training features (covariates) \\(x_train\\) and all validation features \\(x_val\\). This yields a matrix, which we subsequently normalize. When multiplied with the training labels \\(y_train\\) we obtain the estimates. The normalized relative kernel weights (\\(attention\\_w\\) below) are the attention weights.\n\n\nCode\n#y_hat: pred, attention_w: attention weight\ndef nadaraya_watson(x_train, y_train, x_val, kernel):\n    dists = x_train.reshape((-1, 1)) - x_val.reshape((1, -1)) #dist between train and valid\n    # Each column/row corresponds to each query/key\n    k = kernel(dists).type(torch.float32)\n    # Normalization over keys for each query\n    attention_w = k / k.sum(0)\n    y_hat = y_train@attention_w\n    return y_hat, attention_w\n\n\nThe whole calculation is as follows:\n\\[\nf(x) = \\sum_{i=1}^n \\frac{K(x - x_i)}{\\sum_{j=1}^n K(x - x_j)} y_i,\n\\]\nwhere \\(K\\) is the kernel.\nAnd it has a more common formula:\n\\[\nf(x) = \\sum_{i=1}^n \\alpha(x, x_i) y_i,\n\\]\nwhere \\(x\\) is the query, \\([x_i, y_i]\\) is the key-value pair.\nLet’s have a look at the kind of estimates that the different kernels produce.\n\n\nCode\ndef plot_kernel_reg(y_hat):\n    d2l.plot(x_test, [y_truth, y_hat], 'x', 'y', legend=['Truth', 'Pred'],\n             xlim=[0, 5], ylim=[-1, 5])\n    d2l.plt.plot(x_train, y_train, 'o', alpha=0.5)\n\n\n\nConstant kernel\n\nThe estimator calculates the average of all training sample output values based on average convergence.\n\n\nCode\ny_hat, attention_w_constant = nadaraya_watson(x_train, y_train, x_test, kernel= constant)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\nFrom the results, it is not the model we need.\n\nGaussian kernel\n\n\n\nCode\ny_hat, attention_w_Gaussian = nadaraya_watson(x_train, y_train, x_test, kernel= gaussian)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\n\nBoxcar kernel\n\n\n\nCode\ny_hat, attention_w_Boxcar = nadaraya_watson(x_train, y_train, x_test, kernel= boxcar)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\n\nEpanechikov\n\n\n\nCode\ny_hat, attention_w_Epanechikov = nadaraya_watson(x_train, y_train, x_test, kernel= epanechikov)\nplot_kernel_reg(y_hat)\n\n\n\n\n\n\n\n\n\nLet’s see their attention maps.\n\n\nCode\ndef plot(attention_w, names):\n    fig, axes = d2l.plt.subplots(1, 4, sharey=True, figsize=(12, 3))\n    for name, attention, ax in zip(names, attention_w, axes):\n        pcm = ax.imshow(attention.detach().numpy(), cmap='Reds')\n        ax.set_xlabel(name)\n    fig.colorbar(pcm, ax=axes, shrink=0.7)\n\nattention_w = [attention_w_Gaussian, attention_w_Boxcar, attention_w_constant, attention_w_Epanechikov] \nplot(attention_w, names)\n\n\n\n\n\n\n\n\n\nThe visualization clearly shows why the estimates for Gaussian, Boxcar, and Epanechikov are very similar: after all, they are derived from very similar attention weights, despite the different functional form of the kernel.",
+    "objectID": "posts/DIDP/2025-1-24-4.1.html#softmax-function",
+    "href": "posts/DIDP/2025-1-24-4.1.html#softmax-function",
+    "title": "4.1 Softmax Regression",
+    "section": "Softmax Function",
+    "text": "Softmax Function\nHow can we normalized the output? To accomplish this, we first power each of the unnormalized predictions, which ensures that the output is non-negative. To ensure that the probability values of the final outputs sum to 1, we then let the result after each powering divide their sum. And the formula is as follows:\n\\[\n\\hat{y}_i = \\frac{\\exp(o_i)}{\\sum_{j=1}^k \\exp(o_j)}\n\\]\nwhere： - \\(\\hat{y}_i\\) is the possibility of the sample belongs to \\(i\\). - \\(\\hat{y}\\) are the non-negative numbers that sum to 1.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-24-4.1.html#vectorization",
+    "href": "posts/DIDP/2025-1-24-4.1.html#vectorization",
+    "title": "4.1 Softmax Regression",
+    "section": "Vectorization",
+    "text": "Vectorization\nTo improve computational efficiency, we vectorize calculations in minibatches of data. The vector calculation expression for softmax regression is: \\[\n\\mathbf{O} = \\mathbf{X} \\mathbf{W} + \\mathbf{b}, \\\\\n\\hat{\\mathbf{Y}} = \\text{softmax}(\\mathbf{O}).\n\\]\nwhere:\n\n\\(\\mathbf{X} \\in \\mathbb{R}^{n \\times d}\\) is a minibatch\n\\(\\mathbf{W} \\in \\mathbb{R}^{d \\times q}\\) is the weight matrix\n\\(\\mathbf{b} \\in \\mathbb{R}^{1 \\times q}\\) is the bias matrix",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-24-4.1.html#loss-function",
+    "href": "posts/DIDP/2025-1-24-4.1.html#loss-function",
+    "title": "4.1 Softmax Regression",
+    "section": "Loss Function",
+    "text": "Loss Function\nThe Cross-Entropy loss function can measure the distance between the prediction \\(\\hat{\\mathbf{y}}\\) and the ground-truth \\(\\mathbf{y}\\):\n\\[\n\\text{Loss} = -\\sum_{i=1}^k y_i \\log(\\hat{y}_i)\n\\]\nFrom an information theoretic perspective, we can consider the cross-entropy classification goal in two ways: (i) maximizing the likelihood of the observed data; and (ii) minimizing the surprise required to convey the labels.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "4.Linear Neural Networks for Classification",
+      "4.1 Softmax Regression"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.1.html",
+    "href": "posts/DIDP/2025-1-6-11.1.html",
+    "title": "11.1 Queries, Keys, and Values",
+    "section": "",
+    "text": "The Basic Theory of Self-attention please see here",
     "crumbs": [
       "Blog",
       "Dive into Deep Learning",
       "11. Attention Mechanisms and Transformers",
-      "11.2 Attention Pooling by Similarity"
+      "11.1 Queries, Keys, and Values"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-6-11.1.html#visualization-of-attention-weights",
+    "href": "posts/DIDP/2025-1-6-11.1.html#visualization-of-attention-weights",
+    "title": "11.1 Queries, Keys, and Values",
+    "section": "Visualization of Attention Weights",
+    "text": "Visualization of Attention Weights\nThe darker the color, the better the match.\n\n\nCode\nimport torch\nfrom d2l import torch as d2l\n\n#@save\ndef show_heatmaps(matrices, xlabel, ylabel, titles=None, figsize=(2.5, 2.5), cmap='Reds'):\n    d2l.use_svg_display()\n    num_rows, num_cols = matrices.shape[0], matrices.shape[1]\n    fig, axes = d2l.plt.subplots(num_rows, num_cols, figsize=figsize,\n                                 sharex=True, sharey=True, squeeze=False)\n    for i, (row_axes, row_matrices) in enumerate(zip(axes, matrices)):\n        for j, (ax, matrix) in enumerate(zip(row_axes, row_matrices)):\n            pcm = ax.imshow(matrix.detach().numpy(), cmap=cmap)\n            if i == num_rows - 1:\n                ax.set_xlabel(xlabel)\n            if j == 0:\n                ax.set_ylabel(ylabel)\n            if titles:\n                ax.set_title(titles[j])\n    fig.colorbar(pcm, ax=axes, shrink=0.6)\n  \nattention_weights = torch.eye(10).reshape((1, 1, 10, 10))\nshow_heatmaps(attention_weights, xlabel='Keys', ylabel='Queries')",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.1 Queries, Keys, and Values"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-7-11.3.html",
+    "href": "posts/DIDP/2025-1-7-11.3.html",
+    "title": "11.3 Attention Scoring Functions",
+    "section": "",
+    "text": "In section 11.2, we introduce a distance-based kernel to model interactions between queries and keys. But it’s takes too much to compute. So, we will introduce some attention scoring functions that will outperform the method in section 11.2.\nNote that the details of calculating output by query, keys and values is in here\nWe import the packages we need first.\nCode\nimport math\nimport torch\nfrom torch import nn\nfrom d2l import torch as d2l",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.3 Attention Scoring Functions"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-7-11.3.html#dot-product-attention",
+    "href": "posts/DIDP/2025-1-7-11.3.html#dot-product-attention",
+    "title": "11.3 Attention Scoring Functions",
+    "section": "Dot Product Attention",
+    "text": "Dot Product Attention\nLet’s recall the dot product in self attention. Its formula is as follows:\n\\[\n\\begin{align*}\n    \\text{Attention\\_weights}(Q, K) &= \\frac{\\exp\\left(\\mathbf{q}^\\top \\mathbf{k}_i / \\sqrt{d_k}\\right)}{\\sum_{j=1} \\exp\\left(\\mathbf{q}^\\top \\mathbf{k}_j / \\sqrt{d_k}\\right)}\n\\end{align*}\n\\]\nTips: Why do we divide \\(d_k\\) in the formula?\n\nA larger \\(\\sqrt d_k\\) leads to a larger variance in the \\(Q, K\\) dot product, resulting in a larger gap between the vector element values;\nThe gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;\nThe division by the root sign \\(d_k\\) is to normalize the result after the dot product of \\(q\\) and \\(k\\) into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.3 Attention Scoring Functions"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-7-11.3.html#convenience-functions",
+    "href": "posts/DIDP/2025-1-7-11.3.html#convenience-functions",
+    "title": "11.3 Attention Scoring Functions",
+    "section": "Convenience Functions",
+    "text": "Convenience Functions\n\nMasked Softmax Operation\nThe softmax operation is used to output a probability distribution as the attention weights. But in some cases, not all values should be included in the attention aggregation.\nFor example, when processing text, some sequences are populated with special elements that have no meaning. In order to obtain attention convergence using only meaningful element, an effective sequence length can be assigned so that positions outside the assigned range can be filtered out when calculating the softmax. Since it is such a common problem, it has a name: the masked softmax operation.\nHere is the implement.\n\n\nCode\ndef masked_softmax(X, valid_lens):  #@save\n    \"\"\"Perform softmax operation by masking elements on the last dim.\"\"\"\n    # X: 3D tensor [batch_size, seq_len, features], valid_lens: 1D or 2D tensor\n    def _sequence_mask(X, valid_len, value=0):\n        maxlen = X.size(1)\n        mask = torch.arange((maxlen), dtype=torch.float32,\n                            device=X.device)[None, :] &lt; valid_len[:, None]\n        X[~mask] = value # 0 or -1e6\n        return X\n\n    if valid_lens is None:\n        return nn.functional.softmax(X, dim=-1)\n    else:\n        shape = X.shape\n        if valid_lens.dim() == 1: # 1D or 2D\n            valid_lens = torch.repeat_interleave(valid_lens, shape[1])\n        else:\n            valid_lens = valid_lens.reshape(-1)\n        # On the last axis, replace masked elements with a very large negative\n        # value, whose exponentiation outputs 0\n        # [batch_size * seq_len, features]\n        X = _sequence_mask(X.reshape(-1, shape[-1]), valid_lens, value=-1e6)\n        return nn.functional.softmax(X.reshape(shape), dim=-1)\n\n\nTo illustrate how this function works, consider a minibatch of two examples of size \\(2 \\times 4\\), where their valid length are 2 and 3. Through the Masked Softmax Operation, the positions outside the effective length are masked as 0.\n\n\nCode\nmasked_softmax(torch.rand(2, 2, 4), torch.tensor([2, 3])) # valid_len 1D\nmasked_softmax(torch.rand(2, 2, 4), torch.tensor([[1, 3], [2, 4]])) # valid_len 2D\n\n\ntensor([[[1.0000, 0.0000, 0.0000, 0.0000],\n         [0.3748, 0.2905, 0.3347, 0.0000]],\n\n        [[0.3466, 0.6534, 0.0000, 0.0000],\n         [0.2038, 0.3050, 0.3511, 0.1401]]])\n\n\n\n\nBatch Matrix Multiplication\nThen the batch matrix multiplication (BMM) computes the elementwise product\n\\[\n\\text{BMM}(\\mathbf{Q}, \\mathbf{K}) = [\\mathbf{Q}_1 \\mathbf{K}_1, \\mathbf{Q}_2 \\mathbf{K}_2, \\dots, \\mathbf{Q}_n \\mathbf{K}_n] \\in \\mathbb{R}^{n \\times a \\times c}.\n\\]\n\n\nCode\nQ = torch.ones((2, 3, 4))\nK = torch.ones((2, 4, 6))\nd2l.check_shape(torch.bmm(Q, K), (2, 3, 6))",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.3 Attention Scoring Functions"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-7-11.3.html#scaled-dot-product-attention",
+    "href": "posts/DIDP/2025-1-7-11.3.html#scaled-dot-product-attention",
+    "title": "11.3 Attention Scoring Functions",
+    "section": "Scaled Dot Product Attention",
+    "text": "Scaled Dot Product Attention\nIn practice, we often think of minibatches for efficiency, such as computing attention for \\(n\\) queries and \\(m\\) key-value pairs, where queries and keys are of length \\(d\\) and values are of length \\(v\\). The scaled dot product attention of queries \\(\\mathbf{Q} \\in \\mathbb{R}^{n \\times d}\\), keys \\(\\mathbf{K} \\in \\mathbb{R}^{m \\times d}\\), and values \\(\\mathbf{V} \\in \\mathbb{R}^{m \\times v}\\) thus can be written as\n\\[\n\\text{softmax}\\left(\\frac{\\mathbf{Q} \\mathbf{K}^\\top}{\\sqrt{d}}\\right) \\mathbf{V} \\in \\mathbb{R}^{n \\times v}.\n\\]\n\n\nCode\nclass DotProductAttention(nn.Module):  #@save\n    \"\"\"Scaled dot product attention.\"\"\"\n    def __init__(self, dropout):\n        super().__init__()\n        self.dropout = nn.Dropout(dropout)\n\n    # Shape of queries: (batch_size, no. of queries, d)\n    # Shape of keys: (batch_size, no. of key-value pairs, d)\n    # Shape of values: (batch_size, no. of key-value pairs, value dimension)\n    # Shape of valid_lens: (batch_size,) or (batch_size, no. of queries)\n    def forward(self, queries, keys, values, valid_lens=None):\n        d = queries.shape[-1]\n        # Swap the last two dimensions of keys with keys.transpose(1, 2)\n        scores = torch.bmm(queries, keys.transpose(1, 2)) / math.sqrt(d)\n        self.attention_weights = masked_softmax(scores, valid_lens)\n        return torch.bmm(self.dropout(self.attention_weights), values)\n\nqueries = torch.normal(0, 1, (2, 1, 2))\nkeys = torch.normal(0, 1, (2, 10, 2))\nvalues = torch.normal(0, 1, (2, 10, 4))\nvalid_lens = torch.tensor([2, 6])\n\nattention = DotProductAttention(dropout=0.5)\nattention.eval()\nattention(queries, keys, values, valid_lens)\n\n\ntensor([[[-0.9529,  0.5175,  0.1956, -0.3657]],\n\n        [[ 0.1863,  0.3582,  0.1847,  0.7891]]])\n\n\n\n\nCode\nd2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),\n                  xlabel='Keys', ylabel='Queries')",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.3 Attention Scoring Functions"
+    ]
+  },
+  {
+    "objectID": "posts/DIDP/2025-1-7-11.3.html#additive-attention",
+    "href": "posts/DIDP/2025-1-7-11.3.html#additive-attention",
+    "title": "11.3 Attention Scoring Functions",
+    "section": "Additive Attention",
+    "text": "Additive Attention\nWhen queries \\(q\\) and keys \\(k\\) are vectors of different dimension, we can either use a matrix to address the mismatch via \\(\\mathbf{q}^\\top \\mathbf{M} \\mathbf{k}_i\\), or we can use additive attention as the scoring function. The formula is as follow:\n\\[\na(\\mathbf{q}, \\mathbf{k}) = \\mathbf{w}_v^\\top \\tanh(\\mathbf{W}_q \\mathbf{q} + \\mathbf{W}_k \\mathbf{k}) \\in \\mathbb{R},\n\\]\nwhere the learnable parameters are \\(\\mathbf{W_q} \\in \\mathbb{R}^{h \\times q}\\), \\(\\mathbf{W_k} \\in \\mathbb{R}^{h \\times k}\\), and \\(\\mathbf{w_v} \\in \\mathbb{R}^{h}\\).\n\n\nCode\nclass AdditiveAttention(nn.Module):  #@save\n    \"\"\"Additive attention.\"\"\"\n    def __init__(self, num_hiddens, dropout, **kwargs):\n        super(AdditiveAttention, self).__init__(**kwargs)\n        self.W_k = nn.LazyLinear(num_hiddens, bias=False)\n        self.W_q = nn.LazyLinear(num_hiddens, bias=False)\n        self.w_v = nn.LazyLinear(1, bias=False)\n        self.dropout = nn.Dropout(dropout)\n\n    def forward(self, queries, keys, values, valid_lens):\n        queries, keys = self.W_q(queries), self.W_k(keys)\n        # After dimension expansion, shape of queries: (batch_size, no. of\n        # queries, 1, num_hiddens) and shape of keys: (batch_size, 1, no. of\n        # key-value pairs, num_hiddens). Sum them up with broadcasting\n        features = queries.unsqueeze(2) + keys.unsqueeze(1)\n        features = torch.tanh(features)\n        # There is only one output of self.w_v, so we remove the last\n        # one-dimensional entry from the shape. Shape of scores: (batch_size,\n        # no. of queries, no. of key-value pairs)\n        scores = self.w_v(features).squeeze(-1)\n        self.attention_weights = masked_softmax(scores, valid_lens)\n        # Shape of values: (batch_size, no. of key-value pairs, value\n        # dimension)\n        return torch.bmm(self.dropout(self.attention_weights), values)\n\nqueries = torch.normal(0, 1, (2, 1, 20))\n\nattention = AdditiveAttention(num_hiddens=8, dropout=0.1)\nattention.eval()\n\nattention(queries, keys, values, valid_lens)\n\n\ntensor([[[-0.9559,  0.5002,  0.1978, -0.4814]],\n\n        [[ 0.1049,  0.8026,  0.5460,  0.6277]]], grad_fn=&lt;BmmBackward0&gt;)\n\n\n\n\nCode\nd2l.show_heatmaps(attention.attention_weights.reshape((1, 1, 2, 10)),\n                  xlabel='Keys', ylabel='Queries')",
+    "crumbs": [
+      "Blog",
+      "Dive into Deep Learning",
+      "11. Attention Mechanisms and Transformers",
+      "11.3 Attention Scoring Functions"
     ]
   },
   {
