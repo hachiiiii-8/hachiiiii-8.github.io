@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wu Hao">
-<meta name="description" content="Record any MLE issues that may be used. Points: 1.Self-Attention">
+<meta name="description" content="Introduction to Dropout and its implementation">
 
-<title>MLE Record 1 – hao</title>
+<title>5.5 Dropout – hao</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4974,7 +4974,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">Record of Job</a></li><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">MLE Record 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-1-5.1.html">5. Multilayer Perceptrons</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-5-5.5.html">5.5 Dropout</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -5149,13 +5149,13 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">5. Multilayer Perceptrons</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/DIDP/2025-2-1-5.1.html" class="sidebar-item-text sidebar-link">
@@ -5182,7 +5182,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-2-5-5.5.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/DIDP/2025-2-5-5.5.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">5.5 Dropout</span></a>
   </div>
 </li>
@@ -5334,7 +5334,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/Record/2025-1-8-MLE.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../posts/Record/2025-1-8-MLE.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MLE Record 1</span></a>
   </div>
 </li>
@@ -5350,25 +5350,27 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#self-attention" id="toc-self-attention" class="nav-link active" data-scroll-target="#self-attention">Self-Attention</a></li>
-  <li><a href="#overfitting-and-underfitting" id="toc-overfitting-and-underfitting" class="nav-link" data-scroll-target="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
+  <li><a href="#principle-of-dropout" id="toc-principle-of-dropout" class="nav-link active" data-scroll-target="#principle-of-dropout">Principle of Dropout</a></li>
+  <li><a href="#benefits-of-dropout" id="toc-benefits-of-dropout" class="nav-link" data-scroll-target="#benefits-of-dropout">Benefits of Dropout</a></li>
+  <li><a href="#implementation-from-scratch" id="toc-implementation-from-scratch" class="nav-link" data-scroll-target="#implementation-from-scratch">Implementation from Scratch</a></li>
+  <li><a href="#concise-implementation" id="toc-concise-implementation" class="nav-link" data-scroll-target="#concise-implementation">Concise Implementation</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">Record of Job</a></li><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">MLE Record 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-1-5.1.html">5. Multilayer Perceptrons</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-5-5.5.html">5.5 Dropout</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">MLE Record 1</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">5.5 Dropout</h1><button type="button" class="btn code-tools-button dropdown-toggle" id="quarto-code-tools-menu" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi"></i> Code</button><ul class="dropdown-menu dropdown-menu-end" aria-labelelledby="quarto-code-tools-menu"><li><a id="quarto-show-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Show All Code</a></li><li><a id="quarto-hide-all-code" class="dropdown-item" href="javascript:void(0)" role="button">Hide All Code</a></li><li><hr class="dropdown-divider"></li><li><a id="quarto-view-source" class="dropdown-item" href="javascript:void(0)" role="button">View Source</a></li></ul></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">Job Record</div>
+    <div class="quarto-category">Dive-into-Deep-Learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Record any MLE issues that may be used. Points: 1.Self-Attention
+    Introduction to Dropout and its implementation
   </div>
 </div>
 
@@ -5385,7 +5387,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025/1/8</p>
+      <p class="date">2025/2/5</p>
     </div>
   </div>
   
@@ -5397,41 +5399,192 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </header>
 
 
-<section id="self-attention" class="level2">
-<h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
-<section id="question-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
-<p>Why do we divide <span class="math inline">\(d_k\)</span> when we calculate weights matrix in the Self-Attention?</p>
-<p>The formula of computing weights is as follows:</p>
+<p>Deep neural network have strong representation power but are prone to overfitting, especially with limited training data.</p>
+<section id="principle-of-dropout" class="level2">
+<h2 class="anchored" data-anchor-id="principle-of-dropout">Principle of Dropout</h2>
+<p>During each training iteration, we randomly drop (set to zero) a fraction of neurons to prevent the model from overly relying on specific neurons.</p>
+<p>Let <span class="math inline">\(h\)</span> be the activations of a layer. Dropout applies a mask <span class="math inline">\(\mathbf{m}\)</span> where each element is zero with dropout probability <span class="math inline">\(p\)</span>, each intermediate activation <span class="math inline">\(h\)</span> is replaced by a random variable <span class="math inline">\(h&#39;\)</span> as follows:</p>
 <p><span class="math display">\[
-\begin{align*}
-    \text{Attention\_weights}(Q, K) &amp;= \frac{\exp\left(\mathbf{q}^\top \mathbf{k}_i / \sqrt{d_k}\right)}{\sum_{j=1} \exp\left(\mathbf{q}^\top \mathbf{k}_j / \sqrt{d_k}\right)}
-\end{align*}
+h&#39; =
+\begin{cases}
+0 &amp; \text{with probability } p \\
+\frac{h}{1 - p} &amp; \text{otherwise}
+\end{cases}
 \]</span></p>
 </section>
-<section id="solution" class="level3">
-<h3 class="anchored" data-anchor-id="solution">Solution</h3>
+<section id="benefits-of-dropout" class="level2">
+<h2 class="anchored" data-anchor-id="benefits-of-dropout">Benefits of Dropout</h2>
 <ol type="1">
-<li>A larger <span class="math inline">\(\sqrt d_k\)</span> leads to a larger variance in the <span class="math inline">\(Q, K\)</span> dot product, resulting in a larger gap between the vector element values;</li>
-<li>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</li>
-<li>The division by the root sign <span class="math inline">\(d_k\)</span> is to normalize the result after the dot product of <span class="math inline">\(q\)</span> and <span class="math inline">\(k\)</span> into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</li>
+<li><p>Prevents the model from over-relying on specific neurons, enhancing robustness.</p></li>
+<li><p>Works similarly to ensemble learning: since different neurons are dropped in each training step, it implicitly trains multiple sub-networks.</p></li>
 </ol>
 </section>
+<section id="implementation-from-scratch" class="level2">
+<h2 class="anchored" data-anchor-id="implementation-from-scratch">Implementation from Scratch</h2>
+<div id="aa34d721" class="cell" data-execution_count="1">
+<details open class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> nn</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> d2l <span class="im">import</span> torch <span class="im">as</span> d2l</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils <span class="im">import</span> data</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> DataLoader</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> transforms</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> dropout_layer(X, dropout):</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="dv">0</span> <span class="op">&lt;=</span> dropout <span class="op">&lt;=</span> <span class="dv">1</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> dropout <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> torch.zeros_like(X)</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> dropout <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> X</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (torch.rand(X.shape) <span class="op">&gt;</span> dropout).<span class="bu">float</span>()</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mask <span class="op">*</span> X <span class="op">/</span> (<span class="fl">1.0</span> <span class="op">-</span> dropout)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>X<span class="op">=</span> torch.arange(<span class="dv">16</span>, dtype <span class="op">=</span> torch.float32).reshape((<span class="dv">2</span>, <span class="dv">8</span>))</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X)</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">0.</span>))</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">0.5</span>))</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">1.</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>tensor([[ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.],
+        [ 8.,  9., 10., 11., 12., 13., 14., 15.]])
+tensor([[ 0.,  1.,  2.,  3.,  4.,  5.,  6.,  7.],
+        [ 8.,  9., 10., 11., 12., 13., 14., 15.]])
+tensor([[ 0.,  0.,  4.,  6.,  0.,  0.,  0.,  0.],
+        [16., 18., 20.,  0.,  0., 26., 28., 30.]])
+tensor([[0., 0., 0., 0., 0., 0., 0., 0.],
+        [0., 0., 0., 0., 0., 0., 0., 0.]])</code></pre>
+</div>
+</div>
+<section id="preprocessing-the-data" class="level3">
+<h3 class="anchored" data-anchor-id="preprocessing-the-data">Preprocessing the Data</h3>
+<div id="9da82ebf" class="cell" data-execution_count="2">
+<details open class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>trans <span class="op">=</span> transforms.ToTensor()</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>mnist_train <span class="op">=</span> torchvision.datasets.FashionMNIST(root<span class="op">=</span><span class="st">&quot;./data&quot;</span>, train<span class="op">=</span><span class="va">True</span>, transform<span class="op">=</span>trans, download <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>mnist_test <span class="op">=</span> torchvision.datasets.FashionMNIST(root<span class="op">=</span><span class="st">&quot;./data&quot;</span>, train<span class="op">=</span><span class="va">False</span>, transform<span class="op">=</span>trans, download <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>batch_size <span class="op">=</span> <span class="dv">256</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>train_iter <span class="op">=</span> DataLoader(mnist_train, batch_size, shuffle<span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>test_iter <span class="op">=</span> DataLoader(mnist_test, batch_size)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 </section>
-<section id="overfitting-and-underfitting" class="level2">
-<h2 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h2>
-<section id="question-1-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-1-1">Question 1</h3>
-<p>Why regularization reduces overfitting and explains <span class="math inline">\(L_1\)</span> regularization and <span class="math inline">\(L_2\)</span> regularization.</p>
+<section id="define-the-model" class="level3">
+<h3 class="anchored" data-anchor-id="define-the-model">Define the Model</h3>
+<div id="ce395309" class="cell" data-execution_count="3">
+<details open class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DropoutMLPScratch(d2l.Classifier):</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, num_outputs, num_hiddens_1, num_hiddens_2,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                 dropout_1, dropout_2):</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.save_hyperparameters()</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin1 <span class="op">=</span> nn.LazyLinear(num_hiddens_1)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin2 <span class="op">=</span> nn.LazyLinear(num_hiddens_2)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin3 <span class="op">=</span> nn.LazyLinear(num_outputs)</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.relu <span class="op">=</span> nn.ReLU()</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, X):</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>        H1 <span class="op">=</span> <span class="va">self</span>.relu(<span class="va">self</span>.lin1(X.reshape((X.shape[<span class="dv">0</span>], <span class="op">-</span><span class="dv">1</span>))))</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.training:</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>            H1 <span class="op">=</span> dropout_layer(H1, <span class="va">self</span>.dropout_1)</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>        H2 <span class="op">=</span> <span class="va">self</span>.relu(<span class="va">self</span>.lin2(H1))</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.training:</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>            H2 <span class="op">=</span> dropout_layer(H2, <span class="va">self</span>.dropout_2)</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.lin3(H2)</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> trainer_scratch(train_iter, test_iter, model):</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="co">#optimization algorithm (Adam). </span></span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>    optimizer <span class="op">=</span> torch.optim.Adam(model.parameters(), lr<span class="op">=</span><span class="fl">0.001</span>) <span class="co"># lr=0.001 default</span></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>    criterion <span class="op">=</span> nn.CrossEntropyLoss()</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>    n_epochs<span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(n_epochs):</span>
+<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>        model.train()</span>
+<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>        epoch_start_time <span class="op">=</span> time.time()</span>
+<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>        loss_record <span class="op">=</span> []</span>
+<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a>        train_acc <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>        <span class="co">#x: features, y: labels</span></span>
+<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> X, y <span class="kw">in</span> train_iter:</span>
+<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>            optimizer.zero_grad()               <span class="co"># Set gradient to zero.</span></span>
+<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>            train_pred <span class="op">=</span> model(X)  </span>
+<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a>            batch_loss <span class="op">=</span> criterion(train_pred, y)</span>
+<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>            batch_loss.backward()               <span class="co"># Compute gradient(back propagation).</span></span>
+<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>            optimizer.step()                    <span class="co"># Update parameters.</span></span>
+<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>            train_acc <span class="op">+=</span> np.<span class="bu">sum</span>(np.argmax(train_pred.detach().cpu().numpy(), axis<span class="op">=</span><span class="dv">1</span>) <span class="op">==</span> y.cpu().numpy())</span>
+<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>            loss_record.append(batch_loss.detach().item()) <span class="co">#detach(): separation gradient</span></span>
+<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>        mean_train_loss <span class="op">=</span> <span class="bu">sum</span>(loss_record)<span class="op">/</span><span class="bu">len</span>(loss_record)</span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>        train_acc <span class="op">=</span> train_acc <span class="op">/</span> <span class="bu">len</span>(mnist_train)</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>        model.<span class="bu">eval</span>() <span class="co"># Set our model to evaluation mode.</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>        loss_record <span class="op">=</span> []</span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>        test_acc <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> x, y <span class="kw">in</span> test_iter:</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>                test_pred <span class="op">=</span> model(x)</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>                batch_loss <span class="op">=</span> criterion(test_pred, y)</span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>                test_acc <span class="op">+=</span> np.<span class="bu">sum</span>(np.argmax(test_pred.detach().cpu().numpy(), axis<span class="op">=</span><span class="dv">1</span>) <span class="op">==</span> y.cpu().numpy())</span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>                loss_record.append(batch_loss.item())</span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>            mean_test_loss <span class="op">=</span> <span class="bu">sum</span>(loss_record)<span class="op">/</span><span class="bu">len</span>(loss_record)</span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>            test_acc <span class="op">=</span> test_acc <span class="op">/</span> <span class="bu">len</span>(mnist_test)</span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&#39;[</span><span class="sc">%03d</span><span class="st">/</span><span class="sc">%03d</span><span class="st">] </span><span class="sc">%2.2f</span><span class="st"> sec(s) Train Acc: </span><span class="sc">%3.6f</span><span class="st"> Loss: </span><span class="sc">%3.6f</span><span class="st"> | Test Acc: </span><span class="sc">%3.6f</span><span class="st"> loss: </span><span class="sc">%3.6f</span><span class="st">&#39;</span> <span class="op">%</span> <span class="op">\</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a>              (epoch <span class="op">+</span> <span class="dv">1</span>, n_epochs, time.time() <span class="op">-</span> epoch_start_time, <span class="op">\</span></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>               train_acc, mean_train_loss, test_acc, mean_test_loss))</span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> DropoutMLPScratch(num_outputs<span class="op">=</span><span class="dv">10</span>, num_hiddens_1<span class="op">=</span><span class="dv">256</span>, num_hiddens_2<span class="op">=</span><span class="dv">256</span>,</span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>           dropout_1<span class="op">=</span><span class="fl">0.5</span>, dropout_2<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>trainer_scratch(train_iter, test_iter, model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>[001/010] 3.85 sec(s) Train Acc: 0.721283 Loss: 0.758717 | Test Acc: 0.815500 loss: 0.498432
+[002/010] 3.83 sec(s) Train Acc: 0.826717 Loss: 0.489041 | Test Acc: 0.846200 loss: 0.420513
+[003/010] 3.83 sec(s) Train Acc: 0.841867 Loss: 0.438194 | Test Acc: 0.853000 loss: 0.398561
+[004/010] 3.93 sec(s) Train Acc: 0.850717 Loss: 0.412885 | Test Acc: 0.860700 loss: 0.384457
+[005/010] 3.85 sec(s) Train Acc: 0.857117 Loss: 0.395245 | Test Acc: 0.868000 loss: 0.370092
+[006/010] 3.90 sec(s) Train Acc: 0.861583 Loss: 0.383994 | Test Acc: 0.866800 loss: 0.363013
+[007/010] 3.85 sec(s) Train Acc: 0.865383 Loss: 0.373140 | Test Acc: 0.870500 loss: 0.353202
+[008/010] 3.85 sec(s) Train Acc: 0.867100 Loss: 0.362516 | Test Acc: 0.871800 loss: 0.351517
+[009/010] 3.85 sec(s) Train Acc: 0.870300 Loss: 0.355456 | Test Acc: 0.877100 loss: 0.346203
+[010/010] 3.84 sec(s) Train Acc: 0.873733 Loss: 0.348990 | Test Acc: 0.875200 loss: 0.341907</code></pre>
+</div>
+</div>
+<p>The time of training is increased compared the model without dropout because different neurons are dropped in each training step. It’s the equivalent of training a new network every iteration.</p>
 </section>
-<section id="solution-1" class="level3">
-<h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
-<p><a href="https://zhuanlan.zhihu.com/p/35356992">Solution</a></p>
+</section>
+<section id="concise-implementation" class="level2">
+<h2 class="anchored" data-anchor-id="concise-implementation">Concise Implementation</h2>
+<div id="4c01ca25" class="cell" data-execution_count="4">
+<details open class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DropoutMLP(d2l.Classifier):</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, num_outputs, num_hiddens_1, num_hiddens_2,</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>                 dropout_1, dropout_2, lr):</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.save_hyperparameters()</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.net <span class="op">=</span> nn.Sequential(</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>            nn.Flatten(), nn.LazyLinear(num_hiddens_1), nn.ReLU(),</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>            nn.Dropout(dropout_1), nn.LazyLinear(num_hiddens_2), nn.ReLU(),</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>            nn.Dropout(dropout_2), nn.LazyLinear(num_outputs))</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, X):</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.net(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
 
 
 <!-- -->
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -5903,50 +6056,174 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
-<div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;MLE Record 1&quot;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/1/8</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Job Record</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Record any MLE issues that may be used. Points: 1.Self-Attention&quot;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Job</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - MLE</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Self-Attention</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Why do we divide $d_k$ when we calculate weights matrix in the Self-Attention?</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>The formula of computing weights is as follows:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    \text{Attention<span class="sc">\_</span>weights}(Q, K) &amp;= \frac{\exp\left(\mathbf{q}^\top \mathbf{k}_i / \sqrt{d_k}\right)}{\sum_{j=1} \exp\left(\mathbf{q}^\top \mathbf{k}_j / \sqrt{d_k}\right)}</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A larger $\sqrt d_k$ leads to a larger variance in the $Q, K$ dot product, resulting in a larger gap between the vector element values;</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The division by the root sign $d_k$ is to normalize the result after the dot product of $q$ and $k$ into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overfitting and Underfitting</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Why regularization reduces overfitting and explains $L_1$ regularization and $L_2$ regularization. </span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Solution</span><span class="co">](https://zhuanlan.zhihu.com/p/35356992)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;5.5 Dropout&quot;</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/2/5</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Dive-into-Deep-Learning</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Introduction to Dropout and its implementation&quot;</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Deep Learning</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a>Deep neural network have strong representation power but are prone to overfitting, especially with limited training data.</span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a><span class="fu">## Principle of Dropout</span></span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>During each training iteration, we randomly drop (set to zero) a fraction of neurons to prevent the model from overly relying on specific neurons.</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>Let $h$ be the activations of a layer. Dropout applies a mask $\mathbf{m}$ where each element is zero with dropout probability $p$, each intermediate activation $h$ is replaced by a random variable $h&#39;$ as follows:</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>h&#39; =</span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>\begin{cases} </span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>0 &amp; \text{with probability } p <span class="sc">\\</span></span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>\frac{h}{1 - p} &amp; \text{otherwise}</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>\end{cases}</span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="fu">## Benefits of Dropout</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Prevents the model from over-relying on specific neurons, enhancing robustness.</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>Works similarly to ensemble learning: since different neurons are dropped in each training step, it implicitly trains multiple sub-networks.</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a><span class="fu">## Implementation from Scratch</span></span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torch</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch <span class="im">import</span> nn</span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> d2l <span class="im">import</span> torch <span class="im">as</span> d2l</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> torchvision</span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils <span class="im">import</span> data</span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torch.utils.data <span class="im">import</span> DataLoader</span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> torchvision <span class="im">import</span> transforms</span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> dropout_layer(X, dropout):</span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> <span class="dv">0</span> <span class="op">&lt;=</span> dropout <span class="op">&lt;=</span> <span class="dv">1</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> dropout <span class="op">==</span> <span class="dv">1</span>:</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> torch.zeros_like(X)</span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> dropout <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> X</span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>    mask <span class="op">=</span> (torch.rand(X.shape) <span class="op">&gt;</span> dropout).<span class="bu">float</span>()</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> mask <span class="op">*</span> X <span class="op">/</span> (<span class="fl">1.0</span> <span class="op">-</span> dropout)</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a>X<span class="op">=</span> torch.arange(<span class="dv">16</span>, dtype <span class="op">=</span> torch.float32).reshape((<span class="dv">2</span>, <span class="dv">8</span>))</span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X)</span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">0.</span>))</span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">0.5</span>))</span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(dropout_layer(X, <span class="fl">1.</span>))</span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a><span class="fu">### Preprocessing the Data</span></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a>trans <span class="op">=</span> transforms.ToTensor()</span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>mnist_train <span class="op">=</span> torchvision.datasets.FashionMNIST(root<span class="op">=</span><span class="st">&quot;./data&quot;</span>, train<span class="op">=</span><span class="va">True</span>, transform<span class="op">=</span>trans, download <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>mnist_test <span class="op">=</span> torchvision.datasets.FashionMNIST(root<span class="op">=</span><span class="st">&quot;./data&quot;</span>, train<span class="op">=</span><span class="va">False</span>, transform<span class="op">=</span>trans, download <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>batch_size <span class="op">=</span> <span class="dv">256</span></span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>train_iter <span class="op">=</span> DataLoader(mnist_train, batch_size, shuffle<span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>test_iter <span class="op">=</span> DataLoader(mnist_test, batch_size)</span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a><span class="fu">### Define the Model</span></span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DropoutMLPScratch(d2l.Classifier):</span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, num_outputs, num_hiddens_1, num_hiddens_2,</span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>                 dropout_1, dropout_2):</span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.save_hyperparameters()</span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin1 <span class="op">=</span> nn.LazyLinear(num_hiddens_1)</span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin2 <span class="op">=</span> nn.LazyLinear(num_hiddens_2)</span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.lin3 <span class="op">=</span> nn.LazyLinear(num_outputs)</span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.relu <span class="op">=</span> nn.ReLU()</span>
+<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, X):</span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>        H1 <span class="op">=</span> <span class="va">self</span>.relu(<span class="va">self</span>.lin1(X.reshape((X.shape[<span class="dv">0</span>], <span class="op">-</span><span class="dv">1</span>))))</span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.training:</span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a>            H1 <span class="op">=</span> dropout_layer(H1, <span class="va">self</span>.dropout_1)</span>
+<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a>        H2 <span class="op">=</span> <span class="va">self</span>.relu(<span class="va">self</span>.lin2(H1))</span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> <span class="va">self</span>.training:</span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a>            H2 <span class="op">=</span> dropout_layer(H2, <span class="va">self</span>.dropout_2)</span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.lin3(H2)</span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> trainer_scratch(train_iter, test_iter, model):</span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a>    <span class="co">#optimization algorithm (Adam). </span></span>
+<span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a>    optimizer <span class="op">=</span> torch.optim.Adam(model.parameters(), lr<span class="op">=</span><span class="fl">0.001</span>) <span class="co"># lr=0.001 default</span></span>
+<span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a>    criterion <span class="op">=</span> nn.CrossEntropyLoss()</span>
+<span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a>    n_epochs<span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> epoch <span class="kw">in</span> <span class="bu">range</span>(n_epochs):</span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a>        model.train()</span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a>        epoch_start_time <span class="op">=</span> time.time()</span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>        loss_record <span class="op">=</span> []</span>
+<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a>        train_acc <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a>        <span class="co">#x: features, y: labels</span></span>
+<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> X, y <span class="kw">in</span> train_iter:</span>
+<span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a>            optimizer.zero_grad()               <span class="co"># Set gradient to zero.</span></span>
+<span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a>            train_pred <span class="op">=</span> model(X)  </span>
+<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>            batch_loss <span class="op">=</span> criterion(train_pred, y)</span>
+<span id="cb7-127"><a href="#cb7-127" aria-hidden="true" tabindex="-1"></a>            batch_loss.backward()               <span class="co"># Compute gradient(back propagation).</span></span>
+<span id="cb7-128"><a href="#cb7-128" aria-hidden="true" tabindex="-1"></a>            optimizer.step()                    <span class="co"># Update parameters.</span></span>
+<span id="cb7-129"><a href="#cb7-129" aria-hidden="true" tabindex="-1"></a>            train_acc <span class="op">+=</span> np.<span class="bu">sum</span>(np.argmax(train_pred.detach().cpu().numpy(), axis<span class="op">=</span><span class="dv">1</span>) <span class="op">==</span> y.cpu().numpy())</span>
+<span id="cb7-130"><a href="#cb7-130" aria-hidden="true" tabindex="-1"></a>            loss_record.append(batch_loss.detach().item()) <span class="co">#detach(): separation gradient</span></span>
+<span id="cb7-131"><a href="#cb7-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-132"><a href="#cb7-132" aria-hidden="true" tabindex="-1"></a>        mean_train_loss <span class="op">=</span> <span class="bu">sum</span>(loss_record)<span class="op">/</span><span class="bu">len</span>(loss_record)</span>
+<span id="cb7-133"><a href="#cb7-133" aria-hidden="true" tabindex="-1"></a>        train_acc <span class="op">=</span> train_acc <span class="op">/</span> <span class="bu">len</span>(mnist_train)</span>
+<span id="cb7-134"><a href="#cb7-134" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-135"><a href="#cb7-135" aria-hidden="true" tabindex="-1"></a>        model.<span class="bu">eval</span>() <span class="co"># Set our model to evaluation mode.</span></span>
+<span id="cb7-136"><a href="#cb7-136" aria-hidden="true" tabindex="-1"></a>        loss_record <span class="op">=</span> []</span>
+<span id="cb7-137"><a href="#cb7-137" aria-hidden="true" tabindex="-1"></a>        test_acc <span class="op">=</span> <span class="fl">0.0</span></span>
+<span id="cb7-138"><a href="#cb7-138" aria-hidden="true" tabindex="-1"></a>        <span class="cf">with</span> torch.no_grad():</span>
+<span id="cb7-139"><a href="#cb7-139" aria-hidden="true" tabindex="-1"></a>            <span class="cf">for</span> x, y <span class="kw">in</span> test_iter:</span>
+<span id="cb7-140"><a href="#cb7-140" aria-hidden="true" tabindex="-1"></a>                test_pred <span class="op">=</span> model(x)</span>
+<span id="cb7-141"><a href="#cb7-141" aria-hidden="true" tabindex="-1"></a>                batch_loss <span class="op">=</span> criterion(test_pred, y)</span>
+<span id="cb7-142"><a href="#cb7-142" aria-hidden="true" tabindex="-1"></a>                test_acc <span class="op">+=</span> np.<span class="bu">sum</span>(np.argmax(test_pred.detach().cpu().numpy(), axis<span class="op">=</span><span class="dv">1</span>) <span class="op">==</span> y.cpu().numpy())</span>
+<span id="cb7-143"><a href="#cb7-143" aria-hidden="true" tabindex="-1"></a>                loss_record.append(batch_loss.item())</span>
+<span id="cb7-144"><a href="#cb7-144" aria-hidden="true" tabindex="-1"></a>            </span>
+<span id="cb7-145"><a href="#cb7-145" aria-hidden="true" tabindex="-1"></a>            mean_test_loss <span class="op">=</span> <span class="bu">sum</span>(loss_record)<span class="op">/</span><span class="bu">len</span>(loss_record)</span>
+<span id="cb7-146"><a href="#cb7-146" aria-hidden="true" tabindex="-1"></a>            test_acc <span class="op">=</span> test_acc <span class="op">/</span> <span class="bu">len</span>(mnist_test)</span>
+<span id="cb7-147"><a href="#cb7-147" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">&#39;[</span><span class="sc">%03d</span><span class="st">/</span><span class="sc">%03d</span><span class="st">] </span><span class="sc">%2.2f</span><span class="st"> sec(s) Train Acc: </span><span class="sc">%3.6f</span><span class="st"> Loss: </span><span class="sc">%3.6f</span><span class="st"> | Test Acc: </span><span class="sc">%3.6f</span><span class="st"> loss: </span><span class="sc">%3.6f</span><span class="st">&#39;</span> <span class="op">%</span> <span class="op">\</span></span>
+<span id="cb7-148"><a href="#cb7-148" aria-hidden="true" tabindex="-1"></a>              (epoch <span class="op">+</span> <span class="dv">1</span>, n_epochs, time.time() <span class="op">-</span> epoch_start_time, <span class="op">\</span></span>
+<span id="cb7-149"><a href="#cb7-149" aria-hidden="true" tabindex="-1"></a>               train_acc, mean_train_loss, test_acc, mean_test_loss))</span>
+<span id="cb7-150"><a href="#cb7-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-151"><a href="#cb7-151" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> DropoutMLPScratch(num_outputs<span class="op">=</span><span class="dv">10</span>, num_hiddens_1<span class="op">=</span><span class="dv">256</span>, num_hiddens_2<span class="op">=</span><span class="dv">256</span>,</span>
+<span id="cb7-152"><a href="#cb7-152" aria-hidden="true" tabindex="-1"></a>           dropout_1<span class="op">=</span><span class="fl">0.5</span>, dropout_2<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb7-153"><a href="#cb7-153" aria-hidden="true" tabindex="-1"></a>trainer_scratch(train_iter, test_iter, model)</span>
+<span id="cb7-154"><a href="#cb7-154" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb7-155"><a href="#cb7-155" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-156"><a href="#cb7-156" aria-hidden="true" tabindex="-1"></a>The time of training is increased compared the model without dropout because different neurons are dropped in each training step. It&#39;s the equivalent of training a new network every iteration.</span>
+<span id="cb7-157"><a href="#cb7-157" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-158"><a href="#cb7-158" aria-hidden="true" tabindex="-1"></a><span class="fu">## Concise Implementation</span></span>
+<span id="cb7-159"><a href="#cb7-159" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-162"><a href="#cb7-162" aria-hidden="true" tabindex="-1"></a><span class="in">```{python}</span></span>
+<span id="cb7-163"><a href="#cb7-163" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> DropoutMLP(d2l.Classifier):</span>
+<span id="cb7-164"><a href="#cb7-164" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> <span class="fu">__init__</span>(<span class="va">self</span>, num_outputs, num_hiddens_1, num_hiddens_2,</span>
+<span id="cb7-165"><a href="#cb7-165" aria-hidden="true" tabindex="-1"></a>                 dropout_1, dropout_2, lr):</span>
+<span id="cb7-166"><a href="#cb7-166" aria-hidden="true" tabindex="-1"></a>        <span class="bu">super</span>().<span class="fu">__init__</span>()</span>
+<span id="cb7-167"><a href="#cb7-167" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.save_hyperparameters()</span>
+<span id="cb7-168"><a href="#cb7-168" aria-hidden="true" tabindex="-1"></a>        <span class="va">self</span>.net <span class="op">=</span> nn.Sequential(</span>
+<span id="cb7-169"><a href="#cb7-169" aria-hidden="true" tabindex="-1"></a>            nn.Flatten(), nn.LazyLinear(num_hiddens_1), nn.ReLU(),</span>
+<span id="cb7-170"><a href="#cb7-170" aria-hidden="true" tabindex="-1"></a>            nn.Dropout(dropout_1), nn.LazyLinear(num_hiddens_2), nn.ReLU(),</span>
+<span id="cb7-171"><a href="#cb7-171" aria-hidden="true" tabindex="-1"></a>            nn.Dropout(dropout_2), nn.LazyLinear(num_outputs))</span>
+<span id="cb7-172"><a href="#cb7-172" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb7-173"><a href="#cb7-173" aria-hidden="true" tabindex="-1"></a>    <span class="kw">def</span> forward(<span class="va">self</span>, X):</span>
+<span id="cb7-174"><a href="#cb7-174" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">self</span>.net(X)</span>
+<span id="cb7-175"><a href="#cb7-175" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+</code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

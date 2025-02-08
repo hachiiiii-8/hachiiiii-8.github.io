@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Wu Hao">
-<meta name="description" content="Record any MLE issues that may be used. Points: 1.Self-Attention">
+<meta name="description" content="The mathematical derivation of Forward Propagation and Backward Propagation">
 
-<title>MLE Record 1 – hao</title>
+<title>5.3 Forward Propagation, Backward Propagation, and Computational Graphs – hao</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -4974,7 +4974,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">Record of Job</a></li><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">MLE Record 1</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-1-5.1.html">5. Multilayer Perceptrons</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-5-5.3.html">5.3 Forward Propagation and Backward Propagation</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -5149,13 +5149,13 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true">
  <span class="menu-text">5. Multilayer Perceptrons</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../posts/DIDP/2025-2-1-5.1.html" class="sidebar-item-text sidebar-link">
@@ -5170,7 +5170,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/DIDP/2025-2-5-5.3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../posts/DIDP/2025-2-5-5.3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">5.3 Forward Propagation and Backward Propagation</span></a>
   </div>
 </li>
@@ -5334,7 +5334,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
       <ul id="quarto-sidebar-section-12" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../posts/Record/2025-1-8-MLE.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../posts/Record/2025-1-8-MLE.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">MLE Record 1</span></a>
   </div>
 </li>
@@ -5350,25 +5350,26 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <h2 id="toc-title">On this page</h2>
    
   <ul class="collapse">
-  <li><a href="#self-attention" id="toc-self-attention" class="nav-link active" data-scroll-target="#self-attention">Self-Attention</a></li>
-  <li><a href="#overfitting-and-underfitting" id="toc-overfitting-and-underfitting" class="nav-link" data-scroll-target="#overfitting-and-underfitting">Overfitting and Underfitting</a></li>
+  <li><a href="#forward-propagation" id="toc-forward-propagation" class="nav-link active" data-scroll-target="#forward-propagation">Forward Propagation</a></li>
+  <li><a href="#backpropagation" id="toc-backpropagation" class="nav-link" data-scroll-target="#backpropagation">Backpropagation</a></li>
+  <li><a href="#training-neural-networks" id="toc-training-neural-networks" class="nav-link" data-scroll-target="#training-neural-networks">Training Neural Networks</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">Record of Job</a></li><li class="breadcrumb-item"><a href="../../posts/Record/2025-1-8-MLE.html">MLE Record 1</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../posts/DIDP/2024-12-20-DIDP-post.html">Dive into Deep Learning</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-1-5.1.html">5. Multilayer Perceptrons</a></li><li class="breadcrumb-item"><a href="../../posts/DIDP/2025-2-5-5.3.html">5.3 Forward Propagation and Backward Propagation</a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title">MLE Record 1</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<div class="quarto-title-block"><div><h1 class="title">5.3 Forward Propagation, Backward Propagation, and Computational Graphs</h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
   <div class="quarto-categories">
-    <div class="quarto-category">Job Record</div>
+    <div class="quarto-category">Dive-into-Deep-Learning</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    Record any MLE issues that may be used. Points: 1.Self-Attention
+    The mathematical derivation of Forward Propagation and Backward Propagation
   </div>
 </div>
 
@@ -5385,7 +5386,7 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">2025/1/8</p>
+      <p class="date">2025/2/5</p>
     </div>
   </div>
   
@@ -5397,41 +5398,75 @@ body {font-family: "Merriweather", serif;font-size: 16px;line-height: 1.6;color:
 </header>
 
 
-<section id="self-attention" class="level2">
-<h2 class="anchored" data-anchor-id="self-attention">Self-Attention</h2>
-<section id="question-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-1">Question 1</h3>
-<p>Why do we divide <span class="math inline">\(d_k\)</span> when we calculate weights matrix in the Self-Attention?</p>
-<p>The formula of computing weights is as follows:</p>
+<section id="forward-propagation" class="level2">
+<h2 class="anchored" data-anchor-id="forward-propagation">Forward Propagation</h2>
+<p>Forward propagation refers to the calculation and storage of intermediate variables for a neural network in order from the input layer to the output layer.</p>
+<p>Suppose we have the input sample <span class="math inline">\(x \in \mathbb{R}^d\)</span> and our hidden layer does not include a bias term. Here the intermediate variable is:</p>
 <p><span class="math display">\[
-\begin{align*}
-    \text{Attention\_weights}(Q, K) &amp;= \frac{\exp\left(\mathbf{q}^\top \mathbf{k}_i / \sqrt{d_k}\right)}{\sum_{j=1} \exp\left(\mathbf{q}^\top \mathbf{k}_j / \sqrt{d_k}\right)}
-\end{align*}
+\mathbf{z} = \mathbf{W}^{(1)}\mathbf{x},
+\]</span></p>
+<p>where <span class="math inline">\(\mathbf{W}^{(1)} \in \mathbb{R}^{h \times d}\)</span> is the weight parameter of the hidden layer. Then we can obtain our hidden activation vector of length <span class="math inline">\(\mathbf{h}\)</span> by the activation function <span class="math inline">\(\varphi\)</span>:</p>
+<p><span class="math display">\[
+h = \varphi(z).
+\]</span></p>
+<p>The hidden layer output <span class="math inline">\(\mathbf{h}\)</span> is also an intermediate variable. Assuming that the parameter of the output layer possess only a weight of <span class="math inline">\(\mathbf{W}^{(2)} \in \mathbb{R}^{q \times h}\)</span>, we can obtain an output layer variable with a vector of length <span class="math inline">\(q\)</span>:</p>
+<p><span class="math display">\[
+\mathbf{o} = \mathbf{W}^{(2)}\mathbf{h}.
+\]</span></p>
+<p>Suppose that we have the loss function <span class="math inline">\(l\)</span> and the example label is <span class="math inline">\(y\)</span>, we can then calculate the loss term for a single data example,</p>
+<p><span class="math display">\[
+L = l(\mathbf{o}, y).
+\]</span></p>
+<p>And we will see the definition of <span class="math inline">\(\ell_2\)</span> regularization, given the hyperparameter <span class="math inline">\(\lambda\)</span>, the regularization term is</p>
+<p><span class="math display">\[
+s = \frac{\lambda}{2} \left( \| \mathbf{W}^{(1)} \|_F^2 + \| \mathbf{W}^{(2)} \|_F^2 \right).
+\]</span></p>
+<p>Finally, the models’s regularized loss on a given data example is:</p>
+<p><span class="math display">\[
+J = L + s.
+\]</span></p>
+<p>We refer to <span class="math inline">\(J\)</span> as the objective function in the following discussion.</p>
+</section>
+<section id="backpropagation" class="level2">
+<h2 class="anchored" data-anchor-id="backpropagation">Backpropagation</h2>
+<p>Backpropagation refers to the method of calculating the gradient of neural network parameters. In short, the method traverses the network in reverse order, from the output to the input layer, according to the chain rule from calculus.</p>
+<p>The first step is to calculate the gradients of the objective function <span class="math inline">\(J = L + s\)</span> with respect to the loss term <span class="math inline">\(L\)</span> and the regularization term <span class="math inline">\(s\)</span>:</p>
+<p><span class="math display">\[
+\frac{\partial J}{\partial L} = 1 \quad \text{and} \quad \frac{\partial J}{\partial s} = 1.
+\]</span></p>
+<p>Next, we compute the gradient of the objective function with respect to variable of the output layer <span class="math inline">\(\mathbf{o}\)</span> according to the chain rule: <span class="math display">\[
+\frac{\partial J}{\partial o} = \text{prod} \left( \frac{\partial J}{\partial L}, \frac{\partial L}{\partial o} \right) = \frac{\partial L}{\partial o} \in \mathbb{R}^q.
+\]</span></p>
+<p>Next, we calculate the gradients of the regularization term with respect to both parameters:</p>
+<p><span class="math display">\[
+\frac{\partial s}{\partial W^{(1)}} = \lambda W^{(1)} \quad \text{and} \quad \frac{\partial s}{\partial W^{(2)}} = \lambda W^{(2)}.
+\]</span></p>
+<p>Now we are able to calculate the gradient <span class="math inline">\(\text{} \frac{\partial J}{\partial W^{(2)}} \in \mathbb{R}^{q \times h}\)</span> of the model parameters closest to the output layer.</p>
+<p>Using the chain rule yields:</p>
+<p><span class="math display">\[
+\frac{\partial J}{\partial W^{(2)}} = \text{prod} \left( \frac{\partial J}{\partial s}, \frac{\partial s}{\partial W^{(2)}} \right) = \frac{\partial J}{\partial o} h^\top + \lambda W^{(2)}.
+\]</span></p>
+<p>To obtain the gradient with respect to <span class="math inline">\(W^{(1)}\)</span> we need to continue backpropagation along the output layer to the hidden layer. The gradient with respect to the hidden layer output <span class="math inline">\(\frac{\partial J}{\partial h} \in \mathbb{R}^k\)</span> is given by:</p>
+<p><span class="math display">\[
+\frac{\partial J}{\partial h} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial h} \right) = W^{(2)} \frac{\partial J}{\partial o}.
+\]</span></p>
+<p>Since the activation function <span class="math inline">\(\varphi\)</span> applies elementwise, calculating the gradient <span class="math inline">\(\frac{\partial J}{\partial z} \in \mathbb{R}^h\)</span> of the intermediate variable <span class="math inline">\(z\)</span> requires that we use the elementwise multiplication operator, which we denote by:</p>
+<p><span class="math display">\[
+\frac{\partial J}{\partial z} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial z} \right) = \frac{\partial J}{\partial h} \odot \varphi&#39;(z).
+\]</span></p>
+<p>Finally, we can obtain the gradient <span class="math inline">\(\frac{\partial J}{\partial W^{(1)}} \in \mathbb{R}^{h \times d}\)</span> of the model parameters closest to the input layer. According to the chain rule, we get:</p>
+<p><span class="math display">\[
+\frac{\partial J}{\partial W^{(1)}} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial W^{(1)}} \right) = \text{prod} \left( \frac{\partial J}{\partial z}, \frac{\partial z}{\partial W^{(1)}} \right) = \frac{\partial J}{\partial z} x^\top + \lambda W^{(1)}.
 \]</span></p>
 </section>
-<section id="solution" class="level3">
-<h3 class="anchored" data-anchor-id="solution">Solution</h3>
-<ol type="1">
-<li>A larger <span class="math inline">\(\sqrt d_k\)</span> leads to a larger variance in the <span class="math inline">\(Q, K\)</span> dot product, resulting in a larger gap between the vector element values;</li>
-<li>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</li>
-<li>The division by the root sign <span class="math inline">\(d_k\)</span> is to normalize the result after the dot product of <span class="math inline">\(q\)</span> and <span class="math inline">\(k\)</span> into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</li>
-</ol>
-</section>
-</section>
-<section id="overfitting-and-underfitting" class="level2">
-<h2 class="anchored" data-anchor-id="overfitting-and-underfitting">Overfitting and Underfitting</h2>
-<section id="question-1-1" class="level3">
-<h3 class="anchored" data-anchor-id="question-1-1">Question 1</h3>
-<p>Why regularization reduces overfitting and explains <span class="math inline">\(L_1\)</span> regularization and <span class="math inline">\(L_2\)</span> regularization.</p>
-</section>
-<section id="solution-1" class="level3">
-<h3 class="anchored" data-anchor-id="solution-1">Solution</h3>
-<p><a href="https://zhuanlan.zhihu.com/p/35356992">Solution</a></p>
+<section id="training-neural-networks" class="level2">
+<h2 class="anchored" data-anchor-id="training-neural-networks">Training Neural Networks</h2>
+<p>When training neural networks, once model parameters are initialized, we alternate forward propagation with backpropagation, updating model parameters using gradients given by backpropagation.</p>
+<p><strong>Why Out of Memory?</strong> Note that backpropagation reuses the stored intermediate values from forward propagation to avoid duplicate calculations. One of the consequences is that we need to retain the intermediate values until backpropagation is complete. This is also one of the reasons why training requires significantly more memory than plain prediction.</p>
 
 
 <!-- -->
 
-</section>
 </section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
@@ -5904,49 +5939,116 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class>
 <div class="sourceCode" id="cb1" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;MLE Record 1&quot;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> &quot;5.3 Forward Propagation and Backward Propagation&quot;</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> &quot;Wu Hao&quot;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/1/8</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="an">date:</span><span class="co"> 2025/2/5</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="an">date-format:</span><span class="co"> &quot;YYYY[/]M[/]D&quot;</span></span>
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="an">categories:</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Job Record</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;Record any MLE issues that may be used. Points: 1.Self-Attention&quot;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span><span class="co"> </span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">  - Dive-into-Deep-Learning</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="an">description:</span><span class="co"> &quot;The mathematical derivation of Forward Propagation and Backward Propagation&quot;</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="an">execute:</span></span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">  freeze: true</span></span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="an">tags:</span><span class="co"> </span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Job</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - MLE</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a><span class="fu">## Self-Attention</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>Why do we divide $d_k$ when we calculate weights matrix in the Self-Attention?</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>The formula of computing weights is as follows:</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>\begin{align*}</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    \text{Attention<span class="sc">\_</span>weights}(Q, K) &amp;= \frac{\exp\left(\mathbf{q}^\top \mathbf{k}_i / \sqrt{d_k}\right)}{\sum_{j=1} \exp\left(\mathbf{q}^\top \mathbf{k}_j / \sqrt{d_k}\right)}</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>\end{align*}</span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A larger $\sqrt d_k$ leads to a larger variance in the $Q, K$ dot product, resulting in a larger gap between the vector element values;</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>The gap between the vector element values becomes larger, causing the softmax output to be prone to having one value close to 1 and another close to 0, which leads to the Vanishing Gradient;</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a><span class="ss">3. </span>The division by the root sign $d_k$ is to normalize the result after the dot product of $q$ and $k$ into a vector with mean 0 and variance 1 to avoid Vanishing Gradient.</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a><span class="fu">## Overfitting and Underfitting</span></span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a><span class="fu">### Question 1</span></span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Why regularization reduces overfitting and explains $L_1$ regularization and $L_2$ regularization. </span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a><span class="fu">### Solution</span></span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">Solution</span><span class="co">](https://zhuanlan.zhihu.com/p/35356992)</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">  - Deep Learning</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="co">  - Course</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="an">jupyter:</span><span class="co"> python3</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a><span class="fu">## Forward Propagation</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>Forward propagation refers to the calculation and storage of intermediate variables for a neural network in order from the input layer to the output layer. </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>Suppose we have the input sample $x \in \mathbb{R}^d$ and our hidden layer does not include a bias term. Here the intermediate variable is:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>\mathbf{z} = \mathbf{W}^{(1)}\mathbf{x},</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>where $\mathbf{W}^{(1)} \in \mathbb{R}^{h \times d}$ is the weight parameter of the hidden layer. Then we can obtain our hidden activation vector of length $\mathbf{h}$ by the activation function $\varphi$:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>h = \varphi(z).</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>The hidden layer output $\mathbf{h}$ is also an intermediate variable. Assuming that the parameter of the output layer possess only a weight of $\mathbf{W}^{(2)} \in \mathbb{R}^{q \times h}$, we can obtain an output layer variable with a vector of length $q$:</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>\mathbf{o} = \mathbf{W}^{(2)}\mathbf{h}.</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>Suppose that we have the loss function $l$ and the example label is $y$, we can then calculate the loss term for a single data example,</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>L = l(\mathbf{o}, y).</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>And we will see the definition of $\ell_2$ regularization, given the hyperparameter $\lambda$, the regularization term is</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>s = \frac{\lambda}{2} \left( \| \mathbf{W}^{(1)} \|_F^2 + \| \mathbf{W}^{(2)} \|_F^2 \right).</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>Finally, the models&#39;s regularized loss on a given data example is:</span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>J = L + s.</span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-56"><a href="#cb1-56" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>We refer to $J$ as the objective function in the following discussion.</span>
+<span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a><span class="fu">## Backpropagation</span></span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>Backpropagation refers to the method of calculating the gradient of neural network parameters. In short, the method traverses the network in reverse order, from the output to the input layer, according to the chain rule from calculus.</span>
+<span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>The first step is to calculate the gradients of the objective function $J = L + s$ with respect to the loss term $L$ and the regularization term $s$:</span>
+<span id="cb1-64"><a href="#cb1-64" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-65"><a href="#cb1-65" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-66"><a href="#cb1-66" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial L} = 1 \quad \text{and} \quad \frac{\partial J}{\partial s} = 1. </span>
+<span id="cb1-67"><a href="#cb1-67" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-68"><a href="#cb1-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-69"><a href="#cb1-69" aria-hidden="true" tabindex="-1"></a>Next, we compute the gradient of the objective function with respect to variable of the output layer $\mathbf{o}$ according to the chain rule:</span>
+<span id="cb1-70"><a href="#cb1-70" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-71"><a href="#cb1-71" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial o} = \text{prod} \left( \frac{\partial J}{\partial L}, \frac{\partial L}{\partial o} \right) = \frac{\partial L}{\partial o} \in \mathbb{R}^q. </span>
+<span id="cb1-72"><a href="#cb1-72" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-73"><a href="#cb1-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-74"><a href="#cb1-74" aria-hidden="true" tabindex="-1"></a>Next, we calculate the gradients of the regularization term with respect to both parameters:</span>
+<span id="cb1-75"><a href="#cb1-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-76"><a href="#cb1-76" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-77"><a href="#cb1-77" aria-hidden="true" tabindex="-1"></a>\frac{\partial s}{\partial W^{(1)}} = \lambda W^{(1)} \quad \text{and} \quad \frac{\partial s}{\partial W^{(2)}} = \lambda W^{(2)}.</span>
+<span id="cb1-78"><a href="#cb1-78" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-79"><a href="#cb1-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-80"><a href="#cb1-80" aria-hidden="true" tabindex="-1"></a>Now we are able to calculate the gradient $\text{} \frac{\partial J}{\partial W^{(2)}} \in \mathbb{R}^{q \times h}$ of the model parameters closest to the output layer.</span>
+<span id="cb1-81"><a href="#cb1-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-82"><a href="#cb1-82" aria-hidden="true" tabindex="-1"></a>Using the chain rule yields:</span>
+<span id="cb1-83"><a href="#cb1-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-84"><a href="#cb1-84" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-85"><a href="#cb1-85" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial W^{(2)}} = \text{prod} \left( \frac{\partial J}{\partial s}, \frac{\partial s}{\partial W^{(2)}} \right) = \frac{\partial J}{\partial o} h^\top + \lambda W^{(2)}.</span>
+<span id="cb1-86"><a href="#cb1-86" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-87"><a href="#cb1-87" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-88"><a href="#cb1-88" aria-hidden="true" tabindex="-1"></a>To obtain the gradient with respect to $W^{(1)}$ we need to continue backpropagation along the output layer to the hidden layer. The gradient with respect to the hidden layer output $\frac{\partial J}{\partial h} \in \mathbb{R}^k$ is given by:</span>
+<span id="cb1-89"><a href="#cb1-89" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-90"><a href="#cb1-90" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-91"><a href="#cb1-91" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial h} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial h} \right) = W^{(2)} \frac{\partial J}{\partial o}.</span>
+<span id="cb1-92"><a href="#cb1-92" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-93"><a href="#cb1-93" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-94"><a href="#cb1-94" aria-hidden="true" tabindex="-1"></a>Since the activation function $\varphi$ applies elementwise, calculating the gradient $\frac{\partial J}{\partial z} \in \mathbb{R}^h$ of the intermediate variable $z$ requires that we use the elementwise multiplication operator, which we denote by:</span>
+<span id="cb1-95"><a href="#cb1-95" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-96"><a href="#cb1-96" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-97"><a href="#cb1-97" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial z} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial z} \right) = \frac{\partial J}{\partial h} \odot \varphi&#39;(z).</span>
+<span id="cb1-98"><a href="#cb1-98" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-99"><a href="#cb1-99" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-100"><a href="#cb1-100" aria-hidden="true" tabindex="-1"></a>Finally, we can obtain the gradient $\frac{\partial J}{\partial W^{(1)}} \in \mathbb{R}^{h \times d}$ of the model parameters closest to the input layer. According to the chain rule, we get:</span>
+<span id="cb1-101"><a href="#cb1-101" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-102"><a href="#cb1-102" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-103"><a href="#cb1-103" aria-hidden="true" tabindex="-1"></a>\frac{\partial J}{\partial W^{(1)}} = \text{prod} \left( \frac{\partial J}{\partial o}, \frac{\partial o}{\partial W^{(1)}} \right) = \text{prod} \left( \frac{\partial J}{\partial z}, \frac{\partial z}{\partial W^{(1)}} \right) = \frac{\partial J}{\partial z} x^\top + \lambda W^{(1)}.</span>
+<span id="cb1-104"><a href="#cb1-104" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-105"><a href="#cb1-105" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-106"><a href="#cb1-106" aria-hidden="true" tabindex="-1"></a><span class="fu">## Training Neural Networks</span></span>
+<span id="cb1-107"><a href="#cb1-107" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-108"><a href="#cb1-108" aria-hidden="true" tabindex="-1"></a>When training neural networks, once model parameters are initialized, we alternate forward propagation with backpropagation, updating model parameters using gradients given by backpropagation.</span>
+<span id="cb1-109"><a href="#cb1-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-110"><a href="#cb1-110" aria-hidden="true" tabindex="-1"></a>**Why Out of Memory?**</span>
+<span id="cb1-111"><a href="#cb1-111" aria-hidden="true" tabindex="-1"></a>Note that backpropagation reuses the stored intermediate values from forward propagation to avoid duplicate calculations. One of the consequences is that we need to retain the intermediate values until backpropagation is complete. This is also one of the reasons why training requires significantly more memory than plain prediction.</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal><i class="bi"></i></button></pre></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 
